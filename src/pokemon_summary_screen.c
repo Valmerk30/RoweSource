@@ -2663,12 +2663,12 @@ static void PrintStatPage_Midde(void)
 	
 	//Check if the Perfect IVs mode is enabled
 	if(FlagGet(FLAG_PERFECT_IVS_MODE)){
-		hpIV = 31;
-		atkIV = 31;
-		defIV = 31;
-		spAIV = 31;
-		spDIV = 31;
-		speIV = 31;
+		hpIV = 30;
+		atkIV = 15;
+		defIV = 15;
+		spAIV = 15;
+		spDIV = 15;
+		speIV = 30;
 	}
     //Stat names //-------------------------------------------------------------------------------
     statsYPos = 0;
