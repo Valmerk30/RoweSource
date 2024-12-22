@@ -1877,10 +1877,11 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
 		isDoubleBattle = TRUE;
 	else
 		isDoubleBattle = FALSE;
-	
-	if(IsHardMode() == 1 && PartySize > LeaderMonsCount && trainerNum != TRAINER_TATE_AND_LIZA_1)
-		LeaderMonsCount = PartySize;
-	
+
+    if(IsHardMode() == 1 && PartySize > LeaderMonsCount && trainerNum != TRAINER_TATE_AND_LIZA_1)
+	    LeaderMonsCount = PartySize;
+
+
     if (trainerNum == TRAINER_SECRET_BASE)
         return 0;
 
@@ -2323,7 +2324,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
 					}
 					
 					pokemonLevel = TrainerLevel[i];
-					
+				
 					
 				}
 				else if (partyData[i].lvl == 6)//Used for gym tate & liza
@@ -4488,7 +4489,6 @@ static void HandleTurnActionSelectionState(void)
                 case B_ACTION_USE_ITEM:
 					if (IsHardMode()){
 					if (FlagGet(FLAG_SYS_NO_BAG_USE) || gBattleTypeFlags & (BATTLE_TYPE_LINK //DEBUG
-											| BATTLE_TYPE_TRAINER
 											| BATTLE_TYPE_FRONTIER_NO_PYRAMID
                                             | BATTLE_TYPE_EREADER_TRAINER
                                             | BATTLE_TYPE_x2000000))
