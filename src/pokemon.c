@@ -3842,12 +3842,12 @@ void CalculateMonStats(struct Pokemon *mon)
 	SetMonData(mon, MON_DATA_LEVEL, &level);
 	
 	if(FlagGet(FLAG_PERFECT_IVS_MODE)){
-		hpIV 		= 31;
-		attackIV 	= 31;
-		defenseIV 	= 31;
-		spAttackIV 	= 31;
-		spDefenseIV = 31;
-		speedIV 	= 31;
+		hpIV 		= 30;
+		attackIV 	= 15;
+		defenseIV 	= 15;
+		spAttackIV 	= 15;
+		spDefenseIV	= 15;
+		speedIV 	= 30;
 	}
 	
 	if(FlagGet(FLAG_LEVELESS_MODE) && !FlagGet(FLAG_NO_EVOLUTION_MODE))
@@ -3859,7 +3859,7 @@ void CalculateMonStats(struct Pokemon *mon)
 
     if (species == SPECIES_SHEDINJA)
     {
-        newMaxHP = 1;
+        newMaxHP = 10;
     }
     else
     {
@@ -3986,7 +3986,7 @@ void CalculateMonStats(struct Pokemon *mon)
     if (species == SPECIES_SHEDINJA)
     {
         if (currentHP != 0 || oldMaxHP == 0)
-            currentHP = 1;
+            currentHP = 10;
         else
             return;
     }
@@ -4054,12 +4054,12 @@ void CalculateTrainerMonStats(struct Pokemon *mon)
 	
 	//check if you have the Perfect Ivs Mode Enabled
 	if(FlagGet(FLAG_PERFECT_IVS_MODE)){
-		hpIV 		= 31;
-		attackIV 	= 31;
-		defenseIV 	= 31;
-		spAttackIV 	= 31;
-		spDefenseIV = 31;
-		speedIV 	= 31;
+		hpIV 		= 30;
+		attackIV 	= 15;
+		defenseIV 	= 15;
+		spAttackIV 	= 15;
+		spDefenseIV 	= 15;
+		speedIV 	= 30;
 	}
 	
 	//check if you have the no Evs Mode Enabled
@@ -4068,7 +4068,7 @@ void CalculateTrainerMonStats(struct Pokemon *mon)
 		attackEV 	= 0;
 		defenseEV 	= 0;
 		spAttackEV 	= 0;
-		spDefenseEV = 0;
+		spDefenseEV 	= 0;
 		speedEV 	= 0;
 	}
 	
@@ -4081,7 +4081,7 @@ void CalculateTrainerMonStats(struct Pokemon *mon)
 	
 	if (species == SPECIES_SHEDINJA)
     {
-        newMaxHP = 1;
+        newMaxHP = 10;
     }
     else
     {
@@ -4163,7 +4163,7 @@ void CalculateTrainerMonStats(struct Pokemon *mon)
     if (species == SPECIES_SHEDINJA)
     {
         if (currentHP != 0 || oldMaxHP == 0)
-            currentHP = 1;
+            currentHP = 10;
         else
             return;
     }
@@ -5743,12 +5743,12 @@ void PokemonToBattleMon(struct Pokemon *src, struct BattlePokemon *dst)
     dst->experience = GetMonData(src, MON_DATA_EXP, NULL);
 	if(FlagGet(FLAG_PERFECT_IVS_MODE))
 	{
-	dst->hpIV = 31;
-    dst->attackIV = 31;
-    dst->defenseIV = 31;
-    dst->speedIV = 31;
-    dst->spAttackIV = 31;
-    dst->spDefenseIV = 31;
+    dst->hpIV = 30;
+    dst->attackIV = 15;
+    dst->defenseIV = 15;
+    dst->speedIV = 15;
+    dst->spAttackIV = 15;
+    dst->spDefenseIV = 30;
 	}else{
     dst->hpIV = GetMonData(src, MON_DATA_HP_IV, NULL);
     dst->attackIV = GetMonData(src, MON_DATA_ATK_IV, NULL);
