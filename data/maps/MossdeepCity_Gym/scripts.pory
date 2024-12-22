@@ -908,20 +908,20 @@ script MossdeepCity_Gym_EventScript_TateAndLiza_Battle_New{
 		if(flag(FLAG_HARD_MODE)){
 			//Hard Mode
 			switch (var(VAR_NUM_BADGES)) {
-			case 0: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
-			case 1: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
-			case 2: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
-			case 3: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
-			case 4: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_3, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
-			case 5: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_3, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
-			case 6: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_4, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
-			case 7: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_4, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
+			case 0: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
+			case 1: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
+			case 2: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_3, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
+			case 3: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_3, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
+			case 4: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_4, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
+			case 5: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_4, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
+			case 6: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_5, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
+			case 7: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_5, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
 			default:
 				if(flag(FLAG_SYS_GAME_CLEAR)){
 					//When you beat the game you can get a random rematch each day
 					random(5)
 					switch (var(VAR_RESULT)) {
-						case 0: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
+						case 0: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
 						case 1: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
 						case 2: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_3, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
 						case 3: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_4, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
@@ -937,20 +937,20 @@ script MossdeepCity_Gym_EventScript_TateAndLiza_Battle_New{
 		elif(flag(FLAG_NORMAL_MODE)){
 			//Normal Mode
 			switch (var(VAR_NUM_BADGES)) {
-				case 0: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
-				case 1: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
-				case 2: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
-				case 3: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
-				case 4: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
-				case 5: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_3, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
-				case 6: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_3, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
-				case 7: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_4, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
+				case 0: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
+				case 1: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
+				case 2: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
+				case 3: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_3, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
+				case 4: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_3, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
+				case 5: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_4, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
+				case 6: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_4, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
+				case 7: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_5, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
 				default:
 					if(flag(FLAG_SYS_GAME_CLEAR)){
 						//When you beat the game you can get a random rematch each day
 						random(5)
 						switch (var(VAR_RESULT)) {
-							case 0: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
+							case 0: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
 							case 1: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
 							case 2: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_3, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
 							case 3: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_4, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
@@ -966,20 +966,20 @@ script MossdeepCity_Gym_EventScript_TateAndLiza_Battle_New{
 		else{
 			//Easy Mode
 			switch (var(VAR_NUM_BADGES)) {
-				case 0: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
-				case 1: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
-				case 2: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
-				case 3: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
-				case 4: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
-				case 5: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
-				case 6: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_3, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
-				case 7: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_3, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
+				case 0: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
+				case 1: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
+				case 2: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
+				case 3: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
+				case 4: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_3, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
+				case 5: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_3, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
+				case 6: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_4, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
+				case 7: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_4, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
 				default:
 					if(flag(FLAG_SYS_GAME_CLEAR)){
 						//When you beat the game you can get a random rematch each day
 						random(5)
 						switch (var(VAR_RESULT)) {
-							case 0: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
+							case 0: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
 							case 1: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
 							case 2: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_3, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
 							case 3: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_4, MossdeepCity_Gym_Text_TateAndLizaRematchDefeat)
@@ -998,20 +998,20 @@ script MossdeepCity_Gym_EventScript_TateAndLiza_Battle_New{
 		if(flag(FLAG_HARD_MODE)){
 			//Hard Mode
 			switch (var(VAR_NUM_BADGES)) {
-			case 0: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaDefeat)
-			case 1: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaDefeat)
-			case 2: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaDefeat)
-			case 3: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaDefeat)
-			case 4: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_3, MossdeepCity_Gym_Text_TateAndLizaDefeat)
-			case 5: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_3, MossdeepCity_Gym_Text_TateAndLizaDefeat)
-			case 6: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_4, MossdeepCity_Gym_Text_TateAndLizaDefeat)
-			case 7: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_4, MossdeepCity_Gym_Text_TateAndLizaDefeat)
+			case 0: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaDefeat)
+			case 1: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaDefeat)
+			case 2: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_3, MossdeepCity_Gym_Text_TateAndLizaDefeat)
+			case 3: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_3, MossdeepCity_Gym_Text_TateAndLizaDefeat)
+			case 4: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_4, MossdeepCity_Gym_Text_TateAndLizaDefeat)
+			case 5: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_4, MossdeepCity_Gym_Text_TateAndLizaDefeat)
+			case 6: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_5, MossdeepCity_Gym_Text_TateAndLizaDefeat)
+			case 7: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_5, MossdeepCity_Gym_Text_TateAndLizaDefeat)
 			default:
 				if(flag(FLAG_SYS_GAME_CLEAR)){
 					//When you beat the game you can get a random rematch each day
 					random(5)
 					switch (var(VAR_RESULT)) {
-						case 0: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaDefeat)
+						case 0: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaDefeat)
 						case 1: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaDefeat)
 						case 2: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_3, MossdeepCity_Gym_Text_TateAndLizaDefeat)
 						case 3: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_4, MossdeepCity_Gym_Text_TateAndLizaDefeat)
@@ -1027,20 +1027,20 @@ script MossdeepCity_Gym_EventScript_TateAndLiza_Battle_New{
 		elif(flag(FLAG_NORMAL_MODE)){
 			//Normal Mode
 			switch (var(VAR_NUM_BADGES)) {
-				case 0: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaDefeat)
-				case 1: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaDefeat)
-				case 2: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaDefeat)
-				case 3: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaDefeat)
-				case 4: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaDefeat)
-				case 5: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_3, MossdeepCity_Gym_Text_TateAndLizaDefeat)
-				case 6: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_3, MossdeepCity_Gym_Text_TateAndLizaDefeat)
-				case 7: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_4, MossdeepCity_Gym_Text_TateAndLizaDefeat)
+				case 0: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaDefeat)
+				case 1: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaDefeat)
+				case 2: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaDefeat)
+				case 3: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_3, MossdeepCity_Gym_Text_TateAndLizaDefeat)
+				case 4: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_3, MossdeepCity_Gym_Text_TateAndLizaDefeat)
+				case 5: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_4, MossdeepCity_Gym_Text_TateAndLizaDefeat)
+				case 6: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_4, MossdeepCity_Gym_Text_TateAndLizaDefeat)
+				case 7: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_5, MossdeepCity_Gym_Text_TateAndLizaDefeat)
 				default:
 					if(flag(FLAG_SYS_GAME_CLEAR)){
 						//When you beat the game you can get a random rematch each day
 						random(5)
 						switch (var(VAR_RESULT)) {
-							case 0: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaDefeat)
+							case 0: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaDefeat)
 							case 1: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaDefeat)
 							case 2: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_3, MossdeepCity_Gym_Text_TateAndLizaDefeat)
 							case 3: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_4, MossdeepCity_Gym_Text_TateAndLizaDefeat)
@@ -1056,20 +1056,20 @@ script MossdeepCity_Gym_EventScript_TateAndLiza_Battle_New{
 		else{
 			//Easy Mode
 			switch (var(VAR_NUM_BADGES)) {
-				case 0: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaDefeat)
-				case 1: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaDefeat)
-				case 2: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaDefeat)
-				case 3: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaDefeat)
-				case 4: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaDefeat)
-				case 5: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaDefeat)
-				case 6: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_3, MossdeepCity_Gym_Text_TateAndLizaDefeat)
-				case 7: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_3, MossdeepCity_Gym_Text_TateAndLizaDefeat)
+				case 0: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaDefeat)
+				case 1: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaDefeat)
+				case 2: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaDefeat)
+				case 3: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaDefeat)
+				case 4: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_3, MossdeepCity_Gym_Text_TateAndLizaDefeat)
+				case 5: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_3, MossdeepCity_Gym_Text_TateAndLizaDefeat)
+				case 6: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_4, MossdeepCity_Gym_Text_TateAndLizaDefeat)
+				case 7: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_4, MossdeepCity_Gym_Text_TateAndLizaDefeat)
 				default:
 					if(flag(FLAG_SYS_GAME_CLEAR)){
 						//When you beat the game you can get a random rematch each day
 						random(5)
 						switch (var(VAR_RESULT)) {
-							case 0: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaDefeat)
+							case 0: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaDefeat)
 							case 1: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_2, MossdeepCity_Gym_Text_TateAndLizaDefeat)
 							case 2: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_3, MossdeepCity_Gym_Text_TateAndLizaDefeat)
 							case 3: trainerbattle_no_intro(TRAINER_TATE_AND_LIZA_4, MossdeepCity_Gym_Text_TateAndLizaDefeat)
