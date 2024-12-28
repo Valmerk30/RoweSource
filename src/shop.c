@@ -96,8 +96,11 @@ static const u16 sShopInventory_ZeroBadges[] = {
     ITEM_POKE_BALL,
     ITEM_POTION,
     ITEM_ANTIDOTE,
+    ITEM_BURN_HEAL,
+    ITEM_ICE_HEAL,
     ITEM_AWAKENING,
     ITEM_PARALYZE_HEAL,
+    ITEM_REPEL,
     ITEM_NONE
 };
 
