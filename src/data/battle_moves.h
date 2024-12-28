@@ -295,12 +295,12 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_BIND] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_5
-            .accuracy = 85,
+            .accuracy = 90,
         #else
-            .accuracy = 75,
+            .accuracy = 80,
         #endif
         .effect = EFFECT_TRAP,
-        .power = 15,
+        .power = 20,
         .type = TYPE_NORMAL,
         .pp = 20,
         .secondaryEffectChance = 100,
@@ -327,7 +327,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_VINE_WHIP] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_6
-            .power = 45,
+            .power = 40,
             .pp = 25,
         #elif B_UPDATED_MOVE_DATA >= GEN_4
             .power = 35,
@@ -400,7 +400,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
             .power = 70,
             .pp = 25,
         #endif
-        .effect = EFFECT_RECOIL_IF_MISS,
+        .effect = EFFECT_HIT,
         .type = TYPE_FIGHTING,
         .accuracy = 95,
         .secondaryEffectChance = 0,
@@ -415,7 +415,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .effect = EFFECT_FLINCH_HIT,
         .power = 60,
         .type = TYPE_FIGHTING,
-        .accuracy = 85,
+        .accuracy = 100,
         .pp = 15,
         .secondaryEffectChance = 30,
         .target = MOVE_TARGET_SELECTED,
@@ -538,7 +538,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
             .accuracy = 85,
         #endif
         .effect = EFFECT_TRAP,
-        .power = 15,
+        .power = 20,
         .type = TYPE_NORMAL,
         .pp = 20,
         .secondaryEffectChance = 100,
@@ -612,7 +612,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_POISON_STING] =
     {
         .effect = EFFECT_POISON_HIT,
-        .power = 15,
+        .power = 30,
         .type = TYPE_POISON,
         .accuracy = 100,
         .pp = 35,
@@ -997,7 +997,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_PECK] =
     {
         .effect = EFFECT_HIT,
-        .power = 35,
+        .power = 40,
         .type = TYPE_FLYING,
         .accuracy = 100,
         .pp = 35,
@@ -1299,7 +1299,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         #endif
         .effect = EFFECT_TRAP,
         .type = TYPE_FIRE,
-        .pp = 15,
+        .pp = 20,
         .secondaryEffectChance = 100,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -1540,7 +1540,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_RAGE] =
     {
         .effect = EFFECT_RAGE,
-        .power = 20,
+        .power = 40,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 20,
@@ -1892,7 +1892,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_SMOG] =
     {
-        .power = 35,
+        .power = 40,
         .effect = EFFECT_POISON_HIT,
         .type = TYPE_POISON,
         .accuracy = 90,
@@ -2037,11 +2037,11 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_CONSTRICT] =
     {
         .effect = EFFECT_SPEED_DOWN_HIT,
-        .power = 10,
+        .power = 40,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 35,
-        .secondaryEffectChance = 10,
+        .secondaryEffectChance = 30,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SHEER_FORCE_BOOST,
@@ -2106,7 +2106,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
             .power = 85,
             .pp = 20,
         #endif
-        .effect = EFFECT_RECOIL_IF_MISS,
+        .effect = EFFECT_HIT,
         .type = TYPE_FIGHTING,
         .accuracy = 90,
         .secondaryEffectChance = 0,
@@ -2393,7 +2393,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_FURY_SWIPES] =
     {
         .effect = EFFECT_MULTI_HIT,
-        .power = 18,
+        .power = 20,
         .type = TYPE_NORMAL,
         .accuracy = 80,
         .pp = 15,
@@ -2584,7 +2584,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_TRIPLE_KICK] =
     {
         .effect = EFFECT_TRIPLE_KICK,
-        .power = 25,
+        .power = 20,
         .type = TYPE_FIGHTING,
         .accuracy = 90,
         .pp = 10,
@@ -3601,9 +3601,9 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .effect = EFFECT_DEFENSE_DOWN_HIT,
         .power = 100,
         .type = TYPE_STEEL,
-        .accuracy = 75,
+        .accuracy = 100,
         .pp = 15,
-        .secondaryEffectChance = 30,
+        .secondaryEffectChance = 10,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SHEER_FORCE_BOOST,
@@ -4656,7 +4656,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .effect = EFFECT_BURN_HIT,
         .power = 85,
         .type = TYPE_FIRE,
-        .accuracy = 90,
+        .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 10,
         .target = MOVE_TARGET_SELECTED,
@@ -4816,7 +4816,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .power = 30,
         .type = TYPE_GHOST,
         .accuracy = 100,
-        .pp = 15,
+        .pp = 30,
         .secondaryEffectChance = 30,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -5661,7 +5661,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .effect = EFFECT_FEINT,
         .type = TYPE_NORMAL,
         .accuracy = 100,
-        .pp = 10,
+        .pp = 20,
         .secondaryEffectChance = 100,
         .target = MOVE_TARGET_SELECTED,
         .priority = 2,
@@ -6356,7 +6356,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_DRAIN_PUNCH] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_5
-            .power = 75,
+            .power = 60,
             .pp = 10,
         #else
             .power = 60,
@@ -7658,7 +7658,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .power = 40,
         .type = TYPE_NORMAL,
         .accuracy = 100,
-        .pp = 15,
+        .pp = 30,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -8057,7 +8057,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .accuracy = 100,
         .pp = 20,
         .secondaryEffectChance = 100,
-        .target = MOVE_TARGET_FOES_AND_ALLY,
+        .target = MOVE_TARGET_BOTH,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED | FLAG_SHEER_FORCE_BOOST,
         .split = SPLIT_PHYSICAL,
@@ -8404,16 +8404,16 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_RELIC_SONG] =
     {
-        .effect = EFFECT_SLEEP_HIT,   //EFFECT_SLEEP_HIT,
-        .power = 75,
-        .type = TYPE_NORMAL,
-        .accuracy = 100,
-        .pp = 10,
-        .secondaryEffectChance = 10,
-        .target = MOVE_TARGET_BOTH,
+        .effect = EFFECT_SLEEP,
+        .power = 0,
+        .type = TYPE_PSYCHIC,
+        .accuracy = 50,
+        .pp = 20,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_FOES_AND_ALLY,
         .priority = 0,
-        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SOUND | FLAG_SHEER_FORCE_BOOST,
-        .split = SPLIT_SPECIAL,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MAGICCOAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+        .split = SPLIT_STATUS,
     },
 
     [MOVE_SECRET_SWORD] =
@@ -8805,7 +8805,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .power = 40,
         .type = TYPE_FAIRY,
         .accuracy = 0,
-        .pp = 15,
+        .pp = 25,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_BOTH,
         .priority = 0,
@@ -9651,12 +9651,12 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .power = 40,
         .type = TYPE_GRASS,
         .accuracy = 100,
-        .pp = 40,
+        .pp = 25,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
-        .split = SPLIT_PHYSICAL,
+        .split = SPLIT_SPECIAL,
     },
 
     [MOVE_SPOTLIGHT] =
@@ -9900,7 +9900,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_TROP_KICK] =
     {
         .effect = EFFECT_ATTACK_DOWN_HIT,
-        .power = 70,
+        .power = 85,
         .type = TYPE_GRASS,
         .accuracy = 100,
         .pp = 15,
@@ -11727,25 +11727,25 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     },
     [SPECIES_HITMONLEE] =
     {
-        .move = MOVE_HI_JUMP_KICK,
-        .modification = SIGNATURE_MOD_ACCURACY,
-        .variable = 100,
+        .move = MOVE_TRIPLE_KICK,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 30,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
     [SPECIES_HITMONCHAN] =
     {
-        .move = MOVE_MACH_PUNCH,
+        .move = MOVE_DRAIN_PUNCH,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 60,
+        .variable = 80,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
     [SPECIES_HITMONTOP] =
     {
-        .move = MOVE_TRIPLE_KICK,
+        .move = MOVE_ROLLING_KICK,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 30,
+        .variable = 90,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
@@ -11832,6 +11832,14 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance = 10,
         .modification2 = SIGNATURE_MOD_SECOND_TYPE,
         .variable2 = TYPE_ICE,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
+    [SPECIES_DITTO] =
+    {
+        .move = MOVE_TRANSFORM,
+        .modification = SIGNATURE_MOD_PRIORITY,
+        .variable = SIGNATURE_PRIORITY_ALWAYS,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
@@ -12547,12 +12555,45 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
+    [SPECIES_MUNNA] =
+    {
+        .move = MOVE_RELIC_SONG,
+        .modification = SIGNATURE_MOD_ACCURACY,
+        .variable = 60,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
+    [SPECIES_MUSHARNA] =
+    {
+        .move = MOVE_RELIC_SONG,
+        .modification = SIGNATURE_MOD_ACCURACY,
+        .variable = 70,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
     [SPECIES_SCRAFTY] =
     {
         .move = MOVE_LOW_KICK,
-        .modification = SIGNATURE_MOD_SECONDARY_EFFECT,
-        .variable = SIGNATURE_SECONDARY_EFFECT_TAUNT,
+        .modification = SIGNATURE_MOD_PRIORITY,
+        .variable = SIGNATURE_PRIORITY_ALWAYS,
+        .modification2 = SIGNATURE_MOD_SECONDARY_EFFECT,
+        .variable2 = SIGNATURE_SECONDARY_EFFECT_TAUNT,
         .chance = 30,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
+    [SPECIES_THROH] =
+    {
+        .move = MOVE_BIND,
+        .modification = SIGNATURE_MOD_TYPE,
+        .variable = TYPE_FIGHTING,
+        .modification2 = SIGNATURE_MOD_ATTACKER_STAT_UP,
+        .variable2 = STAT_DEF,
+        .chance2 = 50,
+        .modification3 = SIGNATURE_MOD_POWER,
+        .variable3 = 50,
+        .modification4 = SIGNATURE_MOD_ACCURACY,
+        .variable4 = 100,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
@@ -12565,6 +12606,18 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification2 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable2 = STAT_ATK,
         .chance2 = 50,
+        .modification3 = SIGNATURE_MOD_POWER,
+        .variable3 = 50,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
+    [SPECIES_ALOMOMOLA] =
+    {
+        .move = MOVE_DRAINING_KISS,
+        .modification = SIGNATURE_MOD_PRIORITY,
+        .variable = SIGNATURE_PRIORITY_ALWAYS,
+        .modification2 = SIGNATURE_MOD_POWER,
+        .variable2 = 75,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
@@ -12756,6 +12809,15 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
+    [SPECIES_PALOSSAND] =
+    {
+        .move = MOVE_SHORE_UP,
+        .modification = SIGNATURE_MOD_MODIFY_FIELD,
+        .variable = FIELD_SET_WEATHER_SANDSTORM,
+        .chance2 = 20,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
     [SPECIES_RILLABOOM] =
     {
         .move = MOVE_GRASSY_GLIDE,
@@ -12764,12 +12826,23 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
-    [SPECIES_PALOSSAND] =
+    [SPECIES_SILICOBRA] =
     {
-        .move = MOVE_SHORE_UP,
-        .modification = SIGNATURE_MOD_MODIFY_FIELD,
-        .variable = FIELD_SET_WEATHER_SANDSTORM,
-        .chance2 = 20,
+        .move = MOVE_CONSTRICT,
+        .modification = SIGNATURE_MOD_TYPE,
+        .variable = TYPE_GROUND,
+        .modification2 = SIGNATURE_MOD_POWER,
+        .variable2 = 50,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
+    [SPECIES_SANDACONDA] =
+    {
+        .move = MOVE_CONSTRICT,
+        .modification = SIGNATURE_MOD_TYPE,
+        .variable = TYPE_GROUND,
+        .modification2 = SIGNATURE_MOD_POWER,
+        .variable2 = 50,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
