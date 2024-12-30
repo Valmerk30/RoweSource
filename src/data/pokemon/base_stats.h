@@ -18837,12 +18837,12 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_FLOETTE] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 45,
-        .baseDefense   = 45,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 75,
-        .baseSpDefense = 100,
+        .baseHP        = 60,
+        .baseAttack    = 50,
+        .baseDefense   = 50,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 120,
         .type1 = TYPE_FAIRY,
         .type2 = TYPE_GRASS,
         .catchRate = 255,
