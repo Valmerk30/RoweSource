@@ -2495,7 +2495,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_TRI_ATTACK] =
     {
         .effect = EFFECT_TRI_ATTACK,
-        .power = 80,
+        .power = 90,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 10,
