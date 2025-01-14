@@ -5935,10 +5935,10 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_SHUCKLE] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 25,
+        .baseHP        = 50,
+        .baseAttack    = 50,
         .baseDefense   = 200,
-        .baseSpAttack  = 25,
+        .baseSpAttack  = 5,
         .baseSpDefense = 200,
         .baseSpeed     = 5,
         .type1 = TYPE_BUG,
@@ -8425,8 +8425,8 @@ const struct BaseStats gBaseStats[] =
         .baseSpAttack  = 75,
         .baseSpDefense = 80,
         .baseSpeed     = 55,
-        .type1 = TYPE_DARK,
-        .type2 = TYPE_GHOST,
+        .type1 = TYPE_GHOST,
+        .type2 = TYPE_NORMAL,
         .catchRate = 255,
         .expYield = 133,
         .evYield_Attack    = 1,
@@ -21745,12 +21745,12 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_PYUKUMUKU] =
     {
-        .baseHP        = 70,
+        .baseHP        = 80,
         .baseAttack    = 10,
-        .baseDefense   = 175,
+        .baseDefense   = 170,
         .baseSpeed     = 10,
         .baseSpAttack  = 10,
-        .baseSpDefense = 175,
+        .baseSpDefense = 170,
         .type1 = TYPE_POISON,
         .type2 = TYPE_POISON,
         .catchRate = 255,
@@ -24736,14 +24736,14 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_INDEEDEE] =
     {
-        .baseHP        = 65,
+        .baseHP        = 75,
         .baseAttack    = 60,
         .baseDefense   = 60,
-        .baseSpeed     = 90,
+        .baseSpeed     = 80,
         .baseSpAttack  = 100,
         .baseSpDefense = 100,
         .type1 = TYPE_PSYCHIC,
-        .type2 = TYPE_NORMAL,
+        .type2 = TYPE_FAIRY,
         .catchRate = 255,
         .expYield = 166,
         .evYield_SpAttack  = 2,
@@ -26025,8 +26025,8 @@ const struct BaseStats gBaseStats[] =
         .baseSpAttack  = 85,
         .baseSpDefense = 90,
         .baseSpeed     = 65,
-        .type1 = TYPE_DARK,
-        .type2 = TYPE_GHOST,
+        .type1 = TYPE_GHOST,
+        .type2 = TYPE_NORMAL,
         .catchRate = 255,
         .expYield = 168,
         .evYield_Attack    = 1,
@@ -33691,14 +33691,14 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_INDEEDEE_FEMALE] =
     {
-        .baseHP        = 65,
+        .baseHP        = 75,
         .baseAttack    = 60,
         .baseDefense   = 60,
-        .baseSpeed     = 90,
+        .baseSpeed     = 80,
         .baseSpAttack  = 100,
         .baseSpDefense = 100,
         .type1 = TYPE_PSYCHIC,
-        .type2 = TYPE_NORMAL,
+        .type2 = TYPE_FAIRY,
         .catchRate = 255,
         .expYield = 166,
         .evYield_SpDefense = 2,
