@@ -23336,7 +23336,7 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_NICKIT] =
     {
         .baseHP        = 40,
-        .baseAttack    = 30,
+        .baseAttack    = 50,
         .baseDefense   = 30,
         .baseSpeed     = 50,
         .baseSpAttack  = 45,
