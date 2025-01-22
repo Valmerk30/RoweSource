@@ -12,11 +12,14 @@ jobs:
       MODERN: 0
       COMPARE: 0
     steps:
+      - name: Install libpng development package
+        run: sudo apt-get update && sudo apt-get install -y libpng-dev
+
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Checkout agbcc
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           path: agbcc
           repository: pret/agbcc
