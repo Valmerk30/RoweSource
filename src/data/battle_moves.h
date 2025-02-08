@@ -11582,6 +11582,22 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
+    [SPECIES_JIGGLYPUFF] =
+    {
+        .move = MOVE_SING,
+        .modification = SIGNATURE_MOD_ACCURACY,
+        .variable = 80,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
+    [SPECIES_WIGGLYTUFF] =
+    {
+        .move = MOVE_SING,
+        .modification = SIGNATURE_MOD_ACCURACY,
+        .variable = 80,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
     [SPECIES_GOLEM] =
     {
         .move = MOVE_EXPLOSION,
