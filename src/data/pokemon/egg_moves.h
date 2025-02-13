@@ -2267,6 +2267,7 @@ const u16 gEggMoves[] = {
 		MOVE_DISCHARGE,
 		MOVE_TEARFUL_LOOK,
 		MOVE_MUD_SPORT,
+		MOVE_LUNGE,
 		MOVE_SUBSTITUTE),
 
 	egg_moves(MINUN,
@@ -2279,6 +2280,7 @@ const u16 gEggMoves[] = {
 		MOVE_DISCHARGE,
 		MOVE_TEARFUL_LOOK,
 		MOVE_MUD_SPORT,
+		MOVE_LUNGE,
 		MOVE_SUBSTITUTE),
 
 	egg_moves(VOLBEAT,
