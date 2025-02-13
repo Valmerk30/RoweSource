@@ -38,7 +38,6 @@ OldaleTown_House1_EventScript_Pokemart::
 	.2byte ITEM_ABILITY_CAPSULE
 	.2byte ITEM_ABILITY_PATCH
 	.2byte ITEM_IRON_PILL
-	.2byte ITEM_HEART_SCALE
 	.2byte ITEM_NONE
 	release
 	end
