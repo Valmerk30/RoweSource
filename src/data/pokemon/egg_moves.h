@@ -4779,7 +4779,8 @@ const u16 gEggMoves[] = {
 	egg_moves(SNOM,
 		MOVE_MIRROR_COAT,
 		MOVE_BUG_BITE,
-		MOVE_FAIRY_WIND),
+		MOVE_FAIRY_WIND,
+		MOVE_AIR_SLASH),
 
 	egg_moves(STONJOURNER,
 		MOVE_CURSE,
