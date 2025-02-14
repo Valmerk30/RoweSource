@@ -13506,6 +13506,7 @@ static const u8 sAlomomolaTutorLearnset[] =
     TUTOR(MOVE_KNOCK_OFF),
     TUTOR(MOVE_PAIN_SPLIT),
     TUTOR(MOVE_WHIRLPOOL),
+    TUTOR(MOVE_SIGNAL_BEAM),
     0xFF,
 };
 
