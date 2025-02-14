@@ -28536,6 +28536,7 @@ static const u8 sKlefkiTMHMLearnset[] =
     TMHM(TM100_CONFIDE),
     TMHM(TM104_PLAY_ROUGH),
     TMHM(TM105_PSYSHOCK),
+    TMHM(TM108_EARTH_POWER),
     0xFF,
 };
 
@@ -33359,7 +33360,7 @@ static const u8 sToxtricityTMHMLearnset[] =
     TMHM(TM42_FACADE),
     TMHM(TM44_REST),
     TMHM(TM45_ATTRACT),
-    
+    TMHM(TM65_SHADOW_CLAW),
     TMHM(TM66_PAYBACK),
     TMHM(TM68_GIGA_IMPACT),
     TMHM(TM72_VOLT_SWITCH),
