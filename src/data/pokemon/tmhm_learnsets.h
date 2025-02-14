@@ -19328,6 +19328,7 @@ static const u8 sRotomTMHMLearnset[] =
     TMHM(TM97_DARK_PULSE),
     TMHM(TM100_CONFIDE),
     TMHM(TM113_NASTY_PLOT),
+    TMHM(TM120_MYSTICAL_FIRE),
     0xFF,
 };
 
