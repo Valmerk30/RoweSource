@@ -686,8 +686,8 @@ const struct BaseStats gBaseStats[] =
     {
         .baseHP        = 70, 
         .baseAttack    = 100,
-        .baseDefense   = 55,
-        .baseSpAttack  = 100,
+        .baseDefense   = 65,
+        .baseSpAttack  = 90,
         .baseSpDefense = 80,
         .baseSpeed     = 110,
         .type1 = TYPE_ELECTRIC,
@@ -21576,7 +21576,7 @@ const struct BaseStats gBaseStats[] =
         .baseSpeed     = 60,
         .baseSpAttack  = 90,
         .baseSpDefense = 110,
-        .type1 = TYPE_NORMAL,
+        .type1 = TYPE_PSYCHIC,
         .type2 = TYPE_PSYCHIC,
         .catchRate = 255,
         .expYield = 172,
@@ -26722,8 +26722,8 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_RAICHU_ALOLAN] =
     {
         .baseHP        = 70, 
-        .baseAttack    = 100,
-        .baseDefense   = 55,
+        .baseAttack    = 90,
+        .baseDefense   = 65,
         .baseSpAttack  = 100,
         .baseSpDefense = 80,
         .baseSpeed     = 110,
@@ -26739,7 +26739,7 @@ const struct BaseStats gBaseStats[] =
         .eggGroup1 = EGG_GROUP_FIELD,
         .eggGroup2 = EGG_GROUP_FAIRY,
         #ifdef BATTLE_ENGINE
-            .abilities = {ABILITY_SURGE_SURFER, ABILITY_NONE},
+            .abilities = {ABILITY_STATIC, ABILITY_LIGHTNING_ROD},
         #else
             .abilities = {ABILITY_NONE, ABILITY_NONE},
         #endif
