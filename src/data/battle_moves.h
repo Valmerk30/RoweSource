@@ -12862,4 +12862,14 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
+    [SPECIES_PYUKUMUKU] =
+    {
+        .move = MOVE_SPIKE_CANNON,
+        .modification = SIGNATURE_MOD_TYPE,
+        .variable = TYPE_POISON,
+        .modification2 = SIGNATURE_MOD_POWER,
+        .variable2 = 30,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
 };
