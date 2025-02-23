@@ -9900,7 +9900,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_TROP_KICK] =
     {
         .effect = EFFECT_ATTACK_DOWN_HIT,
-        .power = 85,
+        .power = 90,
         .type = TYPE_GRASS,
         .accuracy = 100,
         .pp = 15,
@@ -11379,7 +11379,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_THUNDEROUS_KICK] =
     {
         .effect = EFFECT_DEFENSE_DOWN_HIT,
-        .power = 80,
+        .power = 90,
         .type = TYPE_ELECTRIC,
         .accuracy = 100,
         .pp = 10,
