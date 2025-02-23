@@ -8176,7 +8176,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SHEER_FORCE_BOOST,
-        .split = SPLIT_PHYSICAL,
+        .split = SPLIT_SPECIAL,
     },
 
     [MOVE_HORN_LEECH] =
@@ -11295,8 +11295,8 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_WICKED_BLOW] =
     {
         .effect = EFFECT_ALWAYS_CRIT,
-        .power = 80,
-        .type = TYPE_DARK,
+        .power = 60,
+        .type = TYPE_FIGHTING,
         .accuracy = 100,
         .pp = 5,
         .secondaryEffectChance = 0,
