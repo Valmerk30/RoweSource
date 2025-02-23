@@ -21057,6 +21057,7 @@ static const u8 sMusharnaTMHMLearnset[] =
 
 static const u8 sPidoveTMHMLearnset[] =
 {
+    TMHM(TM02_DRAGON_CLAW),
     TMHM(TM06_TOXIC),
     TMHM(TM10_HIDDEN_POWER),
     TMHM(TM11_SUNNY_DAY),
@@ -21074,6 +21075,7 @@ static const u8 sPidoveTMHMLearnset[] =
     TMHM(TM47_STEEL_WING),
     TMHM(TM58_ROOST),
     TMHM(TM76_FLY),
+    TMHM(TM82_DRAGON_TAIL),
     TMHM(TM87_SWAGGER),
     TMHM(TM88_SLEEP_TALK),
     TMHM(TM89_U_TURN),
@@ -21084,6 +21086,7 @@ static const u8 sPidoveTMHMLearnset[] =
 
 static const u8 sTranquillTMHMLearnset[] =
 {
+    TMHM(TM02_DRAGON_CLAW),
     TMHM(TM06_TOXIC),
     TMHM(TM10_HIDDEN_POWER),
     TMHM(TM11_SUNNY_DAY),
@@ -21101,6 +21104,7 @@ static const u8 sTranquillTMHMLearnset[] =
     TMHM(TM47_STEEL_WING),
     TMHM(TM58_ROOST),
     TMHM(TM76_FLY),
+    TMHM(TM82_DRAGON_TAIL),
     TMHM(TM87_SWAGGER),
     TMHM(TM88_SLEEP_TALK),
     TMHM(TM89_U_TURN),
@@ -21111,6 +21115,7 @@ static const u8 sTranquillTMHMLearnset[] =
 
 static const u8 sUnfezantTMHMLearnset[] =
 {
+    TMHM(TM02_DRAGON_CLAW),
     TMHM(TM06_TOXIC),
     TMHM(TM10_HIDDEN_POWER),
     TMHM(TM11_SUNNY_DAY),
@@ -21131,6 +21136,7 @@ static const u8 sUnfezantTMHMLearnset[] =
     TMHM(TM58_ROOST),
     TMHM(TM76_FLY),
     TMHM(TM77_PSYCH_UP),
+    TMHM(TM82_DRAGON_TAIL),
     TMHM(TM87_SWAGGER),
     TMHM(TM88_SLEEP_TALK),
     TMHM(TM89_U_TURN),
@@ -33488,6 +33494,7 @@ static const u8 sClobbopusTMHMLearnset[] =
     TMHM(TM45_ATTRACT),
     TMHM(TM52_FOCUS_BLAST),
     TMHM(TM66_PAYBACK),
+    TMHM(TM84_POISON_JAB),
     TMHM(TM88_SLEEP_TALK),
     TMHM(TM90_SUBSTITUTE),
     TMHM(TM98_WATERFALL),
@@ -33512,6 +33519,7 @@ static const u8 sGrapploctTMHMLearnset[] =
     TMHM(TM59_BRUTAL_SWING),
     TMHM(TM66_PAYBACK),
     TMHM(TM68_GIGA_IMPACT),
+    TMHM(TM84_POISON_JAB),
     TMHM(TM88_SLEEP_TALK),
     TMHM(TM90_SUBSTITUTE),
     TMHM(TM94_SURF),
@@ -33536,6 +33544,7 @@ static const u8 sSinisteaTMHMLearnset[] =
     TMHM(TM88_SLEEP_TALK),
     TMHM(TM90_SUBSTITUTE),
     TMHM(TM97_DARK_PULSE),
+    TMHM(TM99_DAZZLING_GLEAM),
     TMHM(TM105_PSYSHOCK),
     TMHM(TM113_NASTY_PLOT),
     0xFF,
@@ -33560,6 +33569,7 @@ static const u8 sPolteageistTMHMLearnset[] =
     TMHM(TM88_SLEEP_TALK),
     TMHM(TM90_SUBSTITUTE),
     TMHM(TM97_DARK_PULSE),
+    TMHM(TM99_DAZZLING_GLEAM),
     TMHM(TM105_PSYSHOCK),
     TMHM(TM113_NASTY_PLOT),
     0xFF,
