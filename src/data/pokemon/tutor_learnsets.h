@@ -1279,6 +1279,9 @@ static const u8 sPersianTutorLearnset[] =
     TUTOR(MOVE_FLASH),
     TUTOR(MOVE_HYPER_VOICE),
     TUTOR(MOVE_FOUL_PLAY),
+    TUTOR(MOVE_ICE_FANG),
+    TUTOR(MOVE_FIRE_FANG),
+    TUTOR(MOVE_THUNDER_FANG),
     0xFF,
 };
 
@@ -4600,6 +4603,7 @@ static const u8 sSunkernTutorLearnset[] =
     TUTOR(MOVE_SEED_BOMB),
     TUTOR(MOVE_CUT),
     TUTOR(MOVE_FLASH),
+    TUTOR(MOVE_SIGNAL_BEAM),
     0xFF,
 };
 
@@ -4616,6 +4620,7 @@ static const u8 sSunfloraTutorLearnset[] =
     TUTOR(MOVE_SEED_BOMB),
     TUTOR(MOVE_CUT),
     TUTOR(MOVE_FLASH),
+    TUTOR(MOVE_SIGNAL_BEAM),
     0xFF,
 };
 
@@ -12647,6 +12652,7 @@ static const u8 sCottoneeTutorLearnset[] =
     TUTOR(MOVE_FLASH),
     TUTOR(MOVE_GRASSY_GLIDE),
     TUTOR(MOVE_DEFOG),
+    TUTOR(MOVE_SIGNAL_BEAM),
     0xFF,
 };
 
@@ -12665,6 +12671,7 @@ static const u8 sWhimsicottTutorLearnset[] =
     TUTOR(MOVE_FLASH),
     TUTOR(MOVE_GRASSY_GLIDE),
     TUTOR(MOVE_DEFOG),
+    TUTOR(MOVE_SIGNAL_BEAM),
     0xFF,
 };
 
@@ -18905,6 +18912,9 @@ static const u8 sPersianAlolanTutorLearnset[] =
     TUTOR(MOVE_SEED_BOMB),
     TUTOR(MOVE_HYPER_VOICE),
     TUTOR(MOVE_FOUL_PLAY),
+    TUTOR(MOVE_ICE_FANG),
+    TUTOR(MOVE_FIRE_FANG),
+    TUTOR(MOVE_THUNDER_FANG),
     0xFF,
 };
 
