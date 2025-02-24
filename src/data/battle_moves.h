@@ -12872,21 +12872,5 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
-    [SPECIES_SHUCKLE] =
-    {
-        .move = MOVE_ROLLOUT,
-        .modification = SIGNATURE_MOD_POWER,
-        .variable = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
-    },
-    [SPECIES_WOBBUFFET] =
-    {
-        .move = MOVE_FINAL_GAMBIT,
-        .modification = SIGNATURE_MOD_TYPE,
-        .variable = TYPE_PSYCHIC,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
-    },
 
 };
