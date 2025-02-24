@@ -3687,7 +3687,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_HIDDEN_POWER] =
     {
         .effect = EFFECT_HIDDEN_POWER,
-        .power = 60,
+        .power = 80,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 15,
@@ -4520,7 +4520,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_SECRET_POWER] =
     {
         .effect = EFFECT_HIDDEN_POWER,
-        .power = 60,
+        .power = 80,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 15,
@@ -6828,7 +6828,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_GUNK_SHOT] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_6
-            .accuracy = 80,
+            .accuracy = 85,
         #else
             .accuracy = 70,
         #endif
@@ -9338,7 +9338,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_INFESTATION] =
     {
         .effect = EFFECT_TRAP,
-        .power = 50,
+        .power = 70,
         .type = TYPE_BUG,
         .accuracy = 100,
         .pp = 20,
@@ -11296,7 +11296,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_ALWAYS_CRIT,
         .power = 60,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_DARK,
         .accuracy = 100,
         .pp = 5,
         .secondaryEffectChance = 0,
@@ -12872,4 +12872,21 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
+    [SPECIES_SHUCKLE] =
+    {
+        .move = MOVE_ROLLOUT,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 50,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
+    [SPECIES_WOBBUFFET] =
+    {
+        .move = MOVE_FINAL_GAMBIT,
+        .modification = SIGNATURE_MOD_TYPE,
+        .variable = TYPE_PSYCHIC,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
+
 };
