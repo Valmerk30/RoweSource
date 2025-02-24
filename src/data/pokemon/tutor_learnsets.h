@@ -15048,6 +15048,7 @@ static const u8 sFurfrouTutorLearnset[] =
     TUTOR(MOVE_ROCK_SMASH),
     TUTOR(MOVE_FLASH),
     TUTOR(MOVE_HYPER_VOICE),
+    TUTOR(MOVE_TRIPLE_AXEL),
     0xFF,
 };
 
