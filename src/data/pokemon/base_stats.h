@@ -18556,11 +18556,11 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_DIGGERSBY] =
     {
         .baseHP        = 85,
-        .baseAttack    = 75,
-        .baseDefense   = 90,
+        .baseAttack    = 60,
+        .baseDefense   = 100,
         .baseSpeed     = 80,
         .baseSpAttack  = 50,
-        .baseSpDefense = 80,
+        .baseSpDefense = 85,
         .type1 = TYPE_GROUND,
         .type2 = TYPE_GROUND,
         .catchRate = 255,
@@ -20882,9 +20882,10 @@ const struct BaseStats gBaseStats[] =
         .eggGroup1 = EGG_GROUP_FLYING,
         .eggGroup2 = EGG_GROUP_FLYING,
         #ifdef BATTLE_ENGINE
-            .abilities = {ABILITY_DANCER, ABILITY_NONE},
+            .abilities = {ABILITY_ADAPTABILITY, ABILITY_NONE},
+            .abilityHidden = ABILITY_DANCER,
         #else
-            .abilities = {ABILITY_NONE, ABILITY_NONE},
+            .abilities = {ABILITY_DANCER, ABILITY_NONE},
         #endif
         .bodyColor = BODY_COLOR_RED,
         .noFlip = FALSE,
@@ -32100,9 +32101,10 @@ const struct BaseStats gBaseStats[] =
         .eggGroup1 = EGG_GROUP_FLYING,
         .eggGroup2 = EGG_GROUP_FLYING,
         #ifdef BATTLE_ENGINE
-            .abilities = {ABILITY_DANCER, ABILITY_NONE},
+            .abilities = {ABILITY_ADAPTABILITY, ABILITY_NONE},
+            .abilityHidden = ABILITY_DANCER,
         #else
-            .abilities = {ABILITY_NONE, ABILITY_NONE},
+            .abilities = {ABILITY_DANCER, ABILITY_NONE},
         #endif
         .bodyColor = BODY_COLOR_YELLOW,
         .noFlip = FALSE,
@@ -32131,9 +32133,10 @@ const struct BaseStats gBaseStats[] =
         .eggGroup1 = EGG_GROUP_FLYING,
         .eggGroup2 = EGG_GROUP_FLYING,
         #ifdef BATTLE_ENGINE
-            .abilities = {ABILITY_DANCER, ABILITY_NONE},
+            .abilities = {ABILITY_ADAPTABILITY, ABILITY_NONE},
+            .abilityHidden = ABILITY_DANCER,
         #else
-            .abilities = {ABILITY_NONE, ABILITY_NONE},
+            .abilities = {ABILITY_DANCER, ABILITY_NONE},
         #endif
         .bodyColor = BODY_COLOR_PINK,
         .noFlip = FALSE,
@@ -32162,9 +32165,10 @@ const struct BaseStats gBaseStats[] =
         .eggGroup1 = EGG_GROUP_FLYING,
         .eggGroup2 = EGG_GROUP_FLYING,
         #ifdef BATTLE_ENGINE
-            .abilities = {ABILITY_DANCER, ABILITY_NONE},
+            .abilities = {ABILITY_ADAPTABILITY, ABILITY_NONE},
+            .abilityHidden = ABILITY_DANCER,
         #else
-            .abilities = {ABILITY_NONE, ABILITY_NONE},
+            .abilities = {ABILITY_DANCER, ABILITY_NONE},
         #endif
         .bodyColor = BODY_COLOR_YELLOW,
         .noFlip = FALSE,
