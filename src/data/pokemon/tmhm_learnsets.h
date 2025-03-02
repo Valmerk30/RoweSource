@@ -8258,6 +8258,7 @@ static const u8 sMisdreavusTMHMLearnset[] =
 static const u8 sUnownTMHMLearnset[] =
 {
     TMHM(TM10_HIDDEN_POWER),
+    TMHM(TM43_SECRET_POWER),
     0xFF,
 };
 
