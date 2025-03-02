@@ -3601,7 +3601,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .effect = EFFECT_DEFENSE_DOWN_HIT,
         .power = 100,
         .type = TYPE_STEEL,
-        .accuracy = 100,
+        .accuracy = 90,
         .pp = 15,
         .secondaryEffectChance = 10,
         .target = MOVE_TARGET_SELECTED,
@@ -3687,7 +3687,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_HIDDEN_POWER] =
     {
         .effect = EFFECT_HIDDEN_POWER,
-        .power = 80,
+        .power = 60,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 15,
@@ -4520,7 +4520,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_SECRET_POWER] =
     {
         .effect = EFFECT_HIDDEN_POWER,
-        .power = 80,
+        .power = 60,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 15,
@@ -11832,7 +11832,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     {
         .move = MOVE_THRASH,
         .modification = SIGNATURE_MOD_TYPE,
-        .variable = TYPE_FLYING,
+        .variable = TYPE_DRAGON,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
@@ -12385,7 +12385,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TYPE,
         .variable3 = TYPE_STEEL,
         .modification4 = SIGNATURE_MOD_PSS_CHANGE,
-        .variable4 = SPLIT_PHYSICAL,
+        .variable4 = SPLIT_HIGHEST,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
@@ -12574,7 +12574,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     {
         .move = MOVE_RELIC_SONG,
         .modification = SIGNATURE_MOD_ACCURACY,
-        .variable = 60,
+        .variable = 65,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
@@ -12582,7 +12582,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     {
         .move = MOVE_RELIC_SONG,
         .modification = SIGNATURE_MOD_ACCURACY,
-        .variable = 70,
+        .variable = 75,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
@@ -12887,6 +12887,18 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = SIGNATURE_PRIORITY_ALWAYS,
         .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
         .variable3 = FIELD_SET_TERRAIN_PSYCHIC,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
+    [SPECIES_UNOWN] =
+    {
+        .move = MOVE_HIDDEN_POWER,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 80,
+        .modification2 = SIGNATURE_MOD_SE_AGAINST_TYPE,
+        .variable2 = TYPE_DRAGON,
+        .modification3 = SIGNATURE_MOD_SE_AGAINST_TYPE,
+        .variable3 = TYPE_FAIRY,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
