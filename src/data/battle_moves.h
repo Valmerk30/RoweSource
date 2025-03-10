@@ -3642,7 +3642,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_MORNING_SUN,
         .power = 0,
-        .type = TYPE_NORMAL,
+        .type = TYPE_FIRE,
         .accuracy = 0,
         .pp = 5,
         .secondaryEffectChance = 0,
