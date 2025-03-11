@@ -8571,7 +8571,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroup1 = EGG_GROUP_HUMAN_LIKE,
         .eggGroup2 = EGG_GROUP_HUMAN_LIKE,
-        .abilities = {ABILITY_PURE_POWER, ABILITY_TELEPATHY},
+        .abilities = {ABILITY_DEFIANT, ABILITY_TELEPATHY},
         #ifdef BATTLE_ENGINE
             .abilityHidden = ABILITY_SCREEN_SETTER,
         #endif
@@ -8598,7 +8598,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroup1 = EGG_GROUP_HUMAN_LIKE,
         .eggGroup2 = EGG_GROUP_HUMAN_LIKE,
-        .abilities = {ABILITY_PURE_POWER, ABILITY_TELEPATHY},
+        .abilities = {ABILITY_DEFIANT, ABILITY_TELEPATHY},
         .abilityHidden = ABILITY_SCREEN_SETTER,
         .bodyColor = BODY_COLOR_RED,
         .noFlip = FALSE,
@@ -18527,7 +18527,7 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_BUNNELBY] =
     {
         .baseHP        = 45,
-        .baseAttack    = 35,
+        .baseAttack    = 55,
         .baseDefense   = 40,
         .baseSpeed     = 55,
         .baseSpAttack  = 30,
@@ -18548,19 +18548,19 @@ const struct BaseStats gBaseStats[] =
         #else
             .abilities = {ABILITY_PICKUP, ABILITY_NONE},
         #endif
-        .abilityHidden = ABILITY_HUGE_POWER,
+        .abilityHidden = ABILITY_SIMPLE,
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = FALSE,
     },
 
     [SPECIES_DIGGERSBY] =
     {
-        .baseHP        = 85,
-        .baseAttack    = 60,
+        .baseHP        = 75,
+        .baseAttack    = 100,
         .baseDefense   = 100,
-        .baseSpeed     = 80,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 85,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 75,
         .type1 = TYPE_GROUND,
         .type2 = TYPE_GROUND,
         .catchRate = 255,
@@ -18577,7 +18577,7 @@ const struct BaseStats gBaseStats[] =
         #else
             .abilities = {ABILITY_PICKUP, ABILITY_NONE},
         #endif
-        .abilityHidden = ABILITY_HUGE_POWER,
+        .abilityHidden = ABILITY_SIMPLE,
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = FALSE,
     },
