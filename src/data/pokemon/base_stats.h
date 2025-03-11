@@ -8571,9 +8571,9 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroup1 = EGG_GROUP_HUMAN_LIKE,
         .eggGroup2 = EGG_GROUP_HUMAN_LIKE,
-        .abilities = {ABILITY_PURE_POWER, ABILITY_NONE},
+        .abilities = {ABILITY_PURE_POWER, ABILITY_TELEPATHY},
         #ifdef BATTLE_ENGINE
-            .abilityHidden = ABILITY_TELEPATHY,
+            .abilityHidden = ABILITY_SCREEN_SETTER,
         #endif
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = FALSE,
@@ -8598,8 +8598,8 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroup1 = EGG_GROUP_HUMAN_LIKE,
         .eggGroup2 = EGG_GROUP_HUMAN_LIKE,
-        .abilities = {ABILITY_PURE_POWER, ABILITY_NONE},
-        .abilityHidden = ABILITY_TELEPATHY,
+        .abilities = {ABILITY_PURE_POWER, ABILITY_TELEPATHY},
+        .abilityHidden = ABILITY_SCREEN_SETTER,
         .bodyColor = BODY_COLOR_RED,
         .noFlip = FALSE,
     },
