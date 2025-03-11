@@ -8582,10 +8582,10 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_MEDICHAM] =
     {
         .baseHP        = 65,
-        .baseAttack    = 70,
+        .baseAttack    = 75,
         .baseDefense   = 75,
         .baseSpAttack  = 85,
-        .baseSpDefense = 85,
+        .baseSpDefense = 80,
         .baseSpeed     = 80,
         .type1 = TYPE_FIGHTING,
         .type2 = TYPE_PSYCHIC,
