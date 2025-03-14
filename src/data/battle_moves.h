@@ -412,12 +412,12 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_ROLLING_KICK] =
     {
-        .effect = EFFECT_FLINCH_HIT,
+        .effect = EFFECT_RAPID_SPIN,
         .power = 60,
         .type = TYPE_FIGHTING,
         .accuracy = 100,
         .pp = 15,
-        .secondaryEffectChance = 30,
+        .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED | FLAG_SHEER_FORCE_BOOST | FLAG_STRIKER_BOOST,
@@ -3574,7 +3574,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .effect = EFFECT_RAPID_SPIN,
         .type = TYPE_NORMAL,
         .accuracy = 100,
-        .pp = 40,
+        .pp = 30,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -8848,7 +8848,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_DRAINING_KISS] =
     {
         .effect = EFFECT_ABSORB,
-        .power = 50,
+        .power = 60,
         .type = TYPE_FAIRY,
         .accuracy = 100,
         .pp = 10,
@@ -11767,7 +11767,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     {
         .move = MOVE_ROLLING_KICK,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 90,
+        .variable = 75,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
@@ -12245,8 +12245,6 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .move = MOVE_DRAINING_KISS,
         .modification = SIGNATURE_MOD_PRIORITY,
         .variable = SIGNATURE_PRIORITY_ALWAYS,
-        .modification2 = SIGNATURE_MOD_POWER,
-        .variable2 = 60,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
