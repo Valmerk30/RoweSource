@@ -8606,6 +8606,9 @@ static const u8 sBanetteTutorLearnset[] =
     TUTOR(MOVE_FLASH),
     TUTOR(MOVE_PAIN_SPLIT),
     TUTOR(MOVE_FOUL_PLAY),
+    TUTOR(MOVE_ICE_PUNCH),
+    TUTOR(MOVE_THUNDER_PUNCH),
+    TUTOR(MOVE_FIRE_PUNCH),
     0xFF,
 };
 
