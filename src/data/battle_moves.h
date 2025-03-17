@@ -12834,6 +12834,28 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
+    [SPECIES_MINIOR] =
+    {
+        .move = MOVE_ACROBATICS,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 60,
+        .modification2 = SIGNATURE_MOD_ATTACKER_STAT_UP,
+        .variable2 = STAT_EVASION,
+        .chance2 = 50,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
+    [SPECIES_MINIOR_CORE_RED] =
+    {
+        .move = MOVE_ACROBATICS,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 60,
+        .modification2 = SIGNATURE_MOD_ATTACKER_STAT_UP,
+        .variable2 = STAT_EVASION,
+        .chance2 = 50,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
     [SPECIES_PALOSSAND] =
     {
         .move = MOVE_SHORE_UP,
@@ -12921,17 +12943,6 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification6 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable6 = STAT_SPEED,
         .chance6 = 10,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
-    },
-    [SPECIES_MINIOR] =
-    {
-        .move = MOVE_ACROBATICS,
-        .modification = SIGNATURE_MOD_POWER,
-        .variable = 60,
-        .modification2 = SIGNATURE_MOD_ATTACKER_STAT_UP,
-        .variable2 = STAT_SPEED,
-        .chance2 = 50,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
