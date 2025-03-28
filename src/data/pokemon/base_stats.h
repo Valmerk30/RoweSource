@@ -1522,7 +1522,7 @@ const struct BaseStats gBaseStats[] =
         .eggGroup2 = EGG_GROUP_FIELD,
         #ifdef BATTLE_ENGINE
             .abilities = {ABILITY_LIMBER, ABILITY_TECHNICIAN},
-            .abilityHidden = ABILITY_FELINE_PROWESS,
+            .abilityHidden = ABILITY_UNNERVE,
         #else
             .abilities = {ABILITY_LIMBER, ABILITY_NONE},
         #endif
@@ -8675,7 +8675,7 @@ const struct BaseStats gBaseStats[] =
         .eggGroup1 = EGG_GROUP_FAIRY,
         .eggGroup2 = EGG_GROUP_FAIRY,
         .abilities = {ABILITY_PLUS, ABILITY_LIGHTNING_ROD},
-        .abilityHidden = ABILITY_BATTERY,
+        .abilityHidden = ABILITY_DEFIANT,
         .bodyColor = BODY_COLOR_YELLOW,
         .noFlip = FALSE,
     },
@@ -8701,7 +8701,7 @@ const struct BaseStats gBaseStats[] =
         .eggGroup1 = EGG_GROUP_FAIRY,
         .eggGroup2 = EGG_GROUP_FAIRY,
         .abilities = {ABILITY_MINUS, ABILITY_LIGHTNING_ROD},
-        .abilityHidden = ABILITY_BATTERY,
+        .abilityHidden = ABILITY_COMPETITIVE,
         .bodyColor = BODY_COLOR_YELLOW,
         .noFlip = FALSE,
     },
@@ -20768,7 +20768,7 @@ const struct BaseStats gBaseStats[] =
         .eggGroup1 = EGG_GROUP_BUG,
         .eggGroup2 = EGG_GROUP_BUG,
         #ifdef BATTLE_ENGINE
-            .abilities = {ABILITY_BATTERY, ABILITY_NONE},
+            .abilities = {ABILITY_OVERCHARGE, ABILITY_NONE},
         #else
             .abilities = {ABILITY_NONE, ABILITY_NONE},
         #endif
@@ -20795,7 +20795,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroup1 = EGG_GROUP_BUG,
         .eggGroup2 = EGG_GROUP_BUG,
-        .abilities = {ABILITY_BATTERY, ABILITY_MOLD_BREAKER},
+        .abilities = {ABILITY_OVERCHARGE, ABILITY_MOLD_BREAKER},
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = FALSE,
 		.flags = F_GROUND_INMUNITY,
