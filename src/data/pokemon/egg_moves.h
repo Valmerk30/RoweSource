@@ -2915,7 +2915,7 @@ const u16 gEggMoves[] = {
 		MOVE_SWAGGER),
 
 	egg_moves(CRANIDOS,
-		MOVE_WHIRLWIND,
+		MOVE_AVALANCHE,
 		MOVE_SLAM,
 		MOVE_STOMP,
 		MOVE_THRASH,
@@ -2958,6 +2958,7 @@ const u16 gEggMoves[] = {
 		MOVE_COVET,
 		MOVE_BESTOW,
 		MOVE_ION_DELUGE,
+                MOVE_DRILL_RUN,
 		MOVE_BABY_DOLL_EYES),
 
 	egg_moves(BUIZEL,
@@ -4185,6 +4186,7 @@ const u16 gEggMoves[] = {
 		MOVE_DEFENSE_CURL,
 		MOVE_ROLLOUT,
 		MOVE_MILK_DRINK,
+		MOVE_GRASSY_GLIDE,
 		MOVE_GRASSY_TERRAIN),
 
 	egg_moves(PANCHAM,
