@@ -12274,9 +12274,11 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     [SPECIES_KECLEON] =
     {
         .move = MOVE_LICK,
-        .modification = SIGNATURE_MOD_PRIORITY,
-        .variable = SIGNATURE_PRIORITY_ALWAYS,
-        .modification2 = SIGNATURE_MOD_OTHER,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 60,
+        .modification2 = SIGNATURE_MOD_PRIORITY,
+        .variable2 = SIGNATURE_PRIORITY_ALWAYS,
+        .modification3 = SIGNATURE_MOD_OTHER,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
