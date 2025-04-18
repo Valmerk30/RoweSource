@@ -277,14 +277,14 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_FLY] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_4
-            .power = 110,
+            .power = 100,
         #else
             .power = 70,
         #endif
         .effect = EFFECT_SEMI_INVULNERABLE,
         .type = TYPE_FLYING,
         .accuracy = 100,
-        .pp = 15,
+        .pp = 10,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -1420,7 +1420,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_DIG] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_4
-            .power = 80,
+            .power = 100,
         #else
             .power = 60,
         #endif
@@ -3834,7 +3834,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
             .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SHEER_FORCE_BOOST,
         #endif
         .effect = EFFECT_ALL_STATS_UP_HIT,
-        .power = 60,
+        .power = 80,
         .type = TYPE_ROCK,
         .accuracy = 100,
         .pp = 10,
@@ -4534,7 +4534,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_DIVE] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_4
-            .power = 110,
+            .power = 100,
         #else
             .power = 60,
         #endif
@@ -4944,7 +4944,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_SILVER_WIND] =
     {
         .effect = EFFECT_ALL_STATS_UP_HIT,
-        .power = 60,
+        .power = 80,
         .type = TYPE_BUG,
         .accuracy = 100,
         .pp = 10,
@@ -5275,7 +5275,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .power = 85,
         .type = TYPE_FLYING,
         .accuracy = 90,
-        .pp = 5,
+        .pp = 10,
         .secondaryEffectChance = 30,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -7195,7 +7195,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_OMINOUS_WIND] =
     {
         .effect = EFFECT_ALL_STATS_UP_HIT,
-        .power = 60,
+        .power = 80,
         .type = TYPE_GHOST,
         .accuracy = 100,
         .pp = 10,
@@ -8683,7 +8683,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_PHANTOM_FORCE] =
     {
         .effect = EFFECT_SEMI_INVULNERABLE,
-        .power = 110,
+        .power = 100,
         .type = TYPE_GHOST,
         .accuracy = 100,
         .pp = 10,
@@ -12925,6 +12925,18 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
+    [SPECIES_WYNAUT] =
+    {
+        .move = MOVE_TAIL_SLAP,
+        .modification = SIGNATURE_MOD_TYPE,
+        .variable = TYPE_PSYCHIC,
+        .modification2 = SIGNATURE_MOD_POWER,
+        .variable2 = 30,
+        .modification3 = SIGNATURE_MOD_PSS_CHANGE,
+        .variable3 = SPLIT_SPECIAL,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
     [SPECIES_WOBBUFFET] =
     {
         .move = MOVE_TAIL_SLAP,
@@ -12932,6 +12944,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = TYPE_PSYCHIC,
         .modification2 = SIGNATURE_MOD_POWER,
         .variable2 = 30,
+        .modification3 = SIGNATURE_MOD_PSS_CHANGE,
+        .variable3 = SPLIT_SPECIAL,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
