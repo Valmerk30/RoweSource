@@ -5597,7 +5597,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED | FLAG_BALLISTIC,
-        .split = SPLIT_PHYSICAL,
+        .split = SPLIT_HIGHEST,
     },
 
     [MOVE_HEALING_WISH] =
@@ -9338,7 +9338,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_INFESTATION] =
     {
         .effect = EFFECT_TRAP,
-        .power = 70,
+        .power = 60,
         .type = TYPE_BUG,
         .accuracy = 100,
         .pp = 20,
@@ -12927,13 +12927,11 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     },
     [SPECIES_WOBBUFFET] =
     {
-        .move = MOVE_FINAL_GAMBIT,
+        .move = MOVE_TAIL_SLAP,
         .modification = SIGNATURE_MOD_TYPE,
         .variable = TYPE_PSYCHIC,
-        .modification2 = SIGNATURE_MOD_PRIORITY,
-        .variable2 = SIGNATURE_PRIORITY_ALWAYS,
-        .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
-        .variable3 = FIELD_SET_TERRAIN_PSYCHIC,
+        .modification2 = SIGNATURE_MOD_POWER,
+        .variable2 = 30,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
