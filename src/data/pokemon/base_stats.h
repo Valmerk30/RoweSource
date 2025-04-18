@@ -5936,11 +5936,11 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_SHUCKLE] =
     {
         .baseHP        = 50,
-        .baseAttack    = 50,
+        .baseAttack    = 40,
         .baseDefense   = 200,
-        .baseSpAttack  = 5,
+        .baseSpAttack  = 10,
         .baseSpDefense = 200,
-        .baseSpeed     = 5,
+        .baseSpeed     = 10,
         .type1 = TYPE_BUG,
         .type2 = TYPE_ROCK,
         .catchRate = 255,
