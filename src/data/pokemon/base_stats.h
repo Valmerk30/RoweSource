@@ -3121,12 +3121,12 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_RHYDON] =
     {
-        .baseHP        = 105,
-        .baseAttack    = 130,
+        .baseHP        = 100,
+        .baseAttack    = 120,
         .baseDefense   = 120,
         .baseSpeed     = 40,
-        .baseSpAttack  = 45,
-        .baseSpDefense = 45,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 40,
         .type1 = TYPE_GROUND,
         .type2 = TYPE_ROCK,
         .catchRate = 255,
@@ -12917,11 +12917,11 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_RHYPERIOR] =
     {
-        .baseHP        = 115,
+        .baseHP        = 110,
         .baseAttack    = 140,
         .baseDefense   = 130,
-        .baseSpeed     = 40,
-        .baseSpAttack  = 55,
+        .baseSpeed     = 55,
+        .baseSpAttack  = 45,
         .baseSpDefense = 55,
         .type1 = TYPE_GROUND,
         .type2 = TYPE_ROCK,
