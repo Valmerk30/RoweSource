@@ -7,6 +7,7 @@ static const u8 sNoneTMHMLearnset[] =
 
 static const u8 sBulbasaurTMHMLearnset[] =
 {
+    TMHM(TM02_DRAGON_CLAW),
     TMHM(TM06_TOXIC),
     TMHM(TM09_BULLET_SEED),
     TMHM(TM10_HIDDEN_POWER),
@@ -28,6 +29,7 @@ static const u8 sBulbasaurTMHMLearnset[] =
     TMHM(TM53_ENERGY_BALL),
     TMHM(TM54_FALSE_SWIPE),
     TMHM(TM75_SWORDS_DANCE),
+    TMHM(TM82_DRAGON_TAIL),
     TMHM(TM86_GRASS_KNOT),
     TMHM(TM87_SWAGGER),
     TMHM(TM88_SLEEP_TALK),
@@ -39,6 +41,7 @@ static const u8 sBulbasaurTMHMLearnset[] =
 
 static const u8 sIvysaurTMHMLearnset[] =
 {
+    TMHM(TM02_DRAGON_CLAW),
     TMHM(TM06_TOXIC),
     TMHM(TM09_BULLET_SEED),
     TMHM(TM10_HIDDEN_POWER),
@@ -60,6 +63,7 @@ static const u8 sIvysaurTMHMLearnset[] =
     TMHM(TM53_ENERGY_BALL),
     TMHM(TM54_FALSE_SWIPE),
     TMHM(TM75_SWORDS_DANCE),
+    TMHM(TM82_DRAGON_TAIL),
     TMHM(TM86_GRASS_KNOT),
     TMHM(TM87_SWAGGER),
     TMHM(TM88_SLEEP_TALK),
@@ -71,6 +75,7 @@ static const u8 sIvysaurTMHMLearnset[] =
 
 static const u8 sVenusaurTMHMLearnset[] =
 {
+    TMHM(TM02_DRAGON_CLAW),
     TMHM(TM05_ROAR),
     TMHM(TM06_TOXIC),
     TMHM(TM09_BULLET_SEED),
@@ -97,6 +102,7 @@ static const u8 sVenusaurTMHMLearnset[] =
     TMHM(TM68_GIGA_IMPACT),
     TMHM(TM75_SWORDS_DANCE),
     TMHM(TM78_BULLDOZE),
+    TMHM(TM82_DRAGON_TAIL),
     TMHM(TM86_GRASS_KNOT),
     TMHM(TM87_SWAGGER),
     TMHM(TM88_SLEEP_TALK),
@@ -4500,8 +4506,10 @@ static const u8 sKoffingTMHMLearnset[] =
     TMHM(TM88_SLEEP_TALK),
     TMHM(TM90_SUBSTITUTE),
     TMHM(TM97_DARK_PULSE),
+    TMHM(TM99_DAZZLING_GLEAM),
     TMHM(TM100_CONFIDE),
     TMHM(TM101_SLUDGE_WAVE),
+    TMHM(TM104_PLAY_ROUGH),
     0xFF,
 };
 
@@ -4540,8 +4548,10 @@ static const u8 sWeezingTMHMLearnset[] =
     TMHM(TM88_SLEEP_TALK),
     TMHM(TM90_SUBSTITUTE),
     TMHM(TM97_DARK_PULSE),
+    TMHM(TM99_DAZZLING_GLEAM),
     TMHM(TM100_CONFIDE),
     TMHM(TM101_SLUDGE_WAVE),
+    TMHM(TM104_PLAY_ROUGH),
     0xFF,
 };
 
@@ -6470,6 +6480,7 @@ static const u8 sQuilavaTMHMLearnset[] =
     TMHM(TM45_ATTRACT),
     TMHM(TM50_OVERHEAT),
     TMHM(TM61_WILL_O_WISP),
+    TMHM(TM78_BULLDOZE),
     TMHM(TM87_SWAGGER),
     TMHM(TM88_SLEEP_TALK),
     TMHM(TM90_SUBSTITUTE),
@@ -6506,7 +6517,6 @@ static const u8 sTyphlosionTMHMLearnset[] =
     TMHM(TM45_ATTRACT),
     TMHM(TM50_OVERHEAT),
     TMHM(TM52_FOCUS_BLAST),
-    
     TMHM(TM61_WILL_O_WISP),
     TMHM(TM65_SHADOW_CLAW),
     TMHM(TM68_GIGA_IMPACT),
@@ -12608,6 +12618,7 @@ static const u8 sElectrikeTMHMLearnset[] =
     TMHM(TM44_REST),
     TMHM(TM45_ATTRACT),
     TMHM(TM46_THIEF),
+    TMHM(TM53_ENERGY_BALL),
     TMHM(TM57_CHARGE_BEAM),
     TMHM(TM72_VOLT_SWITCH),
     TMHM(TM73_THUNDER_WAVE),
@@ -12643,6 +12654,7 @@ static const u8 sManectricTMHMLearnset[] =
     TMHM(TM45_ATTRACT),
     TMHM(TM46_THIEF),
     TMHM(TM50_OVERHEAT),
+    TMHM(TM53_ENERGY_BALL),
     TMHM(TM57_CHARGE_BEAM),
     TMHM(TM68_GIGA_IMPACT),
     TMHM(TM72_VOLT_SWITCH),
@@ -21148,6 +21160,7 @@ static const u8 sMusharnaTMHMLearnset[] =
     TMHM(TM18_RAIN_DANCE),
     TMHM(TM20_SAFEGUARD),
     TMHM(TM21_FRUSTRATION),
+    TMHM(TM24_THUNDERBOLT),
     TMHM(TM27_RETURN),
     TMHM(TM29_PSYCHIC),
     TMHM(TM30_SHADOW_BALL),
