@@ -4426,6 +4426,7 @@ static const u8 sHitmonchanTMHMLearnset[] =
 static const u8 sLickitungTMHMLearnset[] =
 {
     TMHM(TM01_FOCUS_PUNCH),
+    TMHM(TM02_DRAGON_CLAW),
     TMHM(TM03_WATER_PULSE),
     TMHM(TM06_TOXIC),
     TMHM(TM10_HIDDEN_POWER),
@@ -4455,8 +4456,7 @@ static const u8 sLickitungTMHMLearnset[] =
     TMHM(TM43_SECRET_POWER),
     TMHM(TM44_REST),
     TMHM(TM45_ATTRACT),
-    TMHM(TM46_THIEF),
-    
+    TMHM(TM46_THIEF),    
     TMHM(TM59_BRUTAL_SWING),
     TMHM(TM68_GIGA_IMPACT),
     TMHM(TM75_SWORDS_DANCE),
@@ -18686,6 +18686,7 @@ static const u8 sMagnezoneTMHMLearnset[] =
 static const u8 sLickilickyTMHMLearnset[] =
 {
     TMHM(TM01_FOCUS_PUNCH),
+    TMHM(TM02_DRAGON_CLAW),
     TMHM(TM03_WATER_PULSE),
     TMHM(TM06_TOXIC),
     TMHM(TM10_HIDDEN_POWER),
