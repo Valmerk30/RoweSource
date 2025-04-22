@@ -7,7 +7,6 @@ static const u8 sNoneTMHMLearnset[] =
 
 static const u8 sBulbasaurTMHMLearnset[] =
 {
-    TMHM(TM02_DRAGON_CLAW),
     TMHM(TM06_TOXIC),
     TMHM(TM09_BULLET_SEED),
     TMHM(TM10_HIDDEN_POWER),
@@ -29,7 +28,6 @@ static const u8 sBulbasaurTMHMLearnset[] =
     TMHM(TM53_ENERGY_BALL),
     TMHM(TM54_FALSE_SWIPE),
     TMHM(TM75_SWORDS_DANCE),
-    TMHM(TM82_DRAGON_TAIL),
     TMHM(TM86_GRASS_KNOT),
     TMHM(TM87_SWAGGER),
     TMHM(TM88_SLEEP_TALK),
@@ -41,7 +39,6 @@ static const u8 sBulbasaurTMHMLearnset[] =
 
 static const u8 sIvysaurTMHMLearnset[] =
 {
-    TMHM(TM02_DRAGON_CLAW),
     TMHM(TM06_TOXIC),
     TMHM(TM09_BULLET_SEED),
     TMHM(TM10_HIDDEN_POWER),
@@ -63,7 +60,6 @@ static const u8 sIvysaurTMHMLearnset[] =
     TMHM(TM53_ENERGY_BALL),
     TMHM(TM54_FALSE_SWIPE),
     TMHM(TM75_SWORDS_DANCE),
-    TMHM(TM82_DRAGON_TAIL),
     TMHM(TM86_GRASS_KNOT),
     TMHM(TM87_SWAGGER),
     TMHM(TM88_SLEEP_TALK),
@@ -75,7 +71,6 @@ static const u8 sIvysaurTMHMLearnset[] =
 
 static const u8 sVenusaurTMHMLearnset[] =
 {
-    TMHM(TM02_DRAGON_CLAW),
     TMHM(TM05_ROAR),
     TMHM(TM06_TOXIC),
     TMHM(TM09_BULLET_SEED),
@@ -102,7 +97,6 @@ static const u8 sVenusaurTMHMLearnset[] =
     TMHM(TM68_GIGA_IMPACT),
     TMHM(TM75_SWORDS_DANCE),
     TMHM(TM78_BULLDOZE),
-    TMHM(TM82_DRAGON_TAIL),
     TMHM(TM86_GRASS_KNOT),
     TMHM(TM87_SWAGGER),
     TMHM(TM88_SLEEP_TALK),
