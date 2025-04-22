@@ -5230,7 +5230,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_DRAGON_CLAW] =
     {
         .effect = EFFECT_HIT,
-        .power = 80,
+        .power = 90,
         .type = TYPE_DRAGON,
         .accuracy = 100,
         .pp = 15,
@@ -7832,7 +7832,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_CIRCLE_THROW] =
     {
         .effect = EFFECT_HIT_SWITCH_TARGET,
-        .power = 60,
+        .power = 75,
         .type = TYPE_FIGHTING,
         .accuracy = 90,
         .pp = 10,
@@ -8084,7 +8084,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_DRAGON_TAIL] =
     {
         .effect = EFFECT_HIT_SWITCH_TARGET,
-        .power = 60,
+        .power = 75,
         .type = TYPE_DRAGON,
         .accuracy = 90,
         .pp = 10,
