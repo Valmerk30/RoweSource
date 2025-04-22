@@ -34,6 +34,7 @@ static const u8 sBulbasaurTMHMLearnset[] =
     TMHM(TM90_SUBSTITUTE),
     TMHM(TM96_NATURE_POWER),
     TMHM(TM100_CONFIDE),
+    TMHM(TM108_EARTH_POWER),
     0xFF,
 };
 
@@ -66,6 +67,7 @@ static const u8 sIvysaurTMHMLearnset[] =
     TMHM(TM90_SUBSTITUTE),
     TMHM(TM96_NATURE_POWER),
     TMHM(TM100_CONFIDE),
+    TMHM(TM108_EARTH_POWER),
     0xFF,
 };
 
