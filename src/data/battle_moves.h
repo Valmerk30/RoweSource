@@ -313,10 +313,10 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_SLAM] =
     {
         .effect = EFFECT_HIT,
-        .power = 80,
+        .power = 100,
         .type = TYPE_NORMAL,
-        .accuracy = 90,
-        .pp = 20,
+        .accuracy = 100,
+        .pp = 100,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -5649,10 +5649,10 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_FEINT] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_6
-            .power = 30,
+            .power = 40,
             .flags = FLAG_MIRROR_MOVE_AFFECTED,
         #elif B_UPDATED_MOVE_DATA >= GEN_5
-            .power = 30,
+            .power = 40,
             .flags = 0,
         #else
             .power = 50,
@@ -11815,7 +11815,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable = 90,
         .modification2 = SIGNATURE_MOD_POWER,
-        .variable2 = 50,
+        .variable2 = 60,
         .modification3 = SIGNATURE_MOD_ACCURACY,
         .variable3 = 90,
         .differentDescription = FALSE,
@@ -11825,9 +11825,9 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     {
         .move = MOVE_SMOG,
         .modification = SIGNATURE_MOD_EFFECT_CHANCE,
-        .variable = 100,
+        .variable = 90,
         .modification2 = SIGNATURE_MOD_POWER,
-        .variable2 = 60,
+        .variable2 = 90,
         .modification3 = SIGNATURE_MOD_ACCURACY,
         .variable3 = 95,
         .differentDescription = FALSE,
