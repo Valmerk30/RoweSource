@@ -2181,7 +2181,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_LEECH_LIFE] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_7
-            .power = 80,
+            .power = 60,
             .pp = 10,
         #else
             .power = 20,
@@ -6265,7 +6265,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
             .pp = 20,
         #endif
         .effect = EFFECT_FLINCH_HIT,
-        .power = 75,
+        .power = 80,
         .type = TYPE_FLYING,
         .accuracy = 95,
         .secondaryEffectChance = 30,
@@ -10538,7 +10538,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_SNIPE_SHOT] =
     {
-        .effect = EFFECT_HIT,   //TODO
+        .effect = EFFECT_JAW_LOCK,   //TODO
         .power = 70,
         .type = TYPE_WATER,
         .accuracy = 100,
@@ -11673,6 +11673,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .move = MOVE_LEECH_LIFE,
         .modification = SIGNATURE_MOD_PRIORITY,
         .variable = SIGNATURE_PRIORITY_ALWAYS,
+        .modification2 = SIGNATURE_MOD_POWER,
+        .variable2 = 70,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
@@ -11681,6 +11683,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .move = MOVE_LEECH_LIFE,
         .modification = SIGNATURE_MOD_PRIORITY,
         .variable = SIGNATURE_PRIORITY_ALWAYS,
+        .modification2 = SIGNATURE_MOD_POWER,
+        .variable2 = 80,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
@@ -12998,5 +13002,46 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
+    [SPECIES_INTELEON] =
+    {
+        .move = MOVE_SNIPE_SHOT,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 90,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
+    [SPECIES_ORICORIO] =
+    {
+        .move = MOVE_REVELATION_DANCE,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 100,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
+    [SPECIES_ORICORIO_POM_POM] =
+    {
+        .move = MOVE_REVELATION_DANCE,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 100,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
+    [SPECIES_ORICORIO_PA_U] =
+    {
+        .move = MOVE_REVELATION_DANCE,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 100,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
+    [SPECIES_ORICORIO_SENSU] =
+    {
+        .move = MOVE_REVELATION_DANCE,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 100,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
+
 
 };
