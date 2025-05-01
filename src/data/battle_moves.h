@@ -10040,7 +10040,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_STOMPING_TANTRUM] =
     {
         .effect = EFFECT_STOMPING_TANTRUM,
-        .power = 75,
+        .power = 80,
         .type = TYPE_GROUND,
         .accuracy = 100,
         .pp = 10,
