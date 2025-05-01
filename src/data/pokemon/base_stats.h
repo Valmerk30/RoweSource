@@ -59294,11 +59294,11 @@ const struct BaseStats gVanillaBaseStats[] =
     [SPECIES_DURALUDON] =
     {
         .baseHP        = 70,
-        .baseAttack    = 95,
+        .baseAttack    = 100,
         .baseDefense   = 115,
         .baseSpeed     = 85,
-        .baseSpAttack  = 120,
-        .baseSpDefense = 50,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 55,
         .type1 = TYPE_STEEL,
         .type2 = TYPE_DRAGON,
         .catchRate = 45,
