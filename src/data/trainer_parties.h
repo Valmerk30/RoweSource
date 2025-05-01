@@ -9025,15 +9025,15 @@ static const struct TrainerMonItemCustomMoves sParty_Wallace[] = {
     .evs = {80, 80, 80, 80, 80, 80}, 
     .abilityNum = 0,
     .happiness = 255,
-    .species = SPECIES_DRACOZOLT,
+    .species = SPECIES_DRACOVISH,
         .ivs = {30, 15, 15, 15, 15, 30},
 	.hiddenNature = NATURE_SERIOUS,
 	.pokeball = ITEM_NET_BALL,
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_LIFE_ORB,
     .heldItem = ITEM_LIFE_ORB,
-    .postgamemoves = {MOVE_DRAGON_RUSH, MOVE_BOLT_BEAK, MOVE_SLAM, MOVE_TAUNT},
-    .moves = {MOVE_DRAGON_RUSH, MOVE_BOLT_BEAK, MOVE_SLAM, MOVE_TAUNT}
+    .postgamemoves = {MOVE_DRAGON_RUSH, MOVE_FISHIOUS_REND, MOVE_BODY_SLAM, MOVE_TAUNT},
+    .moves = {MOVE_DRAGON_RUSH, MOVE_FISHIOUS_REND, MOVE_BODY_SLAM, MOVE_TAUNT}
     },
     {
     .iv = 255,
