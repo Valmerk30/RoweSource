@@ -6278,7 +6278,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_X_SCISSOR] =
     {
         .effect = EFFECT_HIT,
-        .power = 80,
+        .power = 90,
         .type = TYPE_BUG,
         .accuracy = 100,
         .pp = 15,
@@ -12279,7 +12279,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     {
         .move = MOVE_POISON_TAIL,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 75,
+        .variable = 90,
         .modification2 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable2 = TYPE_NORMAL,
         .differentDescription = FALSE,
