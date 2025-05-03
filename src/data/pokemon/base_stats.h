@@ -6389,10 +6389,10 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_HOUNDOOM] =
     {
         .baseHP        = 75,
-        .baseAttack    = 90,
+        .baseAttack    = 95,
         .baseDefense   = 50,
         .baseSpeed     = 95,
-        .baseSpAttack  = 110,
+        .baseSpAttack  = 105,
         .baseSpDefense = 80,
         .type1 = TYPE_DARK,
         .type2 = TYPE_FIRE,
