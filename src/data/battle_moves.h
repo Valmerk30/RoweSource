@@ -3470,7 +3470,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .accuracy = 100,
         .pp = 30,
         .secondaryEffectChance = 0,
-        .target = MOVE_TARGET_FOES_AND_ALLY,
+        .target = MOVE_TARGET_BOTH,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED | FLAG_DMG_UNDERGROUND,
         .split = SPLIT_PHYSICAL,
@@ -5272,16 +5272,15 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_BOUNCE] =
     {
         .effect = EFFECT_SEMI_INVULNERABLE,
-        .power = 85,
+        .power = 80,
         .type = TYPE_FLYING,
         .accuracy = 90,
         .pp = 10,
-        .secondaryEffectChance = 30,
+        .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
-        .priority = 0,
+        .priority = 1,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED | FLAG_SHEER_FORCE_BOOST,
         .split = SPLIT_PHYSICAL,
-        .argument = MOVE_EFFECT_PARALYSIS,
     },
 
     [MOVE_MUD_SHOT] =
@@ -5477,7 +5476,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_DOOM_DESIRE] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_5
-            .power = 140,
+            .power = 120,
             .accuracy = 100,
         #else
             .power = 120,
@@ -5485,7 +5484,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         #endif
         .effect = EFFECT_FUTURE_SIGHT,
         .type = TYPE_STEEL,
-        .pp = 5,
+        .pp = 10,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -5997,10 +5996,10 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_PUNISHMENT] =
     {
         .effect = EFFECT_PUNISHMENT,
-        .power = 60,
+        .power = 80,
         .type = TYPE_DARK,
         .accuracy = 100,
-        .pp = 5,
+        .pp = 10,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -6043,14 +6042,14 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_SUCKER_PUNCH] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_7
-            .power = 70,
+            .power = 75,
         #else
             .power = 80,
         #endif
         .effect = EFFECT_SUCKER_PUNCH,
         .type = TYPE_DARK,
         .accuracy = 100,
-        .pp = 5,
+        .pp = 10,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 1,
@@ -7571,7 +7570,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_ACID_SPRAY] =
     {
         .effect = EFFECT_SPECIAL_DEFENSE_DOWN_HIT_2,
-        .power = 40,
+        .power = 50,
         .type = TYPE_POISON,
         .accuracy = 100,
         .pp = 20,
@@ -7683,7 +7682,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_CLEAR_SMOG] =
     {
         .effect = EFFECT_CLEAR_SMOG,
-        .power = 50,
+        .power = 75,
         .type = TYPE_POISON,
         .accuracy = 0,
         .pp = 15,
@@ -11841,9 +11840,9 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     {
         .move = MOVE_SMOG,
         .modification = SIGNATURE_MOD_EFFECT_CHANCE,
-        .variable = 100,
+        .variable = 90,
         .modification2 = SIGNATURE_MOD_POWER,
-        .variable2 = 60,
+        .variable2 = 90,
         .modification3 = SIGNATURE_MOD_ACCURACY,
         .variable3 = 95,
         .differentDescription = FALSE,
