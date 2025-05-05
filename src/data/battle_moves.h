@@ -4400,7 +4400,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_KNOCK_OFF] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_6
-            .power = 65,
+            .power = 70,
         #else
             .power = 20,
         #endif
@@ -8201,7 +8201,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         #endif
         .effect = EFFECT_HIT,
         .power = 90,
-        .type = TYPE_STEEL,
+        .type = TYPE_FIGHTING,
         .accuracy = 100,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
@@ -11267,7 +11267,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_SCORCHING_SANDS] =
     {
         .effect = EFFECT_SCALD,
-        .power = 70,
+        .power = 80,
         .type = TYPE_GROUND,
         .accuracy = 100,
         .pp = 10,
@@ -11703,7 +11703,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = SIGNATURE_PRIORITY_IN_CONDITIONS,
         .chance = SIGNATURE_PRIORITY_CONDITION_WEATHER_SAND,
         .modification2 = SIGNATURE_MOD_POWER,
-        .variable2 = 75,
+        .variable2 = 90,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
@@ -12742,8 +12742,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification = SIGNATURE_MOD_SECOND_TYPE,
         .variable = TYPE_STEEL,
         .modification2 = SIGNATURE_MOD_ATTACKER_STAT_UP,
-        .variable2 = STAT_SPATK,
-        .chance2 = 10,
+        .variable2 = STAT_ATK,
+        .chance2 = 30,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
@@ -12753,8 +12753,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification = SIGNATURE_MOD_SECOND_TYPE,
         .variable = TYPE_STEEL,
         .modification2 = SIGNATURE_MOD_ATTACKER_STAT_UP,
-        .variable2 = STAT_SPATK,
-        .chance2 = 10,
+        .variable2 = STAT_ATK,
+        .chance2 = 30,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
@@ -12803,9 +12803,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     [SPECIES_AEGISLASH] =
     {
         .move = MOVE_SACRED_SWORD,
-        .modification = SIGNATURE_MOD_ATTACKER_STAT_UP,
-        .variable = STAT_ATK,
-        .chance = 30,
+        .modification = SIGNATURE_MOD_SECOND_TYPE,
+        .variable = TYPE_STEEL,
         .modification2 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable2 = STAT_SPATK,
         .chance2 = 30,
@@ -12815,9 +12814,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     [SPECIES_AEGISLASH_BLADE] =
     {
         .move = MOVE_SACRED_SWORD,
-        .modification = SIGNATURE_MOD_ATTACKER_STAT_UP,
-        .variable = STAT_ATK,
-        .chance = 30,
+        .modification = SIGNATURE_MOD_SECOND_TYPE,
+        .variable = TYPE_STEEL,
         .modification2 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable2 = STAT_SPATK,
         .chance2 = 30,
@@ -13041,6 +13039,13 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
-
+    [SPECIES_LEDIAN] =
+    {
+        .move = MOVE_COMET_PUNCH,
+        .modification = SIGNATURE_MOD_TYPE,
+        .variable = TYPE_BUG,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
 
 };
