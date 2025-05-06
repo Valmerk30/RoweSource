@@ -11949,9 +11949,20 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
             "its Attack, Defense and Speed\n" 
             "stats as well as its accuracy."),
     },
+    [SPECIES_FLAAFFY] =
+    {
+        .move = MOVE_SHOCK_WAVE,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 75,
+        .modification2 = SIGNATURE_MOD_MODIFY_FIELD,
+        .variable2 = FIELD_SET_TERRAIN_ELECTRIC,
+        .chance2 = 10,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
     [SPECIES_AMPHAROS] =
     {
-        .move = MOVE_DISCHARGE,
+        .move = MOVE_SHOCK_WAVE,
         .modification = SIGNATURE_MOD_POWER,
         .variable = 90,
         .modification2 = SIGNATURE_MOD_MODIFY_FIELD,
@@ -11962,7 +11973,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     },
     [SPECIES_AMPHAROS_MEGA] =
     {
-        .move = MOVE_DISCHARGE,
+        .move = MOVE_SHOCK_WAVE,
         .modification = SIGNATURE_MOD_POWER,
         .variable = 90,
         .modification2 = SIGNATURE_MOD_MODIFY_FIELD,
