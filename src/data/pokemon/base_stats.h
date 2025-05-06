@@ -6416,10 +6416,10 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_KINGDRA] =
     {
         .baseHP        = 75,
-        .baseAttack    = 95,
+        .baseAttack    = 80,
         .baseDefense   = 95,
         .baseSpeed     = 85,
-        .baseSpAttack  = 95,
+        .baseSpAttack  = 110,
         .baseSpDefense = 95,
         .type1 = TYPE_WATER,
         .type2 = TYPE_DRAGON,
