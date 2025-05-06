@@ -8635,15 +8635,15 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_ROTOTILLER] =
     {
-        .effect = EFFECT_ROTOTILLER,
+        .effect = EFFECT_DRAGON_DANCE,
         .power = 0,
         .type = TYPE_GROUND,
         .accuracy = 0,
-        .pp = 10,
+        .pp = 20,
         .secondaryEffectChance = 0,
-        .target = MOVE_TARGET_FOES_AND_ALLY | MOVE_TARGET_USER,
+        .target = MOVE_TARGET_USER,
         .priority = 0,
-        .flags = 0,
+        .flags = FLAG_SNATCH_AFFECTED | FLAG_DANCE,
         .split = SPLIT_STATUS,
     },
 
@@ -11899,6 +11899,15 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .move = MOVE_HEAT_WAVE,
         .modification = SIGNATURE_MOD_MODIFY_FIELD,
         .variable = FIELD_SET_WEATHER_SUN,
+        .chance = 10,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
+    [SPECIES_ARTICUNO] =
+    {
+        .move = EFFECT_FREEZE_DRY,
+        .modification = SIGNATURE_MOD_MODIFY_FIELD,
+        .variable = FIELD_SET_WEATHER_HAIL,
         .chance = 10,
         .differentDescription = FALSE,
         .description = _("Default Description"),
