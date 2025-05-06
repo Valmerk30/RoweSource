@@ -1864,8 +1864,8 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_EGG_BOMB] =
     {
-        .effect = EFFECT_HIT,
-        .power = 100,
+        .effect = EFFECT_FLAME_BURST,
+        .power = 90,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 10,
@@ -1873,7 +1873,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED | FLAG_BALLISTIC,
-        .split = SPLIT_PHYSICAL,
+        .split = SPLIT_HIGHEST,
     },
 
     [MOVE_LICK] =
@@ -4924,7 +4924,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_ROCK_TOMB] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_6
-            .power = 75,
+            .power = 80,
             .accuracy = 95,
             .pp = 15,
         #else
@@ -12700,7 +12700,6 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = 60,
         .modification2 = SIGNATURE_MOD_MODIFY_FIELD,
         .variable2 = FIELD_OPPONET_SET_STICKY_WEB,
-        .chance2 = 50,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
@@ -13060,5 +13059,36 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
-
+    [SPECIES_FALINKS] =
+    {
+        .move = MOVE_MEGAHORN,
+        .modification = SIGNATURE_MOD_TYPE,
+        .variable = TYPE_FIGHTING,
+        .modification = SIGNATURE_MOD_ACCURACY,
+        .variable = 90,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
+    [SPECIES_CHANSEY] =
+    {
+        .move = MOVE_EGG_BOMB,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 100,
+        .modification2 = SIGNATURE_MOD_SECONDARY_EFFECT,
+        .variable2 = SIGNATURE_SECONDARY_EFFECT_BURN,
+        .chance2 = 20,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
+    [SPECIES_BLISSEY] =
+    {
+        .move = MOVE_EGG_BOMB,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 100,
+        .modification2 = SIGNATURE_MOD_SECONDARY_EFFECT,
+        .variable2 = SIGNATURE_SECONDARY_EFFECT_BURN,
+        .chance2 = 20,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
 };
