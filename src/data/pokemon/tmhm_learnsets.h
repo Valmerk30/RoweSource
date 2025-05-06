@@ -21736,6 +21736,7 @@ static const u8 sTimburrTMHMLearnset[] =
     TMHM(TM88_SLEEP_TALK),
     TMHM(TM90_SUBSTITUTE),
     TMHM(TM100_CONFIDE),
+    TMHM(TM110_STEALTH_ROCK),
     TMHM(TM119_DRAIN_PUNCH),
     0xFF,
 };
@@ -21773,6 +21774,7 @@ static const u8 sGurdurrTMHMLearnset[] =
     TMHM(TM88_SLEEP_TALK),
     TMHM(TM90_SUBSTITUTE),
     TMHM(TM100_CONFIDE),
+    TMHM(TM110_STEALTH_ROCK),
     TMHM(TM119_DRAIN_PUNCH),
     0xFF,
 };
@@ -21814,6 +21816,7 @@ static const u8 sConkeldurrTMHMLearnset[] =
     TMHM(TM88_SLEEP_TALK),
     TMHM(TM90_SUBSTITUTE),
     TMHM(TM100_CONFIDE),
+    TMHM(TM110_STEALTH_ROCK),
     TMHM(TM119_DRAIN_PUNCH),
     0xFF,
 };
