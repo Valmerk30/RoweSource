@@ -8216,10 +8216,10 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_EXPLOUD] =
     {
         .baseHP        = 105,
-        .baseAttack    = 90,
+        .baseAttack    = 95,
         .baseDefense   = 65,
         .baseSpeed     = 70,
-        .baseSpAttack  = 110,
+        .baseSpAttack  = 105,
         .baseSpDefense = 80,
         .type1 = TYPE_NORMAL,
         .type2 = TYPE_NORMAL,
