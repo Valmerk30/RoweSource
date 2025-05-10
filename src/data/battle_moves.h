@@ -315,8 +315,8 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .effect = EFFECT_HIT,
         .power = 100,
         .type = TYPE_NORMAL,
-        .accuracy = 100,
-        .pp = 100,
+        .accuracy = 90,
+        .pp = 10,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -626,7 +626,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_TWINEEDLE] =
     {
         .effect = EFFECT_TWINEEDLE,
-        .power = 35,
+        .power = 40,
         .type = TYPE_BUG,
         .accuracy = 100,
         .pp = 20,
@@ -2108,7 +2108,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         #endif
         .effect = EFFECT_HIT,
         .type = TYPE_FIGHTING,
-        .accuracy = 90,
+        .accuracy = 85,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -3454,7 +3454,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .power = 100,
         .type = TYPE_FIRE,
         .accuracy = 95,
-        .pp = 5,
+        .pp = 10,
         .secondaryEffectChance = 50,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -7060,9 +7060,9 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_HEAD_SMASH] =
     {
         .effect = EFFECT_RECOIL_50,
-        .power = 150,
+        .power = 120,
         .type = TYPE_ROCK,
-        .accuracy = 85,
+        .accuracy = 90,
         .pp = 5,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
@@ -7403,7 +7403,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_STORM_THROW] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_6
-            .power = 60,
+            .power = 50,
         #else
             .power = 40,
         #endif
@@ -8065,7 +8065,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_FROST_BREATH] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_6
-            .power = 60,
+            .power = 50,
         #else
             .power = 40,
         #endif
@@ -8592,16 +8592,15 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         #else
             .power = 80,
         #endif
-        .effect = EFFECT_TWO_TYPED_MOVE,
-        .type = TYPE_FIGHTING,
+        .effect = EFFECT_PARALYZE_HIT,
+        .type = TYPE_FLYING,
         .accuracy = 95,
         .pp = 10,
-        .secondaryEffectChance = 0,
+        .secondaryEffectChance = 20,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED | FLAG_DMG_MINIMIZE,
         .split = SPLIT_PHYSICAL,
-        .argument = TYPE_FLYING,
     },
 
     [MOVE_MAT_BLOCK] =
@@ -10254,7 +10253,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_ZIPPY_ZAP] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_8
-            .power = 80,
+            .power = 50,
             .pp = 10,
             .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
         #else
@@ -10537,7 +10536,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_SNIPE_SHOT] =
     {
-        .effect = EFFECT_JAW_LOCK,   //TODO
+        .effect = EFFECT_JAW_LOCK,   
         .power = 70,
         .type = TYPE_WATER,
         .accuracy = 100,
@@ -10780,7 +10779,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .power = 100,
         .type = TYPE_FIRE,
         .accuracy = 90,
-        .pp = 5,
+        .pp = 10,
         .secondaryEffectChance = 10,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -11294,10 +11293,10 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_WICKED_BLOW] =
     {
         .effect = EFFECT_ALWAYS_CRIT,
-        .power = 60,
+        .power = 50,
         .type = TYPE_DARK,
         .accuracy = 100,
-        .pp = 5,
+        .pp = 10,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -11423,7 +11422,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .power = 80,
         .type = TYPE_PSYCHIC,
         .accuracy = 100,
-        .pp = 5,
+        .pp = 10,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -11491,7 +11490,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     {
         .move = MOVE_TWINEEDLE,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 45,
+        .variable = 50,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
@@ -12498,7 +12497,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     {
         .move = MOVE_CHATTER,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 80,
+        .variable = 90,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
@@ -12953,7 +12952,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification = SIGNATURE_MOD_TYPE,
         .variable = TYPE_GROUND,
         .modification2 = SIGNATURE_MOD_POWER,
-        .variable2 = 50,
+        .variable2 = 80,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
@@ -13100,4 +13099,34 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
+    [SPECIES_HAWLUCHA] =
+    {
+        .move = MOVE_FLYING_PRESS,
+        .modification = SIGNATURE_MOD_ATTACKER_STAT_UP,
+        .variable = STAT_SPEED,
+        .chance = 20,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
+    [SPECIES_CHIMECHO] =
+    {
+        .move = MOVE_EERIE_SPELL,
+        .modification = SIGNATURE_MOD_TARGET_STAT_DOWN,
+        .variable = STAT_SPEED,
+        .chance = 100,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
+    [SPECIES_CINDERACE] =
+    {
+        .move = MOVE_PYRO_BALL,
+        .modification2 = SIGNATURE_MOD_EFFECT_CHANCE,
+        .variable2 = 30,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
+
+
+
 };
+
