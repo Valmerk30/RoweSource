@@ -1974,9 +1974,9 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroup1 = EGG_GROUP_GRASS,
         .eggGroup2 = EGG_GROUP_GRASS,
-        .abilities = {ABILITY_CHLOROPHYLL, ABILITY_NONE},
+        .abilities = {ABILITY_CHLOROPHYLL, ABILITY_GLUTTONY},
         #ifdef BATTLE_ENGINE
-            .abilityHidden = ABILITY_GLUTTONY,
+            .abilityHidden = ABILITY_INSECT_EATER,
         #endif
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = FALSE,
@@ -2001,9 +2001,9 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroup1 = EGG_GROUP_GRASS,
         .eggGroup2 = EGG_GROUP_GRASS,
-        .abilities = {ABILITY_CHLOROPHYLL, ABILITY_NONE},
+        .abilities = {ABILITY_CHLOROPHYLL, ABILITY_GLUTTONY},
         #ifdef BATTLE_ENGINE
-            .abilityHidden = ABILITY_GLUTTONY,
+            .abilityHidden = ABILITY_INSECT_EATER,
         #endif
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = FALSE,
@@ -2028,9 +2028,9 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroup1 = EGG_GROUP_GRASS,
         .eggGroup2 = EGG_GROUP_GRASS,
-        .abilities = {ABILITY_CHLOROPHYLL, ABILITY_NONE},
+        .abilities = {ABILITY_CHLOROPHYLL, ABILITY_GLUTTONY},
         #ifdef BATTLE_ENGINE
-            .abilityHidden = ABILITY_GLUTTONY,
+            .abilityHidden = ABILITY_INSECT_EATER,
         #endif
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = FALSE,
@@ -8582,11 +8582,11 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_MEDICHAM] =
     {
         .baseHP        = 65,
-        .baseAttack    = 75,
-        .baseDefense   = 75,
+        .baseAttack    = 90,
+        .baseDefense   = 70,
         .baseSpAttack  = 85,
-        .baseSpDefense = 80,
-        .baseSpeed     = 80,
+        .baseSpDefense = 75,
+        .baseSpeed     = 75,
         .type1 = TYPE_FIGHTING,
         .type2 = TYPE_PSYCHIC,
         .catchRate = 255,
@@ -11703,10 +11703,11 @@ const struct BaseStats gBaseStats[] =
         .eggGroup1 = EGG_GROUP_FAIRY,
         .eggGroup2 = EGG_GROUP_GRASS,
         #ifdef BATTLE_ENGINE
-            .abilities = {ABILITY_FLOWER_GIFT, ABILITY_NONE},
+            .abilities = {ABILITY_CHLOROPHYLL, ABILITY_BULLETPROOF},
         #else
             .abilities = {ABILITY_NONE, ABILITY_NONE},
         #endif
+        .abilityHidden = ABILITY_FLOWER_GIFT,
         .bodyColor = BODY_COLOR_PURPLE,
         .noFlip = TRUE,
     },
@@ -29151,10 +29152,11 @@ const struct BaseStats gBaseStats[] =
         .eggGroup1 = EGG_GROUP_FAIRY,
         .eggGroup2 = EGG_GROUP_GRASS,
         #ifdef BATTLE_ENGINE
-            .abilities = {ABILITY_FLOWER_GIFT, ABILITY_NONE},
+            .abilities = {ABILITY_CHLOROPHYLL, ABILITY_BULLETPROOF},
         #else
             .abilities = {ABILITY_NONE, ABILITY_NONE},
         #endif
+        .abilityHidden = ABILITY_FLOWER_GIFT,
         .bodyColor = BODY_COLOR_PINK,
         .noFlip = TRUE,
     },
@@ -32259,8 +32261,8 @@ const struct BaseStats gBaseStats[] =
         .baseHP        = 70,
         .baseAttack    = 100,
         .baseDefense   = 110,
-        .baseSpeed     = 60,
-        .baseSpAttack  = 80,
+        .baseSpeed     = 50,
+        .baseSpAttack  = 90,
         .baseSpDefense = 100,
         .type1 = TYPE_WATER,
         .type2 = TYPE_WATER,
@@ -45996,7 +45998,7 @@ const struct BaseStats gVanillaBaseStats[] =
         .eggGroup1 = EGG_GROUP_FAIRY,
         .eggGroup2 = EGG_GROUP_GRASS,
         #ifdef BATTLE_ENGINE
-            .abilities = {ABILITY_FLOWER_GIFT, ABILITY_NONE},
+            .abilities = {ABILITY_CHLOROPHYLL, ABILITY_NONE},
         #else
             .abilities = {ABILITY_NONE, ABILITY_NONE},
         #endif
