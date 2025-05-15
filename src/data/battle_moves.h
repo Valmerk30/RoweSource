@@ -13125,13 +13125,6 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
-    [SPECIES_PIDGEY] =
-    {
-        .move = MOVE_FLY,
-        .modification = SIGNATURE_MOD_OTHER,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
-    },	
 
 
 };
