@@ -1483,7 +1483,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_HYPNOSIS] =
     {
-        .effect = EFFECT_SLEEP_HIT,
+        .effect = EFFECT_SLEEP,
         .power = 0,
         .type = TYPE_PSYCHIC,
         .accuracy = 80,
@@ -3199,7 +3199,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         #else
             .type = TYPE_NORMAL,
         #endif
-        .effect = EFFECT_ATTACK_DOWN_HIT,
+        .effect = EFFECT_ATTACK_DOWN_2,
         .power = 0,
         .accuracy = 100,
         .pp = 20,
@@ -13120,16 +13120,6 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .move = MOVE_PYRO_BALL,
         .modification = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
-    },
-    [SPECIES_VAPOREON] =
-    {
-        .move = MOVE_CHARM,
-        .modification = SIGNATURE_MOD_POWER,
-        .variable = 100,
-        .modification2 = SIGNATURE_MOD_PSS_CHANGE,
-        .variable2 = SPLIT_SPECIAL,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
