@@ -8817,9 +8817,9 @@ const struct BaseStats gBaseStats[] =
     {
         .baseHP        = 100,
         .baseAttack    = 90,
-        .baseDefense   = 85,
-        .baseSpAttack  = 90,
-        .baseSpDefense = 85,
+        .baseDefense   = 80,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 80,
         .baseSpeed     = 30,
         .type1 = TYPE_POISON,
         .type2 = TYPE_POISON,
