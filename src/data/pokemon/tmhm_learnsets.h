@@ -19015,6 +19015,7 @@ static const u8 sTogekissTMHMLearnset[] =
 
 static const u8 sYanmegaTMHMLearnset[] =
 {
+    TMHM(TM02_DRAGON_CLAW),
     TMHM(TM06_TOXIC),
     TMHM(TM10_HIDDEN_POWER),
     TMHM(TM11_SUNNY_DAY),
