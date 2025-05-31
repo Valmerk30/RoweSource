@@ -19240,10 +19240,10 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_SWIRLIX] =
     {
         .baseHP        = 60,
-        .baseAttack    = 50,
+        .baseAttack    = 60,
         .baseDefense   = 65,
         .baseSpeed     = 50,
-        .baseSpAttack  = 60,
+        .baseSpAttack  = 50,
         .baseSpDefense = 55,
         .type1 = TYPE_FAIRY,
         .type2 = TYPE_FAIRY,
@@ -19269,10 +19269,10 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_SLURPUFF] =
     {
         .baseHP        = 80,
-        .baseAttack    = 70,
+        .baseAttack    = 90,
         .baseDefense   = 85,
-        .baseSpeed     = 70,
-        .baseSpAttack  = 80,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 70,
         .baseSpDefense = 75,
         .type1 = TYPE_FAIRY,
         .type2 = TYPE_FAIRY,
