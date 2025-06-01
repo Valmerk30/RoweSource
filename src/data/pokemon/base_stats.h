@@ -12719,10 +12719,10 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_LUMINEON] =
     {
         .baseHP        = 70,
-        .baseAttack    = 70,
-        .baseDefense   = 75,
+        .baseAttack    = 60,
+        .baseDefense   = 70,
         .baseSpeed     = 90,
-        .baseSpAttack  = 70,
+        .baseSpAttack  = 85,
         .baseSpDefense = 85,
         .type1 = TYPE_WATER,
         .type2 = TYPE_WATER,
