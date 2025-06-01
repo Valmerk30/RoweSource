@@ -9472,7 +9472,7 @@ static const struct LevelUpMove sCastformLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sKecleonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_THIEF),
+    LEVEL_UP_MOVE( 1, MOVE_PURSUIT),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_LICK),
