@@ -4577,8 +4577,8 @@ static const u8 sDRAGON_RUSHDescription[] = _(
     "May cause flinching.");
 
 static const u8 sPOWER_GEMDescription[] = _(
-    "Attacks with rays of light\n"
-    "that sparkle like diamonds.");
+    "Rays of light that sparkle\n"
+    "like diamonds. Never misses.");
 
 static const u8 sVACUUM_WAVEDescription[] = _(
     "Whirls its fists to send\n"
@@ -5650,8 +5650,8 @@ static const u8 sNO_RETREATDescription[] = _(
     "stats but prevents escape.");
     
 static const u8 sTAR_SHOTDescription[] = _(
-    "Lowers the foe's Speed and\n"
-    "makes it weak to Fire.");
+    "A heavy blast of tar that\n"
+    "may cause paralysis.");
     
 static const u8 sMAGIC_POWDERDescription[] = _(
     "Magic powder changes the\n"
@@ -5782,8 +5782,8 @@ static const u8 sSCALE_SHOTDescription[] = _(
     "Ups Speed, lowers defense.");
 
 static const u8 sMETEOR_BEAMDescription[] = _(
-    "A 2-turn move that raises\n"
-    "Sp. Attack before attacking.");
+    "A bright beam of energy\n"
+    "thay may raise the Sp. Att.");
 
 static const u8 sSHELL_SIDE_ARMDescription[] = _(
     "Uses higher of physical and\n"
@@ -6335,7 +6335,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_LAVA_PLUME - 1] = sLAVA_PLUMEDescription,
     [MOVE_LEAF_STORM - 1] = sLEAF_STORMDescription,
     [MOVE_POWER_WHIP - 1] = sPOWER_WHIPDescription,
-    [MOVE_ROCK_WRECKER - 1] = sHyperBeamDescription,
+    [MOVE_ROCK_WRECKER - 1] = sRockSmashDescription,
     [MOVE_CROSS_POISON - 1] = sCROSS_POISONDescription,
     [MOVE_GUNK_SHOT - 1] = sGUNK_SHOTDescription,
     [MOVE_IRON_HEAD - 1] = sIRON_HEADDescription,
