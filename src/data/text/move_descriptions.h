@@ -2320,8 +2320,8 @@ static const u8 sEERIE_IMPULSEDescription[] = _(
 	"that sharply cuts Sp. Atk.");
 
 static const u8 sVENOM_DRENCHDescription[] = _(
-	"Lowers the Attack, Sp. Atk\n"
-	"and Speed of a poisoned foe.");
+	"Does double damage if the\n"
+	"foe is poisoned.");
 
 static const u8 sPOWDERDescription[] = _(
 	"Damages the foe if it uses\n"
@@ -4809,8 +4809,8 @@ static const u8 sTAIL_SLAPDescription[] = _(
     "tail 2 to 5 times.");
 
 static const u8 sVENOSHOCKDescription[] = _(
-    "Does double damage if the\n"
-    "foe is poisoned.");
+    "Attacks with a toxic wave\n"
+    "that may cause paralysis.");
 
 static const u8 sAUTOTOMIZEDescription[] = _(
     "Sheds additional weight to\n"
@@ -5269,8 +5269,8 @@ static const u8 sEERIE_IMPULSEDescription[] = _(
     "that sharply cuts Sp. Atk.");
 
 static const u8 sVENOM_DRENCHDescription[] = _(
-    "Lowers the Attack, Sp. Atk\n"
-    "and Speed of a poisoned foe.");
+    "Does double damage if the\n"
+    "foe is poisoned.");
 
 static const u8 sPOWDERDescription[] = _(
     "Damages the foe if it uses\n"
@@ -5822,8 +5822,8 @@ static const u8 sPOLTERGEISTDescription[] = _(
     "Fails if foe has no item.");
 
 static const u8 sCORROSIVE_GASDescription[] = _(
-    "Highly acidic gas melts items\n"
-    "held by surrounding Pokémon.");
+    "Highly acidic gas that skips\n"
+    "and destroys barriers.");
 
 static const u8 sCOACHINGDescription[] = _(
     "Properly coaches allies to\n"
