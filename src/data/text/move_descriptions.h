@@ -1605,7 +1605,7 @@ static const u8 sAQUA_TAILDescription[] = _(
 
 static const u8 sSEED_BOMBDescription[] = _(
 	"A barrage of hard seeds\n"
-	"is fired at the foe.");
+	"that may cause flinching.");
 
 static const u8 sAIR_SLASHDescription[] = _(
 	"Attacks with a blade of\n"
@@ -2444,8 +2444,8 @@ static const u8 sSTRENGTH_SAPDescription[] = _(
 	"heal HP, then drops Attack.");
 
 static const u8 sSOLAR_BLADEDescription[] = _(
-	"Charges first turn, then\n"
-	"chops with a blade of light.");
+	"Chops with a blade of light\n"
+	"that may inflict a burn.");
 
 static const u8 sLEAFAGEDescription[] = _(
 	"Attacks with a flurry of\n"
@@ -4297,8 +4297,8 @@ static const u8 sDragonClawDescription[] = _(
     "claws.");
 
 static const u8 sFrenzyPlantDescription[] = _(
-    "Powerful, but leaves the\n"
-    "user immobile the next turn.");
+    "Hits the enemy with leaves.\n"
+    "May raise Speed.");
 
 static const u8 sBulkUpDescription[] = _(
     "Bulks up the body to boost\n"
@@ -4498,7 +4498,7 @@ static const u8 sLAST_RESORTDescription[] = _(
 
 static const u8 sWORRY_SEEDDescription[] = _(
     "Plants a seed on the foe\n"
-    "giving it Insomnia.");
+    "that may cause confusion.");
 
 static const u8 sSUCKER_PUNCHDescription[] = _(
     "Strikes first if the foe\n"
@@ -4677,8 +4677,8 @@ static const u8 sDISCHARGEDescription[] = _(
     "city. May paralyze them.");
 
 static const u8 sPOWER_WHIPDescription[] = _(
-    "Violently lashes the foe\n"
-    "with vines or tentacles.");
+    "Whips and squeezes the foe\n"
+    "for 2 to 5 turns.");
 
 static const u8 sCROSS_POISONDescription[] = _(
     "A slash that may poison a\n"
@@ -4725,7 +4725,7 @@ static const u8 sCHARGE_BEAMDescription[] = _(
     "May raise Sp. Atk.");
 
 static const u8 sWOOD_HAMMERDescription[] = _(
-    "Slams the body into a foe\n"
+    "Slams the body into a foe.\n"
     "The user gets hurt too.");
 
 static const u8 sAQUA_JETDescription[] = _(
@@ -4770,7 +4770,7 @@ static const u8 sDARK_VOIDDescription[] = _(
 
 static const u8 sSEED_FLAREDescription[] = _(
     "Generates a shock wave that\n"
-    "sharply reduces Sp. Def.");
+    "may reduce Sp. Def.");
 
 static const u8 sOMINOUS_WINDDescription[] = _(
     "A repulsive attack that may\n"
@@ -5157,8 +5157,8 @@ static const u8 sPARABOLIC_CHARGEDescription[] = _(
     "heals up by half of it.");
 
 static const u8 sFORESTS_CURSEDescription[] = _(
-    "Puts a curse on the foe\n"
-    "making the foe Grass-type.");
+    "Puts a curse on the foe.\n"
+    "Lowers the foe's Sp. Att.");
 
 static const u8 sPETAL_BLIZZARDDescription[] = _(
     "Stirs up a violent storm\n"
@@ -5350,7 +5350,7 @@ static const u8 sLAVA_PLUMEDescription[] = _(
 
 static const u8 sLEAF_STORMDescription[] = _(
     "Whips up a storm of leaves.\n"
-    "Harshly lowers the Sp. Atk.");
+    "May paralyze the foe.");
 
 static const u8 sSHORE_UPDescription[] = _(
     "Restores the user's HP.\n"
@@ -6428,7 +6428,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_DRILL_RUN - 1] = sDRILL_RUNDescription,
     [MOVE_DUAL_CHOP - 1] = sDUAL_CHOPDescription,
     [MOVE_HEART_STAMP - 1] = sHEART_STAMPDescription,
-    [MOVE_HORN_LEECH - 1] = sMegaDrainDescription,
+    [MOVE_HORN_LEECH - 1] = sGigaDrainDescription,
     [MOVE_SACRED_SWORD - 1] = sCHIP_AWAYDescription,
     [MOVE_RAZOR_SHELL - 1] = sRAZOR_SHELLDescription,
     [MOVE_HEAT_CRASH - 1] = sHEAVY_SLAMDescription,
