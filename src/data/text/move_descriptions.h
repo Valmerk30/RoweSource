@@ -3629,8 +3629,8 @@ static const u8 sMindReaderDescription[] = _(
     "ensure the next move's hit.");
 
 static const u8 sNightmareDescription[] = _(
-    "Inflicts 1/4 damage on a\n"
-    "sleeping foe every turn.");
+    "Traps and hurts the foe in\n"
+    "a nightmare for 2 to 5 turns.");
 
 static const u8 sFlameWheelDescription[] = _(
     "A fiery charge attack that\n"
@@ -5141,8 +5141,8 @@ static const u8 sFELL_STINGERDescription[] = _(
     "the Attack stat is raised.");
 
 static const u8 sTRICK_OR_TREATDescription[] = _(
-    "Goes trick-or-treating\n"
-    "making the foe Ghost-type.");
+    "Goes trick-or-treating.\n"
+    "May restore ally's HP.");
 
 static const u8 sNOBLE_ROARDescription[] = _(
     "Intimidates the foe, to cut\n"
@@ -5819,7 +5819,7 @@ static const u8 sLASH_OUTDescription[] = _(
 
 static const u8 sPOLTERGEISTDescription[] = _(
     "Control foe's item to attack.\n"
-    "Fails if foe has no item.");
+    "The item is destroyed.");
 
 static const u8 sCORROSIVE_GASDescription[] = _(
     "Highly acidic gas that skips\n"
@@ -6462,7 +6462,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_ROTOTILLER - 1] = sROTOTILLERDescription,
     [MOVE_STICKY_WEB - 1] = sSTICKY_WEBDescription,
     [MOVE_FELL_STINGER - 1] = sFELL_STINGERDescription,
-    [MOVE_PHANTOM_FORCE - 1] = sSHADOW_FORCEDescription,
+    [MOVE_PHANTOM_FORCE - 1] = sDARKEST_LARIATDescription,
     [MOVE_TRICK_OR_TREAT - 1] = sTRICK_OR_TREATDescription,
     [MOVE_NOBLE_ROAR - 1] = sNOBLE_ROARDescription,
     [MOVE_ION_DELUGE - 1] = sION_DELUGEDescription,
