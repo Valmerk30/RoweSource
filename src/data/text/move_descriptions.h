@@ -5221,8 +5221,8 @@ static const u8 sBOOMBURSTDescription[] = _(
     "destructive sound wave.");
 
 static const u8 sFAIRY_LOCKDescription[] = _(
-    "Prevents the user and\n"
-    "the target from escaping.");
+    "After being hit, foes can\n"
+    "no longer escape.");
 
 static const u8 sKINGS_SHIELDDescription[] = _(
     "Evades damage, and sharply\n"
