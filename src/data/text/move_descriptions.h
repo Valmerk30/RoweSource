@@ -3273,8 +3273,8 @@ static const u8 sStringShotDescription[] = _(
     "to reduce its Speed.");
 
 static const u8 sDragonRageDescription[] = _(
-    "Launches shock waves that\n"
-    "always inflict 40 HP damage.");
+    "A ferocious attack that may\n"
+    "raise the user's Attack.");
 
 static const u8 sFireSpinDescription[] = _(
     "Traps the foe in a ring of\n"
@@ -4293,8 +4293,8 @@ static const u8 sHowlDescription[] = _(
     "and boosts Attack.");
 
 static const u8 sDragonClawDescription[] = _(
-    "Slashes the foe with sharp\n"
-    "claws.");
+    "Slashes the foe with claws\n"
+    "that may lower Defense.");
 
 static const u8 sFrenzyPlantDescription[] = _(
     "Hits the enemy with leaves.\n"
@@ -4569,8 +4569,8 @@ static const u8 sBUG_BUZZDescription[] = _(
     "may lower Sp. Def.");
 
 static const u8 sDRAGON_PULSEDescription[] = _(
-    "Generates a shock wave to\n"
-    "damage the foe.");
+    "Generates a shock wave that\n"
+    "may lower Speed.");
 
 static const u8 sDRAGON_RUSHDescription[] = _(
     "Tackles the foe with menace.\n"
@@ -4669,8 +4669,9 @@ static const u8 sTRICK_ROOMDescription[] = _(
     "first for 5 turns.");
 
 static const u8 sDRACO_METEORDescription[] = _(
-    "Casts comets onto the foe.\n"
-    "Harshly lowers the Sp. Atk.");
+    "Casts a comet to knock the\n"
+    "foe down to the ground.");
+
 
 static const u8 sDISCHARGEDescription[] = _(
     "Zaps the foes with electri-\n"
@@ -4753,12 +4754,12 @@ static const u8 sDOUBLE_HITDescription[] = _(
     "etc. Strikes twice.");
 
 static const u8 sROAR_OF_TIMEDescription[] = _(
-    "Powerful, but leaves the\n"
-    "user immobile the next turn.");
+    "Summons the power of time\n"
+    "to strike 2 turns later.");
 
 static const u8 sSPACIAL_RENDDescription[] = _(
-    "Tears the foe, and space.\n"
-    "High critical-hit ratio.");
+    "Double power if the user\n"
+    "moves before the target.");
 
 static const u8 sMAGMA_STORMDescription[] = _(
     "Traps the foe in a vortex\n"
@@ -5485,8 +5486,8 @@ static const u8 sCLANGING_SCALESDescription[] = _(
     "its scales. Drops Defense.");
 
 static const u8 sDRAGON_HAMMERDescription[] = _(
-    "Swings its whole body\n"
-    "like a hammer to damage.");
+    "Slams the body into a foe.\n"
+    "The user gets hurt too.");
 
 static const u8 sBRUTAL_SWINGDescription[] = _(
     "Violently swings around\n"
