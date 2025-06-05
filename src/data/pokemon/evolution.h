@@ -314,7 +314,7 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_STARAVIA]              = {{EVO_LEVEL, 34, SPECIES_STARAPTOR}},
     [SPECIES_BIDOOF]                = {{EVO_LEVEL, 20, SPECIES_BIBAREL}},
     [SPECIES_KRICKETOT]             = {{EVO_LEVEL, 20, SPECIES_KRICKETUNE}},
-    [SPECIES_SHINX]                 = {{EVO_LEVEL, 16, SPECIES_LUXIO}},
+
     [SPECIES_LUXIO]                 = {{EVO_LEVEL, 36, SPECIES_LUXRAY}},
     [SPECIES_BUDEW]                 = {{EVO_LEVEL, 16, SPECIES_ROSELIA}},
     [SPECIES_CRANIDOS]              = {{EVO_LEVEL, 30, SPECIES_RAMPARDOS}},
@@ -453,7 +453,7 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
 	[SPECIES_FLETCHINDER]               = {{EVO_LEVEL, 36, SPECIES_TALONFLAME}},
 	[SPECIES_SCATTERBUG]                = {{EVO_LEVEL, 8, SPECIES_SPEWPA}},
 	[SPECIES_SPEWPA]	            = {{EVO_VIVILLON, 12, SPECIES_VIVILLON}},
-        [SPECIES_LITLEO]                    = {{EVO_LEVEL, 32, SPECIES_PYROAR}},
+
 	[SPECIES_FLABEBE]	            = {{EVO_LEVEL, 18, SPECIES_FLOETTE}},
 	[SPECIES_FLOETTE]	            = {{EVO_LEVEL, 36, SPECIES_FLORGES},
 	                                       {EVO_ITEM, ITEM_SHINY_STONE, SPECIES_FLORGES}},
