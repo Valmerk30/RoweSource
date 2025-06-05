@@ -3305,8 +3305,8 @@ static const u8 sEarthquakeDescription[] = _(
     "no effect on flying foes.");
 
 static const u8 sFissureDescription[] = _(
-    "A one-hit KO move that\n"
-    "drops the foe in a fissure.");
+    "Destroys barriers and can\n"
+    "cause damage underground.");
 
 static const u8 sDigDescription[] = _(
     "Digs underground the first\n"
@@ -3841,8 +3841,8 @@ static const u8 sDynamicPunchDescription[] = _(
     "confusion, but inaccurate.");
 
 static const u8 sMegahornDescription[] = _(
-    "A brutal ramming attack\n"
-    "using out-thrust horns.");
+    "A brutal attack using horns.\n"
+    "Raises the user's attack.");
 
 static const u8 sDragonBreathDescription[] = _(
     "Strikes the foe with an\n"
@@ -4561,9 +4561,9 @@ static const u8 sAIR_SLASHDescription[] = _(
     "air. May cause flinching.");
 
 static const u8 sX_SCISSORDescription[] = _(
-    "Slashes the foe with crossed\n"
-    "scythes, claws, etc.");
-
+    "Slashes with claws, scythes.\n"	
+    "High critical-hit ratio.");
+     
 static const u8 sBUG_BUZZDescription[] = _(
     "A damaging sound wave that\n"
     "may lower Sp. Def.");
@@ -4734,7 +4734,7 @@ static const u8 sAQUA_JETDescription[] = _(
 
 static const u8 sATTACK_ORDERDescription[] = _(
     "Underlings pummel the foe.\n"
-    "High critical-hit ratio.");
+    "Traps for 2 to 5 turns.");
 
 static const u8 sDEFEND_ORDERDescription[] = _(
     "Raises Defense and Sp. Def\n"
@@ -5129,8 +5129,8 @@ static const u8 sBELCHDescription[] = _(
     "Must eat a Berry to use it.");
 
 static const u8 sROTOTILLERDescription[] = _(
-    "Ups the Attack and Sp. Atk\n"
-    "of Grass-type Pokémon.");
+    "A spinning dance that ups\n"
+    "Attack and Speed.");
 
 static const u8 sSTICKY_WEBDescription[] = _(
     "Weaves a sticky net that\n"
@@ -5329,8 +5329,8 @@ static const u8 sTHOUSAND_WAVESDescription[] = _(
     "no longer escape.");
 
 static const u8 sLANDS_WRATHDescription[] = _(
-    "Gathers the energy of the\n"
-    "land to attack every foe.");
+    "Summons the energy of land.\n"
+    "May confuse the foe.");
 
 static const u8 sLIGHT_OF_RUINDescription[] = _(
     "Fires a great beam of light\n"
@@ -5385,8 +5385,8 @@ static const u8 sFLORAL_HEALINGDescription[] = _(
     "Heals more on grass.");
 
 static const u8 sHIGH_HORSEPOWERDescription[] = _(
-    "Slams hard into the foe with\n"
-    "its entire body.");
+    "Slams hard into the foe.\n"
+    "May reduce the foe's speed.");
 
 static const u8 sSTRENGTH_SAPDescription[] = _(
     "Saps the foe's Attack to\n"
@@ -5699,7 +5699,7 @@ static const u8 sDRUM_BEATINGDescription[] = _(
     
 static const u8 sSNAP_TRAPDescription[] = _(
     "Snares the target in a snap\n"
-    "trap for four to five turns.");
+    "trap for two to five turns.");
     
 static const u8 sPYRO_BALLDescription[] = _(
     "Launches a fiery ball at the\n"
