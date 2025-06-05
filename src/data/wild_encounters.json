@@ -10579,27 +10579,27 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_MAGIKARP"
+                "species": "SPECIES_HOOPA"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CHINCHOU"
+                "species": "SPECIES_MARSHADOW"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SLOWPOKE"
+                "species": "SPECIES_SHINX"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SHELLDER"
+                "species": "SPECIES_LITLEO"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_POLIWAG"
+                "species": "SPECIES_UNOWN_QMARK"
               }
             ]
           },
