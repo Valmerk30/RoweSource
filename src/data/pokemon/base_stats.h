@@ -10267,7 +10267,7 @@ const struct BaseStats gBaseStats[] =
         .baseHP        = 100,
         .baseAttack    = 90,
         .baseDefense   = 130,
-        .baseSpAttack  = 45,
+        .baseSpAttack  = 40,
         .baseSpDefense = 65,
         .baseSpeed     = 75, 
         .type1 = TYPE_WATER,
@@ -23221,7 +23221,7 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_CORVIKNIGHT] =
     {
         .baseHP        = 100,
-        .baseAttack    = 85,
+        .baseAttack    = 90,
         .baseDefense   = 95,
         .baseSpeed     = 75,
         .baseSpAttack  = 55,
