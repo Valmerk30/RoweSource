@@ -4672,7 +4672,6 @@ static const u8 sDRACO_METEORDescription[] = _(
     "Casts a comet to knock the\n"
     "foe down to the ground.");
 
-
 static const u8 sDISCHARGEDescription[] = _(
     "Zaps the foes with electri-\n"
     "city. May paralyze them.");
