@@ -3713,9 +3713,9 @@ static const u8 sSpikesDescription[] = _(
     "foe switching in.");
 
 static const u8 sZapCannonDescription[] = _(
-    "Powerful and sure to cause\n"
-    "paralysis, but inaccurate.");
-
+    "Attacks with a discharge.\n"
+    "Slow, but always paralyzes.");
+     
 static const u8 sForesightDescription[] = _(
     "Negates the foe's efforts\n"
     "to heighten evasiveness.");
@@ -3837,8 +3837,8 @@ static const u8 sMagnitudeDescription[] = _(
     "of random intensity.");
 
 static const u8 sDynamicPunchDescription[] = _(
-    "Powerful and sure to cause\n"
-    "confusion, but inaccurate.");
+    "Hits with a spinning fist.\n"
+    "Slow, but always confuses.");
 
 static const u8 sMegahornDescription[] = _(
     "A brutal attack using horns.\n"
@@ -4713,8 +4713,8 @@ static const u8 sGRASS_KNOTDescription[] = _(
     "more damage to heavier foes.");
 
 static const u8 sCHATTERDescription[] = _(
-    "Attacks with a sound wave\n"
-    "that causes confusion.");
+    "Attacks with a sound wave.\n"
+    "Always causes confusion.");
 
 static const u8 sJUDGMENTDescription[] = _(
     "The type varies with the\n"
@@ -4942,7 +4942,7 @@ static const u8 sHEXDescription[] = _(
 
 static const u8 sSKY_DROPDescription[] = _(
     "Takes the foe into the sky\n"
-    "then drops it the next turn.");
+    "then drops it. Lowers speed.");
 
 static const u8 sSHIFT_GEARDescription[] = _(
     "Rotates its gears to raise\n"
@@ -4981,8 +4981,8 @@ static const u8 sBESTOWDescription[] = _(
     "item to the foe.");
 
 static const u8 sINFERNODescription[] = _(
-    "Powerful and sure to inflict\n"
-    "a burn, but inaccurate.");
+    "Attacks with a fire blast.\n"
+    "Slow, but always burns.");
 
 static const u8 sWATER_PLEDGEDescription[] = _(
     "Attacks with a column of\n"
@@ -5165,8 +5165,8 @@ static const u8 sPETAL_BLIZZARDDescription[] = _(
     "of petals to attack.");
 
 static const u8 sFREEZE_DRYDescription[] = _(
-    "Super effective on Water-\n"
-    "types. May cause freezing.");
+    "Attacks with a freezing wave\n"
+    "May lower the foe's Sp. Def.");
 
 static const u8 sDISARMING_VOICEDescription[] = _(
     "Lets out a charming cry\n"
@@ -5478,7 +5478,7 @@ static const u8 sINSTRUCTDescription[] = _(
 
 static const u8 sBEAK_BLASTDescription[] = _(
     "Heats up beak to attack.\n"
-    "Burns foe on contact.");
+    "Burns foes on contact.");
 
 static const u8 sCLANGING_SCALESDescription[] = _(
     "Makes a big noise with\n"
@@ -5786,8 +5786,8 @@ static const u8 sMETEOR_BEAMDescription[] = _(
     "thay may raise the Sp. Att.");
 
 static const u8 sSHELL_SIDE_ARMDescription[] = _(
-    "Uses higher of physical and\n"
-    "special damage. May poison.");
+    "Spits poison with the shell.\n"
+    "Slow, but always poisons.");
 
 static const u8 sMISTY_EXPLOSIONDescription[] = _(
     "Hit enemies in an explosion\n"
