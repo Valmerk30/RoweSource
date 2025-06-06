@@ -3053,8 +3053,8 @@ static const u8 sJumpKickDescription[] = _(
     "miss and hurt the kicker.");
 
 static const u8 sRollingKickDescription[] = _(
-    "A fast kick delivered from\n"
-    "a rapid spin.");
+    "A high-speed kick that\n"
+    "raises the user's speed.");
 
 static const u8 sSandAttackDescription[] = _(
     "Reduces the foe's accuracy\n"
@@ -3861,8 +3861,8 @@ static const u8 sPursuitDescription[] = _(
     "on a foe switching out.");
 
 static const u8 sRapidSpinDescription[] = _(
-    "Spins the body at high\n"
-    "speed to strike the foe.");
+    "A spinning tackle that\n"
+    "raises the user's speed.");
 
 static const u8 sSweetScentDescription[] = _(
     "Allures the foe to reduce\n"
@@ -4182,8 +4182,8 @@ static const u8 sHydroCannonDescription[] = _(
 
 static const u8 sMeteorMashDescription[] = _(
     "Fires a meteor-like punch.\n"
-    "May raise Attack.");
-
+    "May lower the foe's Speed.");
+     
 static const u8 sAstonishDescription[] = _(
     "An attack that may shock\n"
     "the foe into flinching.");
@@ -4261,8 +4261,8 @@ static const u8 sSandTombDescription[] = _(
     "quicksand for 2 to 5 turns.");
 
 static const u8 sSheerColdDescription[] = _(
-    "A chilling attack that\n"
-    "causes fainting if it hits.");
+    "A chilling wind. Stronger\n"
+    "on each successive hit.");
 
 static const u8 sMuddyWaterDescription[] = _(
     "Attacks with muddy water.\n"
@@ -4385,8 +4385,8 @@ static const u8 sHAMMER_ARMDescription[] = _(
     "that also lowers Speed.");
 
 static const u8 sGYRO_BALLDescription[] = _(
-    "A high-speed spin that does\n"
-    "more damage to faster foes.");
+    "A high-speed spin that\n"
+    "raises the user's speed.");
 
 static const u8 sHEALING_WISHDescription[] = _(
     "The user faints to heal up\n"
@@ -4417,8 +4417,8 @@ static const u8 sACUPRESSUREDescription[] = _(
     "one of its stats.");
 
 static const u8 sMETAL_BURSTDescription[] = _(
-    "Retaliates any hit with\n"
-    "greater power.");
+    "Slams the foe with a hard\n"
+    "body. May cause confusion.");
 
 static const u8 sU_TURNDescription[] = _(
     "Does damage then switches\n"
@@ -4693,8 +4693,8 @@ static const u8 sIRON_HEADDescription[] = _(
     "head. May cause flinching.");
 
 static const u8 sMAGNET_BOMBDescription[] = _(
-    "Launches a magnet that\n"
-    "strikes without fail.");
+    "Prevents the user and\n"
+    "the target from escaping.");
 
 static const u8 sSTONE_EDGEDescription[] = _(
     "Stabs the foe with stones.\n"
@@ -5413,8 +5413,8 @@ static const u8 sLASER_FOCUSDescription[] = _(
     "will be a critical hit.");
 
 static const u8 sGEAR_UPDescription[] = _(
-    "Boosts the attacks of\n"
-    "those with Plus or Minus.");
+    "Gears up the body to boost\n"
+    "both Attack and Defense.");
 
 static const u8 sTHROAT_CHOPDescription[] = _(
     "Chops the throat to disable\n"
@@ -5502,7 +5502,7 @@ static const u8 sSHELL_TRAPDescription[] = _(
 
 static const u8 sFLEUR_CANNONDescription[] = _(
     "A strong bright ray that\n"
-    "may lower Speed.");
+    "may lower the foe's Speed.");
 
 static const u8 sPSYCHIC_FANGSDescription[] = _(
     "Chomps with psychic fangs.\n"
@@ -5547,7 +5547,7 @@ static const u8 sTEARFUL_LOOKDescription[] = _(
 static const u8 sZING_ZAPDescription[] = _(
     "An electrified impact that\n"
     "can cause flinching.");
-
+     
 static const u8 sNATURES_MADNESSDescription[] = _(
     "Hits with power of nature.\n"
     "May cause confusion.");
@@ -5706,12 +5706,12 @@ static const u8 sPYRO_BALLDescription[] = _(
     "target. It may cause a burn.");
     
 static const u8 sBEHEMOTH_BLADEDescription[] = _(
-    "Strikes as a sword. It deals\n"
-    "2x damage to Dynamaxed foes.");
+    "Strikes as a steel sword.\n"
+    "Ups the user's Attack.");
     
 static const u8 sBEHEMOTH_BASHDescription[] = _(
-    "Attacks as a sheild. Deals\n"
-    "2x damage to Dynamaxed foes.");
+    "Attacks as a steel shield.\n"
+    "Ups the user's Defense.");
     
 static const u8 sAURA_WHEELDescription[] = _(
     "Raises Speed to attack. The\n"
