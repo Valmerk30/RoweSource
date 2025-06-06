@@ -3654,7 +3654,7 @@ static const u8 sConversion2Description[] = _(
 
 static const u8 sAeroblastDescription[] = _(
     "Launches a vacuumed blast.\n"
-    "May lower Sp. Def.");
+    "High critical-hit ratio.");
 
 static const u8 sCottonSporeDescription[] = _(
     "Spores cling to the foe,\n"
