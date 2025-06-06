@@ -3517,8 +3517,8 @@ static const u8 sLovelyKissDescription[] = _(
     "face that induces sleep.");
 
 static const u8 sSkyAttackDescription[] = _(
-    "Searches out weak spots,\n"
-    "then strikes the next turn.");
+    "Strikes from the heavens.\n"
+    "May raise user's Attack.");
 
 static const u8 sTransformDescription[] = _(
     "Alters the user's cells to\n"
@@ -3654,7 +3654,7 @@ static const u8 sConversion2Description[] = _(
 
 static const u8 sAeroblastDescription[] = _(
     "Launches a vacuumed blast.\n"
-    "High critical-hit ratio.");
+    "May lower Sp. Def.");
 
 static const u8 sCottonSporeDescription[] = _(
     "Spores cling to the foe,\n"
