@@ -11583,10 +11583,10 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_PACHIRISU] =
     {
-        .baseHP        = 60,
+        .baseHP        = 65,
         .baseAttack    = 90,
         .baseDefense   = 70,
-        .baseSpeed     = 95,
+        .baseSpeed     = 100,
         .baseSpAttack  = 45,
         .baseSpDefense = 90,
         .type1 = TYPE_ELECTRIC,
@@ -18227,12 +18227,12 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_MELOETTA] =
     {
-        .baseHP        = 100,
-        .baseAttack    = 75,
-        .baseDefense   = 75,
-        .baseSpeed     = 90,
-        .baseSpAttack  = 130,
-        .baseSpDefense = 130,
+        .baseHP        = 75,
+        .baseAttack    = 70,
+        .baseDefense   = 70,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 100,
         .type1 = TYPE_NORMAL,
         .type2 = TYPE_PSYCHIC,
         .catchRate = 255,
@@ -30297,12 +30297,12 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_MELOETTA_PIROUETTE] =
     {
-        .baseHP        = 100,
-        .baseAttack    = 130,
-        .baseDefense   = 90,
-        .baseSpeed     = 130,
-        .baseSpAttack  = 75,
-        .baseSpDefense = 75,
+        .baseHP        = 75,
+        .baseAttack    = 100,
+        .baseDefense   = 85,
+        .baseSpeed     = 100,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 70,
         .type1 = TYPE_NORMAL,
         .type2 = TYPE_FIGHTING,
         .catchRate = 255,
