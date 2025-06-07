@@ -13364,6 +13364,7 @@ static const struct LevelUpMove sSimipourLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_NATURAL_GIFT),
     LEVEL_UP_MOVE(43, MOVE_CRUNCH),
     LEVEL_UP_END
+
 };
 
 static const struct LevelUpMove sMunnaLevelUpLearnset[] = {
@@ -16644,6 +16645,7 @@ static const struct LevelUpMove sKeldeoLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sMeloettaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_RELIC_SONG),
     LEVEL_UP_MOVE( 1, MOVE_ROUND),
     LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
