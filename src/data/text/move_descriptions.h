@@ -2260,8 +2260,8 @@ static const u8 sPLAY_ROUGHDescription[] = _(
 	"May lower Attack.");
 
 static const u8 sFAIRY_WINDDescription[] = _(
-	"Stirs up a fairy wind to\n"
-	"strike the foe.");
+	"Stirs up a fairy wind that\n"
+	"strikes and never misses.");
 
 static const u8 sMOONBLASTDescription[] = _(
 	"Attacks with the power of\n"
@@ -2577,7 +2577,7 @@ static const u8 sLIQUIDATIONDescription[] = _(
 
 static const u8 sPRISMATIC_LASERDescription[] = _(
 	"A high power laser that\n"
-	"forces recharge next turn.");
+	"ignores stat changes.");
 
 static const u8 sSPECTRAL_THIEFDescription[] = _(
 	"Steals the target's stat\n"
@@ -3186,7 +3186,7 @@ static const u8 sBlizzardDescription[] = _(
 
 static const u8 sPsybeamDescription[] = _(
     "Fires a peculiar ray that\n"
-    "may confuse the foe.");
+    "may put the foe to sleep.");
 
 static const u8 sBubbleBeamDescription[] = _(
     "Forcefully sprays bubbles\n"
@@ -3481,7 +3481,7 @@ static const u8 sAmnesiaDescription[] = _(
     "and sharply raises Sp. Def.");
 
 static const u8 sKinesisDescription[] = _(
-    "Distracts the foe.\n"
+    "A distracting mind strike.\n"
     "May lower accuracy.");
 
 static const u8 sSoftBoiledDescription[] = _(
@@ -4250,7 +4250,7 @@ static const u8 sShadowPunchDescription[] = _(
 
 static const u8 sExtrasensoryDescription[] = _(
     "Attacks with a peculiar\n"
-    "power. May cause flinching.");
+    "power. May cause confusion.");
 
 static const u8 sSkyUppercutDescription[] = _(
     "An uppercut thrown as if\n"
@@ -4362,7 +4362,7 @@ static const u8 sDoomDesireDescription[] = _(
 
 static const u8 sPsychoBoostDescription[] = _(
     "Allows a full-power attack,\n"
-    "but sharply lowers Sp. Atk.");
+    "that may raise the Sp. Atk.");
 
 static const u8 sROOSTDescription[] = _(
     "Restores the user's HP by\n"
@@ -4802,7 +4802,7 @@ static const u8 sWONDER_ROOMDescription[] = _(
 
 static const u8 sPSYSHOCKDescription[] = _(
     "Attacks with a psychic wave\n"
-    "that does physical damage.");
+    "that may paralyze the foe.");
 
 static const u8 sTAIL_SLAPDescription[] = _(
     "Strikes the foe with its\n"
@@ -5170,7 +5170,7 @@ static const u8 sFREEZE_DRYDescription[] = _(
 
 static const u8 sDISARMING_VOICEDescription[] = _(
     "Lets out a charming cry\n"
-    "that cannot be evaded.");
+    "that damages the foes.");
 
 static const u8 sPARTING_SHOTDescription[] = _(
     "Lowers the foe's Attack and\n"
@@ -5245,8 +5245,8 @@ static const u8 sSTEAM_ERUPTIONDescription[] = _(
     "steam. May inflict a burn.");
 
 static const u8 sHYPERSPACE_HOLEDescription[] = _(
-    "Uses a warp hole to attack.\n"
-    "Can't be evaded.");
+    "Uses a warp hole to hit foes\n"
+    "using moves like Protect.");
 
 static const u8 sWATER_SHURIKENDescription[] = _(
     "Throws 2 to 5 stars that\n"
