@@ -17084,7 +17084,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_DUNSPARCE"
+                "species": "SPECIES_MELOETTA"
               },
               {
                 "min_level": 5,
@@ -17094,7 +17094,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_DUNSPARCE"
+                "species": "SPECIES_MELOETTA"
               }
             ]
           },
@@ -17104,12 +17104,12 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_MELOETTA"
+                "species": "SPECIES_MELOETTA_PIROUETTE"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_MELOETTA"
+                "species": "SPECIES_MELOETTA_PIROUETTE"
               },
               {
                 "min_level": 5,
