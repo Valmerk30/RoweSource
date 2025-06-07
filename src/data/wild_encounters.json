@@ -13292,75 +13292,6 @@
           }
         },
         {
-          "map": "MAP_THREE_ISLAND_PORT",
-          "base_label": "gThreeIsland_Port0",
-          "land_mons": {
-            "encounter_rate": 10,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_DUNSPARCE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 8,
-                "species": "SPECIES_DUNSPARCE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_DUNSPARCE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_DUNSPARCE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_DUNSPARCE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_DUNSPARCE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_DUNSPARCE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_DUNSPARCE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_DUNSPARCE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_DUNSPARCE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_DUNSPARCE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_DUNSPARCE"
-              }
-            ]
-          }
-        },
-        {
           "map": "MAP_PRIMEVAL_FOREST",
           "base_label": "gPrimevalForest0",
           "land_mons": {
@@ -17173,17 +17104,17 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_LARVITAR"
+                "species": "SPECIES_MELOETTA"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_LARVITAR"
+                "species": "SPECIES_MELOETTA"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_LARVITAR"
+                "species": "SPECIES_MELOETTA_PIROUETTE"
               }
             ]
           }
