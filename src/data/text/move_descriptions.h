@@ -1817,7 +1817,7 @@ static const u8 sMAGMA_STORMDescription[] = _(
 
 static const u8 sDARK_VOIDDescription[] = _(
 	"Drags the foe into total\n"
-	"darkness, inducing Sleep.");
+	"darkness. May cause Sleep.");
 
 static const u8 sSEED_FLAREDescription[] = _(
 	"Generates a shock wave that\n"
@@ -2540,8 +2540,8 @@ static const u8 sDRAGON_HAMMERDescription[] = _(
 	"like a hammer to damage.");
 
 static const u8 sBRUTAL_SWINGDescription[] = _(
-	"Violently swings around\n"
-	"to hurt everyone nearby.");
+	"Violently swings around.\n"
+	"May lower Defense.");
 
 static const u8 sAURORA_VEILDescription[] = _(
 	"Weakens all attacks, but\n"
@@ -3013,8 +3013,8 @@ static const u8 sGustDescription[] = _(
     "of wind whipped up by wings.");
 
 static const u8 sWingAttackDescription[] = _(
-    "Strikes the foe with wings\n"
-    "spread wide.");
+    "Strikes the foe with wings.\n"
+    "May lower defense.");
 
 static const u8 sWhirlwindDescription[] = _(
     "Blows away the foe with\n"
@@ -5814,8 +5814,8 @@ static const u8 sBURNING_JEALOUSYDescription[] = _(
     "during the turn get burned.");
 
 static const u8 sLASH_OUTDescription[] = _(
-    "If stats lowered during this\n"
-    "turn, power is doubled.");
+    "Boosts Attack when burned,\n"
+    "paralyzed, or poisoned.");
 
 static const u8 sPOLTERGEISTDescription[] = _(
     "Control foe's item to attack.\n"
@@ -5870,9 +5870,9 @@ static const u8 sFREEZING_GLAREDescription[] = _(
     "the eyes. May freeze the foe.");
 
 static const u8 sFIERY_WRATHDescription[] = _(
-    "An attack fueled by your\n"
-    "wrath. May cause flinching.");
-
+    "An attack fueled by the user's\n"
+    "wrath. May cause a burn.");
+     
 static const u8 sTHUNDEROUS_KICKDescription[] = _(
     "Uses a lightning-like kick\n"
     "to hit. Lowers foe's Defense.");
