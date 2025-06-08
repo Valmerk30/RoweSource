@@ -3050,7 +3050,7 @@ static const u8 sMegaKickDescription[] = _(
 
 static const u8 sJumpKickDescription[] = _(
     "A strong jumping kick. May\n"
-    "miss and hurt the kicker.");
+    "reduce the foe's Defense.");
 
 static const u8 sRollingKickDescription[] = _(
     "A high-speed kick that\n"
@@ -3489,8 +3489,8 @@ static const u8 sSoftBoiledDescription[] = _(
     "user's maximum HP.");
 
 static const u8 sHiJumpKickDescription[] = _(
-    "A jumping knee kick. If it\n"
-    "misses, the user is hurt.");
+    "A jumping flying kick. May\n"
+    "reduce the foe's Defense.");
 
 static const u8 sGlareDescription[] = _(
     "Intimidates and frightens\n"
@@ -4049,7 +4049,7 @@ static const u8 sIngrainDescription[] = _(
     "The user can't switch out.");
 
 static const u8 sSuperpowerDescription[] = _(
-    "Boosts strength sharply,\n"
+    "A very powerful body slam,\n"
     "but lowers abilities.");
 
 static const u8 sMagicCoatDescription[] = _(
@@ -4253,8 +4253,8 @@ static const u8 sExtrasensoryDescription[] = _(
     "power. May cause confusion.");
 
 static const u8 sSkyUppercutDescription[] = _(
-    "An uppercut thrown as if\n"
-    "leaping into the sky.");
+    "Strikes as if leaping into\n"
+    "sky. Affects flying foes.");
 
 static const u8 sSandTombDescription[] = _(
     "Traps and hurts the foe in\n"
@@ -5069,8 +5069,8 @@ static const u8 sRELIC_SONGDescription[] = _(
     "song. May induce sleep.");
 
 static const u8 sSECRET_SWORDDescription[] = _(
-    "Cuts with a long horn that\n"
-    "does physical damage.");
+    "Cuts with a hidden blade.\n"
+    "It ignores abilities.");
 
 static const u8 sGLACIATEDescription[] = _(
     "Blows very cold air at the\n"
@@ -5758,8 +5758,8 @@ static const u8 sFALSE_SURRENDERDescription[] = _(
     "with hair. It never misses.");
     
 static const u8 sMETEOR_ASSAULTDescription[] = _(
-    "Attacks with a thick leek.\n"
-    "The user must then rest.");
+    "Attacks with unearthly.\n"
+    "strength. May lower Accuracy.");
     
 static const u8 sETERNABEAMDescription[] = _(
     "Eternatus' strongest move.\n"
@@ -6516,7 +6516,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_LIGHT_OF_RUIN - 1] = sLIGHT_OF_RUINDescription,
     [MOVE_ORIGIN_PULSE - 1] = sORIGIN_PULSEDescription,
     [MOVE_PRECIPICE_BLADES - 1] = sPRECIPICE_BLADESDescription,
-    [MOVE_DRAGON_ASCENT - 1] = sCLOSE_COMBATDescription,
+    [MOVE_DRAGON_ASCENT - 1] = sSkyUppercutDescription,
     [MOVE_HYPERSPACE_FURY - 1] = sHYPERSPACE_HOLEDescription,
     [MOVE_SHORE_UP - 1] = sSHORE_UPDescription,
     [MOVE_FIRST_IMPRESSION - 1] = sFIRST_IMPRESSIONDescription,
