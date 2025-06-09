@@ -3170,7 +3170,7 @@ static const u8 sWaterGunDescription[] = _(
 
 static const u8 sHydroPumpDescription[] = _(
     "Blasts water at high power\n"
-    "to strike the foe.");
+    "that may cause confusion.");
 
 static const u8 sSurfDescription[] = _(
     "Creates a huge wave, then\n"
@@ -4985,16 +4985,16 @@ static const u8 sINFERNODescription[] = _(
     "Slow, but always burns.");
 
 static const u8 sWATER_PLEDGEDescription[] = _(
-    "Attacks with a column of\n"
-    "water. May make a rainbow.");
+    "Attacks with a rainbow of\n"
+    "water. High critical-hit.");
 
 static const u8 sFIRE_PLEDGEDescription[] = _(
     "Attacks with a column of\n"
-    "fire. May burn the grass.");
+    "fire. High critical-hit.");
 
 static const u8 sGRASS_PLEDGEDescription[] = _(
-    "Attacks with a column of\n"
-    "grass. May create a swamp.");
+    "Attacks with a swamp of\n"
+    "grass. High critical-hit.");
 
 static const u8 sSTRUGGLE_BUGDescription[] = _(
     "Resisting, the user attacks\n"
@@ -5077,8 +5077,8 @@ static const u8 sGLACIATEDescription[] = _(
     "foe. It lowers their Speed.");
 
 static const u8 sBOLT_STRIKEDescription[] = _(
-    "Strikes with a great amount\n"
-    "of lightning. May paralyze.");
+    "Hits with a great amount of\n"
+    "lightning. May lower Speed.");
 
 static const u8 sBLUE_FLAREDescription[] = _(
     "Engulfs the foe in a blue\n"
@@ -5173,8 +5173,8 @@ static const u8 sDISARMING_VOICEDescription[] = _(
     "that damages the foes.");
 
 static const u8 sPARTING_SHOTDescription[] = _(
-    "Lowers the foe's Attack and\n"
-    "Sp. Atk, then switches out.");
+    "Does double damage to foes\n"
+    "with half HP.");
 
 static const u8 sTOPSY_TURVYDescription[] = _(
     "Swaps all stat changes that\n"
@@ -5338,7 +5338,7 @@ static const u8 sLIGHT_OF_RUINDescription[] = _(
 
 static const u8 sORIGIN_PULSEDescription[] = _(
     "Beams of glowing blue light\n"
-    "blast both foes.");
+    "that may cause sleep.");
 
 static const u8 sPRECIPICE_BLADESDescription[] = _(
     "Fearsome blades of stone\n"
@@ -5350,7 +5350,7 @@ static const u8 sLAVA_PLUMEDescription[] = _(
 
 static const u8 sLEAF_STORMDescription[] = _(
     "Whips up a storm of leaves.\n"
-    "May paralyze the foe.");
+    "May cause flinching.");
 
 static const u8 sSHORE_UPDescription[] = _(
     "Restores the user's HP.\n"
@@ -5373,8 +5373,8 @@ static const u8 sDARKEST_LARIATDescription[] = _(
     "It ignores stat changes.");
 
 static const u8 sSPARKLING_ARIADescription[] = _(
-    "Sings with bubbles. Cures\n"
-    "burns on contact.");
+    "Powerful against burnt\n"
+    "foes, but also heals them.");
 
 static const u8 sICE_HAMMERDescription[] = _(
     "Swings the fist to strike.\n"
@@ -5546,7 +5546,7 @@ static const u8 sTEARFUL_LOOKDescription[] = _(
 
 static const u8 sZING_ZAPDescription[] = _(
     "An electrified impact that\n"
-    "can cause flinching.");
+    "may raise the user's Attack.");
      
 static const u8 sNATURES_MADNESSDescription[] = _(
     "Hits with power of nature.\n"
@@ -5569,8 +5569,8 @@ static const u8 sPHOTON_GEYSERDescription[] = _(
     "determines its category.");
 
 static const u8 sZIPPY_ZAPDescription[] = _(
-    "Electric bursts always go\n"
-    "first and land a critical hit.");
+    "An electric bursts that may\n"
+    "raise the user's Sp Attack.");
 
 static const u8 sSPLISHY_SPLASHDescription[] = _(
     "A huge electrified wave that\n"
@@ -5634,8 +5634,8 @@ static const u8 sDYNAMAX_CANNONDescription[] = _(
     "2x damage to Dynamaxed foes.");
     
 static const u8 sSNIPE_SHOTDescription[] = _(
-    "The user ignores effects\n"
-    "that draw in moves.");
+    "A water jet that ignores\n"
+    "protects and never misses.");
     
 static const u8 sJAW_LOCKDescription[] = _(
     "Prevents the user and\n"
@@ -5714,8 +5714,8 @@ static const u8 sBEHEMOTH_BASHDescription[] = _(
     "Ups the user's Defense.");
     
 static const u8 sAURA_WHEELDescription[] = _(
-    "Raises Speed to attack. The\n"
-    "Type is based on its form.");
+    "A lightning fast body tackle.\n"
+    "May raise the user's Speed.");
     
 static const u8 sBREAKING_SWIPEDescription[] = _(
     "Swings its tail to attack.\n"
@@ -5830,8 +5830,8 @@ static const u8 sCOACHINGDescription[] = _(
     "up their Attack and Defense.");
 
 static const u8 sFLIP_TURNDescription[] = _(
-    "Attacks and rushes back to\n"
-    "switch with a party Pokémon.");
+    "Flips the foe away to end\n"
+    "the battle.");
 
 static const u8 sTRIPLE_AXELDescription[] = _(
     "A 3-kick attack that gets\n"
@@ -5854,8 +5854,8 @@ static const u8 sWICKED_BLOWDescription[] = _(
     "strikes with a critical hit.");
 
 static const u8 sSURGING_STRIKESDescription[] = _(
-    "Mastering the Water style,\n"
-    "strikes with 3 critical hits.");
+    "Strikes with 3 water hits.\n"
+    "High critical-hit ratio.");
 
 static const u8 sTHUNDER_CAGEDescription[] = _(
     "Traps the foe in a cage of\n"
