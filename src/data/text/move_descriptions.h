@@ -5658,8 +5658,8 @@ static const u8 sDRAGON_DARTSDescription[] = _(
     "targets are hit once each.");
     
 static const u8 sTEATIMEDescription[] = _(
-    "All Pokémon have teatime\n"
-    "and eat their Berries.");
+    "Eats the foe's held Berry\n"
+    "gaining its effect.");
     
 static const u8 sOCTOLOCKDescription[] = _(
     "Traps the foe to lower Def\n"
@@ -5674,8 +5674,8 @@ static const u8 sFISHIOUS_RENDDescription[] = _(
     "moves before the target.");
     
 static const u8 sCOURT_CHANGEDescription[] = _(
-    "The user swaps effects on\n"
-    "either side of the field.");
+    "The user swaps special\n"
+    "abilities with the target.");
     
 static const u8 sCLANGOROUS_SOULDescription[] = _(
     "The user uses some of its\n"
