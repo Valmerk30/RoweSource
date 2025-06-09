@@ -14521,7 +14521,7 @@ const struct BaseStats gBaseStats[] =
         .baseDefense   = 80,
         .baseSpeed     = 95,
         .baseSpAttack  = 100,
-        .baseSpDefense = 55,
+        .baseSpDefense = 65,
         #if P_UPDATED_STATS >= GEN_6
             .baseAttack    = 80,
         #else
@@ -21071,11 +21071,11 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_TOXAPEX] =
     {
         .baseHP        = 75,
-        .baseAttack    = 65,
+        .baseAttack    = 75,
         .baseDefense   = 140,
         .baseSpeed     = 35,
-        .baseSpAttack  = 55,
-        .baseSpDefense = 130,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 120,
         .type1 = TYPE_POISON,
         .type2 = TYPE_WATER,
         .catchRate = 255,
