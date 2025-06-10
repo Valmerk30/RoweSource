@@ -2881,9 +2881,9 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_EXEGGUTOR] =
     {
-        .baseHP        = 95,
+        .baseHP        = 100,
         .baseAttack    = 95,
-        .baseDefense   = 85,
+        .baseDefense   = 80,
         .baseSpeed     = 55,
         .baseSpAttack  = 125,
         #if P_UPDATED_STATS >= GEN_7
@@ -3044,11 +3044,11 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_KOFFING] =
     {
-        .baseHP        = 40,
-        .baseAttack    = 65,
+        .baseHP        = 45,
+        .baseAttack    = 55,
         .baseDefense   = 95,
         .baseSpeed     = 35,
-        .baseSpAttack  = 60,
+        .baseSpAttack  = 65,
         .baseSpDefense = 45,
         .type1 = TYPE_POISON,
         .type2 = TYPE_POISON,
@@ -3070,10 +3070,10 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_WEEZING] =
     {
         .baseHP        = 65,
-        .baseAttack    = 90,
+        .baseAttack    = 80,
         .baseDefense   = 120,
         .baseSpeed     = 60,
-        .baseSpAttack  = 85,
+        .baseSpAttack  = 95,
         .baseSpDefense = 70,
         .type1 = TYPE_POISON,
         .type2 = TYPE_POISON,
@@ -5275,15 +5275,11 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_JUMPLUFF] =
     {
         .baseHP        = 75,
-        .baseAttack    = 85,
+        .baseAttack    = 55,
         .baseDefense   = 70,
         .baseSpeed     = 110,
-        .baseSpAttack  = 55,
-        #if P_UPDATED_STATS >= GEN_6
-            .baseSpDefense = 95,
-        #else
-            .baseSpDefense = 95,
-        #endif
+        .baseSpAttack  = 90,
+        .baseSpDefense = 90,
         .type1 = TYPE_GRASS,
         .type2 = TYPE_FLYING,
         .catchRate = 255,
@@ -20397,8 +20393,8 @@ const struct BaseStats gBaseStats[] =
         .baseHP        = 80,
         .baseAttack    = 105,
         .baseDefense   = 75,
-        .baseSpeed     = 70,
-        .baseSpAttack  = 100,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 90,
         .baseSpDefense = 100,
         .type1 = TYPE_GRASS,
         .type2 = TYPE_FLYING,
@@ -37622,9 +37618,9 @@ const struct BaseStats gVanillaBaseStats[] =
     [SPECIES_JYNX] =
     {
         .baseHP        = 65,
-        .baseAttack    = 50,
+        .baseAttack    = 45,
         .baseDefense   = 35,
-        .baseSpeed     = 95,
+        .baseSpeed     = 100,
         .baseSpAttack  = 115,
         .baseSpDefense = 95,
         .type1 = TYPE_ICE,
@@ -52019,9 +52015,9 @@ const struct BaseStats gVanillaBaseStats[] =
 
     [SPECIES_MANDIBUZZ] =
     {
-        .baseHP        = 110,
-        .baseAttack    = 65,
-        .baseDefense   = 105,
+        .baseHP        = 105,
+        .baseAttack    = 75,
+        .baseDefense   = 100,
         .baseSpeed     = 80,
         .baseSpAttack  = 55,
         .baseSpDefense = 95,
