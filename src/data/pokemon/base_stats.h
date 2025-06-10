@@ -4689,10 +4689,10 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_CROBAT] =
     {
         .baseHP        = 85,
-        .baseAttack    = 90,
+        .baseAttack    = 95,
         .baseDefense   = 80,
         .baseSpeed     = 130,
-        .baseSpAttack  = 70,
+        .baseSpAttack  = 65,
         .baseSpDefense = 80,
         .type1 = TYPE_POISON,
         .type2 = TYPE_FLYING,
@@ -13157,11 +13157,11 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_GLISCOR] =
     {
         .baseHP        = 75,
-        .baseAttack    = 95,
+        .baseAttack    = 100,
         .baseDefense   = 125,
         .baseSpeed     = 95,
         .baseSpAttack  = 45,
-        .baseSpDefense = 75,
+        .baseSpDefense = 70,
         .type1 = TYPE_GROUND,
         .type2 = TYPE_FLYING,
         .catchRate = 255,
