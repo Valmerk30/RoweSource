@@ -13838,8 +13838,8 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_SERPERIOR] =
     {
         .baseHP        = 75,
-        .baseAttack    = 75,
-        .baseDefense   = 95,
+        .baseAttack    = 85,
+        .baseDefense   = 85,
         .baseSpeed     = 115,
         .baseSpAttack  = 75,
         .baseSpDefense = 95,
