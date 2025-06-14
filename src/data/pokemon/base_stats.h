@@ -12260,10 +12260,10 @@ const struct BaseStats gBaseStats[] =
     {
         .baseHP        = 80,
         .baseAttack    = 75,
-        .baseDefense   = 60,
+        .baseDefense   = 55,
         .baseSpeed     = 100,
         .baseSpAttack  = 90,
-        .baseSpDefense = 55,
+        .baseSpDefense = 65,
         .type1 = TYPE_NORMAL,
         .type2 = TYPE_FLYING,
         .catchRate = 255,
@@ -19890,11 +19890,11 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_KLEFKI] =
     {
         .baseHP        = 55,
-        .baseAttack    = 80,
+        .baseAttack    = 75,
         .baseDefense   = 90,
         .baseSpeed     = 75,
-        .baseSpAttack  = 80,
-        .baseSpDefense = 90,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 85,
         .type1 = TYPE_STEEL,
         .type2 = TYPE_FAIRY,
         .catchRate = 255,
@@ -21851,11 +21851,11 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_KOMALA] =
     {
-        .baseHP        = 65,
+        .baseHP        = 70,
         .baseAttack    = 115,
-        .baseDefense   = 65,
-        .baseSpeed     = 65,
-        .baseSpAttack  = 75,
+        .baseDefense   = 75,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 65,
         .baseSpDefense = 95,
         .type1 = TYPE_NORMAL,
         .type2 = TYPE_NORMAL,
