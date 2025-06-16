@@ -3326,7 +3326,7 @@ const struct BaseStats gBaseStats[] =
         .baseHP        = 80,
         .baseAttack    = 95,
         .baseDefense   = 65,
-        .baseSpeed     = 70,
+        .baseSpeed     = 80,
         .baseSpAttack  = 65,
         .baseSpDefense = 80,
         .type1 = TYPE_WATER,
@@ -21710,12 +21710,12 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_PALOSSAND] =
     {
-        .baseHP        = 85,
-        .baseAttack    = 75,
+        .baseHP        = 90,
+        .baseAttack    = 60,
         .baseDefense   = 110,
         .baseSpeed     = 35,
-        .baseSpAttack  = 100,
-        .baseSpDefense = 75,
+        .baseSpAttack  = 95,
+        .baseSpDefense = 80,
         .type1 = TYPE_GHOST,
         .type2 = TYPE_GROUND,
         .catchRate = 255,
