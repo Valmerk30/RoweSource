@@ -993,7 +993,7 @@ const struct BaseStats gBaseStats[] =
         .baseAttack    = 60,
         .baseDefense   = 70,
         .baseSpeed     = 85,
-        .baseSpDefense = 85,
+        .baseSpDefense = 95,
         #if P_UPDATED_STATS >= GEN_6
             .baseSpAttack  = 100,
         #else
@@ -8102,7 +8102,7 @@ const struct BaseStats gBaseStats[] =
         .baseHP        = 60,
         .baseAttack    = 100,
         .baseDefense   = 45,
-        .baseSpeed     = 160,
+        .baseSpeed     = 150,
         .baseSpAttack  = 50,
         .baseSpDefense = 55,
         .type1 = TYPE_BUG,
@@ -18551,7 +18551,7 @@ const struct BaseStats gBaseStats[] =
     {
         .baseHP        = 75,
         .baseAttack    = 100,
-        .baseDefense   = 100,
+        .baseDefense   = 95,
         .baseSpeed     = 75,
         .baseSpAttack  = 40,
         .baseSpDefense = 75,
