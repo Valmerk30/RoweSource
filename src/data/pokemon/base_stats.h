@@ -23299,11 +23299,11 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_ORBEETLE] =
     {
         .baseHP        = 65,
-        .baseAttack    = 45,
-        .baseDefense   = 110,
-        .baseSpeed     = 90,
-        .baseSpAttack  = 80,
-        .baseSpDefense = 120,
+        .baseAttack    = 50,
+        .baseDefense   = 100,
+        .baseSpeed     = 100,
+        .baseSpAttack  = 95,
+        .baseSpDefense = 100,
         .type1 = TYPE_BUG,
         .type2 = TYPE_PSYCHIC,
         .catchRate = 255,
