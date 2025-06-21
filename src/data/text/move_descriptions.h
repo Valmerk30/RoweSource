@@ -5345,8 +5345,8 @@ static const u8 sPRECIPICE_BLADESDescription[] = _(
     "attack both foes.");
 
 static const u8 sLAVA_PLUMEDescription[] = _(
-    "Scarlet flames torch\n"
-    "everything around the user.");
+    "Scarlet flames strike that\n"
+    "destroys barriers.");
 
 static const u8 sLEAF_STORMDescription[] = _(
     "Whips up a storm of leaves.\n"
@@ -5553,8 +5553,8 @@ static const u8 sNATURES_MADNESSDescription[] = _(
     "May cause confusion.");
 
 static const u8 sMULTI_ATTACKDescription[] = _(
-    "Attacks with razor claws.\n"
-    "Strikes 2 to 5 times.");
+    "Attacks of multiple types.\n"
+    "Can cause random statuses.");
 
 static const u8 sMIND_BLOWNDescription[] = _(
     "It explodes the user's head.\n"
