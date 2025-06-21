@@ -3066,7 +3066,7 @@ static const u8 sHeadbuttDescription[] = _(
 
 static const u8 sHornAttackDescription[] = _(
     "Jabs the foe with sharp\n"
-    "horns.");
+    "horns. May lower Attack.");
 
 static const u8 sFuryAttackDescription[] = _(
     "Jabs the foe 2 to 5 times\n"
@@ -3430,7 +3430,7 @@ static const u8 sSelfDestructDescription[] = _(
 
 static const u8 sEggBombDescription[] = _(
     "An egg is forcibly hurled at\n"
-    "the foe.");
+    "the foe, damaging all foes.");
 
 static const u8 sLickDescription[] = _(
     "Licks with a long tongue to\n"
@@ -4657,8 +4657,8 @@ static const u8 sFLASH_CANNONDescription[] = _(
     "that may lower Sp. Def.");
 
 static const u8 sROCK_CLIMBDescription[] = _(
-    "A charging attack that may\n"
-    "confuse the foe.");
+    "A charging attack that\n"
+    "disables sound moves.");
 
 static const u8 sDEFOGDescription[] = _(
     "Removes obstacles and\n"
@@ -5461,7 +5461,7 @@ static const u8 sPURIFYDescription[] = _(
     "to restore HP.");
 
 static const u8 sREVELATION_DANCEDescription[] = _(
-    "Dances with mystical power.\n"
+    "Hits ignoring stat changes.\n"
     "Matches user's first type.");
 
 static const u8 sCORE_ENFORCERDescription[] = _(
