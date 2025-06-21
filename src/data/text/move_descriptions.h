@@ -1856,8 +1856,8 @@ static const u8 sPSYSHOCKDescription[] = _(
 	"that does physical damage.");
 
 static const u8 sTAIL_SLAPDescription[] = _(
-    "Strikes the foe with its\n"
-    "tail 2 to 5 times.");
+        "Strikes the foe with its\n"
+        "tail 2 to 5 times.");
 
 static const u8 sVENOSHOCKDescription[] = _(
 	"Does double damage if the\n"
@@ -2112,8 +2112,8 @@ static const u8 sGEAR_GRINDDescription[] = _(
 	"that strike twice.");
 
 static const u8 sTECHNO_BLASTDescription[] = _(
-	"The type varies with the\n"
-	"kind of Drive held.");
+	"A kinetic attack that\n"
+	"may raise all stats.");
 
 static const u8 sRELIC_SONGDescription[] = _(
 	"Attacks with an ancient\n"
@@ -2957,16 +2957,16 @@ static const u8 sKarateChopDescription[] = _(
     "high critical-hit ratio.");
 
 static const u8 sDoubleSlapDescription[] = _(
-    "Repeatedly slaps the foe\n"
-    "2 to 5 times.");
+    "Slaps the foe with hands\n"
+    "or tail. Strikes twice.");
 
 static const u8 sCometPunchDescription[] = _(
     "Repeatedly punches the foe\n"
     "2 to 5 times.");
 
 static const u8 sMegaPunchDescription[] = _(
-    "A strong punch thrown with\n"
-    "incredible power.");
+    "A strong punch that may\n"
+    "reduce the foe's Speed.");
 
 static const u8 sPayDayDescription[] = _(
     "Throws coins at the foe.\n"
@@ -2993,8 +2993,8 @@ static const u8 sViceGripDescription[] = _(
     "powerful pincers.");
 
 static const u8 sGuillotineDescription[] = _(
-    "A powerful pincer attack\n"
-    "that may cause fainting.");
+    "A powerful pincer attack.\n"
+    "May lower the foe's Attack.");
 
 static const u8 sRazorWindDescription[] = _(
     "A 2-turn move that strikes\n"
@@ -3046,7 +3046,7 @@ static const u8 sDoubleKickDescription[] = _(
 
 static const u8 sMegaKickDescription[] = _(
     "An extremely powerful kick\n"
-    "with intense force.");
+    "that may reduce Speed.");
 
 static const u8 sJumpKickDescription[] = _(
     "A strong jumping kick. May\n"
@@ -3066,15 +3066,15 @@ static const u8 sHeadbuttDescription[] = _(
 
 static const u8 sHornAttackDescription[] = _(
     "Jabs the foe with sharp\n"
-    "horns. May lower Attack.");
+    "horns. May lower Accuracy.");
 
 static const u8 sFuryAttackDescription[] = _(
-    "Jabs the foe 2 to 5 times\n"
-    "with sharp horns, etc.");
+    "Jabs the foe 3 times in a\n"
+    "row with rising intensity.");
 
 static const u8 sHornDrillDescription[] = _(
-    "A one-hit KO attack that\n"
-    "uses a horn like a drill.");
+    "Uses a horn like a drill.\n"
+    "May lower the foe's Defense.");
 
 static const u8 sTackleDescription[] = _(
     "Charges the foe with a full-\n"
@@ -4306,7 +4306,7 @@ static const u8 sBulkUpDescription[] = _(
 
 static const u8 sBounceDescription[] = _(
     "Bounces up, then down the\n"
-    "next turn. May paralyze.");
+    "next turn. Attacks first.");
 
 static const u8 sMudShotDescription[] = _(
     "Hurls mud at the foe and\n"
@@ -5526,7 +5526,7 @@ static const u8 sLIQUIDATIONDescription[] = _(
 
 static const u8 sPRISMATIC_LASERDescription[] = _(
     "A high power laser that\n"
-    "forces recharge next turn.");
+    "ignores stat changes.");
 
 static const u8 sSPECTRAL_THIEFDescription[] = _(
     "Steals the target's stat\n"
@@ -5553,8 +5553,8 @@ static const u8 sNATURES_MADNESSDescription[] = _(
     "May cause confusion.");
 
 static const u8 sMULTI_ATTACKDescription[] = _(
-    "An attack that changes\n"
-    "with Memories.");
+    "Attacks with razor claws.\n"
+    "Strikes 2 to 5 times.");
 
 static const u8 sMIND_BLOWNDescription[] = _(
     "It explodes the user's head.\n"
@@ -5565,8 +5565,8 @@ static const u8 sPLASMA_FISTSDescription[] = _(
     "targets are hit once each.");
 
 static const u8 sPHOTON_GEYSERDescription[] = _(
-    "User's highest attack stat\n"
-    "determines its category.");
+    "Attacks with an intense ray\n"
+    "of energy. May cause a burn.");
 
 static const u8 sZIPPY_ZAPDescription[] = _(
     "An electric bursts that may\n"
