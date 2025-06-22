@@ -2773,7 +2773,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_SMELLINGSALT,
         .power = 70,
-        .type = TYPE_WATER,
+        .type = TYPE_FIRE,
         .accuracy = 90,
         .pp = 20,
         .secondaryEffectChance = 100,
