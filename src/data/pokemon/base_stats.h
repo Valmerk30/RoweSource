@@ -9447,7 +9447,7 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_WHISCASH] =
     {
-        .baseHP        = 130,
+        .baseHP        = 125,
         .baseAttack    = 80,
         .baseDefense   = 80,
         .baseSpeed     = 60,
@@ -14427,7 +14427,7 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_MUSHARNA] =
     {
         .baseHP        = 115,
-        .baseAttack    = 55,
+        .baseAttack    = 50,
         .baseDefense   = 85,
         .baseSpeed     = 30,
         .baseSpAttack  = 105,
@@ -21213,10 +21213,10 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_FOMANTIS] =
     {
         .baseHP        = 40,
-        .baseAttack    = 55,
+        .baseAttack    = 65,
         .baseDefense   = 35,
-        .baseSpeed     = 35,
-        .baseSpAttack  = 50,
+        .baseSpeed     = 45,
+        .baseSpAttack  = 30,
         .baseSpDefense = 35,
         .type1 = TYPE_GRASS,
         .type2 = TYPE_GRASS,
@@ -21245,9 +21245,9 @@ const struct BaseStats gBaseStats[] =
         .baseHP        = 70,
         .baseAttack    = 105,
         .baseDefense   = 90,
-        .baseSpeed     = 60,
-        .baseSpAttack  = 60,
-        .baseSpDefense = 90,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 80,
         .type1 = TYPE_GRASS,
         .type2 = TYPE_GRASS,
         .catchRate = 255,
@@ -21853,7 +21853,7 @@ const struct BaseStats gBaseStats[] =
     {
         .baseHP        = 70,
         .baseAttack    = 115,
-        .baseDefense   = 75,
+        .baseDefense   = 80,
         .baseSpeed     = 50,
         .baseSpAttack  = 55,
         .baseSpDefense = 95,
