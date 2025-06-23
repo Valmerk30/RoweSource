@@ -3878,7 +3878,7 @@ static const u8 sMetalClawDescription[] = _(
 
 static const u8 sVitalThrowDescription[] = _(
     "Makes the user's move last,\n"
-    "but it never misses.");
+    "but breaks Protect.");
 
 static const u8 sMorningSunDescription[] = _(
     "Restores HP. The amount\n"
