@@ -1015,7 +1015,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED | FLAG_DANCE | FLAG_STAT_STAGES_IGNORED,
-        .split = SPLIT_SPECIAL,
+        .split = SPLIT_HIGHEST,
     },
 
     [MOVE_EGG_BOMB] =
