@@ -13095,6 +13095,18 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
-
+	
+    [SPECIES_KUBFU] =
+    {
+        .move = MOVE_DYNAMIC_PUNCH,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 100,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 90,
+        .modification3 = SIGNATURE_MOD_PRIORITY,
+        .variable3 = 0,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
 
 };
