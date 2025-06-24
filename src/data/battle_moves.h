@@ -3001,12 +3001,12 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 	
     [MOVE_SEARING_SHOT] =
     {
-        .effect = EFFECT_BURN_HIT,
+        .effect = EFFECT_KNOCK_OFF,
         .power = 90,
         .type = TYPE_FIRE,
         .accuracy = 90,
         .pp = 15,
-        .secondaryEffectChance = 100,
+        .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED | FLAG_BALLISTIC | FLAG_SHEER_FORCE_BOOST,
