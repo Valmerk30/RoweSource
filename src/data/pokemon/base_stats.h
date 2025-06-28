@@ -6300,12 +6300,12 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_MANTINE] =
     {
-        .baseHP        = 85,
-		.baseAttack    = 40,
+        .baseHP        = 80,
+	.baseAttack    = 40,
         .baseDefense   = 70,
         .baseSpAttack  = 90,
-        .baseSpDefense = 140,
-        .baseSpeed     = 70,
+        .baseSpDefense = 120,
+        .baseSpeed     = 100,
         .type1 = TYPE_WATER,
         .type2 = TYPE_FLYING,
         .catchRate = 255,
@@ -12741,10 +12741,10 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_MANTYKE] =
     {
-        .baseHP        = 45,
+        .baseHP        = 40,
         .baseAttack    = 20,
         .baseDefense   = 50,
-        .baseSpeed     = 50,
+        .baseSpeed     = 60,
         .baseSpAttack  = 60,
         .baseSpDefense = 120,
         .type1 = TYPE_WATER,
@@ -27184,7 +27184,7 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_MAROWAK_ALOLAN] =
     {
         .baseHP        = 70,
-        .baseAttack    = 85,
+        .baseAttack    = 90,
         .baseDefense   = 110,
         .baseSpeed     = 65,
         .baseSpAttack  = 50,
@@ -32224,8 +32224,8 @@ const struct BaseStats gBaseStats[] =
     {
         .baseHP        = 75,
         .baseAttack    = 115,
-        .baseDefense   = 65,
-        .baseSpeed     = 110,
+        .baseDefense   = 75,
+        .baseSpeed     = 100,
         .baseSpAttack  = 55,
         .baseSpDefense = 65,
         .type1 = TYPE_ROCK,
@@ -32240,8 +32240,8 @@ const struct BaseStats gBaseStats[] =
         .eggGroup1 = EGG_GROUP_FIELD,
         .eggGroup2 = EGG_GROUP_FIELD,
         #ifdef BATTLE_ENGINE
-            .abilities = {ABILITY_TOUGH_CLAWS, ABILITY_SAND_RUSH},
-			.abilityHidden = ABILITY_VITAL_SPIRIT,
+            .abilities = {ABILITY_SAND_RUSH, ABILITY_VITAL_SPIRIT},
+			.abilityHidden = ABILITY_TOUGH_CLAWS,
         #else
             .abilities = {ABILITY_NONE, ABILITY_NONE},
         #endif
