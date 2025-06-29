@@ -3633,8 +3633,8 @@ static const u8 sNightmareDescription[] = _(
     "a nightmare for 2 to 5 turns.");
 
 static const u8 sFlameWheelDescription[] = _(
-    "A fiery charge attack that\n"
-    "raises the user's speed.");
+    "A fiery spinning attack.\n"
+    "Raises the user's speed.");
 
 static const u8 sSnoreDescription[] = _(
     "A loud attack that can be\n"
