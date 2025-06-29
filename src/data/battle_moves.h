@@ -3889,7 +3889,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_ELECTROWEB] =
     {
         .effect = EFFECT_SPEED_DOWN_HIT,
-        .power = 55,
+        .power = 60,
         .type = TYPE_ELECTRIC,
         .accuracy = 90,
         .pp = 25,
