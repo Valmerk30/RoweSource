@@ -447,6 +447,21 @@ struct SignatureMove
     u16 variable6;
     u8  argument6;
     u8  chance6;
+    // Seventh Effect
+    u8  modification7;
+    u16 variable7;
+    u8  argument7;
+    u8  chance7;
+    // Eighth Effect
+    u8  modification8;
+    u16 variable8;
+    u8  argument8;
+    u8  chance8;
+    // Ninth Effect
+    u8  modification9;
+    u16 variable9;
+    u8  argument9;
+    u8  chance9;
 };
 
 struct SpindaSpot
