@@ -2886,11 +2886,7 @@ const struct BaseStats gBaseStats[] =
         .baseDefense   = 80,
         .baseSpeed     = 55,
         .baseSpAttack  = 125,
-        #if P_UPDATED_STATS >= GEN_7
-            .baseSpDefense = 65,
-        #else
-            .baseSpDefense = 65,
-        #endif
+        .baseSpDefense = 65,
         .type1 = TYPE_GRASS,
         .type2 = TYPE_PSYCHIC,
         .catchRate = 255,
@@ -6041,7 +6037,7 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_URSARING] =
     {
         .baseHP        = 90,
-        .baseAttack    = 130,
+        .baseAttack    = 125,
         .baseDefense   = 75,
         .baseSpeed     = 55,
         .baseSpAttack  = 75,
@@ -6325,7 +6321,7 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_SKARMORY] =
     {
-        .baseHP        = 65,
+        .baseHP        = 70,
         .baseAttack    = 90,
         .baseDefense   = 140,
         .baseSpeed     = 70,
@@ -7439,8 +7435,8 @@ const struct BaseStats gBaseStats[] =
         .baseAttack    = 70,
         .baseDefense   = 50,
         .baseSpDefense = 60,
-        .baseSpAttack  = 110,
-        .baseSpeed     = 90,
+        .baseSpAttack  = 105,
+        .baseSpeed     = 95,
         .type1 = TYPE_BUG,
         .type2 = TYPE_FLYING,
         .catchRate = 255,
@@ -8834,12 +8830,12 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_CARVANHA] =
     {
-        .baseHP        = 45,
+        .baseHP        = 50,
         .baseAttack    = 90,
-        .baseDefense   = 20,
+        .baseDefense   = 30,
         .baseSpeed     = 65,
-        .baseSpAttack  = 65,
-        .baseSpDefense = 20,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 30,
         .type1 = TYPE_WATER,
         .type2 = TYPE_DARK,
         .catchRate = 255,
@@ -8860,12 +8856,12 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_SHARPEDO] =
     {
-        .baseHP        = 70,
+        .baseHP        = 75,
         .baseAttack    = 120,
-        .baseDefense   = 40,
+        .baseDefense   = 55,
         .baseSpeed     = 95,
-        .baseSpAttack  = 95,
-        .baseSpDefense = 40,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 55,
         .type1 = TYPE_WATER,
         .type2 = TYPE_DARK,
         .catchRate = 255,
@@ -8968,12 +8964,12 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_CAMERUPT] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 100,
+        .baseHP        = 80,
+        .baseAttack    = 75,
         .baseDefense   = 70,
         .baseSpeed     = 40,
         .baseSpAttack  = 105,
-        .baseSpDefense = 75,
+        .baseSpDefense = 90,
         .type1 = TYPE_FIRE,
         .type2 = TYPE_GROUND,
         .catchRate = 255,
@@ -9504,11 +9500,11 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_CRAWDAUNT] =
     {
-        .baseHP        = 65,
+        .baseHP        = 70,
         .baseAttack    = 120,
-        .baseDefense   = 85,
+        .baseDefense   = 90,
         .baseSpeed     = 55,
-        .baseSpAttack  = 90,
+        .baseSpAttack  = 80,
         .baseSpDefense = 55,
         .type1 = TYPE_WATER,
         .type2 = TYPE_DARK,
@@ -9831,8 +9827,8 @@ const struct BaseStats gBaseStats[] =
         .baseAttack    = 115,
         .baseDefense   = 70,
         .baseSpeed     = 75,
-        .baseSpAttack  = 70,
-        .baseSpDefense = 65,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 70,
         .type1 = TYPE_GHOST,
         .type2 = TYPE_GHOST,
         .catchRate = 255,
@@ -23127,7 +23123,7 @@ const struct BaseStats gBaseStats[] =
         .baseHP        = 120,
         .baseAttack    = 95,
         .baseDefense   = 95,
-        .baseSpeed     = 30,
+        .baseSpeed     = 35,
         .baseSpAttack  = 55,
         .baseSpDefense = 75,
         .type1 = TYPE_NORMAL,
@@ -27153,9 +27149,9 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_EXEGGUTOR_ALOLAN] =
     {
-        .baseHP        = 95,
+        .baseHP        = 100,
         .baseAttack    = 95,
-        .baseDefense   = 85,
+        .baseDefense   = 80,
         .baseSpeed     = 55,
         .baseSpAttack  = 125,
         .baseSpDefense = 65,
