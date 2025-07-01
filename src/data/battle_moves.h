@@ -10342,10 +10342,10 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_FOUL_PLAY] =
     {
         .effect = EFFECT_FOUL_PLAY,
-        .power = 100,
+        .power = 90,
         .type = TYPE_DARK,
-        .accuracy = 85,
-        .pp = 10,
+        .accuracy = 90,
+        .pp = 15,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
