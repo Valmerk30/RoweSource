@@ -10249,6 +10249,20 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_PHYSICAL,
     },	
 
+    [MOVE_FIERY_WRATH] =
+    {
+        .effect = EFFECT_BURN_HIT,
+        .power = 80,
+        .type = TYPE_DARK,
+        .accuracy = 85,
+        .pp = 20,
+        .secondaryEffectChance = 20,
+        .target = MOVE_TARGET_BOTH,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SHEER_FORCE_BOOST,
+        .split = SPLIT_SPECIAL,
+    },
+
     [MOVE_DARKEST_LARIAT] =
     {
         .effect = EFFECT_HIT,
@@ -10310,20 +10324,6 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .priority = 0,
         .split = SPLIT_SPECIAL,
     },	
-
-    [MOVE_FIERY_WRATH] =
-    {
-        .effect = EFFECT_BURN_HIT,
-        .power = 90,
-        .type = TYPE_DARK,
-        .accuracy = 85,
-        .pp = 15,
-        .secondaryEffectChance = 20,
-        .target = MOVE_TARGET_BOTH,
-        .priority = 0,
-        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SHEER_FORCE_BOOST,
-        .split = SPLIT_SPECIAL,
-    },
 
     [MOVE_JAW_LOCK] =
     {
