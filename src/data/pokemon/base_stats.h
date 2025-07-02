@@ -8096,10 +8096,10 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_NINJASK] =
     {
         .baseHP        = 60,
-        .baseAttack    = 100,
+        .baseAttack    = 120,
         .baseDefense   = 50,
         .baseSpeed     = 150,
-        .baseSpAttack  = 40,
+        .baseSpAttack  = 20,
         .baseSpDefense = 50,
         .type1 = TYPE_BUG,
         .type2 = TYPE_FLYING,
