@@ -1452,7 +1452,7 @@ const u16 sTMHMMoves[TMHM_COUNT] =
     MOVE_GRASS_KNOT,  		//86
     MOVE_SWAGGER,  			//87
     MOVE_SLEEP_TALK,  		//88
-    MOVE_U_TURN,  			//89
+    MOVE_LUNGE,  			//89
     MOVE_SUBSTITUTE,  		//90
     MOVE_FLASH_CANNON,		//91
     MOVE_TRICK_ROOM,  		//92
