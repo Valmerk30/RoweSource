@@ -168,20 +168,6 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
         .split = SPLIT_PHYSICAL,
     },
-	
-    [MOVE_NATURAL_GIFT] =
-    {
-        .effect = EFFECT_NATURAL_GIFT,
-        .power = 1,
-        .type = TYPE_NORMAL,
-        .accuracy = 90,
-        .pp = 20,
-        .secondaryEffectChance = 0,
-        .target = MOVE_TARGET_SELECTED,
-        .priority = 0,
-        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
-        .split = SPLIT_PHYSICAL,
-    },	
 
     [MOVE_VEEVEE_VOLLEY] =
     {
@@ -714,6 +700,20 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_PHYSICAL,
     },
 	
+    [MOVE_NATURAL_GIFT] =
+    {
+        .effect = EFFECT_HIT_ENEMY_HEAL_ALLY,
+        .power = 75,
+        .type = TYPE_NORMAL,
+        .accuracy = 90,
+        .pp = 20,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
+        .split = SPLIT_SPECIAL,
+    },	
+
     [MOVE_CRUSH_CLAW] =
     {
         .effect = EFFECT_DEFENSE_DOWN_HIT,
@@ -3542,6 +3542,20 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED | FLAG_SHEER_FORCE_BOOST,
         .split = SPLIT_SPECIAL,
     },	
+	
+    [MOVE_WATER_SPOUT] =
+    {
+        .effect = EFFECT_BRICK_BREAK,
+        .power = 85,
+        .type = TYPE_WATER,
+        .accuracy = 85,
+        .pp = 15,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
+        .split = SPLIT_SPECIAL,
+    },
 
     [MOVE_MUDDY_WATER] =
     {
@@ -3727,20 +3741,6 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
         .split = SPLIT_SPECIAL,
     },	
-	
-    [MOVE_WATER_SPOUT] =
-    {
-        .effect = EFFECT_ERUPTION,
-        .power = 150,
-        .type = TYPE_WATER,
-        .accuracy = 80,
-        .pp = 10,
-        .secondaryEffectChance = 0,
-        .target = MOVE_TARGET_BOTH,
-        .priority = 0,
-        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
-        .split = SPLIT_SPECIAL,
-    },
 	
     [MOVE_WITHDRAW] =
     {
@@ -9710,12 +9710,26 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .power = 90,
         .type = TYPE_DRAGON,
         .accuracy = 90,
-        .pp = 10,
+        .pp = 15,
         .secondaryEffectChance = 25,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED | FLAG_SHEER_FORCE_BOOST,
         .split = SPLIT_PHYSICAL,
+    },	
+
+    [MOVE_DRAGON_ENERGY] =
+    {
+        .effect = EFFECT_EERIE_SPELL,
+        .power = 90,
+        .type = TYPE_DRAGON,
+        .accuracy = 90,
+        .pp = 15,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED | FLAG_SOUND,
+        .split = SPLIT_SPECIAL,
     },	
 	
     [MOVE_DRAGON_DARTS] =
@@ -9826,20 +9840,6 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
         .split = SPLIT_PHYSICAL,
-    },
-
-    [MOVE_DRAGON_ENERGY] =
-    {
-        .effect = EFFECT_ERUPTION,
-        .power = 150,
-        .type = TYPE_DRAGON,
-        .accuracy = 80,
-        .pp = 10,
-        .secondaryEffectChance = 0,
-        .target = MOVE_TARGET_BOTH,
-        .priority = 0,
-        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
-        .split = SPLIT_SPECIAL,
     },
 
     [MOVE_ROAR_OF_TIME] =
