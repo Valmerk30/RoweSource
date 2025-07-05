@@ -13531,6 +13531,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     [SPECIES_SWAMPERT] =
     {
         .move = MOVE_MUDDY_WATER,
+        .modification = SIGNATURE_MOD_POWER,
         .variable = 80,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,	
