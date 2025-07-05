@@ -13118,9 +13118,55 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .description = _("Default Description"),
     },	
 
-
-
-
+    [SPECIES_UNOWN] =
+    {
+        .move = MOVE_HIDDEN_POWER,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 90,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 90,		
+        .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
+        .variable3 = STAT_SPEED,
+        .chance3 = 10,
+        .modification4 = SIGNATURE_MOD_ATTACKER_STAT_UP,
+        .variable4 = STAT_ATK,
+        .chance4 = 10,
+        .modification5 = SIGNATURE_MOD_ATTACKER_STAT_UP,
+        .variable5 = STAT_DEF,
+        .chance5 = 10,
+        .modification6 = SIGNATURE_MOD_ATTACKER_STAT_UP,
+        .variable6 = STAT_SPATK,
+        .chance6 = 10,
+        .modification7 = SIGNATURE_MOD_ATTACKER_STAT_UP,
+        .variable7 = STAT_SPDEF,
+        .chance7 = 10,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },	
+	
+    [SPECIES_WOBBUFFET] =
+    {
+        .move = MOVE_TAIL_SLAP,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 30,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 90,
+	.modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
+        .variable3 = SIGNATURE_SECONDARY_EFFECT_TAUNT,	
+        .chance3 = 10,				
+        .modification4 = SIGNATURE_MOD_PSS_CHANGE,
+        .variable4 = SPLIT_SPECIAL,
+        .modification5 = SIGNATURE_MOD_TYPE,
+        .variable5 = TYPE_PSYCHIC,		
+        .modification6 = SIGNATURE_MOD_SE_AGAINST_TYPE,
+        .variable6 = TYPE_GHOST,
+        .modification7 = SIGNATURE_MOD_SE_AGAINST_TYPE,
+        .variable7 = TYPE_PSYCHIC,
+        .modification8 = SIGNATURE_MOD_SE_AGAINST_TYPE,
+        .variable8 = TYPE_DRAGON,		
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
 	
     [SPECIES_GIRAFARIG] =
     {
