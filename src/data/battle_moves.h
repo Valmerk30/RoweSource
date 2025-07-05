@@ -12237,13 +12237,14 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
 
     [SPECIES_HITMONLEE] =
     {
-        .move = MOVE_JUMP_KICK,	
+        .move = MOVE_TRIPLE_KICK,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 100,
+        .variable = 20,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,
-        .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
-        .variable3 = 50,		
+        .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
+        .variable3 = STAT_SPEED,
+	.chance3 = 10,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
@@ -15989,14 +15990,13 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
 
     [SPECIES_MELOETTA] =
     {
-        .move = MOVE_THUNDEROUS_KICK,
+        .move = MOVE_JUMP_KICK,	
         .modification = SIGNATURE_MOD_POWER,
         .variable = 100,
         .modification2 = SIGNATURE_MOD_ACCURACY,
-        .variable2 = 90,		
-        .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
-        .variable3 = SIGNATURE_SECONDARY_EFFECT_PARALYSIS,
-        .chance3 = 20,
+        .variable2 = 90,
+        .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
+        .variable3 = 50,		
         .differentDescription = FALSE,
         .description = _("Default Description"),
     }, 
