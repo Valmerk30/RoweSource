@@ -5158,7 +5158,7 @@ static const u8 sPARABOLIC_CHARGEDescription[] = _(
 
 static const u8 sFORESTS_CURSEDescription[] = _(
     "Puts a curse on the foe.\n"
-    "Lowers the foe's Sp. Att.");
+    "Hits for 2 to 5 turns.");
 
 static const u8 sPETAL_BLIZZARDDescription[] = _(
     "Stirs up a violent storm\n"
