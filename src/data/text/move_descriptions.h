@@ -5790,8 +5790,8 @@ static const u8 sMISTY_EXPLOSIONDescription[] = _(
     "that also hurts the user.");
 
 static const u8 sGRASSY_GLIDEDescription[] = _(
-    "Gliding on ground, hits. Goes\n"
-    "first on Grassy Terrain.");
+    "Gliding on grass, always hits.\n"
+    "Goes first on Grassy Terrain.");
 
 static const u8 sRISING_VOLTAGEDescription[] = _(
     "This move's power doubles\n"
