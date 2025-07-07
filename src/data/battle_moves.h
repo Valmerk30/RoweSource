@@ -14846,7 +14846,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .description = _("Default Description"),
     },	
 
-    [MOVE_FLASH_CANNON] =
+    [SPECIES_BRONZONG] =
     {
         .move = MOVE_FLASH_CANNON,
         .modification = SIGNATURE_MOD_POWER,
@@ -15666,7 +15666,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
 
     [SPECIES_EMOLGA] =
     {
-        .move = EFFECT_ACROBATICS,
+        .move = MOVE_ACROBATICS,
         .modification = SIGNATURE_MOD_POWER,
         .variable = 80,
         .modification2 = SIGNATURE_MOD_ACCURACY,
@@ -16092,7 +16092,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
 
     [SPECIES_DIGGERSBY] =
     {
-        .move = EFFECT_BULLDOZE,
+        .move = MOVE_BULLDOZE,
         .modification = SIGNATURE_MOD_POWER,
         .variable = 80,
         .modification2 = SIGNATURE_MOD_ACCURACY,
@@ -16514,42 +16514,39 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
  
     [SPECIES_DECIDUEYE] =
     {
-        .move = MOVE_THUNDEROUS_KICK,
+        .move = MOVE_OBLIVION_WING,
         .modification = SIGNATURE_MOD_POWER,
         .variable = 100,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
-        .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
-        .variable3 = SIGNATURE_SECONDARY_EFFECT_PARALYSIS,
-        .chance3 = 20,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },	
  
     [SPECIES_INCINEROAR] =
     {
-        .move = MOVE_THUNDEROUS_KICK,
+        .move = MOVE_THROAT_CHOP,
         .modification = SIGNATURE_MOD_POWER,
         .variable = 100,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
-        .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
-        .variable3 = SIGNATURE_SECONDARY_EFFECT_PARALYSIS,
-        .chance3 = 20,
+        .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
+        .variable3 = STAT_SPATK,
+        .chance3 = 25,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },	
  
     [SPECIES_PRIMARINA] =
     {
-        .move = MOVE_THUNDEROUS_KICK,
+        .move = MOVE_SPARKLING_ARIA,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 100,
+        .variable = 80,
         .modification2 = SIGNATURE_MOD_ACCURACY,
-        .variable2 = 90,		
-        .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
-        .variable3 = SIGNATURE_SECONDARY_EFFECT_PARALYSIS,
-        .chance3 = 20,
+        .variable2 = 90,
+        .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
+        .variable3 = STAT_ATK,
+        .chance3 = 25,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },	
