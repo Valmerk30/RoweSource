@@ -4393,17 +4393,17 @@ static const u8 sDevonScopeDesc[] = _(
 
 // TMs/HMs
 static const u8 sTM01Desc[] = _(
-    "Powerful, but makes\n"
-    "the user flinch if\n"
-    "hit by the foe.");
+    "A powerful loyalty\n"
+    "attack. The user\n"
+    "flinches if hit.");
 
 static const u8 sTM02Desc[] = _(
-    "Hooks and slashes\n"
-    "the foe with long,\n"
-    "sharp claws.");
+    "Slashes the foe \n"
+    "with claws that\n"
+    "may lower Defense.");
 
 static const u8 sTM03Desc[] = _(
-    "Generates an\n"
+    "Attacks with an\n"
     "ultrasonic wave\n"
     "that may confuse.");
 
@@ -4508,14 +4508,14 @@ static const u8 sTM23Desc[] = _(
     "lower Defense.");
 
 static const u8 sTM24Desc[] = _(
+    "Strikes the foe\n"
+    "with a thunderbolt.\n"
+    "It may paralyze.");    
+
+static const u8 sTM25Desc[] = _(
     "A powerful electric\n"
     "attack that may\n"
     "cause paralysis.");
-
-static const u8 sTM25Desc[] = _(
-    "Strikes the foe\n"
-    "with a thunderbolt.\n"
-    "It may paralyze.");
 
 static const u8 sTM26Desc[] = _(
     "Causes a quake\n"
@@ -4623,9 +4623,9 @@ static const u8 sTM46Desc[] = _(
     "foe's held item.");
 
 static const u8 sTM47Desc[] = _(
-    "Spreads hard-\n"
-    "edged wings and\n"
-    "slams into the foe.");
+    "Spreads hard-edged\n"
+    "wings and slams\n"
+    "into the foe.");
 
 static const u8 sTM48Desc[] = _(
     "Switches abilities\n"
@@ -4643,9 +4643,9 @@ static const u8 sTM50Desc[] = _(
     "lowers Sp. Atk.");
 	
 static const u8 sTM51Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Low Sweep.");
+    "Attacks the foe's \n"
+    "legs. May lower\n"
+    "its Speed.");
 
 static const u8 sTM52Desc[] = _(
     "This TM can be used\n"
