@@ -3174,7 +3174,7 @@ static const u8 sHydroPumpDescription[] = _(
 
 static const u8 sSurfDescription[] = _(
     "Creates a huge wave, then\n"
-    "crashes it down on the foe.");
+    "crashes it down on foes.");
 
 static const u8 sIceBeamDescription[] = _(
     "Blasts the foe with an icy\n"
