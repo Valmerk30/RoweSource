@@ -3244,7 +3244,7 @@ static const u8 sGuardSpecDesc[] = _(
 
 static const u8 sDireHitDesc[] = _(
     "Raises the\n"
-    "critical-hit ratio\n"
+    "critical hit ratio\n"
     "during one battle.");
 
 static const u8 sXAttackDesc[] = _(
@@ -3734,7 +3734,7 @@ static const u8 sApicotBerryDesc[] = _(
 
 static const u8 sLansatBerryDesc[] = _(
     "A hold item that\n"
-    "ups the critical-\n"
+    "ups the critical\n"
     "hit rate in a pinch.");
 
 static const u8 sStarfBerryDesc[] = _(
@@ -3966,7 +3966,7 @@ static const u8 sLuckyEggDesc[] = _(
 static const u8 sScopeLensDesc[] = _(
     "A hold item that\n"
     "improves the\n"
-    "critical-hit rate.");
+    "critical hit rate.");
 
 static const u8 sMetalCoatDesc[] = _(
     "A hold item that\n"
@@ -4205,7 +4205,7 @@ static const u8 sPureIncenseDesc[] = _(
 static const u8 sLuckyPunchDesc[] = _(
     "A hold item that\n"
     "raises Chansey's\n"
-    "critical-hit rate.");
+    "critical hit rate.");
 
 static const u8 sMetalPowderDesc[] = _(
     "A hold item that\n"
@@ -4220,7 +4220,7 @@ static const u8 sThickClubDesc[] = _(
 static const u8 sStickDesc[] = _(
     "A hold item that\n"
     "raises Farfetch'd's\n"
-    "critical-hit ratio.");
+    "critical hit ratio.");
 
 static const u8 sRedScarfDesc[] = _(
     "A hold item that\n"
@@ -4463,9 +4463,9 @@ static const u8 sTM14Desc[] = _(
     "may freeze the foe.");
 
 static const u8 sTM15Desc[] = _(
-    "Powerful, but needs\n"
-    "recharging the\n"
-    "next turn.");
+    "Powerful physical,\n"
+    "needs recharging\n"
+    "the next turn.");
 
 static const u8 sTM16Desc[] = _(
     "Creates a wall of\n"
@@ -4648,114 +4648,114 @@ static const u8 sTM51Desc[] = _(
     "its Speed.");
 
 static const u8 sTM52Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Focus Blast.");
+    "Attacks at full\n"
+    "power. May lower\n"
+    "SP. Def.");
 
 static const u8 sTM53Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Energy Ball.");
+    "Draws power from\n"
+    "nature to attack.\n"
+    "May lower Sp. Def.");
 
 static const u8 sTM54Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "False Swipe.");
+    "An attack that\n"
+    "leave the foes\n"
+    "with at least 1 HP.");
 
 static const u8 sTM55Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Scald.");
+    "Shoots boling water\n"
+    "at the foe. May\n"
+    "inflict a burn.");
 
 static const u8 sTM56Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Darkest Lariat.");
+    "Swings the arms to\n"
+    "strike. Ignores\n"
+    "stat changes.");
 
 static const u8 sTM57Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Charge Beam.");
+    "Fires a beam of\n"
+    "electricity. May\n"
+    "raise Sp.Atk.");
 
 static const u8 sTM58Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Roost.");
+    "Restores the user's\n"
+    "HP by half of\n"
+    "its max HP.");
 
 static const u8 sTM59Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Brutal Swing.");
+    "Violently swings\n"
+    "around to hurt\n"
+    "everyone nearby.");
 
 static const u8 sTM60Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Quash.");
+    "Suppresses the foe\n"
+    "making it move\n"
+    "last.");
 
 static const u8 sTM61Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Will-O-Wisp.");
+    "Inflicts a burn\n"
+    "to the foe with\n"
+    "intense fire.");
 
 static const u8 sTM62Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Acrobatics.");
+    "Does double damage\n"
+    "if the user has no\n"
+    "item.");
 
 static const u8 sTM63Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Embargo.");
+    "Prevents the foe\n"
+    "from using any\n"
+    "items.");
 
 static const u8 sTM64Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Explosion.");
+    "Inflicts severe\n"
+    "damage, but makes\n"
+    "the user faint.");
 
 static const u8 sTM65Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Shadow Claw.");
+    "Strikes with claws.\n"
+    "High critical hit\n"
+    "ratio.");
 
 static const u8 sTM66Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Payback.");
+    "An attack that\n"
+    "gains power if the\n"
+    "user moves last.");
 
 static const u8 sTM67Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Smart Strike.");
+    "Hits with an\n"
+    "accurate horn that\n"
+    "never misses.");
 
 static const u8 sTM68Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Giga Impact.");
+    "Powerful special,\n"
+    "needs recharging\n"
+    "the next turn.");
 
 static const u8 sTM69Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Rock Polish.");
+    "Polishes the body\n"
+    "to sharply raise\n"
+    "Speed.");
 
 static const u8 sTM70Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Aurora Veil.");
+    "Weakens all attacks,\n"
+    "but only usable\n"
+    "with hail.");
 
 static const u8 sTM71Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Stone Edge.");
+    "Stabs the foe with\n"
+    "stones. High critical\n"
+    "hit ratio.");
 
 static const u8 sTM72Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Volt Switch.");
+    "Does damage then\n"
+    "switches out\n"
+    "the user.");
 
 static const u8 sTM73Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Thunder Wave.");
+    "A weak jolt of\n"
+    "electricity that\n"
+    "paralyzes the foe.");
 
 static const u8 sTM74Desc[] = _(
     "This TM can be used\n"
@@ -4763,84 +4763,84 @@ static const u8 sTM74Desc[] = _(
     "Gyro Ball.");
 
 static const u8 sTM75Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Swords Dance.");
+    "A high-speed spin\n"
+    "that raises the\n"
+    "user's Speed.");
 
 static const u8 sTM76Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Fly.");
+    "Flies up on the\n"
+    "first turn, then\n"
+    "strikes next turn.");
 
 static const u8 sTM77Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Psych Up.");
+    "Copies the foe's\n"
+    "effect(s) and gives\n"
+    "to the user.");
 
 static const u8 sTM78Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Bulldoze.");
+    "Stomps down on the\n"
+    "ground. May lower\n"
+    "Speed.");
 
 static const u8 sTM79Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Frost Breath.");
+    "Icy breath attack.\n"
+    "Always results in\n"
+    "a critical hit.");
 
 static const u8 sTM80Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Rock Slide.");
+    "Large boulders are\n"
+    "hurled. May cause\n"
+    "flinching.");
 
 static const u8 sTM81Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "X-Scissor.");
+    "Slashes with claws,\n"
+    "scythes, etc. High\n"
+    "critical hit ratio.");
 
 static const u8 sTM82Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Dragon Tail.");
+    "Knocks the foe\n"
+    "away to end the\n"
+    "battle.");
 
 static const u8 sTM83Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Infestation.");
+    "The foe is infested\n"
+    "and attacked for\n"
+    "2 to 5 turns.");
 
 static const u8 sTM84Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Poison Jab.");
+    "A stabbing attack\n"
+    "that may poison\n"
+    "the foe.");
 
 static const u8 sTM85Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Dream Eater.");
+    "Takes one half the\n"
+    "damage inflicted on\n"
+    "a sleeping foe.");
 
 static const u8 sTM86Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Grass Knot.");
+    "A snare attack that\n"
+    "does more damage to\n"
+    "heavier foes.");
 
 static const u8 sTM87Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Swagger.");
+    "Confuses the foe,\n"
+    "but also sharply\n"
+    "raises Attack.");
 
 static const u8 sTM88Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Sleep Talk.");
+    "Uses an available\n"
+    "move randomly while\n"
+    "sleep.");
 
 static const u8 sTM89Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "U-Turn.");
+    "Lunges at the foe\n"
+    "to lower its\n"
+    "Attack stat.");
 
 static const u8 sTM90Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Substitute.");
+    "Creates a decoy\n"
+    "using 1/4 of the \n"
+    "user's max HP.");
 
 static const u8 sTM91Desc[] = _(
     "This TM can be used\n"
