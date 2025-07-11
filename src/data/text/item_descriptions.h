@@ -4943,54 +4943,54 @@ static const u8 sTM110Desc[] = _(
     "switching in.");
 
 static const u8 sTM111Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Heat Crash.");
+    "Does more damage if\n"
+    "the user outweights\n"
+    "the foe.");
 
 static const u8 sTM112Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Pollen Puff.");
+    "Explodes on foes,\n"
+    "or restores an\n"
+    "ally's HP.");
 
 static const u8 sTM113Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Nasty Plot.");
+    "Thinks bad thoughts\n"
+    "to sharply boost\n"
+    "Sp. Atk.");
 
 static const u8 sTM114Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Brave Bird.");
+    "A low altitude\n"
+    "charge that also\n"
+    "hurts the user.");
 
 static const u8 sTM115Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Bug Buzz.");
+    "A damaging sound\n"
+    "wave that may\n"
+    "lower Sp. Def.");
 
 static const u8 sTM116Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Dragon Dance.");
+    "A mystical dance\n"
+    "that ups Attack\n"
+    "and Speed.");
 
 static const u8 sTM117Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Blaze Kick.");
+    "Attacks with a\n"
+    "scorching kick that\n"
+    "may lower Attack.");
 
 static const u8 sTM118Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Tri-Attack.");
+    "Fires three types\n"
+    "of beams of\n"
+    "increasing power.");
 
 static const u8 sTM119Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Drain Punch.");
+    "A punch that\n"
+    "absorbs half the\n"
+    "damage inflicted.");
 
 static const u8 sTM120Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Mystical Fire.");
+    "Breathes a special,\n"
+    "hot fire. May lower\n"
+    "foe's Sp. Atk.");
 
 static const u8 sHM01Desc[] = _(
     "Attacks the foe\n"
