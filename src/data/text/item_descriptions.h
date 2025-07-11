@@ -4843,104 +4843,104 @@ static const u8 sTM90Desc[] = _(
     "user's max HP.");
 
 static const u8 sTM91Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Flash Cannon.");
+    "Releases a blast\n"
+    "of light that may\n"
+    "lower Sp. Def.");
 
 static const u8 sTM92Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Trick Room.");
+    "Slower Pokémon get\n"
+    "to move first for\n"
+    "5 turns.");
 
 static const u8 sTM93Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Wild Charge.");
+    "Electrical tackle\n"
+    "that also hurts\n"
+    "the user.");
 
 static const u8 sTM94Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Surf.");
+    "Creates a huge wave,\n"
+    "then crashes it down\n"
+    "on foes.");
 
 static const u8 sTM95Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Snarl.");
+    "Yells and rants at\n"
+    "the foe lowering its\n"
+    "Sp. Atk.");
 
 static const u8 sTM96Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Nature Power.");
+    "The type of attack\n"
+    "varies depending on\n"
+    "the location.");
 
 static const u8 sTM97Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Dark Pulse.");
+    "Attacks with a dark\n"
+    "aura, may cause\n"
+    "flinching.");
 
 static const u8 sTM98Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Waterfall.");
+    "Charges the foe\n"
+    "with speed to\n"
+    "climb waterfalls.");
 
 static const u8 sTM99Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Dazzling Gleam.");
+    "Damages foes by\n"
+    "emitting a bright\n"
+    "flash.");
 
 static const u8 sTM100Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Confide.");
+    "Shares a secret with\n"
+    "the foe, lowering\n"
+    "Sp. Atk.");
 
 static const u8 sTM101Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Sludge Wave.");
+    "Swamps the foe with\n"
+    "a wave of sludge.\n"
+    "May also poison.");
 
 static const u8 sTM102Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Liquidation.");
+    "Slams the foe with\n"
+    "water. Can lower\n"
+    "Defense.");
 
 static const u8 sTM103Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Leech Life.");
+    "An attack that\n"
+    "steals half the\n"
+    "damage inflicted.");
 
 static const u8 sTM104Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Play Rough.");
+    "Plays rough with\n"
+    "the foe. May lower\n"
+    "Attack.");
 
 static const u8 sTM105Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Psyshock.");
+    "Attacks with a\n"
+    "psychic wave that\n"
+    "may Paralyze.");
 
 static const u8 sTM106Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Aura Sphere.");
+    "Attacks with an\n"
+    "aura blast that\n"
+    "cannot be evaded.");
 
 static const u8 sTM107Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Power Gem.");
+    "Attacks with rays\n"
+    "of light like\n"
+    "diamond sparkles.");
 
 static const u8 sTM108Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Earth Power.");
+    "Makers the ground\n"
+    "erupt. May lower\n"
+    "Sp. Def.");
 
 static const u8 sTM109Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Gunk Shot.");
+    "Shoots garbage to\n"
+    "the foe. May also\n"
+    "poison.");
 
 static const u8 sTM110Desc[] = _(
-    "This TM can be used\n"
-    "to teach the Move\n"
-    "Stealth Rock.");
+    "Floating stones\n"
+    "that hurt a foe\n"
+    "switching in.");
 
 static const u8 sTM111Desc[] = _(
     "This TM can be used\n"
