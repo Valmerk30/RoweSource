@@ -2472,7 +2472,7 @@ static const u8 sTHROAT_CHOPDescription[] = _(
 	"sound moves for a while.");
 
 static const u8 sPOLLEN_PUFFDescription[] = _(
-	"Explodes on foes, but\n"
+	"Explodes on foes, or\n"
 	"restores ally's HP.");
 
 static const u8 sANCHOR_SHOTDescription[] = _(
@@ -3590,7 +3590,7 @@ static const u8 sConversionDescription[] = _(
 
 static const u8 sTriAttackDescription[] = _(
     "Fires three types of beams\n"
-    "at the same time.");
+    "of increasing power.");
 
 static const u8 sSuperFangDescription[] = _(
     "Attacks with sharp fangs\n"
@@ -4397,8 +4397,8 @@ static const u8 sBRINEDescription[] = _(
     "with half HP.");
 
 static const u8 sNATURAL_GIFTDescription[] = _(
-    "The effectiveness varies\n"
-    "with the held Berry.");
+    "Attacks with internal power,\n"
+    "or restores ally's HP.");
 
 static const u8 sFEINTDescription[] = _(
     "An attack that hits foes\n"
@@ -5142,7 +5142,7 @@ static const u8 sFELL_STINGERDescription[] = _(
 
 static const u8 sTRICK_OR_TREATDescription[] = _(
     "Goes trick-or-treating.\n"
-    "May restore ally's HP.");
+    "Can restore ally's HP.");
 
 static const u8 sNOBLE_ROARDescription[] = _(
     "Intimidates the foe, to cut\n"
@@ -5421,7 +5421,7 @@ static const u8 sTHROAT_CHOPDescription[] = _(
     "sound moves for a while.");
 
 static const u8 sPOLLEN_PUFFDescription[] = _(
-    "Explodes on foes, but\n"
+    "Explodes on foes, or\n"
     "restores ally's HP.");
 
 static const u8 sANCHOR_SHOTDescription[] = _(
@@ -5597,8 +5597,8 @@ static const u8 sSIZZLY_SLIDEDescription[] = _(
     "Leaves the foe with a burn.");
 
 static const u8 sGLITZY_GLOWDescription[] = _(
-    "Telekinetic force that sets\n"
-    "wall, lowering Sp. Atk damage.");
+    "Hits with telekinetic force,\n"
+    "or restores ally's HP.");
 
 static const u8 sBADDY_BADDescription[] = _(
     "Acting badly, attacks. Sets\n"
@@ -6301,7 +6301,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_DRAGON_PULSE - 1] = sDRAGON_PULSEDescription,
     [MOVE_DRAGON_RUSH - 1] = sDRAGON_RUSHDescription,
     [MOVE_POWER_GEM - 1] = sPOWER_GEMDescription,
-    [MOVE_DRAIN_PUNCH - 1] = sDRAINING_KISSDescription,
+    [MOVE_DRAIN_PUNCH - 1] = sMegaDrainDescription,
     [MOVE_VACUUM_WAVE - 1] = sVACUUM_WAVEDescription,
     [MOVE_FOCUS_BLAST - 1] = sFOCUS_BLASTDescription,
     [MOVE_ENERGY_BALL - 1] = sENERGY_BALLDescription,
