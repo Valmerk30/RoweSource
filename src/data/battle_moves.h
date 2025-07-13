@@ -11416,8 +11416,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = FIELD_SET_WEATHER_SUN,
         .chance3 = 25,
         .modification4 = SIGNATURE_MOD_OTHER,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _(
+            "Attacks in only one turn. May\n"
+            "change the terrain to sunny."),
     },
 	
     [SPECIES_CHARIZARD] =
@@ -11430,7 +11432,9 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 30,
         .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .description = _(
+            "A powerful fire attack with\n"
+            "higher chance of cause burns."),
     },
 	
     [SPECIES_BLASTOISE] =
