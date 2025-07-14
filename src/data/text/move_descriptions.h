@@ -3205,8 +3205,8 @@ static const u8 sPeckDescription[] = _(
     "jabbing beak, etc.");
 
 static const u8 sDrillPeckDescription[] = _(
-    "A corkscrewing attack with\n"
-    "the beak acting as a drill.");
+    "Attacks with the beak like a\n"
+    "drill. High critical ratio.");
 
 static const u8 sSubmissionDescription[] = _(
     "A reckless body slam that\n"
@@ -4177,8 +4177,8 @@ static const u8 sBlastBurnDescription[] = _(
     "Lowers Attack and Defense.");
 
 static const u8 sHydroCannonDescription[] = _(
-    "Powerful, but leaves the\n"
-    "user immobile the next turn.");
+    "A reckless water cannon that\n"
+    "also hurts the user.");
 
 static const u8 sMeteorMashDescription[] = _(
     "Fires a meteor-like punch.\n"
@@ -4321,7 +4321,7 @@ static const u8 sCovetDescription[] = _(
     "item held by the foe.");
 
 static const u8 sVoltTackleDescription[] = _(
-    "A Powerful tackle that\n"
+    "A powerful tackle that\n"
     "may paralyze the foe.");
 
 static const u8 sMagicalLeafDescription[] = _(
