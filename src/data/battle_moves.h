@@ -25,6 +25,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
             .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
         #endif
         .effect = EFFECT_RECOIL_25,
+
         .power = 50,
         .type = TYPE_NORMAL,
         .pp = 1,
@@ -6455,7 +6456,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .type = TYPE_POISON,
         .accuracy = 90,
         .pp = 20,
-		.secondaryEffectChance = 20,
+	.secondaryEffectChance = 10,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SHEER_FORCE_BOOST | FLAG_STRONG_JAW_BOOST,
@@ -11419,7 +11420,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _(
             "Attacks in only one turn. May\n"
-            "change the terrain to sunny."),
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_CHARIZARD] =
@@ -11431,7 +11432,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 30,
-        .differentDescription = FALSE,
+        .differentDescription = TRUE,
         .description = _(
             "A powerful fire attack with\n"
             "higher chance of cause burns."),
@@ -11447,8 +11448,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_CONFUSION,
         .chance3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "Reckless attack that hurts the\n"
+            "user. May cause confusion."),
     },
 	
 	[SPECIES_BUTTERFREE] =
@@ -11459,9 +11462,11 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
 	.modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
-        .variable3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .variable3 = 30,
+        .differentDescription = TRUE,
+        .description = _( 
+            "A strange beam attack with\n"
+            "higher chance of confusion."),
     },
 	
     [SPECIES_BEEDRILL] =
@@ -11473,8 +11478,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,	
 	.modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 20,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "Stingers to jab the foe twice.\n"
+            "Higher chance of cause poison."),
     },
 	
     [SPECIES_PIDGEOT] =
@@ -11486,9 +11493,11 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
 	.modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
-    },	
+        .differentDescription = TRUE,
+        .description = _( 
+            "Strikes from heaven. Higher\n"
+            "chance of raising attack."),
+    },	     
 	
     [SPECIES_RATICATE] =
     {
@@ -11498,9 +11507,11 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
-        .variable3 = 25,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .variable3 = 30,		
+        .differentDescription = TRUE,
+        .description = _( 
+            "Bites with sharp fangs. Higher\n"
+            "chance of cause flinching."),
     },
 	
     [SPECIES_RATICATE_ALOLAN] =
@@ -11511,9 +11522,11 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
-        .variable3 = 25,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .variable3 = 30,		
+        .differentDescription = TRUE,
+        .description = _( 
+            "Bites with sharp fangs. Higher\n"
+            "chance of cause flinching."),
     },
 	
     [SPECIES_FEAROW] =
@@ -11526,8 +11539,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_FLINCH,
         .chance3 = 20,			
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "Attacks with a drill beak. High\n"
+            "critical ratio. Can flinch."),
     },	
 	
     [SPECIES_ARBOK] =
@@ -11539,8 +11554,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,	
 	.modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 25,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "A sharp-fanged attack. Higher\n"
+            "chance of badly poisoning."),
     },	
 	
     [SPECIES_RAICHU] =
@@ -11550,15 +11567,15 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = 100,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,
-	.modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
-        .variable3 = 0,			
-        .modification4 = SIGNATURE_MOD_MODIFY_FIELD,
-        .variable4 = FIELD_SET_TERRAIN_ELECTRIC,
-        .chance4 = 25,
-	.modification5 = SIGNATURE_MOD_PSS_CHANGE,
-        .variable5 = SPLIT_PHYSICAL,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
+        .variable3 = FIELD_SET_TERRAIN_ELECTRIC,
+        .chance3 = 25,
+	.modification4 = SIGNATURE_MOD_PSS_CHANGE,
+        .variable4 = SPLIT_PHYSICAL,	
+        .differentDescription = TRUE,
+        .description = _( 
+            "A tackle that may paralyze and\n"
+            "set the terrain to electric."),
     },
 	
     [SPECIES_RAICHU_ALOLAN] =
@@ -11568,15 +11585,15 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = 100,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,
-	.modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
-        .variable3 = 0,			
-        .modification4 = SIGNATURE_MOD_MODIFY_FIELD,
-        .variable4 = FIELD_SET_TERRAIN_ELECTRIC,
-        .chance4 = 25,
-	.modification5 = SIGNATURE_MOD_PSS_CHANGE,
-        .variable5 = SPLIT_SPECIAL,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
+        .variable3 = FIELD_SET_TERRAIN_ELECTRIC,
+        .chance3 = 25,
+	.modification4 = SIGNATURE_MOD_PSS_CHANGE,
+        .variable4 = SPLIT_SPECIAL,	
+        .differentDescription = TRUE,
+        .description = _( 
+            "A tackle that may paralyze and\n"
+            "set the terrain to electric."),
     },
 	
     [SPECIES_SANDSLASH] =
@@ -11591,8 +11608,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_GROUND,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "Slash with claws. High critical"
+            "hit. Can raise user's Speed."),
     },
 	
     [SPECIES_NIDOQUEEN] =
@@ -11603,11 +11622,13 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
-        .variable3 = 25,
+        .variable3 = 30,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_POISON,			
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "A full-body slam with higher\n"
+            "chance of cause paralysis."),
     },
 	
     [SPECIES_NIDOKING] =
@@ -11618,9 +11639,11 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
-        .variable3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .variable3 = 30,
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_CLEFABLE] =
@@ -11634,8 +11657,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_FAIRY,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_NINETALES] =
@@ -11647,8 +11672,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_WIGGLYTUFF] =
@@ -11660,8 +11687,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_CROBAT] =
@@ -11674,8 +11703,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_POISON,
         .chance3 = 20,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_VILEPLUME] =
@@ -11693,8 +11724,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance4 = 25,
         .modification5 = SIGNATURE_MOD_TYPE,
         .variable5 = TYPE_GRASS,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_BELLOSSOM] =
@@ -11710,8 +11743,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification4 = SIGNATURE_MOD_MODIFY_FIELD,
         .variable4 = FIELD_SET_TERRAIN_GRASS,
         .chance4 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_PARASECT] =
@@ -11723,8 +11758,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,			
         .modification3 = SIGNATURE_MOD_PRIORITY,
         .variable3 = SIGNATURE_PRIORITY_ALWAYS,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_VENOMOTH] =
@@ -11737,8 +11774,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_SLEEP,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_DUGTRIO] =
@@ -11751,8 +11790,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_DEF,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_DUGTRIO_ALOLAN] =
@@ -11765,8 +11806,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_DEF,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_PERSIAN] =
@@ -11779,8 +11822,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_ACC,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_PERSIAN_ALOLAN] =
@@ -11795,8 +11840,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_DARK,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 	
     [SPECIES_PERRSERKER] =
@@ -11808,8 +11855,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
 	.modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_GOLDUCK] =
@@ -11824,8 +11873,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,		
         .modification4 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable4 = TYPE_DARK,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_PRIMEAPE] =
@@ -11838,8 +11889,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_PARALYSIS,
         .chance3 = 20,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_ARCANINE] =
@@ -11851,8 +11904,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_DEFENSE_STAT,
         .variable3 = STAT_SPDEF,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_POLIWRATH] =
@@ -11866,8 +11921,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 90,
         .modification4 = SIGNATURE_MOD_PRIORITY,
         .variable4 = SIGNATURE_PRIORITY_ALWAYS,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_POLITOED] =
@@ -11879,8 +11936,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,			
         .modification3 = SIGNATURE_MOD_TYPE,
         .variable3 = TYPE_FAIRY,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 	
     [SPECIES_ALAKAZAM] =
@@ -11893,8 +11952,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_CONFUSION,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_MACHAMP] =
@@ -11906,8 +11967,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,			
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_VICTREEBEL] =
@@ -11920,8 +11983,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable3 = STAT_SPEED,
         .chance3 = 20,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_TENTACRUEL] =
@@ -11933,8 +11998,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,	
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 	
     [SPECIES_GOLEM] =
@@ -11949,8 +12016,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 50,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_ROCK,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_GOLEM_ALOLAN] =
@@ -11965,8 +12034,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 50,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_ROCK,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_RAPIDASH] =
@@ -11979,8 +12050,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_BURN,
         .chance3 = 20,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_SLOWBRO] =
@@ -11997,8 +12070,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_PSYCHIC,		
 	.modification5 = SIGNATURE_MOD_PSS_CHANGE,
         .variable5 = SPLIT_SPECIAL,			
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_SLOWKING] =
@@ -12015,8 +12090,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_PSYCHIC,		
 	.modification5 = SIGNATURE_MOD_PSS_CHANGE,
         .variable5 = SPLIT_SPECIAL,			
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 	
     [SPECIES_SLOWBRO_GALARIAN] =
@@ -12030,8 +12107,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 90,
         .modification4 = SIGNATURE_MOD_PRIORITY,
         .variable4 = SIGNATURE_PRIORITY_ALWAYS,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_SLOWKING_GALARIAN] =
@@ -12045,8 +12124,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 90,
         .modification4 = SIGNATURE_MOD_PRIORITY,
         .variable4 = SIGNATURE_PRIORITY_ALWAYS,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_MAGNEZONE] =
@@ -12059,8 +12140,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_PARALYSIS,
         .chance3 = 20,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_SIRFETCHD] =
@@ -12072,8 +12155,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_DEFENSE_STAT,
         .variable3 = STAT_SPDEF,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 
     [SPECIES_DODRIO] =
@@ -12086,8 +12171,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable3 = STAT_ATK,
 	.chance3 = 10,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_DEWGONG] =
@@ -12099,8 +12186,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 
     [SPECIES_MUK] =
@@ -12112,8 +12201,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_CLOYSTER] =
@@ -12126,8 +12217,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_SPEED,
         .chance3 = 10,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_GENGAR] =
@@ -12140,8 +12233,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_SLEEP,
         .chance3 = 10,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 
     [SPECIES_STEELIX] =
@@ -12153,8 +12248,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 				
     [SPECIES_HYPNO] =
@@ -12166,8 +12263,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_KINGLER] =
@@ -12180,8 +12279,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_SPEED,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_ELECTRODE] =
@@ -12193,8 +12294,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_DAMAGE_STAT,
         .variable3 = STAT_SPEED,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_EXEGGUTOR] =
@@ -12209,8 +12312,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,		
         .modification4 = SIGNATURE_MOD_DAMAGE_STAT,
         .variable4 = STAT_SPATK,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_EXEGGUTOR_ALOLAN] =
@@ -12225,8 +12330,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,		
         .modification4 = SIGNATURE_MOD_DAMAGE_STAT,
         .variable4 = STAT_SPATK,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_MAROWAK] =
@@ -12238,8 +12345,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_MAROWAK_ALOLAN] =
@@ -12251,8 +12360,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_HITMONLEE] =
@@ -12265,8 +12376,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_SPEED,
 	.chance3 = 10,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_HITMONCHAN] =
@@ -12279,8 +12392,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_ATK,
 	.chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_HITMONTOP] =
@@ -12290,8 +12405,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = 100,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,				
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_LICKILICKY] =
@@ -12305,8 +12422,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = TYPE_NORMAL,
         .modification4 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable4 = TYPE_GHOST,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_WEEZING] =
@@ -12318,8 +12437,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,	
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 90,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_WEEZING_GALARIAN] =
@@ -12331,8 +12452,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,	
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 90,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_RHYPERIOR] =
@@ -12344,8 +12467,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,	
         .modification3 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable3 = TYPE_ROCK,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_CHANSEY] =
@@ -12358,8 +12483,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_BURN,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_BLISSEY] =
@@ -12372,8 +12499,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_BURN,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_TANGELA] =
@@ -12388,8 +12517,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_GRASS,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 
     [SPECIES_TANGROWTH] =
@@ -12404,8 +12535,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_GRASS,			
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_KANGASKHAN] =
@@ -12417,8 +12550,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,			
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_KINGDRA] =
@@ -12430,8 +12565,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable3 = TYPE_NORMAL,				
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_SEAKING] =
@@ -12445,8 +12582,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,					
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_WATER,			
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_STARMIE] =
@@ -12458,8 +12597,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,					
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 
     [SPECIES_MR_RIME] =
@@ -12472,8 +12613,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_FREEZE,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_SCIZOR] =
@@ -12486,8 +12629,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
         .variable3 =  FIELD_OPPONET_SET_SPIKES,
         .chance3 = 20,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_JYNX] =
@@ -12499,8 +12644,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_ELECTIVIRE] =
@@ -12513,8 +12660,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_PARALYSIS,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_MAGMORTAR] =
@@ -12527,8 +12676,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_BURN,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_PINSIR] =
@@ -12543,8 +12694,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_BUG,				
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 	
     [SPECIES_TAUROS] =
@@ -12559,8 +12712,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .modification4 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable4 = TYPE_FIGHTING,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },			
 
     [SPECIES_GYARADOS] =
@@ -12575,8 +12730,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .modification4 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable4 = TYPE_ELECTRIC,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_LAPRAS] =
@@ -12589,8 +12746,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_FREEZE,
         .chance3 = 10,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_DITTO] =
@@ -12613,8 +12772,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification6 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable6 = STAT_SPDEF,
         .chance6 = 10,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_VAPOREON] =
@@ -12629,8 +12790,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_WATER,			
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_JOLTEON] =
@@ -12645,8 +12808,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_ELECTRIC,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_FLAREON] =
@@ -12661,8 +12826,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_FIRE,			
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_ESPEON] =
@@ -12677,8 +12844,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_PSYCHIC,			
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_UMBREON] =
@@ -12693,8 +12862,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_DARK,			
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_LEAFEON] =
@@ -12709,8 +12880,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_GRASS,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_GLACEON] =
@@ -12725,8 +12898,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_ICE,			
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_SYLVEON] =
@@ -12741,8 +12916,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_FAIRY,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_PORYGON_Z] =
@@ -12756,8 +12933,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = TYPE_DARK,
         .modification4 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable4 = TYPE_STEEL,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 
     [SPECIES_OMASTAR] =
@@ -12769,8 +12948,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 	
     [SPECIES_KABUTOPS] =
@@ -12783,8 +12964,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_ATK,
         .chance3 = 20,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_AERODACTYL] =
@@ -12797,8 +12980,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_FLINCH,
         .chance3 = 20,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 	
     [SPECIES_SNORLAX] =
@@ -12810,8 +12995,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_DAMAGE_STAT,
         .variable3 = STAT_SPDEF,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },			
 
     [SPECIES_ARTICUNO] =
@@ -12826,8 +13013,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,
         .modification4 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable4 = TYPE_WATER,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_ZAPDOS] =
@@ -12842,8 +13031,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,
         .modification4 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable4 = TYPE_GRASS,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },			
 	
     [SPECIES_MOLTRES] =
@@ -12858,8 +13049,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,
         .modification4 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable4 = TYPE_ROCK,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_DRAGONITE] =
@@ -12872,8 +13065,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_SPEED,
         .chance3 = 50,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_MEW] =
@@ -12886,8 +13081,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_FLINCH,
         .chance3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_MEGANIUM] =
@@ -12900,8 +13097,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_LEECH_SEED,
         .chance3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_TYPHLOSION] =
@@ -12911,8 +13110,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = 100,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_FERALIGATR] =
@@ -12927,8 +13128,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,		
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_WATER,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_FURRET] =
@@ -12943,8 +13146,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,		
         .modification4 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable4 = TYPE_FIGHTING,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_NOCTOWL] =
@@ -12956,8 +13161,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_LEDIAN] =
@@ -12972,8 +13179,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,		
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_BUG,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_ARIADOS] =
@@ -12986,8 +13195,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
         .variable3 = FIELD_OPPONET_SET_STICKY_WEB,
         .chance3 = 50,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_LANTURN] =
@@ -12999,8 +13210,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 90,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_TOGEKISS] =
@@ -13013,8 +13226,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_INFATUATION,
         .chance3 = 25,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_XATU] =
@@ -13029,8 +13244,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 100,
         .modification4 = SIGNATURE_MOD_PRIORITY,
         .variable4 = SIGNATURE_PRIORITY_ALWAYS,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_AMPHAROS] =
@@ -13044,8 +13261,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 90,
         .modification4 = SIGNATURE_MOD_PRIORITY,
         .variable4 = SIGNATURE_PRIORITY_ALWAYS,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_AZUMARILL] =
@@ -13057,8 +13276,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,			
         .modification3 = SIGNATURE_MOD_PRIORITY,
         .variable3 = SIGNATURE_PRIORITY_ALWAYS,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_SUDOWOODO] =
@@ -13071,8 +13292,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_PARALYSIS,
         .chance3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_JUMPLUFF] =
@@ -13084,8 +13307,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },			
 	
     [SPECIES_AMBIPOM] =
@@ -13098,8 +13323,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
 	.modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_TAUNT,	
         .chance3 = 100,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_SUNFLORA] =
@@ -13111,8 +13338,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,	
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },			
 	
     [SPECIES_YANMEGA] =
@@ -13124,8 +13353,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_QUAGSIRE] =
@@ -13137,8 +13368,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_HONCHKROW] =
@@ -13148,8 +13381,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = 100,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_MISMAGIUS] =
@@ -13162,8 +13397,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_ACC,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_UNOWN] =
@@ -13188,8 +13425,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification7 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable7 = STAT_SPDEF,
         .chance7 = 10,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_WOBBUFFET] =
@@ -13212,8 +13451,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable7 = TYPE_PSYCHIC,
         .modification8 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable8 = TYPE_DRAGON,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_GIRAFARIG] =
@@ -13228,8 +13469,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 50,			
         .modification4 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable4 = TYPE_DARK,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_FORRETRESS] =
@@ -13241,8 +13484,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 	
     [SPECIES_DUNSPARCE] =
@@ -13255,8 +13500,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable3 = STAT_ACC,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_GLISCOR] =
@@ -13267,8 +13514,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_GRANBULL] =
@@ -13280,8 +13529,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_QWILFISH] =
@@ -13296,8 +13547,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,		
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_POISON,			
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 
     [SPECIES_SHUCKLE] =
@@ -13310,8 +13563,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
 	.modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_FLINCH,	
         .chance3 = 20,			
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_HERACROSS] =
@@ -13323,8 +13578,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,			
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_WEAVILE] =
@@ -13337,8 +13594,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_DEF,
 	.chance3 = 10,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_URSARING] =
@@ -13351,8 +13610,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
 	.modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_TAUNT,	
         .chance3 = 100,			
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_MAGCARGO] =
@@ -13365,8 +13626,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
 	.modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_BURN,	
         .chance3 = 20,			
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_MAMOSWINE] =
@@ -13379,8 +13642,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
 	.modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_FREEZE,	
         .chance3 = 10,			
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_CURSOLA] =
@@ -13394,8 +13659,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,		
         .modification4 = SIGNATURE_MOD_PSS_CHANGE,
         .variable4 = SPLIT_SPECIAL,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 	
     [SPECIES_OCTILLERY] =
@@ -13407,8 +13674,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,			
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 	
     [SPECIES_DELIBIRD] =
@@ -13423,8 +13692,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 50,	
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_ICE,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 	
     [SPECIES_MANTINE] =
@@ -13437,8 +13708,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_FLINCH,
         .chance3 = 20,			
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 	
     [SPECIES_SKARMORY] =
@@ -13450,8 +13723,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,			
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 	
     [SPECIES_HOUNDOOM] =
@@ -13463,8 +13738,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,	
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 20,					
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 	
     [SPECIES_DONPHAN] =
@@ -13477,8 +13754,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable3 = STAT_SPEED,
         .chance3 = 25,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_STANTLER] =
@@ -13490,8 +13769,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,	
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 30,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 	
     [SPECIES_SMEARGLE] =
@@ -13506,8 +13787,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .modification4 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable4 = TYPE_NORMAL,				
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 	
     [SPECIES_MILTANK] =
@@ -13519,8 +13802,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_TYRANITAR] =
@@ -13533,8 +13818,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
 	.modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_FLINCH,	
         .chance3 = 20,			
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 	
     [SPECIES_CELEBI] =
@@ -13552,8 +13839,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
 	.chance4 = 10,
         .modification5 = SIGNATURE_MOD_TYPE,
         .variable5 = TYPE_PSYCHIC,			
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },			
 	
     [SPECIES_SCEPTILE] =
@@ -13566,8 +13855,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable3 = STAT_ACC,
         .chance3 = 25,			
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_BLAZIKEN] =
@@ -13579,8 +13870,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,	
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_SWAMPERT] =
@@ -13595,8 +13888,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification4 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable4 = STAT_SPEED,
         .chance4 = 10,				
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_MIGHTYENA] =
@@ -13609,8 +13904,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification4 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable4 = STAT_DEF,
         .chance4 = 25,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_OBSTAGOON] =
@@ -13623,8 +13920,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable3 = STAT_ATK,
         .chance3 = 25,			
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_BEAUTIFLY] =
@@ -13636,8 +13935,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_DUSTOX] =
@@ -13651,8 +13952,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 20,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_POISON,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_LUDICOLO] =
@@ -13667,8 +13970,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification4 = SIGNATURE_MOD_MODIFY_FIELD,
         .variable4 = FIELD_SET_WEATHER_RAIN,
         .chance4 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_SHIFTRY] =
@@ -13685,8 +13990,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance4 = 50,
         .modification5 = SIGNATURE_MOD_PSS_CHANGE,
         .variable5 = SPLIT_PHYSICAL,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_SWELLOW] =
@@ -13698,8 +14005,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_PELIPPER] =
@@ -13709,8 +14018,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = 100,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_GARDEVOIR] =
@@ -13723,8 +14034,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
         .variable3 = FIELD_SET_TERRAIN_MISTY,
         .chance3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_GALLADE] =
@@ -13739,8 +14052,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 30,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_FIGHTING,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_MASQUERAIN] =
@@ -13752,8 +14067,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_TYPE,
         .variable3 = TYPE_BUG,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_BRELOOM] =
@@ -13765,8 +14082,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable3 = TYPE_FLYING,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_SLAKING] =
@@ -13781,8 +14100,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 50,		
         .modification4 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable4 = TYPE_DRAGON,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_NINJASK] =
@@ -13794,8 +14115,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_DAMAGE_STAT,
         .variable3 = STAT_SPEED,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 		
     [SPECIES_SHEDINJA] =
@@ -13809,8 +14132,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = STAT_SPEED,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_GHOST,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_EXPLOUD] =
@@ -13827,8 +14152,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_FIGHTING,		
         .modification5 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable5 = TYPE_STEEL,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_HARIYAMA] =
@@ -13841,8 +14168,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_PARALYSIS,
         .chance3 = 10,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_PROBOPASS] =
@@ -13855,8 +14184,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_CONFUSION,
         .chance3 = 20,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_DELCATTY] =
@@ -13872,8 +14203,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_NORMAL,	
         .modification5 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable5 = TYPE_ELECTRIC,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_SABLEYE] =
@@ -13886,8 +14219,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
 	.variable3 = STAT_EVASION,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_MAWILE] =
@@ -13897,8 +14232,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = 80,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_AGGRON] =
@@ -13910,8 +14247,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_MEDICHAM] =
@@ -13924,8 +14263,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
 	.variable3 = STAT_SPDEF,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_MANECTRIC] =
@@ -13938,8 +14279,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
 	.variable3 = STAT_SPEED,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_PLUSLE] =
@@ -13952,8 +14295,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
 	.variable3 = STAT_SPEED,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_MINUN] =
@@ -13966,8 +14311,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
 	.variable3 = STAT_SPEED,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_VOLBEAT] =
@@ -13982,8 +14329,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_BUG,			
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_ILLUMISE] =
@@ -13998,8 +14347,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_BUG,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_ROSERADE] =
@@ -14012,8 +14363,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
 	.variable3 = SIGNATURE_SECONDARY_EFFECT_INFATUATION,
         .chance3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_SWALOT] =
@@ -14025,8 +14378,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,				
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_SHARPEDO] =
@@ -14039,8 +14394,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 =  SIGNATURE_MOD_TARGET_STAT_DOWN,
 	.variable3 = STAT_EVASION,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_WAILORD] =
@@ -14053,8 +14410,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_CONFUSION,
         .chance3 = 10,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_CAMERUPT] =
@@ -14067,8 +14426,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_BURN,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_TORKOAL] =
@@ -14081,8 +14442,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_BURN,
         .chance3 = 20,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_GRUMPIG] =
@@ -14094,8 +14457,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 20,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_SPINDA] =
@@ -14108,8 +14473,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 =  SIGNATURE_MOD_ATTACKER_STAT_UP,
 	.variable3 = STAT_EVASION,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_FLYGON] =
@@ -14122,8 +14489,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 =  SIGNATURE_MOD_ATTACKER_STAT_UP,
 	.variable3 = STAT_SPEED,
         .chance3 = 25,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_CACTURNE] =
@@ -14135,8 +14504,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_ALTARIA] =
@@ -14150,8 +14521,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = TYPE_FLYING,			
         .modification4 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable4 = TYPE_STEEL,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_ZANGOOSE] =
@@ -14166,8 +14539,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,
         .modification4 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable4 = TYPE_POISON,			
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_SEVIPER] =
@@ -14181,8 +14556,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 30,
         .modification4 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable4 = TYPE_NORMAL,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_LUNATONE] =
@@ -14197,8 +14574,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_ROCK,				
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_SOLROCK] =
@@ -14213,8 +14592,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_ROCK,				
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_WHISCASH] =
@@ -14226,8 +14607,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_CRAWDAUNT] =
@@ -14239,8 +14622,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_CLAYDOL] =
@@ -14253,8 +14638,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 =  SIGNATURE_MOD_ATTACKER_STAT_UP,
 	.variable3 = STAT_SPDEF,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_CRADILY] =
@@ -14267,8 +14654,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_LEECH_SEED,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_ARMALDO] =
@@ -14282,8 +14671,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_ROCK,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_MILOTIC] =
@@ -14298,8 +14689,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .modification4 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable4 = TYPE_ELECTRIC,			
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_CASTFORM] =
@@ -14311,8 +14704,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_KECLEON] =
@@ -14325,8 +14720,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_PRIORITY,
         .variable3 = SIGNATURE_PRIORITY_ALWAYS,
         .modification4 = SIGNATURE_MOD_OTHER,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_BANETTE] =
@@ -14339,8 +14736,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 =  SIGNATURE_MOD_ATTACKER_STAT_UP,
 	.variable3 = STAT_EVASION,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_DUSKNOIR] =
@@ -14353,8 +14752,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
 	.modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_FLINCH,	
         .chance3 = 15,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_TROPIUS] =
@@ -14367,8 +14768,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
         .variable3 = FIELD_SELF_SET_TAILWIND,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_CHIMECHO] =
@@ -14381,8 +14784,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
 	.variable3 = SIGNATURE_SECONDARY_EFFECT_INFATUATION,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_ABSOL] =
@@ -14394,8 +14799,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 =  SIGNATURE_MOD_DEFENSE_STAT,
 	.variable3 = STAT_SPEED,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_GLALIE] =
@@ -14408,8 +14815,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
 	.variable3 = SIGNATURE_SECONDARY_EFFECT_FREEZE,
         .chance3 = 10,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_FROSLASS] =
@@ -14422,8 +14831,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
 	.variable3 = SIGNATURE_SECONDARY_EFFECT_FREEZE,
         .chance3 = 10,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_WALREIN] =
@@ -14435,8 +14846,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_HUNTAIL] =
@@ -14451,8 +14864,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_WATER,				
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_GOREBYSS] =
@@ -14465,8 +14880,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_POISON,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_RELICANTH] =
@@ -14479,8 +14896,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_CONFUSION,
         .chance3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_ALOMOMOLA] =
@@ -14492,8 +14911,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,			
         .modification3 = SIGNATURE_MOD_PRIORITY,
         .variable3 = SIGNATURE_PRIORITY_ALWAYS,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_SALAMENCE] =
@@ -14506,8 +14927,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_DAMAGE_STAT,
 	.variable3 = STAT_ATK,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_METAGROSS] =
@@ -14519,8 +14942,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 95,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_REGICE] =
@@ -14532,8 +14957,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 30,
         .modification3 = SIGNATURE_MOD_TYPE,
         .variable3 = TYPE_ICE,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_REGIROCK] =
@@ -14545,8 +14972,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 30,
         .modification3 = SIGNATURE_MOD_PSS_CHANGE,
         .variable3 = SPLIT_PHYSICAL,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 	
     [SPECIES_REGISTEEL] =
@@ -14560,8 +14989,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = SPLIT_HIGHEST,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_STEEL,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_DEOXYS] =
@@ -14573,8 +15004,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_TORTERRA] =
@@ -14586,8 +15019,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_INFERNAPE] =
@@ -14600,8 +15035,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_CONFUSION,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_EMPOLEON] =
@@ -14611,8 +15048,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = 100,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 	
     [SPECIES_STARAPTOR] =
@@ -14625,8 +15064,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable3 = STAT_ATK,
         .chance3 = 50,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_BIBAREL] =
@@ -14641,8 +15082,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,		
         .modification4 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable4 = TYPE_ELECTRIC,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_KRICKETUNE] =
@@ -14655,8 +15098,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
 	.variable3 = STAT_SPEED,
         .chance3 = 25,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_LUXRAY] =
@@ -14668,8 +15113,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 	
     [SPECIES_RAMPARDOS] =
@@ -14685,8 +15132,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = SIGNATURE_PRIORITY_ALWAYS,		
         .modification5 = SIGNATURE_MOD_TYPE,
         .variable5 = TYPE_ROCK,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_BASTIODON] =
@@ -14699,8 +15148,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
 	.variable3 = STAT_SPDEF,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_WORMADAM] =
@@ -14712,8 +15163,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_MOTHIM] =
@@ -14725,8 +15178,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 	
     [SPECIES_VESPIQUEN] =
@@ -14736,8 +15191,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = 90,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_PACHIRISU] =
@@ -14750,8 +15207,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
         .variable3 = FIELD_SET_TERRAIN_ELECTRIC,
         .chance3 = 10,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_FLOATZEL] =
@@ -14764,8 +15223,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_CONFUSION,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_CHERRIM] =
@@ -14778,8 +15239,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_BURN,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 	
     [SPECIES_GASTRODON] =
@@ -14791,8 +15254,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_DRIFBLIM] =
@@ -14805,8 +15270,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 =  SIGNATURE_MOD_TARGET_STAT_DOWN,
 	.variable3 = STAT_EVASION,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_LOPUNNY] =
@@ -14819,8 +15286,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
 	.variable3 = SIGNATURE_SECONDARY_EFFECT_INFATUATION,
         .chance3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_PURUGLY] =
@@ -14836,8 +15305,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_GHOST,
         .modification5 = SIGNATURE_MOD_DAMAGE_STAT,
         .variable5 = STAT_ATK,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 	
     [SPECIES_SKUNTANK] =
@@ -14849,8 +15320,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_DAMAGE_STAT,
         .variable3 = STAT_ATK,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_BRONZONG] =
@@ -14862,8 +15335,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_CHATOT] =
@@ -14876,8 +15351,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_CONFUSION,
         .chance3 = 90,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_SPIRITOMB] =
@@ -14890,8 +15367,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_ATK,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 	
     [SPECIES_GARCHOMP] =
@@ -14904,8 +15383,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_DEF,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_LUCARIO] =
@@ -14918,8 +15399,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_CONFUSION,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_HIPPOWDON] =
@@ -14932,8 +15415,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_CONFUSION,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_DRAPION] =
@@ -14946,8 +15431,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_POISON,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 	
     [SPECIES_TOXICROAK] =
@@ -14960,8 +15447,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_POISON,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 	
     [SPECIES_CARNIVINE] =
@@ -14974,8 +15463,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_LEECH_SEED,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_LUMINEON] =
@@ -14990,8 +15481,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,
 	.modification4 = SIGNATURE_MOD_PSS_CHANGE,
         .variable4 = SPLIT_SPECIAL,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_ABOMASNOW] =
@@ -15004,8 +15497,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
         .variable3 = FIELD_SET_WEATHER_HAIL,
         .chance3 = 10,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_ROTOM] =
@@ -15015,8 +15510,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = 100,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 	
     [SPECIES_HEATRAN] =
@@ -15029,8 +15526,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_BURN,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_DARKRAI] =
@@ -15042,8 +15541,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_VICTINI] =
@@ -15056,8 +15557,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_BURN,
         .chance3 = 50,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_SERPERIOR] =
@@ -15070,8 +15573,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_BURN,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 	
     [SPECIES_EMBOAR] =
@@ -15083,8 +15588,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 95,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_SAMUROTT] =
@@ -15096,8 +15603,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_WATCHOG] =
@@ -15114,8 +15623,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_ELECTRIC,
 	.modification5 = SIGNATURE_MOD_PSS_CHANGE,
         .variable5 = SPLIT_PHYSICAL,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_STOUTLAND] =
@@ -15135,8 +15646,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable5 = SIGNATURE_PRIORITY_ALWAYS,
         .modification6 = SIGNATURE_MOD_TYPE,
         .variable6 = TYPE_NORMAL,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 	
     [SPECIES_LIEPARD] =
@@ -15149,8 +15662,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_ACC,
         .chance3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_SIMISAGE] =
@@ -15163,8 +15678,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
         .variable3 = FIELD_SET_TERRAIN_GRASS,
         .chance3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_SIMISEAR] =
@@ -15177,8 +15694,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
         .variable3 = FIELD_SET_WEATHER_SUN,
         .chance3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_SIMIPOUR] =
@@ -15191,8 +15710,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
         .variable3 = FIELD_SET_WEATHER_RAIN,
         .chance3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 	
     [SPECIES_MUSHARNA] =
@@ -15207,8 +15728,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 30,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_POISON,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_UNFEZANT] =
@@ -15218,8 +15741,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = 80,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_ZEBSTRIKA] =
@@ -15232,8 +15757,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_PARALYSIS,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_GIGALITH] =
@@ -15246,8 +15773,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
         .variable3 = FIELD_OPPONET_SET_STEALTH_ROCK,
         .chance3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
 
     [SPECIES_SWOOBAT] =
@@ -15262,8 +15791,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification4 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable4 = SIGNATURE_SECONDARY_EFFECT_INFATUATION,
         .chance4 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_EXCADRILL] =
@@ -15278,8 +15809,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,	
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_STEEL,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_AUDINO] =
@@ -15294,8 +15827,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .modification4 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable4 = TYPE_NORMAL,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_CONKELDURR] =
@@ -15308,8 +15843,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
         .variable3 = FIELD_OPPONET_SET_STEALTH_ROCK,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_SEISMITOAD] =
@@ -15322,8 +15859,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable3 = STAT_ATK,
 	.chance3 = 10,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_THROH] =
@@ -15336,8 +15875,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable3 = STAT_DEF,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_SAWK] =
@@ -15350,8 +15891,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable3 = STAT_ATK,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_LEAVANNY] =
@@ -15363,8 +15906,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_SCOLIPEDE] =
@@ -15377,8 +15922,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable3 = STAT_SPEED,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_WHIMSICOTT] =
@@ -15393,8 +15940,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification4 = SIGNATURE_MOD_MODIFY_FIELD,
         .variable4 = FIELD_SELF_SET_TAILWIND,
         .chance4 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_LILLIGANT] =
@@ -15409,8 +15958,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 100,
         .modification4 = SIGNATURE_MOD_PRIORITY,
         .variable4 = SIGNATURE_PRIORITY_CONDITION_TERRAIN_ANY,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_BASCULIN] =
@@ -15423,8 +15974,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_SPEED,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_KROOKODILE] =
@@ -15437,8 +15990,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_DEF,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_DARMANITAN] =
@@ -15450,8 +16005,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_MARACTUS] =
@@ -15464,8 +16021,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
         .variable3 = FIELD_OPPONET_SET_SPIKES,
         .chance3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_CRUSTLE] =
@@ -15478,8 +16037,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 =  SIGNATURE_MOD_TARGET_STAT_DOWN,
 	.variable3 = STAT_SPEED,
         .chance3 = 10,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_SCRAFTY] =
@@ -15491,8 +16052,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_SIGILYPH] =
@@ -15507,8 +16070,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
 	.modification4 = SIGNATURE_MOD_PSS_CHANGE,
         .variable4 = SPLIT_SPECIAL,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_COFAGRIGUS] =
@@ -15521,8 +16086,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_PARALYSIS,
         .chance3 = 10,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_RUNERIGUS] =
@@ -15534,8 +16101,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_CARRACOSTA] =
@@ -15545,8 +16114,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = 90,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_ARCHEOPS] =
@@ -15559,8 +16130,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_ATK,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
  [SPECIES_GARBODOR] =
@@ -15573,8 +16146,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_PARALYSIS,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_ZOROARK] =
@@ -15586,8 +16161,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_CINCCINO] =
@@ -15600,8 +16177,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_FLINCH,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_GOTHITELLE] =
@@ -15613,8 +16192,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 90,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_REUNICLUS] =
@@ -15626,8 +16207,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 90,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_SWANNA] =
@@ -15640,8 +16223,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
         .variable3 = FIELD_SELF_SET_TAILWIND,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_VANILLUXE] =
@@ -15653,8 +16238,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_SAWSBUCK] =
@@ -15667,8 +16254,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_ATK,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_EMOLGA] =
@@ -15681,8 +16270,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable3 = STAT_EVASION,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_ESCAVALIER] =
@@ -15695,8 +16286,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_SPATK,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_AMOONGUSS] =
@@ -15708,8 +16301,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable3 = TYPE_STEEL,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_JELLICENT] =
@@ -15722,8 +16317,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_SPATK,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_GALVANTULA] =
@@ -15736,8 +16333,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
         .variable3 = FIELD_OPPONET_SET_STICKY_WEB,
         .chance3 = 50,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_FERROTHORN] =
@@ -15750,8 +16349,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_ATK,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_KLINKLANG] =
@@ -15764,8 +16365,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable3 = STAT_SPEED,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_EELEKTROSS] =
@@ -15780,8 +16383,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
 	.modification4 = SIGNATURE_MOD_PSS_CHANGE,
         .variable4 = SPLIT_PHYSICAL,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_BEHEEYEM] =
@@ -15793,8 +16398,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_CHANDELURE] =
@@ -15806,8 +16413,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_HAXORUS] =
@@ -15820,8 +16429,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_FLINCH,
         .chance3 = 15,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_BEARTIC] =
@@ -15836,8 +16447,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 30,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_ICE,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_CRYOGONAL] =
@@ -15850,8 +16463,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_FREEZE,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_ACCELGOR] =
@@ -15867,8 +16482,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification4 = SIGNATURE_MOD_TARGET_STAT_DOWN,
 	.variable4 = STAT_EVASION,
         .chance4 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_STUNFISK] =
@@ -15880,8 +16497,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_MIENSHAO] =
@@ -15895,8 +16514,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 30,
         .modification4 = SIGNATURE_MOD_DEFENSE_STAT,
         .variable4 = STAT_SPDEF,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_DRUDDIGON] =
@@ -15908,8 +16529,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_GOLURK] =
@@ -15922,8 +16545,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
 	.variable3 = STAT_ACC,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_BISHARP] =
@@ -15936,8 +16561,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
 	.variable3 = STAT_SPEED,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_BOUFFALANT] =
@@ -15952,8 +16579,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 30,
         .modification4 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable4 = TYPE_FAIRY,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_BRAVIARY] =
@@ -15966,8 +16595,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
 	.variable3 = STAT_ATK,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_MANDIBUZZ] =
@@ -15980,8 +16611,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
 	.variable3 = STAT_SPEED,
         .chance3 = 10,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_HEATMOR] =
@@ -15995,8 +16628,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 90,
         .modification4 = SIGNATURE_MOD_PRIORITY,
         .variable4 = SIGNATURE_PRIORITY_ALWAYS,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_DURANT] =
@@ -16008,8 +16643,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_HYDREIGON] =
@@ -16025,8 +16662,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification4 = SIGNATURE_MOD_MODIFY_FIELD,
         .variable4 = FIELD_OPPONET_SET_SPIKES,
         .chance4 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_VOLCARONA] =
@@ -16039,8 +16678,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_BURN,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_MELOETTA] =
@@ -16054,8 +16695,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,	
 	.modification4 = SIGNATURE_MOD_PSS_CHANGE,
         .variable4 = SPLIT_SPECIAL,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     }, 
 
     [SPECIES_MELOETTA_PIROUETTE] =
@@ -16069,8 +16712,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,		
 	.modification4 = SIGNATURE_MOD_PSS_CHANGE,
         .variable4 = SPLIT_PHYSICAL,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     }, 
 
 
@@ -16084,8 +16729,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_PARALYSIS,
         .chance3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_DELPHOX] =
@@ -16097,8 +16744,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_GRENINJA] =
@@ -16111,8 +16760,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_FLINCH,
         .chance3 = 10,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
 
@@ -16125,8 +16776,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_TALONFLAME] =
@@ -16138,8 +16791,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_VIVILLON] =
@@ -16153,8 +16808,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 30,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_BUG,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_PYROAR] =
@@ -16167,8 +16824,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_BURN,
         .chance3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_FLORGES] =
@@ -16181,8 +16840,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_SPDEF,
 	.chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_GOGOAT] =
@@ -16195,8 +16856,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
         .variable3 = FIELD_SET_TERRAIN_GRASS,
         .chance3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_PANGORO] =
@@ -16209,8 +16872,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 =  SIGNATURE_MOD_TARGET_STAT_DOWN,
 	.variable3 = STAT_ATK,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_FURFROU] =
@@ -16226,8 +16891,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_NORMAL,			
         .modification5 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable5 = TYPE_GHOST,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_MEOWSTIC] =
@@ -16239,8 +16906,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_MEOWSTIC_FEMALE] =
@@ -16252,8 +16921,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_AEGISLASH] =
@@ -16266,8 +16937,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 =  SIGNATURE_MOD_TARGET_STAT_DOWN,
 	.variable3 = STAT_SPATK,
         .chance3 = 25,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_AROMATISSE] =
@@ -16280,8 +16953,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_INFATUATION,
         .chance3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_SLURPUFF] =
@@ -16294,8 +16969,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_DEF,
 	.chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_MALAMAR] =
@@ -16311,8 +16988,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification4 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable4 = STAT_SPATK,
 	.chance4 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_BARBARACLE] =
@@ -16324,8 +17003,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_DRAGALGE] =
@@ -16338,8 +17019,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable3 = STAT_SPEED,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_CLAWITZER] =
@@ -16351,8 +17034,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_HELIOLISK] =
@@ -16362,8 +17047,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = 80,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_TYRANTRUM] =
@@ -16378,8 +17065,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_ROCK,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_AURORUS] =
@@ -16392,8 +17081,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable3 = STAT_SPDEF,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_HAWLUCHA] =
@@ -16406,8 +17097,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_ACC,
 	.chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_DEDENNE] =
@@ -16420,8 +17113,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
         .variable3 = FIELD_SET_TERRAIN_ELECTRIC,	
         .chance3 = 50,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_GOODRA] =
@@ -16434,8 +17129,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
 	.variable3 = FIELD_SELF_SET_TAILWIND,
         .chance3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_KLEFKI] =
@@ -16448,8 +17145,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_FLINCH,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_TREVENANT] =
@@ -16464,8 +17163,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
 	.chance3 = 25,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_GHOST,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_GOURGEIST] =
@@ -16478,8 +17179,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable3 = STAT_SPDEF,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_AVALUGG] =
@@ -16494,8 +17197,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification4 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable4 = STAT_DEF,
         .chance4 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_NOIVERN] =
@@ -16510,8 +17215,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification4 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable4 = STAT_ATK,
         .chance4 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_HOOPA] =
@@ -16523,8 +17230,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 0,		
         .modification3 = SIGNATURE_MOD_TYPE,
         .variable3 = TYPE_GHOST,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_VOLCANION] =
@@ -16536,8 +17245,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_DECIDUEYE] =
@@ -16547,8 +17258,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = 100,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_INCINEROAR] =
@@ -16561,8 +17274,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_SPATK,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_PRIMARINA] =
@@ -16575,8 +17290,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_ATK,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_TOUCANNON] =
@@ -16589,8 +17306,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable3 = STAT_DEF,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_GUMSHOOS] =
@@ -16603,8 +17322,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable3 = STAT_DEF,
         .chance3 = 25,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_VIKAVOLT] =
@@ -16617,8 +17338,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable3 = STAT_DEF,
         .chance3 = 25,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 	
     [SPECIES_CRABOMINABLE] =
@@ -16631,8 +17354,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_FREEZE,
         .chance3 = 30,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_ORICORIO] =
@@ -16645,8 +17370,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_BURN,
         .chance3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_ORICORIO_POM_POM] =
@@ -16659,8 +17386,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_PARALYSIS,
         .chance3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_ORICORIO_PA_U] =
@@ -16673,8 +17402,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_SLEEP,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_ORICORIO_SENSU] =
@@ -16687,8 +17418,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_CONFUSION,
         .chance3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_RIBOMBEE] =
@@ -16701,8 +17434,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
         .variable3 = FIELD_SET_TERRAIN_MISTY,	
         .chance3 = 50,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_LYCANROC] =
@@ -16715,8 +17450,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
         .variable3 = FIELD_OPPONET_SET_STEALTH_ROCK,	
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_WISHIWASHI] =
@@ -16729,8 +17466,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 =  SIGNATURE_MOD_TARGET_STAT_DOWN,
 	.variable3 = STAT_SPATK,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_TOXAPEX] =
@@ -16745,8 +17484,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_POISON,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_MUDSDALE] =
@@ -16759,8 +17500,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 =  SIGNATURE_MOD_ATTACKER_STAT_UP,
 	.variable3 = STAT_ATK,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_ARAQUANID] =
@@ -16770,8 +17513,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = 100,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_LURANTIS] =
@@ -16784,8 +17529,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 =  SIGNATURE_MOD_TARGET_STAT_DOWN,
 	.variable3 = STAT_ATK,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_SHIINOTIC] =
@@ -16798,8 +17545,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 =  SIGNATURE_MOD_TARGET_STAT_DOWN,
 	.variable3 = STAT_ACC,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_SALAZZLE] =
@@ -16812,8 +17561,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_BURN,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_BEWEAR] =
@@ -16826,8 +17577,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_PARALYSIS,
         .chance3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_TSAREENA] =
@@ -16840,8 +17593,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_CONFUSION,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_COMFEY] =
@@ -16854,8 +17609,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_LEECH_SEED,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_ORANGURU] =
@@ -16868,8 +17625,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_CONFUSION,
         .chance3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_PASSIMIAN] =
@@ -16882,8 +17641,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_LEECH_SEED,
         .chance3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_GOLISOPOD] =
@@ -16896,8 +17657,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_FLINCH,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_PALOSSAND] =
@@ -16910,8 +17673,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
         .variable3 =  FIELD_SET_WEATHER_SANDSTORM,
         .chance3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_PYUKUMUKU] =
@@ -16930,8 +17695,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable5 = TYPE_DRAGON,		
         .modification6 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable6 = TYPE_ROCK,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_SILVALLY] =
@@ -16943,8 +17710,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_MINIOR] =
@@ -16959,8 +17728,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_FLYING,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_KOMALA] =
@@ -16972,8 +17743,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_TURTONATOR] =
@@ -16986,8 +17759,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable3 = STAT_SPDEF,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_TOGEDEMARU] =
@@ -16997,8 +17772,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = 100,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_MIMIKYU] =
@@ -17025,8 +17802,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance7 = 50,
         .modification8 = SIGNATURE_MOD_PRIORITY,
         .variable8 = SIGNATURE_PRIORITY_ALWAYS,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_BRUXISH] =
@@ -17039,8 +17818,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_FLINCH,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_DRAMPA] =
@@ -17050,8 +17831,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = 80,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_DHELMISE] =
@@ -17066,8 +17849,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_GHOST,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_KOMMO_O] =
@@ -17080,8 +17865,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable3 = STAT_DEF,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_MARSHADOW] =
@@ -17091,8 +17878,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = 100,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_NAGANADEL] =
@@ -17105,8 +17894,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_POISON,
         .chance3 = 10,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_MELMETAL] =
@@ -17119,8 +17910,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_FLINCH,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },
 
     [SPECIES_RILLABOOM] =
@@ -17133,8 +17926,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable3 = STAT_ATK,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_CINDERACE] =
@@ -17147,8 +17942,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable3 = STAT_SPEED,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_INTELEON] =
@@ -17161,8 +17958,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable3 = STAT_ACC,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_GREEDENT] =
@@ -17179,8 +17978,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_NORMAL,
         .modification5 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable5 = TYPE_WATER,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_CORVIKNIGHT] =
@@ -17192,8 +17993,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_ORBEETLE] =
@@ -17205,8 +18008,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_THIEVUL] =
@@ -17219,8 +18024,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_FLINCH,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_ELDEGOSS] =
@@ -17236,8 +18043,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification4 = SIGNATURE_MOD_MODIFY_FIELD,
         .variable4 = FIELD_SET_TERRAIN_GRASS,
         .chance4 = 10,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },		
  
     [SPECIES_DUBWOOL] =
@@ -17250,8 +18059,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable3 = STAT_SPEED,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_DREDNAW] =
@@ -17264,8 +18075,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_CONFUSION,
         .chance3 = 20,	
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_BOLTUND] =
@@ -17277,8 +18090,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_COALOSSAL] =
@@ -17291,8 +18106,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_ACC,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_FLAPPLE] =
@@ -17304,8 +18121,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
  
     [SPECIES_APPLETUN] =
@@ -17317,8 +18136,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_SILICOBRA] =
@@ -17333,8 +18154,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_GROUND,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_SANDACONDA] =
@@ -17349,8 +18172,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .modification4 = SIGNATURE_MOD_TYPE,
         .variable4 = TYPE_GROUND,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_CRAMORANT] =
@@ -17363,8 +18188,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_FLINCH,
         .chance3 = 20,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_BARRASKEWDA] =
@@ -17377,8 +18204,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification4 = SIGNATURE_MOD_MODIFY_FIELD,
         .variable4 = FIELD_SET_WEATHER_RAIN,
         .chance4 = 30,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_TOXTRICITY] =
@@ -17391,8 +18220,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_CONFUSION,
         .chance3 = 10,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_CENTISKORCH] =
@@ -17404,8 +18235,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_GRAPPLOCT] =
@@ -17418,8 +18251,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_PARALYSIS,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_POLTEAGEIST] =
@@ -17429,8 +18264,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = 80,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_HATTERENE] =
@@ -17443,8 +18280,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_BURN,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_GRIMMSNARL] =
@@ -17457,8 +18296,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_FLINCH,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_ALCREMIE] =
@@ -17470,8 +18311,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_FALINKS] =
@@ -17486,8 +18329,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 30,
         .modification4 =  SIGNATURE_MOD_DEFENSE_STAT,
 	.variable4 = STAT_ATK,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_PINCURCHIN] =
@@ -17500,8 +18345,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_PARALYSIS,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_FROSMOTH] =
@@ -17514,8 +18361,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_FREEZE,
         .chance3 = 10,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_STONJOURNER] =
@@ -17528,8 +18377,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
 	.variable3 = STAT_DEF,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_EISCUE] =
@@ -17541,8 +18392,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_INDEEDEE] =
@@ -17555,8 +18408,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
 	.variable3 = STAT_SPATK,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_INDEEDEE_FEMALE] =
@@ -17569,8 +18424,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
 	.variable3 = STAT_ATK,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_MORPEKO] =
@@ -17583,8 +18440,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
 	.variable3 = STAT_ATK,
         .chance3 = 25,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_COPPERAJAH] =
@@ -17597,8 +18456,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable3 = STAT_SPEED,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_DRACOZOLT] =
@@ -17611,8 +18472,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_PARALYSIS,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_ARCTOZOLT] =
@@ -17625,8 +18488,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_FREEZE,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_DRACOVISH] =
@@ -17639,8 +18504,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_BURN,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_ARCTOVISH] =
@@ -17653,8 +18520,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_CONFUSION,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_DURALUDON] =
@@ -17666,8 +18535,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 40,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_DRAGAPULT] =
@@ -17680,8 +18551,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_REMOVE_STAT_CHANGES,
         .chance3 = 50,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
     [SPECIES_URSHIFU] =
@@ -17694,8 +18567,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
 	.variable3 = SIGNATURE_SECONDARY_EFFECT_FLINCH,
         .chance3 = 20,
-        .differentDescription = FALSE,
-        .description = _("Default Description"),
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
     },	
 
 };
