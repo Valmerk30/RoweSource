@@ -2407,7 +2407,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroup1 = EGG_GROUP_FLYING,
         .eggGroup2 = EGG_GROUP_FLYING,
-        .abilities = {ABILITY_ROCK_HEAD, ABILITY_VITAL_SPIRIT},
+        .abilities = {ABILITY_VITAL_SPIRIT, ABILITY_QUICK_FEET},
         #ifdef BATTLE_ENGINE
             .abilityHidden = ABILITY_TANGLED_FEET,
         #endif
