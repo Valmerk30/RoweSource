@@ -4612,7 +4612,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED | FLAG_BALLISTIC,
-        .split = SPLIT_PHYSICAL,
+        .split = SPLIT_SPECIAL,
     },	
 
     [MOVE_HORN_LEECH] =
@@ -12271,8 +12271,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
+            "Powerful psychic attack. Higher\n"
+            "chance of lowering Sp. Def."),
     },
 	
     [SPECIES_KINGLER] =
@@ -12287,8 +12287,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
+            "Hammers with pincers. High crit\n"
+            "ratio. May lower Speed."),
     },	
 	
     [SPECIES_ELECTRODE] =
@@ -12297,13 +12297,16 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification = SIGNATURE_MOD_POWER,
         .variable = 100,
         .modification2 = SIGNATURE_MOD_ACCURACY,
-        .variable2 = 90,		
-        .modification3 = SIGNATURE_MOD_DAMAGE_STAT,
-        .variable3 = STAT_SPEED,		
+        .variable2 = 90,
+        .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
+        .variable3 = STAT_SPEED,
+        .chance3 = 25,
+        .modification4 = SIGNATURE_MOD_DAMAGE_STAT,
+        .variable4 = STAT_SPEED,		
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
+            "Hurls an orb that uses Speed\n"
+            "to attack. May raise Speed."),
     },	
 	
     [SPECIES_EXEGGUTOR] =
@@ -12316,12 +12319,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_SPATK,
         .chance3 = 10,		
-        .modification4 = SIGNATURE_MOD_DAMAGE_STAT,
-        .variable4 = STAT_SPATK,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
+            "Hurls objects from 2 to 5 times\n"
+            "that may lower Sp. Atk."),
     },
 	
     [SPECIES_EXEGGUTOR_ALOLAN] =
@@ -12334,12 +12335,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_SPATK,
         .chance3 = 10,		
-        .modification4 = SIGNATURE_MOD_DAMAGE_STAT,
-        .variable4 = STAT_SPATK,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
+            "Hurls objects from 2 to 5 times\n"
+            "that may lower Sp. Atk."),
     },	
 	
     [SPECIES_MAROWAK] =
@@ -12353,8 +12352,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
+            "Clubs the foe with a bone.\n"
+            "Higher change of flinching."),
     },
 	
     [SPECIES_MAROWAK_ALOLAN] =
@@ -12368,8 +12367,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
+            "Clubs the foe with a bone.\n"
+            "Higher change of flinching."),
     },	
 
     [SPECIES_HITMONLEE] =
@@ -12384,8 +12383,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
 	.chance3 = 10,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
+            "Kicks the foe 3 times in a row.\n"
+            "May lower the foe's Speed."),
     },
 	
     [SPECIES_HITMONCHAN] =
@@ -12400,8 +12399,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
 	.chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
+            "A punch that absorbs half the\n"
+            "damage. May increase Attack."),
     },
 	
     [SPECIES_HITMONTOP] =
@@ -12413,8 +12412,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,				
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
+            "A high-speed kick that raises\n"
+            "the user's Speed."),
     },
 
     [SPECIES_LICKILICKY] =
@@ -12430,8 +12429,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_GHOST,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
+            "Effective against Normal and\n"
+            "Ghost. May also paralyze."),
     },
 
     [SPECIES_WEEZING] =
@@ -12445,8 +12444,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 90,		
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
+            "An exhaust-gas attack.\n"
+            "Almost always poisons."),
     },
 	
     [SPECIES_WEEZING_GALARIAN] =
@@ -12460,8 +12459,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 90,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
+            "An exhaust-gas attack.\n"
+            "Almost always poisons."),
     },
 	
     [SPECIES_RHYPERIOR] =
@@ -12475,8 +12474,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = TYPE_ROCK,		
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
+            "Effective against Rock. May\n"
+            "lower the foe's Defense."),
     },	
 	
     [SPECIES_CHANSEY] =
