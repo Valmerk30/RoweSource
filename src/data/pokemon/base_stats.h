@@ -9379,8 +9379,8 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroup1 = EGG_GROUP_MINERAL,
         .eggGroup2 = EGG_GROUP_MINERAL,
-        .abilities = {ABILITY_MAGNET_PULL, ABILITY_INTIMIDATE},
-		.abilityHidden = ABILITY_GRAVITATION,
+        .abilities = {ABILITY_GRAVITATION, ABILITY_INTIMIDATE},
+	.abilityHidden = ABILITY_INSOMNIA,
         .bodyColor = BODY_COLOR_YELLOW,
         .noFlip = FALSE,
     },
@@ -9406,8 +9406,8 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroup1 = EGG_GROUP_MINERAL,
         .eggGroup2 = EGG_GROUP_MINERAL,
-        .abilities = {ABILITY_MAGNET_PULL, ABILITY_SOLAR_POWER},
-		.abilityHidden = ABILITY_GRAVITATION,
+        .abilities = {ABILITY_GRAVITATION, ABILITY_SOLAR_POWER},
+		.abilityHidden = ABILITY_LIMBER,
         .bodyColor = BODY_COLOR_RED,
         .noFlip = FALSE,
     },
@@ -14922,7 +14922,7 @@ const struct BaseStats gBaseStats[] =
         .eggGroup2 = EGG_GROUP_HUMAN_LIKE,
         #ifdef BATTLE_ENGINE
             .abilities = {ABILITY_GUTS, ABILITY_SHEER_FORCE},
-            .abilityHidden = ABILITY_IRON_FIST,
+            .abilityHidden = ABILITY_STAMINA,
         #else
             .abilities = {ABILITY_GUTS, ABILITY_NONE},
         #endif
