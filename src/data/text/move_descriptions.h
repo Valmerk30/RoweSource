@@ -3225,8 +3225,8 @@ static const u8 sSeismicTossDescription[] = _(
     "to the user's level.");
 
 static const u8 sStrengthDescription[] = _(
-    "Builds enormous power,\n"
-    "then slams the foe.");
+    "Powerful slam to the foe.\n"
+    "May raise the user's Attack.");
 
 static const u8 sAbsorbDescription[] = _(
     "An attack that absorbs\n"
@@ -3482,7 +3482,7 @@ static const u8 sAmnesiaDescription[] = _(
 
 static const u8 sKinesisDescription[] = _(
     "A distracting mind strike.\n"
-    "May lower accuracy.");
+    "May lower Accuracy.");
 
 static const u8 sSoftBoiledDescription[] = _(
     "Recovers up to half the\n"
@@ -3869,7 +3869,7 @@ static const u8 sSweetScentDescription[] = _(
     "evasiveness.");
 
 static const u8 sIronTailDescription[] = _(
-    "Attacks with a rock-hard\n"
+    "Attacks with a iron-hard\n"
     "tail. May lower Defense.");
 
 static const u8 sMetalClawDescription[] = _(
@@ -4878,7 +4878,7 @@ static const u8 sLOW_SWEEPDescription[] = _(
 
 static const u8 sACID_SPRAYDescription[] = _(
     "Sprays a hide-melting acid.\n"
-    "Sharply reduces Sp. Def.");
+    "May reduce Sp. Def.");
 
 static const u8 sFOUL_PLAYDescription[] = _(
     "The higher the foe's Attack\n"
@@ -5281,8 +5281,8 @@ static const u8 sGEOMANCYDescription[] = _(
     "Speed on the 2nd turn.");
 
 static const u8 sMAGNETIC_FLUXDescription[] = _(
-    "Boosts the defenses of\n"
-    "those with Plus or Minus.");
+    "Prevents the user and\n"
+    "the target from escaping.");
 
 static const u8 sHAPPY_HOURDescription[] = _(
     "Doubles the amount of\n"
