@@ -4609,8 +4609,8 @@ static const u8 sNASTY_PLOTDescription[] = _(
     "sharply boost Sp. Atk.");
 
 static const u8 sBULLET_PUNCHDescription[] = _(
-    "Punches as fast as a bul-\n"
-    "let. It always hits first.");
+    "Punches fast as a bullet.\n"
+    "It always hits first.");
 
 static const u8 sICE_SHARDDescription[] = _(
     "Hurls a chunk of ice that\n"
@@ -5061,8 +5061,8 @@ static const u8 sGEAR_GRINDDescription[] = _(
     "that strike twice.");
 
 static const u8 sTECHNO_BLASTDescription[] = _(
-    "The type varies with the\n"
-    "kind of Drive held.");
+    "A kinetic attack that\n"
+    "may raise all stats.");
 
 static const u8 sRELIC_SONGDescription[] = _(
     "Attacks with an ancient\n"
@@ -5165,7 +5165,7 @@ static const u8 sPETAL_BLIZZARDDescription[] = _(
     "of petals to attack.");
 
 static const u8 sFREEZE_DRYDescription[] = _(
-    "Attacks with a freezing wave\n"
+    "Attacks with a freezing wave.\n"
     "May lower the foe's Sp. Def.");
 
 static const u8 sDISARMING_VOICEDescription[] = _(
@@ -5562,7 +5562,7 @@ static const u8 sMIND_BLOWNDescription[] = _(
 
 static const u8 sPLASMA_FISTSDescription[] = _(
     "The user attacks twice. Two\n"
-    "targets are hit once each.");
+    "targets are hit randomly.");
 
 static const u8 sPHOTON_GEYSERDescription[] = _(
     "Attacks with an intense ray\n"
@@ -5655,7 +5655,7 @@ static const u8 sMAGIC_POWDERDescription[] = _(
     
 static const u8 sDRAGON_DARTSDescription[] = _(
     "The user attacks twice. Two\n"
-    "targets are hit once each.");
+    "random targets are hit.");
     
 static const u8 sTEATIMEDescription[] = _(
     "Eats the foe's held Berry\n"
