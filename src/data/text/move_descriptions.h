@@ -3054,7 +3054,7 @@ static const u8 sJumpKickDescription[] = _(
 
 static const u8 sRollingKickDescription[] = _(
     "A high-speed kick that\n"
-    "raises the user's speed.");
+    "raises the user's Speed.");
 
 static const u8 sSandAttackDescription[] = _(
     "Reduces the foe's accuracy\n"
@@ -3862,7 +3862,7 @@ static const u8 sPursuitDescription[] = _(
 
 static const u8 sRapidSpinDescription[] = _(
     "A spinning tackle that\n"
-    "raises the user's speed.");
+    "raises the user's Speed.");
 
 static const u8 sSweetScentDescription[] = _(
     "Allures the foe to reduce\n"
