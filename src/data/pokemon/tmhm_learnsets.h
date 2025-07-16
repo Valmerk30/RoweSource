@@ -173,7 +173,6 @@ static const u8 sCharmeleonTMHMLearnset[] =
     TMHM(TM45_ATTRACT),
     TMHM(TM50_OVERHEAT),
     TMHM(TM54_FALSE_SWIPE),
-    
     TMHM(TM61_WILL_O_WISP),
     TMHM(TM62_ACROBATICS),
     TMHM(TM65_SHADOW_CLAW),
@@ -219,8 +218,7 @@ static const u8 sCharizardTMHMLearnset[] =
     TMHM(TM47_STEEL_WING),
     TMHM(TM50_OVERHEAT),
     TMHM(TM52_FOCUS_BLAST),
-    TMHM(TM54_FALSE_SWIPE),
-    
+    TMHM(TM54_FALSE_SWIPE),    
     TMHM(TM58_ROOST),
     TMHM(TM59_BRUTAL_SWING),
     TMHM(TM61_WILL_O_WISP),
@@ -267,8 +265,7 @@ static const u8 sSquirtleTMHMLearnset[] =
     TMHM(TM44_REST),
     TMHM(TM45_ATTRACT),
     TMHM(TM54_FALSE_SWIPE),
-    TMHM(TM55_SCALD),
-    
+    TMHM(TM55_SCALD),    
     TMHM(TM74_GYRO_BALL),
     TMHM(TM80_ROCK_SLIDE),
     TMHM(TM87_SWAGGER),
@@ -305,8 +302,7 @@ static const u8 sWartortleTMHMLearnset[] =
     TMHM(TM44_REST),
     TMHM(TM45_ATTRACT),
     TMHM(TM54_FALSE_SWIPE),
-    TMHM(TM55_SCALD),
-    
+    TMHM(TM55_SCALD),    
     TMHM(TM74_GYRO_BALL),
     TMHM(TM80_ROCK_SLIDE),
     TMHM(TM87_SWAGGER),
