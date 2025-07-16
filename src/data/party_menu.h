@@ -1413,7 +1413,7 @@ const u16 sTMHMMoves[TMHM_COUNT] =
     MOVE_STEEL_WING,		//47 Changed with Low Sweep
     MOVE_SKILL_SWAP,
     MOVE_SNATCH,
-    MOVE_OVERHEAT,
+    MOVE_FLAME_CHARGE,
     MOVE_LOW_SWEEP,  		//51 Changed with Steel Wing
     MOVE_FOCUS_BLAST,  		//52
     MOVE_ENERGY_BALL,  		//53
