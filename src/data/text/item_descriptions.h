@@ -4638,9 +4638,9 @@ static const u8 sTM49Desc[] = _(
     "is trying to use.");
 
 static const u8 sTM50Desc[] = _(
-    "Enables full-power\n"
-    "attack, but sharply\n"
-    "lowers Sp. Atk.");
+    "Attacks in a cloak\n"
+    "of flames. It may\n"
+    "raise Speed.");
 	
 static const u8 sTM51Desc[] = _(
     "Attacks the foe's \n"
