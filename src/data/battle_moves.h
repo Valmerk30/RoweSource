@@ -11613,6 +11613,24 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
             "Slash with claws. High critical"
             "hit. Can raise user's Speed."),
     },
+
+    [SPECIES_SANDSLASH_ALOLAN] =
+    {
+        .move = MOVE_SLASH,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 90,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 90,
+        .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
+        .variable3 = STAT_SPEED,
+        .chance3 = 25,
+        .modification4 = SIGNATURE_MOD_TYPE,
+        .variable4 = TYPE_ICE,		
+        .differentDescription = TRUE,
+        .description = _( 
+            "Slash with claws. High critical"
+            "hit. Can raise user's Speed."),
+    },
 	
     [SPECIES_NIDOQUEEN] =
     {
@@ -11672,6 +11690,23 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
+        .differentDescription = TRUE,
+        .description = _( 
+            "A special fire with higher\n"
+            "chance of lowering Sp. Atk."),
+    },
+
+    [SPECIES_NINETALES_ALOLAN] =
+    {
+        .move = MOVE_MYSTICAL_FIRE,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 100,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 90,
+        .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
+        .variable3 = 50,
+        .modification4 = SIGNATURE_MOD_TYPE,
+        .variable4 = TYPE_ICE,
         .differentDescription = TRUE,
         .description = _( 
             "A special fire with higher\n"
