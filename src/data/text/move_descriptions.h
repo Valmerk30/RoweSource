@@ -1776,12 +1776,12 @@ static const u8 sCHARGE_BEAMDescription[] = _(
 	"May raise Sp. Atk.");
 
 static const u8 sWOOD_HAMMERDescription[] = _(
-    "Slams the body into a foe\n"
-    "The user gets hurt too.");
+        "Slams the body into a foe\n"
+        "The user gets hurt too.");
 
 static const u8 sAQUA_JETDescription[] = _(
-    "Strikes first by dashing\n"
-    "at the foe at a high speed.");
+        "Strikes first by dashing\n"
+        "at the foe at a high speed.");
 
 static const u8 sATTACK_ORDERDescription[] = _(
 	"Underlings pummel the foe.\n"
@@ -3634,7 +3634,7 @@ static const u8 sNightmareDescription[] = _(
 
 static const u8 sFlameWheelDescription[] = _(
     "A fiery spinning attack.\n"
-    "Raises the user's speed.");
+    "Raises the user's Speed.");
 
 static const u8 sSnoreDescription[] = _(
     "A loud attack that can be\n"
@@ -5406,7 +5406,7 @@ static const u8 sSPOTLIGHTDescription[] = _(
 
 static const u8 sTOXIC_THREADDescription[] = _(
     "Attacks with a thread that\n"
-    "poisons and drops Speed.");
+    "may drop the foes Speed.");
 
 static const u8 sLASER_FOCUSDescription[] = _(
     "Guarantees the next move\n"
