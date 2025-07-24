@@ -13303,8 +13303,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,	
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
+            "A fairy wind that never misses.\n"
+            "May cause infatuation."),
     },	
 	
     [SPECIES_XATU] =
@@ -13321,8 +13321,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = SIGNATURE_PRIORITY_ALWAYS,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
+            "Priority strike in 2 turns.\n"
+            "Will set Psychic Terrain."),
     },	
 	
     [SPECIES_AMPHAROS] =
@@ -13338,8 +13338,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = SIGNATURE_PRIORITY_ALWAYS,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
+            "Attacks with a discharge.\n"
+            "Almost always paralyzes."),
     },
 	
     [SPECIES_AZUMARILL] =
@@ -13353,8 +13353,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = SIGNATURE_PRIORITY_ALWAYS,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
+            "Priority attack that absorbs\n"
+            "half the damage inflicted."),
     },	
 	
     [SPECIES_SUDOWOODO] =
@@ -13369,8 +13369,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
+            "Reckless attack that hurts the\n"
+            "user. May cause paralysis."),
     },
 
     [SPECIES_JUMPLUFF] =
@@ -13381,11 +13381,11 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
-        .variable3 = 20,
+        .variable3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
+            "Floats in the air and dives.\n"
+            "Higher chance of flinching."),
     },			
 	
     [SPECIES_AMBIPOM] =
@@ -13400,8 +13400,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 100,		
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
+            "Slams the enemy twice. Taunts\n"
+            "the foe into using attack moves."),
     },	
 
     [SPECIES_SUNFLORA] =
@@ -13415,8 +13415,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
+            "Plants a seed on the foe\n."
+            "Higher chance of confusion."),
     },			
 	
     [SPECIES_YANMEGA] =
@@ -13430,8 +13430,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
+            "A damaging sound wave. Higher\n"
+            "chance to lower Sp. Def."),
     },	
 	
     [SPECIES_QUAGSIRE] =
@@ -13445,8 +13445,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
+            "Swings the tail like a wave.\n"
+            "Higher chance to raise Attack."),
     },
 	
     [SPECIES_HONCHKROW] =
@@ -13456,10 +13456,12 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = 100,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,
+        .modification3 = SIGNATURE_MOD_SE_AGAINST_TYPE,
+        .variable3 = TYPE_FAIRY,	
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
+            "Knocks down the foe's held\n"
+            "item. Effective to Fairy."),
     },	
 	
     [SPECIES_MISMAGIUS] =
@@ -13474,8 +13476,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
+            "Double damage if status problem.\n"
+            "May lower Accuracy."),
     },	
 
     [SPECIES_UNOWN] =
@@ -13502,8 +13504,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance7 = 10,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
+            "Attacks with inner power.\n"
+            "May raise random stats."),
     },	
 	
     [SPECIES_WOBBUFFET] =
@@ -13528,8 +13530,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable8 = TYPE_DRAGON,		
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
+            "Hits 2 to 5 times. May taunt."
+            "Eff to Ghost, Psychic and Dragon"),
     },
 	
     [SPECIES_GIRAFARIG] =
@@ -13546,8 +13548,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_DARK,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
+            "Attacks or restores HP. Eff to\n"
+            "Dark. May set Psychic Terrain."),
     },	
 
     [SPECIES_FORRETRESS] =
@@ -13561,8 +13563,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
+            "A flash that damages. Higher\n"
+            "chance to lower Accuracy."),
     },		
 	
     [SPECIES_DUNSPARCE] =
@@ -13577,9 +13579,9 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
-    },	
+            "Hits with a horn. May lower\n"
+            "Defense and raise Accuracy."),
+    },	     
 
     [SPECIES_GLISCOR] =
     {
@@ -13589,11 +13591,13 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
+        .variable3 = STAT_ACC,
+        .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
-    },	
+            "Destroys barriers, may raise\n"
+            "Accuracy, and hits underground."),
+    },	     
 
     [SPECIES_GRANBULL] =
     {
