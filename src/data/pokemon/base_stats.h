@@ -26957,10 +26957,10 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_PERSIAN_ALOLAN] =
     {
         .baseHP        = 70,
-        .baseAttack    = 90,
+        .baseAttack    = 65,
         .baseDefense   = 70,
-        .baseSpeed     = 120,
-        .baseSpAttack  = 60,
+        .baseSpeed     = 105,
+        .baseSpAttack  = 90,
         .baseSpDefense = 60,
         .type1 = TYPE_DARK,
         .type2 = TYPE_DARK,
