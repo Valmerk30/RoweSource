@@ -934,7 +934,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_FURY_ATTACK] =
     {
         .effect = EFFECT_TRIPLE_KICK,
-        .power = 20,
+        .power = 10,
         .type = TYPE_NORMAL,
         .accuracy = 90,
         .pp = 15,
@@ -3607,7 +3607,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_SURGING_STRIKES] =
     {
         .effect = EFFECT_TRIPLE_KICK,   //TODO (Multi hit + Always Crit)
-        .power = 20,
+        .power = 15,
         .type = TYPE_WATER,
         .accuracy = 90,
         .pp = 15,
@@ -5406,7 +5406,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_TRIPLE_AXEL] =
     {
         .effect = EFFECT_TRIPLE_KICK,   //TODO: Increase damage by 20 instead of 10
-        .power = 20,
+        .power = 15,
         .type = TYPE_ICE,
         .accuracy = 90,
         .pp = 15,
@@ -6028,7 +6028,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_TRIPLE_KICK] =
     {
         .effect = EFFECT_TRIPLE_KICK,
-        .power = 20,
+        .power = 15,
         .type = TYPE_FIGHTING,
         .accuracy = 90,
         .pp = 15,
@@ -12094,6 +12094,24 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
             "Defense and cause a burn."),
     },
 
+    [SPECIES_RAPIDASH_GALARIAN] =
+    {
+        .move = MOVE_FIRE_LASH,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 100,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 90,			
+        .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
+        .variable3 = SIGNATURE_SECONDARY_EFFECT_BURN,
+        .chance3 = 20,	
+        .modification4 = SIGNATURE_MOD_TYPE,
+        .variable4 = TYPE_FAIRY,	
+        .differentDescription = TRUE,
+        .description = _( 
+            "Whips with magic. May lower\n"
+            "Defense and cause a burn."),
+    },
+
     [SPECIES_SLOWBRO] =
     {
         .move = MOVE_VITAL_THROW,
@@ -12234,6 +12252,21 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     },		
 
     [SPECIES_MUK] =
+    {
+        .move = MOVE_SLUDGE_WAVE,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 80,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 90,
+        .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
+        .variable3 = 20,
+        .differentDescription = TRUE,
+        .description = _( 
+            "Swamps the foes with sludge.\n"
+            "Higher chance of poisoning."),
+    },	
+
+    [SPECIES_MUK_ALOLAN] =
     {
         .move = MOVE_SLUDGE_WAVE,
         .modification = SIGNATURE_MOD_POWER,
