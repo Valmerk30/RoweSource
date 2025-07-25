@@ -11846,12 +11846,44 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
             "Attack of random intensity.\n"
             "May lower the foes defense."),
     },	
+
+    [SPECIES_MEOWTH] =
+    {
+        .move = MOVE_PAY_DAY,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 60,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 90,			
+        .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
+        .variable3 = STAT_ACC,
+        .chance3 = 25,
+        .differentDescription = TRUE,
+        .description = _( 
+            "Throws coins at the foe.\n"
+            "May lower the foe's accuracy."),
+    },	
 	
     [SPECIES_PERSIAN] =
     {
         .move = MOVE_PAY_DAY,
         .modification = SIGNATURE_MOD_POWER,
         .variable = 100,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 90,			
+        .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
+        .variable3 = STAT_ACC,
+        .chance3 = 25,
+        .differentDescription = TRUE,
+        .description = _( 
+            "Throws coins at the foe.\n"
+            "May lower the foe's accuracy."),
+    },	
+
+    [SPECIES_MEOWTH_ALOLAN] =
+    {
+        .move = MOVE_PAY_DAY,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 60,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,			
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
@@ -12376,6 +12408,22 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
             "Hurls an orb that uses Speed\n"
             "to attack. May raise Speed."),
     },	
+
+    [SPECIES_EXEGGCUTE] =
+    {
+        .move = MOVE_BARRAGE,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 15,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 90,
+        .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
+        .variable3 = STAT_SPATK,
+        .chance3 = 10,		
+        .differentDescription = TRUE,
+        .description = _( 
+            "Hurls objects from 2 to 5 times\n"
+            "that may lower Sp. Atk."),
+    },
 	
     [SPECIES_EXEGGUTOR] =
     {
@@ -12433,6 +12481,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 30,
+        .modification4 = SIGNATURE_MOD_TYPE,
+        .variable4 = TYPE_GHOST,	
         .differentDescription = TRUE,
         .description = _( 
             "Clubs the foe with a bone.\n"
@@ -12484,6 +12534,23 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
             "the user's Speed."),
     },
 
+    [SPECIES_LICKITUNG] =
+    {
+        .move = MOVE_LICK,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 60,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 90,	
+        .modification3 = SIGNATURE_MOD_TYPE,
+        .variable3 = TYPE_NORMAL,
+        .modification4 = SIGNATURE_MOD_SE_AGAINST_TYPE,
+        .variable4 = TYPE_GHOST,
+        .differentDescription = TRUE,
+        .description = _( 
+            "Effective against Normal and\n"
+            "Ghost. May also paralyze."),
+    },
+
     [SPECIES_LICKILICKY] =
     {
         .move = MOVE_LICK,
@@ -12499,6 +12566,21 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .description = _( 
             "Effective against Normal and\n"
             "Ghost. May also paralyze."),
+    },
+
+    [SPECIES_KOFFING] =
+    {
+        .move = MOVE_SMOG,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 50,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 70,	
+        .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
+        .variable3 = 90,		
+        .differentDescription = TRUE,
+        .description = _( 
+            "An exhaust-gas attack.\n"
+            "Almost always poisons."),
     },
 
     [SPECIES_WEEZING] =
