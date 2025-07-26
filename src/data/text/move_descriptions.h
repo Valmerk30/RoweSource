@@ -4645,7 +4645,7 @@ static const u8 sPSYCHO_CUTDescription[] = _(
     "High critical hit ratio.");
 
 static const u8 sZEN_HEADBUTTDescription[] = _(
-    "Hits with a strong head-\n"
+    "Hits with a psychic head-\n"
     "butt. May cause flinching.");
 
 static const u8 sMIRROR_SHOTDescription[] = _(
@@ -4717,8 +4717,8 @@ static const u8 sCHATTERDescription[] = _(
     "Always causes confusion.");
 
 static const u8 sJUDGMENTDescription[] = _(
-    "The type varies with the\n"
-    "kind of Plate held.");
+    "Does more damage if the\n"
+    "foe has powered up.");
 
 static const u8 sCHARGE_BEAMDescription[] = _(
     "Fires a beam of electricity.\n"
