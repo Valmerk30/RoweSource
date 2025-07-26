@@ -2381,7 +2381,7 @@ const struct BaseStats gBaseStats[] =
         .eggGroup2 = EGG_GROUP_FLYING,
         .abilities = {ABILITY_RUN_AWAY, ABILITY_EARLY_BIRD},
         #ifdef BATTLE_ENGINE
-            .abilityHidden = ABILITY_TANGLED_FEET,
+            .abilityHidden = ABILITY_QUICK_FEET,
         #endif
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = FALSE,
@@ -2409,7 +2409,7 @@ const struct BaseStats gBaseStats[] =
         .eggGroup2 = EGG_GROUP_FLYING,
         .abilities = {ABILITY_VITAL_SPIRIT, ABILITY_QUICK_FEET},
         #ifdef BATTLE_ENGINE
-            .abilityHidden = ABILITY_TANGLED_FEET,
+            .abilityHidden = ABILITY_QUICK_FEET,
         #endif
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = FALSE,
@@ -14864,7 +14864,7 @@ const struct BaseStats gBaseStats[] =
         .eggGroup2 = EGG_GROUP_HUMAN_LIKE,
         #ifdef BATTLE_ENGINE
             .abilities = {ABILITY_GUTS, ABILITY_SHEER_FORCE},
-            .abilityHidden = ABILITY_IRON_FIST,
+            .abilityHidden = ABILITY_STAMINA,
         #else
             .abilities = {ABILITY_GUTS, ABILITY_NONE},
         #endif
@@ -14893,7 +14893,7 @@ const struct BaseStats gBaseStats[] =
         .eggGroup2 = EGG_GROUP_HUMAN_LIKE,
         #ifdef BATTLE_ENGINE
             .abilities = {ABILITY_GUTS, ABILITY_SHEER_FORCE},
-            .abilityHidden = ABILITY_IRON_FIST,
+            .abilityHidden = ABILITY_STAMINA,
         #else
             .abilities = {ABILITY_GUTS, ABILITY_NONE},
         #endif
@@ -21600,7 +21600,7 @@ const struct BaseStats gBaseStats[] =
         .eggGroup1 = EGG_GROUP_FIELD,
         .eggGroup2 = EGG_GROUP_FIELD,
         #ifdef BATTLE_ENGINE
-            .abilities = {ABILITY_RECEIVER, ABILITY_NONE},
+            .abilities = {ABILITY_OWN_TEMPO, ABILITY_RECEIVER},
             .abilityHidden = ABILITY_DEFIANT,
         #else
             .abilities = {ABILITY_NONE, ABILITY_NONE},
