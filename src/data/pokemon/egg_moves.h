@@ -1155,6 +1155,7 @@ const u16 gEggMoves[] = {
 		MOVE_RAGE_POWDER,
 		MOVE_ELECTROWEB,
 		MOVE_LUNGE,
+		MOVE_SNAP_TRAP,
 		MOVE_POISON_JAB),
 
 	egg_moves(CHINCHOU,
