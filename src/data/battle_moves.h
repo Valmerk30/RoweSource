@@ -13465,6 +13465,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_PARALYSIS,
         .chance3 = 30,
+        .modification4 = SIGNATURE_MOD_TYPE,
+        .variable4 = TYPE_ROCK,	
         .differentDescription = TRUE,
         .description = _( 
             "Reckless attack that hurts the\n"
@@ -13480,12 +13482,14 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 30,
+	.modification4 = SIGNATURE_MOD_PSS_CHANGE,
+        .variable4 = SPLIT_SPECIAL,
         .differentDescription = TRUE,
         .description = _( 
             "Floats in the air and dives.\n"
             "Higher chance of flinching."),
     },			
-	
+
     [SPECIES_AMBIPOM] =
     {
         .move = MOVE_DOUBLE_HIT,
@@ -13605,7 +13609,33 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
             "Attacks with inner power.\n"
             "May raise random stats."),
     },	
-	
+
+    [SPECIES_WYNAUT] =
+    {
+        .move = MOVE_TAIL_SLAP,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 20,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 90,
+	.modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
+        .variable3 = SIGNATURE_SECONDARY_EFFECT_TAUNT,	
+        .chance3 = 10,				
+        .modification4 = SIGNATURE_MOD_PSS_CHANGE,
+        .variable4 = SPLIT_SPECIAL,
+        .modification5 = SIGNATURE_MOD_TYPE,
+        .variable5 = TYPE_PSYCHIC,		
+        .modification6 = SIGNATURE_MOD_SE_AGAINST_TYPE,
+        .variable6 = TYPE_GHOST,
+        .modification7 = SIGNATURE_MOD_SE_AGAINST_TYPE,
+        .variable7 = TYPE_PSYCHIC,
+        .modification8 = SIGNATURE_MOD_SE_AGAINST_TYPE,
+        .variable8 = TYPE_DRAGON,		
+        .differentDescription = TRUE,
+        .description = _( 
+            "Hits 2 to 5 times. May taunt."
+            "Eff to Ghost, Psychic and Dragon"),
+    },
+
     [SPECIES_WOBBUFFET] =
     {
         .move = MOVE_TAIL_SLAP,
@@ -13659,10 +13689,12 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
+        .modification4 = SIGNATURE_MOD_DAMAGE_STAT,
+        .variable4 = STAT_SPDEF,
         .differentDescription = TRUE,
         .description = _( 
-            "A flash that damages. Higher\n"
-            "chance to lower Accuracy."),
+            "Flash that hits with Sp. Def.\n"
+            "Higher chance to lower Acc."),
     },		
 	
     [SPECIES_DUNSPARCE] =
