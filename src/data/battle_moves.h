@@ -7178,24 +7178,6 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_SPECIAL,
     },
 	
-    [MOVE_AIR_SLASH] =
-    {
-        #if B_UPDATED_MOVE_DATA >= GEN_6
-            .pp = 20,
-        #else
-            .pp = 20,
-        #endif
-        .effect = EFFECT_FLINCH_HIT,
-        .power = 75,
-        .type = TYPE_FLYING,
-        .accuracy = 90,
-        .secondaryEffectChance = 30,
-        .target = MOVE_TARGET_SELECTED,
-        .priority = 0,
-        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SHEER_FORCE_BOOST,
-        .split = SPLIT_SPECIAL,
-    },
-
     [MOVE_DRILL_PECK] =
     {
         .effect = EFFECT_HIT,
@@ -7208,6 +7190,24 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_HIGH_CRIT | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
         .split = SPLIT_PHYSICAL,
+    },
+
+    [MOVE_AIR_SLASH] =
+    {
+        #if B_UPDATED_MOVE_DATA >= GEN_6
+            .pp = 20,
+        #else
+            .pp = 20,
+        #endif
+        .effect = EFFECT_FLINCH_HIT,
+        .power = 80,
+        .type = TYPE_FLYING,
+        .accuracy = 90,
+        .secondaryEffectChance = 20,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SHEER_FORCE_BOOST,
+        .split = SPLIT_SPECIAL,
     },
 	
     [MOVE_AERIAL_ACE] =
@@ -13372,7 +13372,23 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
             "A charged beam that almost\n"
             "always raises Sp. Atk."),
     },	
-	
+
+    [SPECIES_TOGETIC] =
+    {
+        .move = MOVE_FAIRY_WIND,
+ 	.modification = SIGNATURE_MOD_POWER,
+        .variable = 60,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 0,		
+        .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
+        .variable3 = SIGNATURE_SECONDARY_EFFECT_INFATUATION,
+        .chance3 = 25,	
+        .differentDescription = TRUE,
+        .description = _( 
+            "A fairy wind that never misses.\n"
+            "May cause infatuation."),
+    },	
+
     [SPECIES_TOGEKISS] =
     {
         .move = MOVE_FAIRY_WIND,
