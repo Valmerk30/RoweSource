@@ -3014,7 +3014,7 @@ static const u8 sGustDescription[] = _(
 
 static const u8 sWingAttackDescription[] = _(
     "Strikes the foe with wings.\n"
-    "May lower defense.");
+    "May lower Defense.");
 
 static const u8 sWhirlwindDescription[] = _(
     "Blows away the foe with\n"
@@ -4297,7 +4297,7 @@ static const u8 sDragonClawDescription[] = _(
     "that may lower Defense.");
 
 static const u8 sFrenzyPlantDescription[] = _(
-    "Hits the enemy with leaves.\n"
+    "Hits with crazy leaves.\n"
     "May raise Speed.");
 
 static const u8 sBulkUpDescription[] = _(
