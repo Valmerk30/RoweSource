@@ -4958,9 +4958,9 @@ static const u8 sTM113Desc[] = _(
     "Sp. Atk.");
 
 static const u8 sTM114Desc[] = _(
-    "A low altitude\n"
-    "charge that also\n"
-    "hurts the user.");
+    "Attacks with a\n"
+    "blade of air.\n"
+    "May cause flinch.");
 
 static const u8 sTM115Desc[] = _(
     "A damaging sound\n"
