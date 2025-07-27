@@ -5320,6 +5320,8 @@ static const u8 sSwinubTutorLearnset[] =
     TUTOR(MOVE_SUPERPOWER),
     TUTOR(MOVE_ROCK_SMASH),
     TUTOR(MOVE_STRENGTH),
+    TUTOR(MOVE_BREAKING_SWIPE),
+    TUTOR(MOVE_ICE_FANG),
     0xFF,
 };
 
@@ -5340,6 +5342,7 @@ static const u8 sPiloswineTutorLearnset[] =
     TUTOR(MOVE_SUPERPOWER),
     TUTOR(MOVE_ROCK_SMASH),
     TUTOR(MOVE_STRENGTH),
+    TUTOR(MOVE_BREAKING_SWIPE),
     TUTOR(MOVE_ICE_FANG),
     TUTOR(MOVE_HIGH_HORSEPOWER),
     TUTOR(MOVE_STOMPING_TANTRUM),
@@ -5355,6 +5358,7 @@ static const u8 sCorsolaTutorLearnset[] =
     TUTOR(MOVE_SUBSTITUTE),
     TUTOR(MOVE_ROLLOUT),
     TUTOR(MOVE_SNORE),
+    TUTOR(MOVE_SIGNAL_BEAM),
     TUTOR(MOVE_ICY_WIND),
     TUTOR(MOVE_ENDURE),
     TUTOR(MOVE_MUD_SLAP),
@@ -5406,6 +5410,7 @@ static const u8 sOctilleryTutorLearnset[] =
     TUTOR(MOVE_SIGNAL_BEAM),
     TUTOR(MOVE_SEED_BOMB),
     TUTOR(MOVE_WHIRLPOOL),
+    TUTOR(MOVE_DRAGON_PULSE),
     0xFF,
 };
 
@@ -5433,7 +5438,7 @@ static const u8 sDelibirdTutorLearnset[] =
     TUTOR(MOVE_RECYCLE),
     TUTOR(MOVE_DRILL_RUN),
     TUTOR(MOVE_DEFOG),
-	TUTOR(MOVE_TRIPLE_AXEL),
+    TUTOR(MOVE_TRIPLE_AXEL),
     0xFF,
 };
 
@@ -5458,6 +5463,7 @@ static const u8 sMantineTutorLearnset[] =
     TUTOR(MOVE_SEED_BOMB),
     TUTOR(MOVE_DEFOG),
     TUTOR(MOVE_WHIRLPOOL),
+    TUTOR(MOVE_DRAGON_PULSE),
     0xFF,
 };
 
@@ -6795,7 +6801,7 @@ static const u8 sKirliaTutorLearnset[] =
     TUTOR(MOVE_FLASH),
     TUTOR(MOVE_HYPER_VOICE),
     TUTOR(MOVE_PAIN_SPLIT),
-	TUTOR(MOVE_TRIPLE_AXEL),
+    TUTOR(MOVE_TRIPLE_AXEL),
     0xFF,
 };
 
@@ -10862,6 +10868,7 @@ static const u8 sMantykeTutorLearnset[] =
     TUTOR(MOVE_TAILWIND),
     TUTOR(MOVE_SIGNAL_BEAM),
     TUTOR(MOVE_WHIRLPOOL),
+    TUTOR(MOVE_DRAGON_PULSE),
     0xFF,
 };
 
@@ -11184,7 +11191,7 @@ static const u8 sGlaceonTutorLearnset[] =
     TUTOR(MOVE_ICE_FANG),
     TUTOR(MOVE_HYPER_VOICE),
     TUTOR(MOVE_HEAL_BELL),
-	TUTOR(MOVE_TRIPLE_AXEL),
+    TUTOR(MOVE_TRIPLE_AXEL),
     0xFF,
 };
 
@@ -11233,6 +11240,7 @@ static const u8 sMamoswineTutorLearnset[] =
     TUTOR(MOVE_SUPERPOWER),
     TUTOR(MOVE_ROCK_SMASH),
     TUTOR(MOVE_STRENGTH),
+    TUTOR(MOVE_BREAKING_SWIPE),
     TUTOR(MOVE_ICE_FANG),
     TUTOR(MOVE_HIGH_HORSEPOWER),
     TUTOR(MOVE_STOMPING_TANTRUM),
@@ -18196,6 +18204,7 @@ static const u8 sCursolaTutorLearnset[] =
     TUTOR(MOVE_ROCK_SLIDE),
     TUTOR(MOVE_SUBSTITUTE),
     TUTOR(MOVE_SNORE),
+    TUTOR(MOVE_SIGNAL_BEAM),
     TUTOR(MOVE_ICY_WIND),
     TUTOR(MOVE_ENDURE),
     TUTOR(MOVE_SLEEP_TALK),
@@ -19298,6 +19307,7 @@ static const u8 sCorsolaGalarianTutorLearnset[] =
     TUTOR(MOVE_ROCK_SLIDE),
     TUTOR(MOVE_SUBSTITUTE),
     TUTOR(MOVE_SNORE),
+    TUTOR(MOVE_SIGNAL_BEAM),
     TUTOR(MOVE_ICY_WIND),
     TUTOR(MOVE_ENDURE),
     TUTOR(MOVE_SLEEP_TALK),
@@ -20510,10 +20520,10 @@ const u8 *const sTutorLearnsets[] =
     [SPECIES_VIKAVOLT] = sVikavoltTutorLearnset,
     [SPECIES_CRABRAWLER] = sCrabrawlerTutorLearnset,
     [SPECIES_CRABOMINABLE] = sCrabominableTutorLearnset,
-    [SPECIES_ORICORIO] 			= sOricorioTutorLearnset,
-	[SPECIES_ORICORIO_POM_POM] 	= sOricorioTutorLearnset,
-	[SPECIES_ORICORIO_PA_U] 	= sOricorioTutorLearnset,
-	[SPECIES_ORICORIO_SENSU] 	= sOricorioTutorLearnset,
+    [SPECIES_ORICORIO] 		= sOricorioTutorLearnset,
+    [SPECIES_ORICORIO_POM_POM] 	= sOricorioTutorLearnset,
+    [SPECIES_ORICORIO_PA_U] 	= sOricorioTutorLearnset,
+    [SPECIES_ORICORIO_SENSU] 	= sOricorioTutorLearnset,
     [SPECIES_CUTIEFLY] = sCutieflyTutorLearnset,
     [SPECIES_RIBOMBEE] = sRibombeeTutorLearnset,
     [SPECIES_ROCKRUFF] = sRockruffTutorLearnset,
@@ -20546,14 +20556,14 @@ const u8 *const sTutorLearnsets[] =
     [SPECIES_PYUKUMUKU] = sPyukumukuTutorLearnset,
     [SPECIES_TYPE_NULL] = sTypeNullTutorLearnset,
     [SPECIES_SILVALLY] = sSilvallyTutorLearnset,
-    [SPECIES_MINIOR] 				= sMiniorTutorLearnset,
-	[SPECIES_MINIOR_CORE_RED] 		= sMiniorTutorLearnset,
-	[SPECIES_MINIOR_CORE_ORANGE] 	= sMiniorTutorLearnset,
-	[SPECIES_MINIOR_CORE_YELLOW] 	= sMiniorTutorLearnset,
-	[SPECIES_MINIOR_CORE_GREEN] 	= sMiniorTutorLearnset,
-	[SPECIES_MINIOR_CORE_BLUE] 		= sMiniorTutorLearnset,
-	[SPECIES_MINIOR_CORE_INDIGO] 	= sMiniorTutorLearnset,
-	[SPECIES_MINIOR_CORE_VIOLET] 	= sMiniorTutorLearnset,
+    [SPECIES_MINIOR] 			= sMiniorTutorLearnset,
+    [SPECIES_MINIOR_CORE_RED] 		= sMiniorTutorLearnset,
+    [SPECIES_MINIOR_CORE_ORANGE] 	= sMiniorTutorLearnset,
+    [SPECIES_MINIOR_CORE_YELLOW] 	= sMiniorTutorLearnset,
+    [SPECIES_MINIOR_CORE_GREEN] 	= sMiniorTutorLearnset,
+    [SPECIES_MINIOR_CORE_BLUE] 		= sMiniorTutorLearnset,
+    [SPECIES_MINIOR_CORE_INDIGO] 	= sMiniorTutorLearnset,
+    [SPECIES_MINIOR_CORE_VIOLET] 	= sMiniorTutorLearnset,
     [SPECIES_KOMALA] = sKomalaTutorLearnset,
     [SPECIES_TURTONATOR] = sTurtonatorTutorLearnset,
     [SPECIES_TOGEDEMARU] = sTogedemaruTutorLearnset,
@@ -20629,7 +20639,7 @@ const u8 *const sTutorLearnsets[] =
     [SPECIES_BARRASKEWDA] = sBarraskewdaTutorLearnset,
     [SPECIES_TOXEL] = sToxelTutorLearnset,
     [SPECIES_TOXTRICITY] = sToxtricityTutorLearnset,
-	[SPECIES_TOXTRICITY_LOW_KEY] = sToxtricityTutorLearnset,
+    [SPECIES_TOXTRICITY_LOW_KEY] = sToxtricityTutorLearnset,
     [SPECIES_SIZZLIPEDE] = sSizzlipedeTutorLearnset,
     [SPECIES_CENTISKORCH] = sCentiskorchTutorLearnset,
     [SPECIES_CLOBBOPUS] = sClobbopusTutorLearnset,
