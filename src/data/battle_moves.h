@@ -14120,6 +14120,22 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
             "Hits using the foe's Attack.\n"
             "May lower Defense."),
     },
+
+    [SPECIES_LINOONE] =
+    {
+        .move = MOVE_EXTREME_SPEED,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 90,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 90,
+        .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
+        .variable3 = STAT_EVASION,
+        .chance3 = 25,			
+        .differentDescription = TRUE,
+        .description = _( 
+            "An extremely fast attack.\n"
+            "May raise Evasion."),
+    },
 	
     [SPECIES_OBSTAGOON] =
     {
@@ -14192,13 +14208,11 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = 100,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,
-        .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
-        .variable3 = 0,		
-        .modification4 = SIGNATURE_MOD_MODIFY_FIELD,
-        .variable4 = FIELD_SELF_SET_TAILWIND,
-        .chance4 = 50,
-        .modification5 = SIGNATURE_MOD_PSS_CHANGE,
-        .variable5 = SPLIT_PHYSICAL,		
+        .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
+        .variable3 = FIELD_SELF_SET_TAILWIND,
+        .chance3 = 50,
+        .modification4 = SIGNATURE_MOD_PSS_CHANGE,
+        .variable4 = SPLIT_PHYSICAL,		
         .differentDescription = TRUE,
         .description = _( 
             "Circles with leaves. May lower\n"
