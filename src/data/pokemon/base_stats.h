@@ -7718,10 +7718,10 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_WINGULL] =
     {
         .baseHP        = 40,
-        .baseAttack    = 45,
+        .baseAttack    = 55,
         .baseDefense   = 30,
         .baseSpeed     = 85,
-        .baseSpAttack  = 55,
+        .baseSpAttack  = 45,
         .baseSpDefense = 30,
         .type1 = TYPE_WATER,
         .type2 = TYPE_FLYING,
@@ -7748,9 +7748,9 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_PELIPPER] =
     {
         .baseHP        = 90,
-        .baseAttack    = 50,
+        .baseAttack    = 95,
         .baseDefense   = 100,
-	.baseSpAttack  = 95,
+	.baseSpAttack  = 50,
         .baseSpDefense = 70,
         .baseSpeed     = 65,
         .type1 = TYPE_WATER,
