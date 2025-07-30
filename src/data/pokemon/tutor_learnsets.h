@@ -6945,6 +6945,7 @@ static const u8 sSlakothTutorLearnset[] =
     TUTOR(MOVE_ROCK_SMASH),
     TUTOR(MOVE_STRENGTH),
     TUTOR(MOVE_CUT),
+    TUTOR(MOVE_STOMPING_TANTRUM),
     0xFF,
 };
 
@@ -6972,6 +6973,7 @@ static const u8 sVigorothTutorLearnset[] =
     TUTOR(MOVE_ROCK_SMASH),
     TUTOR(MOVE_STRENGTH),
     TUTOR(MOVE_CUT),
+    TUTOR(MOVE_STOMPING_TANTRUM),
     0xFF,
 };
 
