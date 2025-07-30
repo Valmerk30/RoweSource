@@ -2376,8 +2376,8 @@ static const u8 sTHOUSAND_ARROWSDescription[] = _(
 	"knocks them to the ground.");
 
 static const u8 sTHOUSAND_WAVESDescription[] = _(
-	"Those hit by the wave can\n"
-	"no longer escape.");
+	"Multiple waves that make\n"
+	"foes no longer escape.");
 
 static const u8 sLANDS_WRATHDescription[] = _(
 	"Gathers the energy of the\n"
@@ -2989,8 +2989,8 @@ static const u8 sScratchDescription[] = _(
     "sharp claws.");
 
 static const u8 sViceGripDescription[] = _(
-    "Grips the foe with large and\n"
-    "powerful pincers.");
+    "Grips the foe with powerful\n"
+    "pincers. May lower Speed.");
 
 static const u8 sGuillotineDescription[] = _(
     "A powerful pincer attack.\n"
@@ -3562,7 +3562,7 @@ static const u8 sExplosionDescription[] = _(
 
 static const u8 sFurySwipesDescription[] = _(
     "Rakes the foe with sharp\n"
-    "claws, etc., 2 to 5 times.");
+    "claws from 2 to 5 times.");
 
 static const u8 sBonemerangDescription[] = _(
     "Throws a bone boomerang\n"
@@ -4253,7 +4253,7 @@ static const u8 sExtrasensoryDescription[] = _(
     "power. May cause confusion.");
 
 static const u8 sSkyUppercutDescription[] = _(
-    "Strikes as if leaping into\n"
+    "Strikes leaping into the\n"
     "sky. Affects flying foes.");
 
 static const u8 sSandTombDescription[] = _(
@@ -4381,8 +4381,8 @@ static const u8 sWAKE_UP_SLAPDescription[] = _(
     "foes, but also heals them.");
 
 static const u8 sHAMMER_ARMDescription[] = _(
-    "A swinging fist attack\n"
-    "that also lowers Speed.");
+    "A swinging arm attack.\n"
+    "Lowers the user Speed.");
 
 static const u8 sGYRO_BALLDescription[] = _(
     "A high-speed spin that\n"
@@ -4417,7 +4417,7 @@ static const u8 sACUPRESSUREDescription[] = _(
     "one of its stats.");
 
 static const u8 sMETAL_BURSTDescription[] = _(
-    "Slams the foe with a hard\n"
+    "Slams the foe with a steel\n"
     "body. May cause confusion.");
 
 static const u8 sU_TURNDescription[] = _(
@@ -4617,7 +4617,7 @@ static const u8 sICE_SHARDDescription[] = _(
     "always strike first.");
 
 static const u8 sSHADOW_CLAWDescription[] = _(
-    "Strikes with a shadow claw.\n"
+    "Strikes with a ghostly claw.\n"
     "High critical hit ratio.");
 
 static const u8 sTHUNDER_FANGDescription[] = _(
@@ -5049,8 +5049,8 @@ static const u8 sNIGHT_DAZEDescription[] = _(
     "wave. May lower accuracy.");
 
 static const u8 sHURRICANEDescription[] = _(
-    "Traps the foe in a fierce\n"
-    "wind. May cause confusion.");
+    "Hits the foe with fierce\n"
+    "winds. May cause confusion.");
 
 static const u8 sHEAD_CHARGEDescription[] = _(
     "A charge using guard hair.\n"
@@ -5245,6 +5245,10 @@ static const u8 sSTEAM_ERUPTIONDescription[] = _(
     "steam. May inflict a burn.");
 
 static const u8 sHYPERSPACE_HOLEDescription[] = _(
+    "Uses a warp hole to attack.\n"
+    "Can't be evaded.");
+
+static const u8 sHYPERSPACE_FURYDescription[] = _(
     "Uses a warp hole to hit foes\n"
     "using moves like Protect.");
 
@@ -5346,7 +5350,7 @@ static const u8 sPRECIPICE_BLADESDescription[] = _(
 
 static const u8 sLAVA_PLUMEDescription[] = _(
     "Scarlet flames strike that\n"
-    "destroys barriers.");
+    "destroy barriers.");
 
 static const u8 sLEAF_STORMDescription[] = _(
     "Whips up a storm of leaves.\n"
@@ -5489,8 +5493,8 @@ static const u8 sDRAGON_HAMMERDescription[] = _(
     "The user gets hurt too.");
 
 static const u8 sBRUTAL_SWINGDescription[] = _(
-    "Violently swings around\n"
-    "to hurt everyone nearby.");
+    "Violently swings around.\n"
+    "May lower the foes Defense.");
 
 static const u8 sAURORA_VEILDescription[] = _(
     "Weakens all attacks, but\n"
@@ -5569,8 +5573,8 @@ static const u8 sPHOTON_GEYSERDescription[] = _(
     "of energy. May cause a burn.");
 
 static const u8 sZIPPY_ZAPDescription[] = _(
-    "An electric bursts that may\n"
-    "raise the user's Sp Attack.");
+    "An electric burst that may\n"
+    "raise the user's Sp. Attack.");
 
 static const u8 sSPLISHY_SPLASHDescription[] = _(
     "A huge electrified wave that\n"
@@ -5767,7 +5771,7 @@ static const u8 sSTEEL_BEAMDescription[] = _(
 
 static const u8 sEXPANDING_FORCEDescription[] = _(
     "Power goes up and damages\n"
-    "all foes on Psychic Terrain.");
+    "all foes. May raise Sp. Atk.");
 
 static const u8 sSTEEL_ROLLERDescription[] = _(
     "Destroys terrain. Fails if\n"
@@ -6513,7 +6517,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_ORIGIN_PULSE - 1] = sORIGIN_PULSEDescription,
     [MOVE_PRECIPICE_BLADES - 1] = sPRECIPICE_BLADESDescription,
     [MOVE_DRAGON_ASCENT - 1] = sSkyUppercutDescription,
-    [MOVE_HYPERSPACE_FURY - 1] = sHYPERSPACE_HOLEDescription,
+    [MOVE_HYPERSPACE_FURY - 1] = sHYPERSPACE_FURYDescription,
     [MOVE_SHORE_UP - 1] = sSHORE_UPDescription,
     [MOVE_FIRST_IMPRESSION - 1] = sFIRST_IMPRESSIONDescription,
     [MOVE_BANEFUL_BUNKER - 1] = sBANEFUL_BUNKERDescription,
