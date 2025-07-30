@@ -14699,14 +14699,11 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
 
     [SPECIES_SPINDA] =
     {
-        .move = MOVE_SHADOW_CLAW,
+        .move = MOVE_RAPID_SPIN,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 90,
+        .variable = 100,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
-        .modification3 =  SIGNATURE_MOD_ATTACKER_STAT_UP,
-	.variable3 = STAT_EVASION,
-        .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
             "123456789012345678901234567890"
@@ -14723,6 +14720,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 =  SIGNATURE_MOD_ATTACKER_STAT_UP,
 	.variable3 = STAT_SPEED,
         .chance3 = 25,		
+        .modification4 = SIGNATURE_MOD_TYPE,
+        .variable4 = TYPE_GROUND,	
         .differentDescription = TRUE,
         .description = _( 
             "123456789012345678901234567890"
