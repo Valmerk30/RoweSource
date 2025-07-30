@@ -7565,6 +7565,7 @@ static const u8 sManectricTutorLearnset[] =
     TUTOR(MOVE_THUNDER_FANG),
     TUTOR(MOVE_FLASH),
     TUTOR(MOVE_HYPER_VOICE),
+    TUTOR(MOVE_DRAGON_PULSE),
     0xFF,
 };
 
@@ -7591,7 +7592,7 @@ static const u8 sPlusleTutorLearnset[] =
     TUTOR(MOVE_THUNDER_PUNCH),
     TUTOR(MOVE_SIGNAL_BEAM),
     TUTOR(MOVE_FLASH),
-	TUTOR(MOVE_SIGNAL_BEAM),
+    TUTOR(MOVE_SIGNAL_BEAM),
     0xFF,
 };
 
@@ -7618,7 +7619,7 @@ static const u8 sMinunTutorLearnset[] =
     TUTOR(MOVE_THUNDER_PUNCH),
     TUTOR(MOVE_SIGNAL_BEAM),
     TUTOR(MOVE_FLASH),
-	TUTOR(MOVE_SIGNAL_BEAM),
+    TUTOR(MOVE_SIGNAL_BEAM),
     0xFF,
 };
 
@@ -8003,7 +8004,7 @@ static const u8 sTrapinchTutorLearnset[] =
     TUTOR(MOVE_SUPERPOWER),
     TUTOR(MOVE_ROCK_SMASH),
     TUTOR(MOVE_STRENGTH),
-	TUTOR(MOVE_SCORCHING_SANDS),
+    TUTOR(MOVE_SCORCHING_SANDS),
     0xFF,
 };
 
@@ -8032,7 +8033,7 @@ static const u8 sVibravaTutorLearnset[] =
     TUTOR(MOVE_DRAGON_PULSE),
     TUTOR(MOVE_HEAT_WAVE),
     TUTOR(MOVE_DEFOG),
-	TUTOR(MOVE_SCORCHING_SANDS),
+    TUTOR(MOVE_SCORCHING_SANDS),
     0xFF,
 };
 
@@ -8065,7 +8066,7 @@ static const u8 sFlygonTutorLearnset[] =
     TUTOR(MOVE_HEAT_WAVE),
     TUTOR(MOVE_BREAKING_SWIPE),
     TUTOR(MOVE_DEFOG),
-	TUTOR(MOVE_SCORCHING_SANDS),
+    TUTOR(MOVE_SCORCHING_SANDS),
     0xFF,
 };
 
