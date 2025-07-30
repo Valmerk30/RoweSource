@@ -14052,7 +14052,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable5 = TYPE_PSYCHIC,			
         .differentDescription = TRUE,
         .description = _( 
-            "A ray that nullifies abilities.\n "
+            "A ray that nullifies abilities.\n"
             "May raise Def and Sp. Def."),
     },			
 	
