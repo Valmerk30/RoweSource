@@ -14323,9 +14323,11 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,	
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_FLINCH,
-        .chance3 = 50,		
-        .modification4 = SIGNATURE_MOD_SE_AGAINST_TYPE,
-        .variable4 = TYPE_DRAGON,
+        .chance3 = 50,	
+        .modification4 = SIGNATURE_MOD_TYPE,
+        .variable4 = TYPE_NORMAL,	
+        .modification5 = SIGNATURE_MOD_SE_AGAINST_TYPE,
+        .variable5 = TYPE_DRAGON,
         .differentDescription = TRUE,
         .description = _( 
             "123456789012345678901234567890"
