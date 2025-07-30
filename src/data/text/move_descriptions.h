@@ -2457,7 +2457,7 @@ static const u8 sSPOTLIGHTDescription[] = _(
 
 static const u8 sTOXIC_THREADDescription[] = _(
 	"Attacks with a thread that\n"
-	"poisons and drops Speed.");
+	"poisons the enemies.");
 
 static const u8 sLASER_FOCUSDescription[] = _(
 	"Guarantees the next move\n"
@@ -5726,8 +5726,8 @@ static const u8 sBRANCH_POKEDescription[] = _(
     "with a pointed branch.");
     
 static const u8 sOVERDRIVEDescription[] = _(
-    "The user twangs its guitar,\n"
-    "causing strong vibrations.");
+    "Causes strong vibrations.\n"
+    "May cause Confusion.");
     
 static const u8 sAPPLE_ACIDDescription[] = _(
     "Attacks with tart apple acid\n"
