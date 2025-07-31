@@ -8705,7 +8705,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .accuracy = 85,
         .pp = 20,
         .secondaryEffectChance = 100,
-        .target = MOVE_TARGET_BOTH,
+        .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
         .split = SPLIT_PHYSICAL,
@@ -15336,8 +15336,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_ELECTRIC,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Hits through stat changes. Eff\n"
+            "to Electric. May lower Speed."),
     },	
 
     [SPECIES_KRICKETUNE] =
@@ -15352,8 +15352,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,	
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Slashes with high crit ratio.\n"
+            "May raise Speed."),
     },	
 
     [SPECIES_LUXRAY] =
@@ -15367,9 +15367,28 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
-    },		
+            "A plasma bolt. Higher chance\n"
+            "of Flinch or Paralysis."),
+    },	
+
+    [SPECIES_CRANIDOS] =
+    {
+        .move = MOVE_HEADBUTT,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 50,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 90,
+        .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
+        .variable3 = 10,
+        .modification4 = SIGNATURE_MOD_PRIORITY,
+        .variable4 = SIGNATURE_PRIORITY_ALWAYS,		
+        .modification5 = SIGNATURE_MOD_TYPE,
+        .variable5 = TYPE_ROCK,		
+        .differentDescription = TRUE,
+        .description = _( 
+            "Hits with a strong head. May\n"
+            "cause Flinch. Attacks first."),
+    },	
 	
     [SPECIES_RAMPARDOS] =
     {
@@ -15379,15 +15398,31 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
-        .variable3 = 0,
+        .variable3 = 10,
         .modification4 = SIGNATURE_MOD_PRIORITY,
         .variable4 = SIGNATURE_PRIORITY_ALWAYS,		
         .modification5 = SIGNATURE_MOD_TYPE,
         .variable5 = TYPE_ROCK,		
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Hits with a strong head. May\n"
+            "cause Flinch. Attacks first."),
+    },	
+
+    [SPECIES_SHIELDON] =
+    {
+        .move = MOVE_BEHEMOTH_BASH,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 60,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 90,		
+        .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
+	.variable3 = STAT_SPDEF,
+        .chance3 = 25,
+        .differentDescription = TRUE,
+        .description = _( 
+            "Attacks as a steel shield.\n"
+            "May raise Defense and Sp. Def."),
     },	
 
     [SPECIES_BASTIODON] =
@@ -15402,8 +15437,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Attacks as a steel shield.\n"
+            "May raise Defense and Sp. Def."),
     },	
 
     [SPECIES_WORMADAM] =
@@ -15417,8 +15452,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Struggles to attack. Higher\n"
+            "chance of lowering Sp. Atk."),
     },	
 
     [SPECIES_MOTHIM] =
@@ -15432,8 +15467,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Skitters behind the foe. Higher\n"
+            "chance of lowering Sp. Atk."),
     },		
 	
     [SPECIES_VESPIQUEN] =
@@ -15443,10 +15478,12 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = 90,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,
+        .modification3 = SIGNATURE_MOD_PRIORITY,
+        .variable3 = SIGNATURE_PRIORITY_ALWAYS,	
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Underlings pummel the foe. High\n"
+            "priority. Traps 2 to 5 turns."),
     },	
 
     [SPECIES_PACHIRISU] =
@@ -15461,8 +15498,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Shocking tackle that may set\n"
+            "Electric Terrain and Paralyze."),
     },	
 
     [SPECIES_FLOATZEL] =
@@ -15477,8 +15514,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "A wave of water drops. May\n"
+            "cause Paralysis and Confusion."),
     },	
 
     [SPECIES_CHERRIM] =
@@ -15493,8 +15530,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "A fiery wave that may reduce\n"
+            "Sp. Def. and also cause Burn."),
     },		
 	
     [SPECIES_GASTRODON] =
@@ -15508,8 +15545,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Throws a blob of mud. Higher\n"
+            "chance of lowering Accuracy."),
     },	
 
     [SPECIES_DRIFBLIM] =
@@ -15522,10 +15559,28 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 =  SIGNATURE_MOD_TARGET_STAT_DOWN,
 	.variable3 = STAT_EVASION,
         .chance3 = 25,
+	.modification4 = SIGNATURE_MOD_PSS_CHANGE,
+        .variable4 = SPLIT_SPECIAL,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Shadowy chains that prevent\n"
+            "escape. May lower Evasion."),
+    },	
+
+    [SPECIES_BUNEARY] =
+    {
+        .move = MOVE_RETURN,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 1,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 90,		
+        .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
+	.variable3 = SIGNATURE_SECONDARY_EFFECT_INFATUATION,
+        .chance3 = 25,
+        .differentDescription = TRUE,
+        .description = _( 
+            "Higher power with friendship.\n"
+            "May cause Infatuation."),
     },	
 
     [SPECIES_LOPUNNY] =
@@ -15540,8 +15595,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Higher power with friendship.\n"
+            "May cause Infatuation."),
     },	
 
     [SPECIES_PURUGLY] =
