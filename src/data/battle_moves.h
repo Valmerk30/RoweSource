@@ -14905,7 +14905,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_ROCK,		
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },
 
@@ -14923,7 +14923,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_ELECTRIC,			
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },
 
@@ -14938,7 +14938,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },
 
@@ -14954,7 +14954,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification4 = SIGNATURE_MOD_OTHER,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },
 
@@ -14970,7 +14970,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },
 
@@ -14988,7 +14988,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_GHOST,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },
 
@@ -15004,7 +15004,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },
 
@@ -15020,7 +15020,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },
 
@@ -15035,7 +15035,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
 	.variable3 = STAT_SPEED,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },
 
@@ -15051,7 +15051,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },
 
@@ -15067,7 +15067,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 	
@@ -15082,7 +15082,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },
 
@@ -15100,7 +15100,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_WATER,				
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },
 
@@ -15116,7 +15116,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },
 
@@ -15132,7 +15132,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },
 
@@ -15147,7 +15147,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = SIGNATURE_PRIORITY_ALWAYS,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },
 
@@ -15162,7 +15162,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = SIGNATURE_PRIORITY_ALWAYS,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },
 
@@ -15177,7 +15177,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
 	.variable4 = STAT_ATK,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },
 
@@ -15194,7 +15194,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
 	.variable4 = STAT_ATK,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },
 
@@ -15209,7 +15209,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = TYPE_ICE,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },
 	
@@ -15224,7 +15224,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = SPLIT_PHYSICAL,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },
 	
@@ -15241,7 +15241,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_STEEL,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15256,7 +15256,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15271,7 +15271,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },
 
@@ -15287,7 +15287,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15300,7 +15300,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },		
 	
@@ -15316,7 +15316,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 50,		
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15334,7 +15334,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_ELECTRIC,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15350,7 +15350,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,	
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15365,7 +15365,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },		
 	
@@ -15384,7 +15384,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable5 = TYPE_ROCK,		
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15400,7 +15400,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15415,7 +15415,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15430,7 +15430,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },		
 	
@@ -15443,7 +15443,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15459,7 +15459,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15475,7 +15475,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15491,7 +15491,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },		
 	
@@ -15506,7 +15506,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15522,7 +15522,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15538,7 +15538,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15557,7 +15557,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable5 = STAT_ATK,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },		
 	
@@ -15572,7 +15572,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = STAT_ATK,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15587,7 +15587,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,	
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15603,7 +15603,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 90,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15619,7 +15619,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },		
 	
@@ -15635,7 +15635,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15651,7 +15651,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15667,7 +15667,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15683,7 +15683,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },		
 	
@@ -15699,7 +15699,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },		
 	
@@ -15715,7 +15715,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15733,7 +15733,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = SPLIT_SPECIAL,	
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15749,7 +15749,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15762,7 +15762,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },		
 	
@@ -15778,7 +15778,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15793,7 +15793,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15809,7 +15809,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 40,		
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15825,7 +15825,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },		
 	
@@ -15840,7 +15840,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15855,7 +15855,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15875,7 +15875,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable5 = SPLIT_PHYSICAL,	
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15898,7 +15898,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable6 = TYPE_NORMAL,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },		
 	
@@ -15914,7 +15914,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15930,7 +15930,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },
 
@@ -15946,7 +15946,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15962,7 +15962,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },		
 	
@@ -15980,7 +15980,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_POISON,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -15996,7 +15996,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16012,7 +16012,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -16028,7 +16028,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },		
 
@@ -16046,7 +16046,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance4 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16062,7 +16062,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,		
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16080,7 +16080,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_STEEL,	
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16096,7 +16096,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16112,7 +16112,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
 	.chance3 = 10,	
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16128,7 +16128,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16144,7 +16144,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16159,7 +16159,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,	
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16175,7 +16175,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16193,7 +16193,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance4 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16211,7 +16211,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = SIGNATURE_PRIORITY_CONDITION_TERRAIN_ANY,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16227,7 +16227,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16243,7 +16243,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16258,7 +16258,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16274,7 +16274,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16290,7 +16290,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16305,7 +16305,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16323,7 +16323,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = SPLIT_SPECIAL,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16339,7 +16339,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16354,7 +16354,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16367,7 +16367,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16383,7 +16383,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16399,7 +16399,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16414,7 +16414,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16430,7 +16430,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16445,7 +16445,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 90,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16460,7 +16460,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 90,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16476,7 +16476,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16491,7 +16491,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16507,7 +16507,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16523,7 +16523,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16539,7 +16539,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16554,7 +16554,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = TYPE_STEEL,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16570,7 +16570,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16586,7 +16586,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 50,	
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16602,7 +16602,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16618,7 +16618,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16636,7 +16636,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = SPLIT_PHYSICAL,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16651,7 +16651,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16666,7 +16666,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16682,7 +16682,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 15,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16700,7 +16700,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_ICE,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16716,7 +16716,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16735,7 +16735,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance4 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16750,7 +16750,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16767,7 +16767,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = STAT_SPDEF,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16782,7 +16782,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16798,7 +16798,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16814,7 +16814,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16832,7 +16832,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_FAIRY,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16848,7 +16848,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16864,7 +16864,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16881,7 +16881,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = SIGNATURE_PRIORITY_ALWAYS,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16896,7 +16896,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16915,7 +16915,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance4 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16931,7 +16931,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16948,7 +16948,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = SPLIT_SPECIAL,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     }, 
 
@@ -16965,7 +16965,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = SPLIT_PHYSICAL,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     }, 
 
@@ -16982,7 +16982,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -16997,7 +16997,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -17013,7 +17013,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },
 
@@ -17028,7 +17028,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -17043,7 +17043,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -17060,7 +17060,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_BUG,	
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -17076,7 +17076,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -17092,7 +17092,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
 	.chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -17108,7 +17108,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -17124,7 +17124,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -17143,7 +17143,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable5 = TYPE_GHOST,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -17158,7 +17158,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -17173,7 +17173,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -17189,7 +17189,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,		
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -17205,7 +17205,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -17221,7 +17221,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
 	.chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -17240,7 +17240,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
 	.chance4 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -17255,7 +17255,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -17271,7 +17271,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -17286,7 +17286,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -17299,7 +17299,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -17317,7 +17317,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_ROCK,	
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -17333,7 +17333,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,	
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -17349,7 +17349,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
 	.chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -17365,7 +17365,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 50,	
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -17381,7 +17381,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -17397,7 +17397,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -17415,7 +17415,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_GHOST,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -17431,7 +17431,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -17449,7 +17449,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance4 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -17467,7 +17467,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance4 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -17482,7 +17482,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 40,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },
 
@@ -17512,7 +17512,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -17526,7 +17526,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -17542,7 +17542,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -17558,7 +17558,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -17574,7 +17574,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -17590,7 +17590,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,		
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -17606,7 +17606,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,	
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 	
@@ -17622,7 +17622,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 30,	
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -17638,7 +17638,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -17654,7 +17654,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -17670,7 +17670,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -17686,7 +17686,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -17702,7 +17702,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 50,	
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -17718,7 +17718,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -17734,7 +17734,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -17752,7 +17752,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_POISON,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -17768,7 +17768,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -17784,7 +17784,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -17800,7 +17800,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -17816,7 +17816,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -17832,7 +17832,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -17848,7 +17848,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -17864,7 +17864,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -17880,7 +17880,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -17896,7 +17896,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -17912,7 +17912,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -17928,7 +17928,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -17944,7 +17944,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -17966,7 +17966,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable6 = TYPE_ROCK,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -17981,7 +17981,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -17999,7 +17999,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_FLYING,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -18014,7 +18014,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -18030,7 +18030,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -18043,7 +18043,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -18073,7 +18073,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable8 = SIGNATURE_PRIORITY_ALWAYS,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -18089,7 +18089,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -18102,7 +18102,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -18120,7 +18120,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_GHOST,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -18136,7 +18136,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -18149,7 +18149,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -18165,7 +18165,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -18181,7 +18181,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },
 
@@ -18197,7 +18197,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -18213,7 +18213,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -18229,7 +18229,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -18249,7 +18249,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable5 = TYPE_WATER,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -18264,7 +18264,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -18279,7 +18279,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -18295,7 +18295,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -18314,7 +18314,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance4 = 10,	
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },		
  
@@ -18330,7 +18330,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -18346,7 +18346,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,	
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -18361,7 +18361,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -18377,7 +18377,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -18392,7 +18392,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
  
@@ -18407,7 +18407,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -18425,7 +18425,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_GROUND,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -18443,7 +18443,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_GROUND,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -18459,7 +18459,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,		
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -18475,7 +18475,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance4 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -18490,7 +18490,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -18505,7 +18505,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -18521,7 +18521,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -18537,7 +18537,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -18553,7 +18553,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -18569,7 +18569,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -18584,7 +18584,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -18602,7 +18602,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
 	.variable4 = STAT_ATK,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -18618,7 +18618,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -18634,7 +18634,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -18650,7 +18650,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -18665,7 +18665,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -18681,7 +18681,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -18697,7 +18697,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -18713,7 +18713,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -18729,7 +18729,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -18745,7 +18745,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -18761,7 +18761,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -18777,7 +18777,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -18793,7 +18793,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -18808,7 +18808,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 40,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -18824,7 +18824,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
@@ -18840,7 +18840,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890"
+            "123456789012345678901234567890\n"
             "123456789012345678901234567890"),
     },	
 
