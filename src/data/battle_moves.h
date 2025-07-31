@@ -17453,6 +17453,21 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
             "123456789012345678901234567890"),
     },	
 
+    [SPECIES_DIANCIE] =
+    {
+        .move = MOVE_DIAMOND_STORM,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 80,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 90,		
+        .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
+        .variable3 = 40,
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
+    },
+
     [SPECIES_HOOPA] =
     {
         .move = MOVE_HYPERSPACE_HOLE,
@@ -18453,9 +18468,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = 80,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
-        .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
-        .variable3 = SIGNATURE_SECONDARY_EFFECT_CONFUSION,
-        .chance3 = 10,
+        .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
+        .variable3 = 20,
         .differentDescription = TRUE,
         .description = _( 
             "123456789012345678901234567890"
