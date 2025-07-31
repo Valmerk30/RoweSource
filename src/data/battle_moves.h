@@ -8696,6 +8696,20 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED | FLAG_SHEER_FORCE_BOOST,
         .split = SPLIT_PHYSICAL,
     },
+
+    [MOVE_ATTACK_ORDER] =
+    {
+        .effect = EFFECT_TRAP,
+        .power = 80,
+        .type = TYPE_BUG,
+        .accuracy = 85,
+        .pp = 20,
+        .secondaryEffectChance = 100,
+        .target = MOVE_TARGET_BOTH,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
+        .split = SPLIT_PHYSICAL,
+    },
 		
     [MOVE_X_SCISSOR] =
     {
@@ -8752,20 +8766,6 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
         .split = SPLIT_PHYSICAL,
     },	
-
-    [MOVE_ATTACK_ORDER] =
-    {
-        .effect = EFFECT_TRAP,
-        .power = 90,
-        .type = TYPE_BUG,
-        .accuracy = 85,
-        .pp = 15,
-        .secondaryEffectChance = 100,
-        .target = MOVE_TARGET_BOTH,
-        .priority = 0,
-        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
-        .split = SPLIT_PHYSICAL,
-    },
 
     [MOVE_MEGAHORN] =
     {
@@ -11740,7 +11740,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,		
         .differentDescription = TRUE,
         .description = _( 
-            "A slash with high crit ratio."
+            "A slash with high crit ratio.\n"
             "Higher chance of Poison."),
     },
 	
@@ -14310,7 +14310,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = TYPE_FLYING,	
         .differentDescription = TRUE,
         .description = _( 
-            "Strikes leaping into the sky."
+            "Strikes leaping into the sky.\n"
             "Effective against Flying."),
     },
 
@@ -15420,7 +15420,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     {
         .move = MOVE_ATTACK_ORDER,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 80,
+        .variable = 90,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,
         .differentDescription = TRUE,
@@ -16034,16 +16034,14 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
 
     [SPECIES_EXCADRILL] =
     {
-        .move = MOVE_HYPER_VOICE,
+        .move = MOVE_DRILL_RUN,
         .modification = SIGNATURE_MOD_POWER,
         .variable = 90,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
-        .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
-        .variable3 = SIGNATURE_SECONDARY_EFFECT_INFATUATION,
-        .chance3 = 10,	
-        .modification4 = SIGNATURE_MOD_TYPE,
-        .variable4 = TYPE_STEEL,	
+        .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
+        .variable3 = STAT_SPEED,
+        .chance3 = 25,		
         .differentDescription = TRUE,
         .description = _( 
             "123456789012345678901234567890"
@@ -16052,16 +16050,16 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
 
     [SPECIES_AUDINO] =
     {
-        .move = MOVE_THUNDEROUS_KICK,
+        .move = MOVE_HYPER_VOICE,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 80,
+        .variable = 90,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
-        .variable3 = SIGNATURE_SECONDARY_EFFECT_PARALYSIS,
-        .chance3 = 20,
-        .modification4 = SIGNATURE_MOD_SE_AGAINST_TYPE,
-        .variable4 = TYPE_NORMAL,
+        .variable3 = SIGNATURE_SECONDARY_EFFECT_INFATUATION,
+        .chance3 = 20,	
+        .modification4 = SIGNATURE_MOD_TYPE,
+        .variable4 = TYPE_STEEL,	
         .differentDescription = TRUE,
         .description = _( 
             "123456789012345678901234567890"
@@ -17493,7 +17491,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
-        .variable3 = 40,
+        .variable3 = 30,
         .differentDescription = TRUE,
         .description = _( 
             "123456789012345678901234567890"
