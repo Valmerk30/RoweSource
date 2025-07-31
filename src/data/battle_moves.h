@@ -3332,7 +3332,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
             .pp = 20,
         #endif
         .effect = EFFECT_TRAP,
-        .power = 65,
+        .power = 60,
         .type = TYPE_WATER,
         .secondaryEffectChance = 100,
         .target = MOVE_TARGET_SELECTED,
@@ -9629,7 +9629,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .type = TYPE_DRAGON,
         .accuracy = 95,
         .pp = 25,
-        .secondaryEffectChance = 30,
+        .secondaryEffectChance = 20,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED | FLAG_SHEER_FORCE_BOOST,
@@ -10923,7 +10923,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .type = TYPE_STEEL,
         .accuracy = 90,
         .pp = 10,
-        .secondaryEffectChance = 0,
+        .secondaryEffectChance = 20,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED | FLAG_RECKLESS_BOOST,
@@ -11853,7 +11853,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification = SIGNATURE_MOD_POWER,
         .variable = 60,
         .modification2 = SIGNATURE_MOD_ACCURACY,
-        .variable2 = 90,			
+        .variable2 = 95,			
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_ACC,
         .chance3 = 25,
@@ -11885,7 +11885,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification = SIGNATURE_MOD_POWER,
         .variable = 60,
         .modification2 = SIGNATURE_MOD_ACCURACY,
-        .variable2 = 90,			
+        .variable2 = 95,			
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_ACC,
         .chance3 = 25,
@@ -12540,7 +12540,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification = SIGNATURE_MOD_POWER,
         .variable = 60,
         .modification2 = SIGNATURE_MOD_ACCURACY,
-        .variable2 = 90,	
+        .variable2 = 95,	
         .modification3 = SIGNATURE_MOD_TYPE,
         .variable3 = TYPE_NORMAL,
         .modification4 = SIGNATURE_MOD_SE_AGAINST_TYPE,
@@ -15075,7 +15075,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     {
         .move = MOVE_ICE_FANG,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 100,
+        .variable = 90,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
@@ -15136,6 +15136,21 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
             "123456789012345678901234567890"),
     },
 
+    [SPECIES_LUVDISC] =
+    {
+        .move = MOVE_DRAINING_KISS,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 60,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 95,			
+        .modification3 = SIGNATURE_MOD_PRIORITY,
+        .variable3 = SIGNATURE_PRIORITY_ALWAYS,
+        .differentDescription = TRUE,
+        .description = _( 
+            "123456789012345678901234567890"
+            "123456789012345678901234567890"),
+    },
+
     [SPECIES_ALOMOMOLA] =
     {
         .move = MOVE_DRAINING_KISS,
@@ -15156,11 +15171,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .move = MOVE_DRAGON_BREATH,
         .modification = SIGNATURE_MOD_POWER,
         .variable = 100,
-        .modification2 = SIGNATURE_MOD_ACCURACY,
-        .variable2 = 90,		
-        .modification3 = SIGNATURE_MOD_DAMAGE_STAT,
-	.variable3 = STAT_ATK,
-        .chance3 = 25,
+        .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
+        .variable3 = 50,
+        .modification4 = SIGNATURE_MOD_DAMAGE_STAT,
+	.variable4 = STAT_ATK,
         .differentDescription = TRUE,
         .description = _( 
             "123456789012345678901234567890"
@@ -15176,6 +15190,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 95,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 50,
+        .modification4 = SIGNATURE_MOD_DAMAGE_STAT,
+	.variable4 = STAT_ATK,
         .differentDescription = TRUE,
         .description = _( 
             "123456789012345678901234567890"
@@ -18338,7 +18354,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     {
         .move = MOVE_THUNDER_FANG,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 100,
+        .variable = 90,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
@@ -18482,7 +18498,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     {
         .move = MOVE_FIRE_FANG,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 100,
+        .variable = 90,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
