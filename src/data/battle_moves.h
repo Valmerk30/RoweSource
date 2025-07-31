@@ -14913,12 +14913,12 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     {
         .move = MOVE_CLANGING_SCALES,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 110,
+        .variable = 100,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_CONFUSION,
-        .chance3 = 20,
+        .chance3 = 50,
         .modification4 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable4 = TYPE_ELECTRIC,			
         .differentDescription = TRUE,
@@ -14946,7 +14946,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     {
         .move = MOVE_FAINT_ATTACK,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 90,
+        .variable = 60,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 0,		
         .modification3 = SIGNATURE_MOD_PRIORITY,
@@ -14984,6 +14984,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
 	.modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_FLINCH,	
         .chance3 = 15,	
+        .modification4 = SIGNATURE_MOD_TYPE,
+        .variable4 = TYPE_GHOST,
         .differentDescription = TRUE,
         .description = _( 
             "123456789012345678901234567890"
