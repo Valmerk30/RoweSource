@@ -1820,7 +1820,7 @@ static const u8 sDARK_VOIDDescription[] = _(
 	"darkness. May cause Sleep.");
 
 static const u8 sSEED_FLAREDescription[] = _(
-	"Generates a shock wave that\n"
+	"Generates a fiery wave that\n"
 	"sharply reduces Sp. Def.");
 
 static const u8 sOMINOUS_WINDDescription[] = _(
@@ -4769,7 +4769,7 @@ static const u8 sDARK_VOIDDescription[] = _(
     "darkness, inducing Sleep.");
 
 static const u8 sSEED_FLAREDescription[] = _(
-    "Generates a shock wave that\n"
+    "Generates a fiery wave that\n"
     "may reduce Sp. Def.");
 
 static const u8 sOMINOUS_WINDDescription[] = _(
@@ -4997,8 +4997,8 @@ static const u8 sGRASS_PLEDGEDescription[] = _(
     "grass. High critical hit.");
 
 static const u8 sSTRUGGLE_BUGDescription[] = _(
-    "Resisting, the user attacks\n"
-    "the foe. Lowers Sp. Atk.");
+    "The user struggles to\n"
+    "attack. May lower Sp. Atk.");
 
 static const u8 sBULLDOZEDescription[] = _(
     "Stomps down on the ground.\n"
@@ -5113,8 +5113,8 @@ static const u8 sFUSION_FLAREDescription[] = _(
     "leave the foe with a burn.");
 
 static const u8 sFUSION_BOLTDescription[] = _(
-    "May cause flinching or\n"
-    "leave the foe paralyzed.");
+    "A plasma bolt. May cause\n"
+    "flinching or paralysis.");
 
 static const u8 sFLYING_PRESSDescription[] = _(
     "This attack does Fighting\n"
@@ -5577,8 +5577,8 @@ static const u8 sZIPPY_ZAPDescription[] = _(
     "raise the user's Sp. Attack.");
 
 static const u8 sSPLISHY_SPLASHDescription[] = _(
-    "A huge electrified wave that\n"
-    "may paralyze the foe.");
+    "A wave of thousand drops\n"
+    "that may paralyze the foe.");
 
 static const u8 sFLOATY_FALLDescription[] = _(
     "Floats in air and dives at\n"
