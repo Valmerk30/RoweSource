@@ -11420,7 +11420,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _(
             "Attacks in only one turn. May\n"
-            "set the weather to sunny."),
+            "set Sunny Weather."),
     },
 	
     [SPECIES_CHARIZARD] =
@@ -11435,7 +11435,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _(
             "A powerful fire attack with\n"
-            "higher chance to cause burns."),
+            "higher chance to cause Burn."),
     },
 	
     [SPECIES_BLASTOISE] =
@@ -11451,7 +11451,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Reckless attack that hurts the\n"
-            "user. May cause confusion."),
+            "user. May cause Confusion."),
     },
 	
 	[SPECIES_BUTTERFREE] =
@@ -11466,7 +11466,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "A strange beam attack with\n"
-            "higher chance of confusion."),
+            "higher chance of Confusion."),
     },
 	
     [SPECIES_BEEDRILL] =
@@ -11481,7 +11481,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Stingers to jab the foe twice.\n"
-            "Higher chance to cause poison."),
+            "Higher chance to cause Poison."),
     },
 	
     [SPECIES_PIDGEOT] =
@@ -11496,7 +11496,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Strikes from heaven. Higher\n"
-            "chance of raising attack."),
+            "chance of raising Attack."),
     },	     
 	
     [SPECIES_RATICATE] =
@@ -11511,7 +11511,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Bites with sharp fangs. Higher\n"
-            "chance to cause flinching."),
+            "chance to cause Flinch."),
     },
 	
     [SPECIES_RATICATE_ALOLAN] =
@@ -11526,7 +11526,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Bites with sharp fangs. Higher\n"
-            "chance to cause flinching."),
+            "chance to cause Flinch."),
     },
 	
     [SPECIES_FEAROW] =
@@ -11557,7 +11557,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "A sharp-fanged attack. Higher\n"
-            "chance of badly poisoning."),
+            "chance of Badly Poison."),
     },	
 	
     [SPECIES_RAICHU] =
@@ -11575,7 +11575,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "A tackle that may paralyze and\n"
-            "set the terrain to electric."),
+            "set Electric Terrain."),
     },
 	
     [SPECIES_RAICHU_ALOLAN] =
@@ -11593,7 +11593,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "A tackle that may paralyze and\n"
-            "set the terrain to electric."),
+            "set Electric Terrain."),
     },
 	
     [SPECIES_SANDSLASH] =
@@ -11646,7 +11646,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "A full-body slam with higher\n"
-            "chance to cause paralysis."),
+            "chance to cause Paralysis."),
     },
 	
     [SPECIES_NIDOKING] =
@@ -11661,7 +11661,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "A stabbing attack with higher\n"
-            "chance to poison the foe."),
+            "chance to cause Poison."),
     },
 	
     [SPECIES_CLEFABLE] =
@@ -11725,7 +11725,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Attacks with an ancient song.\n"
-            "Higher chance of causing sleep."),
+            "Higher chance of causing Sleep."),
     },       
 	
     [SPECIES_CROBAT] =
@@ -11740,8 +11740,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,		
         .differentDescription = TRUE,
         .description = _( 
-            "A slash with high critical hit."
-            "Higher chance of poisoning."),
+            "A slash with high crit ratio.\n"
+            "Higher chance of Poison."),
     },
 	
     [SPECIES_VILEPLUME] =
@@ -11762,7 +11762,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Rampage 2 or 3 turns. May raise\n"
-            "Speed and set grass terrain."),
+            "Speed and set Grassy Terrain."),
     },
 	
     [SPECIES_BELLOSSOM] =
@@ -11781,7 +11781,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Rampage 2 or 3 turns. May raise\n"
-            "Speed and set grass terrain."),
+            "Speed and set Grassy Terrain."),
     },
 	
     [SPECIES_PARASECT] =
@@ -11812,7 +11812,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "White haze that eliminates all\n"
-            "stat changes and can sleep."),
+            "stat changes and can Sleep."),
     },	
 	
     [SPECIES_DUGTRIO] =
@@ -11828,7 +11828,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Attack of random intensity.\n"
-            "May lower the foes defense."),
+            "May lower the foes Defense."),
     },	
 
     [SPECIES_DUGTRIO_ALOLAN] =
@@ -11844,7 +11844,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Attack of random intensity.\n"
-            "May lower the foes defense."),
+            "May lower the foes Defense."),
     },	
 
     [SPECIES_MEOWTH] =
@@ -11860,7 +11860,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Throws coins at the foe.\n"
-            "May lower the foe's accuracy."),
+            "May lower the foe's Accuracy."),
     },	
 	
     [SPECIES_PERSIAN] =
@@ -11876,7 +11876,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Throws coins at the foe.\n"
-            "May lower the foe's accuracy."),
+            "May lower the foe's Accuracy."),
     },	
 
     [SPECIES_MEOWTH_ALOLAN] =
@@ -11892,7 +11892,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Throws coins at the foe.\n"
-            "May lower the foe's accuracy."),
+            "May lower the foe's Accuracy."),
     },	
 
     [SPECIES_PERSIAN_ALOLAN] =
@@ -11959,7 +11959,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Double-chop attack. High crit\n"
-            "ratio. May cause paralysis."),
+            "ratio. May cause Paralysis."),
     },	
 	
     [SPECIES_ARCANINE] =
@@ -11974,7 +11974,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Mystical fire that attacks the\n"
-            "Sp. Def. May inflict burning."),
+            "Sp. Def. May inflict Burning."),
     },
 
     [SPECIES_POLIWRATH] =
@@ -11991,7 +11991,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Hits with a spinning fist.\n"
-            "Almost always confuses."),
+            "Almost always Confuses."),
     },	
 
     [SPECIES_POLITOED] =
@@ -12025,7 +12025,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "A mind strike that may lower\n"
-            "Accuracy and cause confusion."),
+            "Accuracy and cause Confusion."),
     },	
 
     [SPECIES_MACHAMP] =
@@ -12089,7 +12089,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Reckless attack that hurts the\n"
-            "user. Can set stealth rock."),
+            "user. Can set Stealth Rock."),
     },
 	
     [SPECIES_GOLEM_ALOLAN] =
@@ -12123,7 +12123,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Whips with fire. May lower\n"
-            "Defense and cause a burn."),
+            "Defense and cause a Burn."),
     },
 
     [SPECIES_RAPIDASH_GALARIAN] =
@@ -12141,7 +12141,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Whips with magic. May lower\n"
-            "Defense and cause a burn."),
+            "Defense and cause a Burn."),
     },
 
     [SPECIES_SLOWBRO] =
@@ -12161,7 +12161,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Moves last, but breaks Protect.\n"
-            "May cause infatuation."),
+            "May cause Infatuation."),
     },	
 
     [SPECIES_SLOWKING] =
@@ -12181,7 +12181,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Moves last, but breaks Protect.\n"
-            "May cause infatuation."),
+            "May cause Infatuation."),
     },		
 	
     [SPECIES_SLOWBRO_GALARIAN] =
@@ -12198,7 +12198,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Spits poison with the shell.\n"
-            "Almost always poisons."),
+            "Almost always Poisons."),
     },	
 
     [SPECIES_SLOWKING_GALARIAN] =
@@ -12215,7 +12215,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Spits poison with the shell.\n"
-            "Almost always poisons."),
+            "Almost always Poisons."),
     },	
 	
     [SPECIES_MAGNEZONE] =
@@ -12231,7 +12231,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Prevents escaping. May cause\n"
-            "paralysis to the foe."),
+            "Paralysis to the foe."),
     },
 
     [SPECIES_SIRFETCHD] =
@@ -12295,7 +12295,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Swamps the foes with sludge.\n"
-            "Higher chance of poisoning."),
+            "Higher chance of Poison."),
     },	
 
     [SPECIES_MUK_ALOLAN] =
@@ -12310,7 +12310,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Swamps the foes with sludge.\n"
-            "Higher chance of poisoning."),
+            "Higher chance of Poison."),
     },	
 
     [SPECIES_CLOYSTER] =
@@ -12342,7 +12342,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Traps in a nightmare for 2 to 5\n"
-            "turns. May inflict sleep."),
+            "turns. May inflict Sleep."),
     },		
 
     [SPECIES_STEELIX] =
@@ -12469,7 +12469,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Clubs the foe with a bone.\n"
-            "Higher change of flinching."),
+            "Higher change of Flinch."),
     },
 	
     [SPECIES_MAROWAK_ALOLAN] =
@@ -12486,7 +12486,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Clubs the foe with a bone.\n"
-            "Higher change of flinching."),
+            "Higher change of Flinch."),
     },	
 
     [SPECIES_HITMONLEE] =
@@ -12548,7 +12548,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Effective against Normal and\n"
-            "Ghost. May also paralyze."),
+            "Ghost. May also Paralyze."),
     },
 
     [SPECIES_LICKILICKY] =
@@ -12565,7 +12565,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Effective against Normal and\n"
-            "Ghost. May also paralyze."),
+            "Ghost. May also Paralyze."),
     },
 
     [SPECIES_KOFFING] =
@@ -12580,7 +12580,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "An exhaust-gas attack.\n"
-            "Almost always poisons."),
+            "Almost always Poisons."),
     },
 
     [SPECIES_WEEZING] =
@@ -12595,7 +12595,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "An exhaust-gas attack.\n"
-            "Almost always poisons."),
+            "Almost always Poisons."),
     },
 	
     [SPECIES_WEEZING_GALARIAN] =
@@ -12610,7 +12610,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "An exhaust-gas attack.\n"
-            "Almost always poisons."),
+            "Almost always Poisons."),
     },
 	
     [SPECIES_RHYPERIOR] =
@@ -12641,7 +12641,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Hurls an egg that damages all\n"
-            "foes. May inflict burning."),
+            "foes. May inflict Burning."),
     },
 	
     [SPECIES_BLISSEY] =
@@ -12657,7 +12657,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Hurls an egg that damages all\n"
-            "foes. May inflict burning."),
+            "foes. May inflict Burning."),
     },
 
     [SPECIES_TANGELA] =
@@ -12708,7 +12708,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "A rhytmhic punch with higher\n"
-            "chance to cause confusion."),
+            "chance to cause Confusion."),
     },	
 	
     [SPECIES_KINGDRA] =
@@ -12773,7 +12773,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Crystals that eliminates stat\n"
-            "changes. May cause freezing."),
+            "changes. May cause Freezing."),
     },	
 	
     [SPECIES_SCIZOR] =
@@ -12820,7 +12820,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Attacks twice to random foes.\n"
-            "May cause paralysis."),
+            "May cause Paralysis."),
     },
 
     [SPECIES_MAGMORTAR] =
@@ -12836,7 +12836,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Burns down the foe's item. May"
-            "also cause burning."),
+            "also cause Burning."),
     },	
 
     [SPECIES_PINSIR] =
@@ -12906,7 +12906,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Crashes a water wave to the\n"
-            "foes. May inflict freezing."),
+            "foes. May inflict Freezing."),
     },
 	
     [SPECIES_DITTO] =
@@ -13022,7 +13022,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Cutely begs to obtain the item.\n"
-            "May set Tailwind"),
+            "May set Tailwind."),
     },	
 	
     [SPECIES_LEAFEON] =
@@ -13093,7 +13093,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Effective against Dark and Steel\n"
-            "May raise all stats. "),
+            "May raise all stats."),
     },		
 
     [SPECIES_OMASTAR] =
@@ -13108,7 +13108,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Shoots boiling water. Higher\n"
-            "chance of causing burn."),
+            "chance of causing Burn."),
     },		
 	
     [SPECIES_KABUTOPS] =
@@ -13140,7 +13140,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Slams twice with wings.\n"
-            "May cause flinching."),
+            "May cause Flinch."),
     },		
 	
     [SPECIES_SNORLAX] =
@@ -13155,7 +13155,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Used only while asleep. Hits\n"
-            "with Sp. Def. Can flinch."),
+            "with Sp. Def. May Flinch."),
     },       	
 
     [SPECIES_ARTICUNO] =
@@ -13241,7 +13241,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Psychic wave that does physical\n"
-            "damage. May cause flinching."),
+            "damage. May cause Flinch."),
     },
 
     [SPECIES_MEGANIUM] =
@@ -13288,7 +13288,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Prevents escaping. May cause\n"
-            "flinching to the foe."),
+            "Flinch to the foe."),
     },
 	
     [SPECIES_FURRET] =
@@ -13306,7 +13306,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Bounces up, priority attack.\n"
-            "Eff to Fighting. Can flinch."),
+            "Eff to Fighting. Can Flinch."),
     },
 	
     [SPECIES_NOCTOWL] =
@@ -13321,7 +13321,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Attacks with a peculiar power.\n"
-            "Higher chance of confusion."),
+            "Higher chance of Confusion."),
     },	
 	
     [SPECIES_LEDIAN] =
@@ -13354,8 +13354,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 50,		
         .differentDescription = TRUE,
         .description = _( 
-            "A thread that drops Speed and\n"
-            "can poison enemies."),
+            "A thread that Poisons and\n"
+            "can set Sticky Web."),
     },
 	
     [SPECIES_LANTURN] =
@@ -13386,7 +13386,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "A fairy wind that never misses.\n"
-            "May cause infatuation."),
+            "May cause Infatuation."),
     },	
 
     [SPECIES_TOGEKISS] =
@@ -13402,7 +13402,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "A fairy wind that never misses.\n"
-            "May cause infatuation."),
+            "May cause Infatuation."),
     },	
 	
     [SPECIES_XATU] =
@@ -13437,7 +13437,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Attacks with a discharge.\n"
-            "Almost always paralyzes."),
+            "Almost always Paralyzes."),
     },
 	
     [SPECIES_AZUMARILL] =
@@ -13470,7 +13470,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Reckless attack that hurts the\n"
-            "user. May cause paralysis."),
+            "user. May cause Paralysis."),
     },
 
     [SPECIES_JUMPLUFF] =
@@ -13487,7 +13487,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Floats in the air and dives.\n"
-            "Higher chance of flinching."),
+            "Higher chance of Flinch."),
     },			
 
     [SPECIES_AMBIPOM] =
@@ -13503,7 +13503,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Slams the enemy twice. Taunts\n"
-            "the foe into using attack moves."),
+            "into only using attack moves."),
     },	
 
     [SPECIES_SUNFLORA] =
@@ -13518,7 +13518,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Plants a seed on the foe\n."
-            "Higher chance of confusion."),
+            "Higher chance of Confusion."),
     },			
 	
     [SPECIES_YANMEGA] =
@@ -13619,7 +13619,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
 	.modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_TAUNT,	
-        .chance3 = 10,				
+        .chance3 = 20,				
         .modification4 = SIGNATURE_MOD_PSS_CHANGE,
         .variable4 = SPLIT_SPECIAL,
         .modification5 = SIGNATURE_MOD_TYPE,
@@ -13632,7 +13632,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable8 = TYPE_DRAGON,		
         .differentDescription = TRUE,
         .description = _( 
-            "Hits 2 to 5 times. May taunt."
+            "Hits 2 to 5 times. May Taunt."
             "Eff to Ghost, Psychic and Dragon"),
     },
 
@@ -13645,7 +13645,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
 	.modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_TAUNT,	
-        .chance3 = 10,				
+        .chance3 = 20,				
         .modification4 = SIGNATURE_MOD_PSS_CHANGE,
         .variable4 = SPLIT_SPECIAL,
         .modification5 = SIGNATURE_MOD_TYPE,
@@ -13658,7 +13658,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable8 = TYPE_DRAGON,		
         .differentDescription = TRUE,
         .description = _( 
-            "Hits 2 to 5 times. May taunt."
+            "Hits 2 to 5 times. May Taunt."
             "Eff to Ghost, Psychic and Dragon"),
     },
 	
@@ -13741,7 +13741,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Bites with vicious fangs.\n"
-            "Higher chance of flinching."),
+            "Higher chance of Flinch."),
     },	
 
     [SPECIES_QWILFISH] =
@@ -13775,7 +13775,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "5 turn attack of rising power.\n"
-            "May cause the foe to flinch."),
+            "May cause the foe to Flinch."),
     },
 	
     [SPECIES_HERACROSS] =
@@ -13836,11 +13836,11 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
 	.modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_BURN,	
-        .chance3 = 20,			
+        .chance3 = 10,			
         .differentDescription = TRUE,
         .description = _( 
             "Burns up Berries and Gems.\n"
-            "May also burn the enemies."),
+            "May also Burn the enemies."),
     },
 
     [SPECIES_MAMOSWINE] =
@@ -13856,7 +13856,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "More powerful if injured.\n"
-            "May cause freezing."),
+            "May cause Freezing."),
     },	
 	
     [SPECIES_CURSOLA] =
@@ -13922,7 +13922,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Hits with an air blast. High\n"
-            "crit ratio. May cause flinch."),
+            "crit ratio. May cause Flinch."),
     },		
 	
     [SPECIES_SKARMORY] =
@@ -13952,7 +13952,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "A fiery wrath attack. Higher\n"
-            "chance of causing burns."),
+            "chance of causing Burns."),
     },		
 	
     [SPECIES_DONPHAN] =
@@ -13983,7 +13983,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Strong psychic headbutt. Higher\n"
-            "chance of flinching."),
+            "chance of Flinch."),
     },		
 	
     [SPECIES_SMEARGLE] =
@@ -14016,7 +14016,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Stomps the enemy. Higher\n"
-            "chance to cause flinching."),
+            "chance to cause Flinch."),
     },	
 
     [SPECIES_TYRANITAR] =
@@ -14032,7 +14032,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Swings with arms. Ignores stat\n"
-            "changes. May cause flinching."),
+            "changes. May cause Flinch."),
     },		
 	
     [SPECIES_CELEBI] =
