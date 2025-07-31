@@ -3722,7 +3722,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .type = TYPE_WATER,
         .accuracy = 80,
         .pp = 10,
-        .secondaryEffectChance = 30,
+        .secondaryEffectChance = 20,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
@@ -15271,8 +15271,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Summons the lands. Higher\n"
+            "chance to cause Confusion."),
     },
 
     [SPECIES_INFERNAPE] =
@@ -15287,21 +15287,23 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Traps in fire from 2 to 5 turns.\n"
+            "May cause Confusion."),
     },	
 
     [SPECIES_EMPOLEON] =
     {
-        .move = MOVE_PSYCHO_BOOST,
+        .move = MOVE_HYDRO_PUMP,
         .modification = SIGNATURE_MOD_POWER,
         .variable = 100,
         .modification2 = SIGNATURE_MOD_ACCURACY,
-        .variable2 = 90,		
+        .variable2 = 90,
+        .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
+        .variable3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Blasts water at high power.\n"
+            "Higher chance of Confusion."),
     },		
 	
     [SPECIES_STARAPTOR] =
@@ -15316,8 +15318,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 50,		
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Reckless hit that hurts the\n"
+            "user. May raise Attack."),
     },	
 
     [SPECIES_BIBAREL] =
