@@ -17483,21 +17483,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
             "123456789012345678901234567890"),
     },	
 
-    [SPECIES_DIANCIE] =
-    {
-        .move = MOVE_DIAMOND_STORM,
-        .modification = SIGNATURE_MOD_POWER,
-        .variable = 80,
-        .modification2 = SIGNATURE_MOD_ACCURACY,
-        .variable2 = 90,		
-        .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
-        .variable3 = 30,
-        .differentDescription = TRUE,
-        .description = _( 
-            "123456789012345678901234567890"
-            "123456789012345678901234567890"),
-    },	
- 
+
     [SPECIES_DECIDUEYE] =
     {
         .move = MOVE_OBLIVION_WING,
