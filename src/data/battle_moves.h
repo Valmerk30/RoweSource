@@ -3614,7 +3614,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
-        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED | FLAG_HIGH_CRIT,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
         .split = SPLIT_PHYSICAL,
     },
 
@@ -12950,7 +12950,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Cutely begs to obtain the item.\n"
-            "May set Rain Weather"),
+            "May set Rainy Weather"),
     },	
 	
     [SPECIES_JOLTEON] =
@@ -13382,7 +13382,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 0,		
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_INFATUATION,
-        .chance3 = 25,	
+        .chance3 = 50,	
         .differentDescription = TRUE,
         .description = _( 
             "A fairy wind that never misses.\n"
@@ -13398,7 +13398,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 0,		
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_INFATUATION,
-        .chance3 = 25,	
+        .chance3 = 50,	
         .differentDescription = TRUE,
         .description = _( 
             "A fairy wind that never misses.\n"
@@ -14594,7 +14594,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
 	.variable3 = SIGNATURE_SECONDARY_EFFECT_INFATUATION,
-        .chance3 = 25,
+        .chance3 = 50,
         .differentDescription = TRUE,
         .description = _( 
             "A violent storm of petals that\n"
@@ -15017,7 +15017,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
 	.variable3 = SIGNATURE_SECONDARY_EFFECT_INFATUATION,
-        .chance3 = 20,
+        .chance3 = 50,
         .differentDescription = TRUE,
         .description = _( 
             "123456789012345678901234567890\n"
@@ -15799,7 +15799,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Charges the foe with water.\n"
-            "May set Rain Weather"),
+            "May set Rainy Weather"),
     },	
 
     [SPECIES_ABOMASNOW] =
@@ -16002,8 +16002,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Attacks with a column of grass.\n"
+            "May set Grassy Terrain."),
     },
 
     [SPECIES_SIMISEAR] =
@@ -16018,8 +16018,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Attacks with a column of fire.\n"
+            "May set Sunny Weather."),
     },	
 
     [SPECIES_SIMIPOUR] =
@@ -16034,8 +16034,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Attacks with a column of water.\n"
+            "May set Rainy Weather."),
     },		
 	
     [SPECIES_MUSHARNA] =
@@ -16052,8 +16052,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_POISON,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Weird steam that eliminate stat\n"
+            "changes. May cause Poison."),
     },	
 
     [SPECIES_UNFEZANT] =
@@ -16065,11 +16065,11 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_EVASION,
-        .chance3 = 50,
+        .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Razor wind attack. High crit\n"
+            "ratio. May raise Evasion."),
     },	
 
     [SPECIES_ZEBSTRIKA] =
@@ -16084,24 +16084,24 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "A lightning kick. May lower\n"
+            "Defense and cause Paralysis."),
     },	
  
     [SPECIES_GIGALITH] =
     {
         .move = MOVE_ROCK_THROW,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 100,
+        .variable = 90,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
         .variable3 = FIELD_OPPONET_SET_STEALTH_ROCK,
-        .chance3 = 50,
+        .chance3 = 90,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Throws small rocks to the foe.\n"
+            "Almost always sets Stealth Rock."),
     },		
 
     [SPECIES_SWOOBAT] =
@@ -16118,8 +16118,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance4 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "A sudden blow after a cute act.\n"
+            "May cause Flinch and Infatuation."),
     },	
 
     [SPECIES_EXCADRILL] =
@@ -16134,8 +16134,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,		
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Spins claws like a drill. High\n"
+            "crit ratio. May raise Speed."),
     },	
 
     [SPECIES_AUDINO] =
@@ -16146,14 +16146,14 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
-        .variable3 = SIGNATURE_SECONDARY_EFFECT_INFATUATION,
+        .variable3 = SIGNATURE_SECONDARY_EFFECT_CONFUSION,
         .chance3 = 20,	
-        .modification4 = SIGNATURE_MOD_TYPE,
+        .modification4 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable4 = TYPE_STEEL,	
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "A loud attack, effective to\n"
+            "Steel. May cause Confusion."),
     },	
 
     [SPECIES_CONKELDURR] =
@@ -16168,8 +16168,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Destroys barriers like Reflect\n"
+            "and may set Stealth Rock."),
     },	
 
     [SPECIES_SEISMITOAD] =
@@ -16184,8 +16184,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
 	.chance3 = 10,	
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Three water strikes of rising\n"
+            "power. May raise Attack."),
     },	
 
     [SPECIES_THROH] =
@@ -16231,8 +16231,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,	
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Lunges violently at the foe.\n"
+            "Higher chance to lower Attack."),
     },	
 
     [SPECIES_SCOLIPEDE] =
