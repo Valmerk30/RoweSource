@@ -14933,11 +14933,11 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_TYMPOLE] =
     {
         .baseHP        = 50,
-        .baseAttack    = 50,
-        .baseDefense   = 40,
+        .baseAttack    = 40,
+        .baseDefense   = 50,
         .baseSpeed     = 65,
         .baseSpAttack  = 50,
-        .baseSpDefense = 40,
+        .baseSpDefense = 50,
         .type1 = TYPE_WATER,
         .type2 = TYPE_WATER,
         .catchRate = 255,
@@ -14964,10 +14964,10 @@ const struct BaseStats gBaseStats[] =
     {
         .baseHP        = 75,
         .baseAttack    = 65,
-        .baseDefense   = 55,
+        .baseDefense   = 60,
         .baseSpeed     = 70,
         .baseSpAttack  = 65,
-        .baseSpDefense = 55,
+        .baseSpDefense = 60,
         .type1 = TYPE_WATER,
         .type2 = TYPE_GROUND,
         .catchRate = 255,
