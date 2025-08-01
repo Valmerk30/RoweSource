@@ -1596,7 +1596,7 @@ static const u8 sDARK_PULSEDescription[] = _(
 	"aura. May cause flinching.");
 
 static const u8 sNIGHT_SLASHDescription[] = _(
-	"Hits as soon as possible.\n"
+	"A shady backstabbing hit.\n"
 	"High critical hit ratio.");
 
 static const u8 sAQUA_TAILDescription[] = _(
@@ -3301,8 +3301,8 @@ static const u8 sRockThrowDescription[] = _(
     "strike the foe.");
 
 static const u8 sEarthquakeDescription[] = _(
-    "A powerful quake, but has\n"
-    "no effect on flying foes.");
+    "A powerful quake, does more\n"
+    "damage to underground foes.");
 
 static const u8 sFissureDescription[] = _(
     "Destroys barriers and can\n"
@@ -3697,7 +3697,7 @@ static const u8 sBellyDrumDescription[] = _(
     "sacrificing HP.");
 
 static const u8 sSludgeBombDescription[] = _(
-    "Sludge is hurled to inflict\n"
+    "Sludge explosion to inflict\n"
     "damage. May also poison.");
 
 static const u8 sMudSlapDescription[] = _(
@@ -4382,7 +4382,7 @@ static const u8 sWAKE_UP_SLAPDescription[] = _(
 
 static const u8 sHAMMER_ARMDescription[] = _(
     "A swinging arm attack.\n"
-    "Lowers the user Speed.");
+    "Lowers the user's Speed.");
 
 static const u8 sGYRO_BALLDescription[] = _(
     "A high-speed spin that\n"
@@ -4713,8 +4713,8 @@ static const u8 sGRASS_KNOTDescription[] = _(
     "more damage to heavier foes.");
 
 static const u8 sCHATTERDescription[] = _(
-    "Attacks with a sound wave.\n"
-    "Always causes confusion.");
+    "Attacks with a voice wave.\n"
+    "High chance of confusion.");
 
 static const u8 sJUDGMENTDescription[] = _(
     "Does more damage if the\n"
@@ -4809,7 +4809,7 @@ static const u8 sTAIL_SLAPDescription[] = _(
     "tail 2 to 5 times.");
 
 static const u8 sVENOSHOCKDescription[] = _(
-    "Attacks with a toxic wave\n"
+    "Attacks with a toxic shock\n"
     "that may cause paralysis.");
 
 static const u8 sAUTOTOMIZEDescription[] = _(
@@ -5089,11 +5089,11 @@ static const u8 sFIERY_DANCEDescription[] = _(
     "May raise Sp. Atk.");
 
 static const u8 sFREEZE_SHOCKDescription[] = _(
-    "A powerful 2-turn move that\n"
+    "A powerful cold attack that\n"
     "may paralyze the foe.");
 
 static const u8 sICE_BURNDescription[] = _(
-    "A powerful 2-turn move that\n"
+    "A powerful cold attack that\n"
     "may inflict a burn.");
 
 static const u8 sSNARLDescription[] = _(
@@ -5105,8 +5105,8 @@ static const u8 sICICLE_CRASHDescription[] = _(
     "foe. May cause flinching.");
 
 static const u8 sV_CREATEDescription[] = _(
-    "Very powerful, but lowers\n"
-    "Defense, Sp. Def and Speed.");
+    "A powerful fire tackle.\n"
+    "Lowers the user's Speed.");
 
 static const u8 sFUSION_FLAREDescription[] = _(
     "May cause flinching or\n"
