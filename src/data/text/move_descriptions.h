@@ -2420,7 +2420,11 @@ static const u8 sSPIRIT_SHACKLEDescription[] = _(
 	"no longer escape.");
 
 static const u8 sDARKEST_LARIATDescription[] = _(
-	"Swings the arms to strike\n"
+	"Swings the arms to strike.\n"
+	"It ignores stat changes.");
+
+static const u8 sPHANTOM_FORCEDescription[] = _(
+	"A ghostly body attack.\n"
 	"It ignores stat changes.");
 
 static const u8 sSPARKLING_ARIADescription[] = _(
@@ -2938,7 +2942,7 @@ static const u8 sASTRAL_BARRAGEDescription[] = _(
 
 static const u8 sEERIE_SPELLDescription[] = _(
     "Attacks with psychic power.\n"
-    "Foe's last move has 3 PP cut.");
+    "Foe's last move has PP cut.");
 
 static const u8 sNotDoneYetDescription[] = _(
 	"Not done yet.");
@@ -3589,8 +3593,8 @@ static const u8 sConversionDescription[] = _(
     "into a known move's type.");
 
 static const u8 sTriAttackDescription[] = _(
-    "Fires three types of beams\n"
-    "of increasing power.");
+    "Three types of beams that can\n"
+    "Burn, Freeze or Paralyze.");
 
 static const u8 sSuperFangDescription[] = _(
     "Attacks with sharp fangs\n"
@@ -4237,8 +4241,8 @@ static const u8 sCosmicPowerDescription[] = _(
     "with a mystic power.");
 
 static const u8 sWaterSpoutDescription[] = _(
-    "Inflicts more damage if the\n"
-    "user's HP is high.");
+    "Destroys barriers such as\n"
+    "REFLECT and causes damage.");
 
 static const u8 sSignalBeamDescription[] = _(
     "A strange beam attack that\n"
@@ -4833,8 +4837,12 @@ static const u8 sSMACK_DOWNDescription[] = _(
     "foe down to the ground.");
 
 static const u8 sSTORM_THROWDescription[] = _(
-    "This attack always results\n"
-    "in a critical hit.");
+    "A grapple attack with high\n"
+    "critical hit ratio.");
+
+static const u8 sFROST_BREATHDescription[] = _(
+    "A freezing breath with high\n"
+    "critical hit ratio.");
 
 static const u8 sFLAME_BURSTDescription[] = _(
     "A bursting flame that does\n"
@@ -5850,8 +5858,8 @@ static const u8 sJUNGLE_HEALINGDescription[] = _(
     "itself and allies in battle.");
 
 static const u8 sWICKED_BLOWDescription[] = _(
-    "Mastering the Dark style,\n"
-    "strikes with a critical hit.");
+    "Hits with dark martial arts.\n"
+    "High critical hit ratio.");
 
 static const u8 sSURGING_STRIKESDescription[] = _(
     "Strikes with 3 water hits\n"
@@ -6420,7 +6428,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_VOLT_SWITCH - 1] = sU_TURNDescription,
     [MOVE_STRUGGLE_BUG - 1] = sSTRUGGLE_BUGDescription,
     [MOVE_BULLDOZE - 1] = sBULLDOZEDescription,
-    [MOVE_FROST_BREATH - 1] = sSTORM_THROWDescription,
+    [MOVE_FROST_BREATH - 1] = sFROST_BREATHDescription,
     [MOVE_DRAGON_TAIL - 1] = sCIRCLE_THROWDescription,
     [MOVE_WORK_UP - 1] = sWORK_UPDescription,
     [MOVE_ELECTROWEB - 1] = sELECTROWEBDescription,
@@ -6462,7 +6470,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_ROTOTILLER - 1] = sROTOTILLERDescription,
     [MOVE_STICKY_WEB - 1] = sSTICKY_WEBDescription,
     [MOVE_FELL_STINGER - 1] = sFELL_STINGERDescription,
-    [MOVE_PHANTOM_FORCE - 1] = sDARKEST_LARIATDescription,
+    [MOVE_PHANTOM_FORCE - 1] = sPHANTOM_FORCEDescription,
     [MOVE_TRICK_OR_TREAT - 1] = sTRICK_OR_TREATDescription,
     [MOVE_NOBLE_ROAR - 1] = sNOBLE_ROARDescription,
     [MOVE_ION_DELUGE - 1] = sION_DELUGEDescription,
