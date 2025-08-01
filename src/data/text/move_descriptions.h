@@ -5742,7 +5742,7 @@ static const u8 sSPIRIT_BREAKDescription[] = _(
     "force. Lowers Sp. Atk.");
     
 static const u8 sSTRANGE_STEAMDescription[] = _(
-    "Emits a strange steam to\n"
+    "Emits a weird steam to\n"
     "eliminate all stat changes.");
     
 static const u8 sLIFE_DEWDescription[] = _(
@@ -5854,8 +5854,8 @@ static const u8 sWICKED_BLOWDescription[] = _(
     "strikes with a critical hit.");
 
 static const u8 sSURGING_STRIKESDescription[] = _(
-    "Strikes with 3 water hits.\n"
-    "High critical hit ratio.");
+    "Strikes with 3 water hits\n"
+    "of rising power.");
 
 static const u8 sTHUNDER_CAGEDescription[] = _(
     "Traps the foe in a cage of\n"
@@ -5874,7 +5874,7 @@ static const u8 sFIERY_WRATHDescription[] = _(
     "wrath. May cause a burn.");
      
 static const u8 sTHUNDEROUS_KICKDescription[] = _(
-    "Hits with a lightning kick\n"
+    "Hits with a lightning kick.\n"
     "May lower foe's Defense.");
 
 static const u8 sGLACIAL_LANCEDescription[] = _(
