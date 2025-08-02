@@ -15661,8 +15661,8 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_SCRAGGY] =
     {
         .baseHP        = 50,
-        .baseAttack    = 75,
-        .baseDefense   = 70,
+        .baseAttack    = 65,
+        .baseDefense   = 80,
         .baseSpeed     = 50,
         .baseSpAttack  = 35,
         .baseSpDefense = 70,
