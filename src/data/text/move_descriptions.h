@@ -2420,11 +2420,7 @@ static const u8 sSPIRIT_SHACKLEDescription[] = _(
 	"no longer escape.");
 
 static const u8 sDARKEST_LARIATDescription[] = _(
-	"Swings the arms to strike.\n"
-	"It ignores stat changes.");
-
-static const u8 sDarkestLariatDescription[] = _(
-	"A ghostly body attack.\n"
+	"A frightening body attack.\n"
 	"It ignores stat changes.");
 
 static const u8 sSPARKLING_ARIADescription[] = _(
@@ -6470,7 +6466,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_ROTOTILLER - 1] = sROTOTILLERDescription,
     [MOVE_STICKY_WEB - 1] = sSTICKY_WEBDescription,
     [MOVE_FELL_STINGER - 1] = sFELL_STINGERDescription,
-    [MOVE_PHANTOM_FORCE - 1] = sDarkestLariatDescription,
+    [MOVE_PHANTOM_FORCE - 1] = sDARKEST_LARIATDescription,
     [MOVE_TRICK_OR_TREAT - 1] = sTRICK_OR_TREATDescription,
     [MOVE_NOBLE_ROAR - 1] = sNOBLE_ROARDescription,
     [MOVE_ION_DELUGE - 1] = sION_DELUGEDescription,
