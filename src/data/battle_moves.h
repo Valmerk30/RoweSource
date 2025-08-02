@@ -16742,8 +16742,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Hits twice with spinning gears.\n"
+            "May raise Speed."),
     },	
 
     [SPECIES_EELEKTROSS] =
@@ -16760,8 +16760,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = SPLIT_PHYSICAL,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Traps in a cage 2 to 5 turns.\n"
+            "May cause Paralysis."),
     },	
 
     [SPECIES_BEHEEYEM] =
@@ -16775,8 +16775,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "An intense ray of energy.\n"
+            "Higher chance to cause Burn."),
     },	
 
     [SPECIES_CHANDELURE] =
