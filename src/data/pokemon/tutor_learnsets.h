@@ -13061,6 +13061,7 @@ static const u8 sCofagrigusTutorLearnset[] =
     TUTOR(MOVE_KNOCK_OFF),
     TUTOR(MOVE_FLASH),
     TUTOR(MOVE_PAIN_SPLIT),
+    TUTOR(MOVE_DRAGON_PULSE),
     0xFF,
 };
 
@@ -13151,6 +13152,7 @@ static const u8 sTrubbishTutorLearnset[] =
     TUTOR(MOVE_SWAGGER),
     TUTOR(MOVE_SLEEP_TALK),
     TUTOR(MOVE_SEED_BOMB),
+    TUTOR(MOVE_SIGNAL_BEAM),
     TUTOR(MOVE_RECYCLE),
     TUTOR(MOVE_PAIN_SPLIT),
     0xFF,
@@ -13167,6 +13169,7 @@ static const u8 sGarbodorTutorLearnset[] =
     TUTOR(MOVE_SLEEP_TALK),
     TUTOR(MOVE_BODY_PRESS),
     TUTOR(MOVE_SEED_BOMB),
+    TUTOR(MOVE_SIGNAL_BEAM),
     TUTOR(MOVE_RECYCLE),
     TUTOR(MOVE_STOMPING_TANTRUM),
     TUTOR(MOVE_PAIN_SPLIT),
@@ -13241,7 +13244,7 @@ static const u8 sCinccinoTutorLearnset[] =
     TUTOR(MOVE_KNOCK_OFF),
     TUTOR(MOVE_SEED_BOMB),
     TUTOR(MOVE_HYPER_VOICE),
-	TUTOR(MOVE_TRIPLE_AXEL),
+    TUTOR(MOVE_TRIPLE_AXEL),
     0xFF,
 };
 
@@ -13436,6 +13439,7 @@ static const u8 sDeerlingTutorLearnset[] =
     TUTOR(MOVE_SLEEP_TALK),
     TUTOR(MOVE_SEED_BOMB),
     TUTOR(MOVE_FLASH),
+    TUTOR(MOVE_STOMPING_TANTRUM),
     0xFF,
 };
 
@@ -13452,6 +13456,7 @@ static const u8 sSawsbuckTutorLearnset[] =
     TUTOR(MOVE_ROCK_SMASH),
     TUTOR(MOVE_CUT),
     TUTOR(MOVE_FLASH),
+    TUTOR(MOVE_HIGH_HORSEPOWER),
     TUTOR(MOVE_STOMPING_TANTRUM),
     0xFF,
 };
@@ -18293,18 +18298,23 @@ static const u8 sMrRimeTutorLearnset[] =
     TUTOR(MOVE_RECYCLE),
     TUTOR(MOVE_STOMPING_TANTRUM),
     TUTOR(MOVE_FOUL_PLAY),
-	TUTOR(MOVE_TRIPLE_AXEL),
+    TUTOR(MOVE_TRIPLE_AXEL),
     0xFF,
 };
 
 static const u8 sRunerigusTutorLearnset[] =
 {
-    TUTOR(MOVE_ROCK_SLIDE),
+    TUTOR(MOVE_DREAM_EATER),
     TUTOR(MOVE_SUBSTITUTE),
+    TUTOR(MOVE_PSYCH_UP),
     TUTOR(MOVE_SNORE),
     TUTOR(MOVE_ENDURE),
+    TUTOR(MOVE_SWAGGER),
     TUTOR(MOVE_SLEEP_TALK),
     TUTOR(MOVE_BODY_PRESS),
+    TUTOR(MOVE_KNOCK_OFF),
+    TUTOR(MOVE_FLASH),
+    TUTOR(MOVE_PAIN_SPLIT),
     TUTOR(MOVE_DRAGON_PULSE),
     0xFF,
 };
@@ -19427,9 +19437,16 @@ static const u8 sDarmanitanGalarianTutorLearnset[] =
 
 static const u8 sYamaskGalarianTutorLearnset[] =
 {
+    TUTOR(MOVE_DREAM_EATER),
     TUTOR(MOVE_SUBSTITUTE),
+    TUTOR(MOVE_PSYCH_UP),
+    TUTOR(MOVE_SNORE),
     TUTOR(MOVE_ENDURE),
+    TUTOR(MOVE_SWAGGER),
     TUTOR(MOVE_SLEEP_TALK),
+    TUTOR(MOVE_KNOCK_OFF),
+    TUTOR(MOVE_FLASH),
+    TUTOR(MOVE_PAIN_SPLIT),
     0xFF,
 };
 
