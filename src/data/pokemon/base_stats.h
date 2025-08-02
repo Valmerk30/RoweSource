@@ -11348,9 +11348,9 @@ const struct BaseStats gBaseStats[] =
     {
         .baseHP        = 95,
         .baseAttack    = 165,
-        .baseDefense   = 60,
-        .baseSpeed     = 60,
-        .baseSpAttack  = 65,
+        .baseDefense   = 65,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 50,
         .baseSpDefense = 50,
         .type1 = TYPE_ROCK,
         .type2 = TYPE_ROCK,
@@ -11375,11 +11375,11 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_SHIELDON] =
     {
-        .baseHP        = 30,
-        .baseAttack    = 40,
-        .baseDefense   = 120,
+        .baseHP        = 40,
+        .baseAttack    = 45,
+        .baseDefense   = 110,
         .baseSpeed     = 30,
-        .baseSpAttack  = 40,
+        .baseSpAttack  = 35,
         .baseSpDefense = 90,
         .type1 = TYPE_ROCK,
         .type2 = TYPE_STEEL,
@@ -11400,12 +11400,12 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_BASTIODON] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 60,
-        .baseDefense   = 160,
+        .baseHP        = 75,
+        .baseAttack    = 65,
+        .baseDefense   = 150,
         .baseSpeed     = 30,
         .baseSpAttack  = 45,
-        .baseSpDefense = 140,
+        .baseSpDefense = 130,
         .type1 = TYPE_ROCK,
         .type2 = TYPE_STEEL,
         .catchRate = 255,
