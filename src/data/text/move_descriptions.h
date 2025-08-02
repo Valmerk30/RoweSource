@@ -4840,7 +4840,7 @@ static const u8 sSTORM_THROWDescription[] = _(
     "A grapple attack with high\n"
     "critical hit ratio.");
 
-static const u8 sFROST_BREATHDescription[] = _(
+static const u8 sFrostBreathDescription[] = _(
     "A freezing breath with high\n"
     "critical hit ratio.");
 
@@ -6428,7 +6428,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_VOLT_SWITCH - 1] = sU_TURNDescription,
     [MOVE_STRUGGLE_BUG - 1] = sSTRUGGLE_BUGDescription,
     [MOVE_BULLDOZE - 1] = sBULLDOZEDescription,
-    [MOVE_FROST_BREATH - 1] = sFROST_BREATHDescription,
+    [MOVE_FROST_BREATH - 1] = sFrostBreathDescription,
     [MOVE_DRAGON_TAIL - 1] = sCIRCLE_THROWDescription,
     [MOVE_WORK_UP - 1] = sWORK_UPDescription,
     [MOVE_ELECTROWEB - 1] = sELECTROWEBDescription,
