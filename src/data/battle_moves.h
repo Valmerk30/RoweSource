@@ -16257,8 +16257,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Crushes with its body. May\n"
+            "Flinch and raise Speed."),
     },	
 
     [SPECIES_WHIMSICOTT] =
@@ -16275,8 +16275,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance4 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Hits with Speed stat to heavier\n"
+            "foes. Can set Tailwind."),
     },	
 
     [SPECIES_LILLIGANT] =
@@ -16293,8 +16293,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = SIGNATURE_PRIORITY_CONDITION_TERRAIN_ANY,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "It never misses. Removes stat\n"
+            "changes. Priority in terrains."),
     },	
 
     [SPECIES_BASCULIN] =
@@ -16309,8 +16309,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Slams the foe with water. May\n"
+            "lower Defense and Speed."),
     },	
 
     [SPECIES_KROOKODILE] =
@@ -16325,8 +16325,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "More damage if foe is powered\n"
+            "up. May lower Defense."),
     },	
 
     [SPECIES_DARMANITAN] =
@@ -16340,8 +16340,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Charges in a cloak of flames.\n"
+            "Higher chance to raise Speed."),
     },	
 
     [SPECIES_MARACTUS] =
@@ -16356,8 +16356,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Hits with nature power. May\n"
+            "set Spikes and lower Sp. Def."),
     },	
 
     [SPECIES_CRUSTLE] =
@@ -16372,8 +16372,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Hurls 2 to 5 boulders to the\n"
+            "foe. May lower Speed."),
     },	
 
     [SPECIES_SCRAFTY] =
@@ -16387,8 +16387,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Attacks the foe's legs. Higher\n"
+            "chance of lowering Speed."),
     },	
 
     [SPECIES_SIGILYPH] =
