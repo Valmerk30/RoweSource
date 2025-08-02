@@ -3849,8 +3849,8 @@ static const u8 sMegahornDescription[] = _(
     "Raises the user's attack.");
 
 static const u8 sDragonBreathDescription[] = _(
-    "Strikes the foe with an\n"
-    "incredible blast of breath.");
+    "An incredible blast of breath\n"
+    "that may cause paralysis.");
 
 static const u8 sBatonPassDescription[] = _(
     "Switches out the user while\n"
