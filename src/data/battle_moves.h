@@ -16647,8 +16647,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "A stinging hit, never misses.\n"
+            "May reduce Sp. Atk."),
     },	
 
     [SPECIES_AMOONGUSS] =
@@ -16682,6 +16682,22 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
             "Sp. Atk and Sp. Def."),
     },	
 
+    [SPECIES_JOLTIK] =
+    {
+        .move = MOVE_ELECTROWEB,
+ 	.modification = SIGNATURE_MOD_POWER,
+        .variable = 60,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 90,		
+        .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
+        .variable3 = FIELD_OPPONET_SET_STICKY_WEB,
+        .chance3 = 25,	
+        .differentDescription = TRUE,
+        .description = _( 
+            "Snares with an electric net.\n"
+            "May set Sticky Web."),
+    },	
+
     [SPECIES_GALVANTULA] =
     {
         .move = MOVE_ELECTROWEB,
@@ -16694,8 +16710,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 50,	
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Snares with an electric net.\n"
+            "May set Sticky Web."),
     },	
 
     [SPECIES_FERROTHORN] =
@@ -16710,8 +16726,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Traps with vines 2 to 5 turns.\n"
+            "May lower Attack."),
     },	
 
     [SPECIES_KLINKLANG] =
@@ -16838,13 +16854,10 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 =  SIGNATURE_MOD_TARGET_STAT_DOWN,
 	.variable3 = STAT_ACC,
         .chance3 = 25,
-        .modification4 = SIGNATURE_MOD_TARGET_STAT_DOWN,
-	.variable4 = STAT_EVASION,
-        .chance4 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Infests the foe 2 to 5 turns.\n"
+            "May lower Accuracy."),
     },	
 
     [SPECIES_STUNFISK] =
