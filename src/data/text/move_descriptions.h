@@ -2423,7 +2423,7 @@ static const u8 sDARKEST_LARIATDescription[] = _(
 	"Swings the arms to strike.\n"
 	"It ignores stat changes.");
 
-static const u8 sPHANTOM_FORCEDescription[] = _(
+static const u8 sDarkestLariatDescription[] = _(
 	"A ghostly body attack.\n"
 	"It ignores stat changes.");
 
@@ -4840,7 +4840,7 @@ static const u8 sSTORM_THROWDescription[] = _(
     "A grapple attack with high\n"
     "critical hit ratio.");
 
-static const u8 sFrostBreathDescription[] = _(
+static const u8 sFROST_BREATHDescription[] = _(
     "A freezing breath with high\n"
     "critical hit ratio.");
 
@@ -6428,7 +6428,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_VOLT_SWITCH - 1] = sU_TURNDescription,
     [MOVE_STRUGGLE_BUG - 1] = sSTRUGGLE_BUGDescription,
     [MOVE_BULLDOZE - 1] = sBULLDOZEDescription,
-    [MOVE_FROST_BREATH - 1] = sFrostBreathDescription,
+    [MOVE_FROST_BREATH - 1] = sFROST_BREATHDescription,
     [MOVE_DRAGON_TAIL - 1] = sCIRCLE_THROWDescription,
     [MOVE_WORK_UP - 1] = sWORK_UPDescription,
     [MOVE_ELECTROWEB - 1] = sELECTROWEBDescription,
@@ -6470,7 +6470,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_ROTOTILLER - 1] = sROTOTILLERDescription,
     [MOVE_STICKY_WEB - 1] = sSTICKY_WEBDescription,
     [MOVE_FELL_STINGER - 1] = sFELL_STINGERDescription,
-    [MOVE_PHANTOM_FORCE - 1] = sPHANTOM_FORCEDescription,
+    [MOVE_PHANTOM_FORCE - 1] = sDarkestLariatDescription,
     [MOVE_TRICK_OR_TREAT - 1] = sTRICK_OR_TREATDescription,
     [MOVE_NOBLE_ROAR - 1] = sNOBLE_ROARDescription,
     [MOVE_ION_DELUGE - 1] = sION_DELUGEDescription,
