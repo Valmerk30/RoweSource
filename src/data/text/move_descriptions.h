@@ -4130,7 +4130,7 @@ static const u8 sLusterPurgeDescription[] = _(
 
 static const u8 sMistBallDescription[] = _(
     "Attacks with a flurry of\n"
-    "down. May lower Sp. Atk.");
+    "mist. May lower Sp. Atk.");
 
 static const u8 sFeatherDanceDescription[] = _(
     "Envelops the foe with down\n"
