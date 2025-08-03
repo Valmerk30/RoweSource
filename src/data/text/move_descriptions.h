@@ -3973,7 +3973,7 @@ static const u8 sSwallowDescription[] = _(
     "and restores HP.");
 
 static const u8 sHeatWaveDescription[] = _(
-    "Exhales a hot breath on the\n"
+    "Exhales a hot wind on the\n"
     "foe. May inflict a burn.");
 
 static const u8 sHailDescription[] = _(
@@ -5113,8 +5113,8 @@ static const u8 sV_CREATEDescription[] = _(
     "Lowers the user's Speed.");
 
 static const u8 sFUSION_FLAREDescription[] = _(
-    "May cause flinching or\n"
-    "leave the foe with a burn.");
+    "A fiery flare. May cause\n"
+    "flinching or paralysis.");
 
 static const u8 sFUSION_BOLTDescription[] = _(
     "A plasma bolt. May cause\n"
@@ -5209,7 +5209,7 @@ static const u8 sELECTRIFYDescription[] = _(
     "its next move Electric-type.");
 
 static const u8 sPLAY_ROUGHDescription[] = _(
-    "Plays rough with the foe.\n"
+    "Plays around dangerously.\n"
     "May lower Attack.");
 
 static const u8 sFAIRY_WINDDescription[] = _(
@@ -5257,8 +5257,8 @@ static const u8 sHYPERSPACE_FURYDescription[] = _(
     "using moves like Protect.");
 
 static const u8 sWATER_SHURIKENDescription[] = _(
-    "Throws 2 to 5 stars that\n"
-    "are sure to strike first.");
+    "Throws sharp starfish that\n"
+    "strike 2 to 5 times.");
 
 static const u8 sMYSTICAL_FIREDescription[] = _(
     "Breathes a special, hot\n"
@@ -5609,8 +5609,8 @@ static const u8 sGLITZY_GLOWDescription[] = _(
     "or restores ally's HP.");
 
 static const u8 sBADDY_BADDescription[] = _(
-    "Acting badly, attacks. Sets\n"
-    "wall, lowering Attack damage.");
+    "Acting badly, attacks. Can\n"
+    "cause flinching.");
 
 static const u8 sSAPPY_SEEDDescription[] = _(
     "Giant stalk scatters seeds\n"
