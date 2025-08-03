@@ -2966,7 +2966,7 @@ static const u8 sCometPunchDescription[] = _(
 
 static const u8 sMegaPunchDescription[] = _(
     "A strong punch that may\n"
-    "reduce the foe's Speed.");
+    "reduce the foe's Defense.");
 
 static const u8 sPayDayDescription[] = _(
     "Throws coins at the foe.\n"
@@ -3005,8 +3005,8 @@ static const u8 sSwordsDanceDescription[] = _(
     "sharply raises Attack.");
 
 static const u8 sCutDescription[] = _(
-    "This move is super effe-\n"
-    "ctive on Grass types.");
+    "Cuts lowering foe's Attack.\n"
+    "Effective on Grass types.");
 
 static const u8 sGustDescription[] = _(
     "Strikes the foe with a gust\n"
@@ -3046,11 +3046,11 @@ static const u8 sDoubleKickDescription[] = _(
 
 static const u8 sMegaKickDescription[] = _(
     "An extremely powerful kick\n"
-    "that may reduce Speed.");
+    "that may reduce Defense.");
 
 static const u8 sJumpKickDescription[] = _(
     "A strong jumping kick. May\n"
-    "reduce the foe's Defense.");
+    "reduce the foe's Speed.");
 
 static const u8 sRollingKickDescription[] = _(
     "A high-speed kick that\n"
@@ -3490,7 +3490,7 @@ static const u8 sSoftBoiledDescription[] = _(
 
 static const u8 sHiJumpKickDescription[] = _(
     "A jumping flying kick. May\n"
-    "reduce the foe's Defense.");
+    "reduce the foe's Speed.");
 
 static const u8 sGlareDescription[] = _(
     "Intimidates and frightens\n"
@@ -3737,8 +3737,8 @@ static const u8 sDetectDescription[] = _(
     "if used in succession.");
 
 static const u8 sBoneRushDescription[] = _(
-    "Strikes the foe with a bone\n"
-    "in hand 2 to 5 times.");
+    "Throws bones to attack the\n"
+    "foe 2 to 5 times.");
 
 static const u8 sLockOnDescription[] = _(
     "Locks on to the foe to\n"
