@@ -17686,10 +17686,10 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_VULLABY] =
     {
         .baseHP        = 70,
-        .baseAttack    = 55,
+        .baseAttack    = 60,
         .baseDefense   = 75,
         .baseSpeed     = 60,
-        .baseSpAttack  = 45,
+        .baseSpAttack  = 40,
         .baseSpDefense = 65,
         .type1 = TYPE_DARK,
         .type2 = TYPE_FLYING,
@@ -17715,10 +17715,10 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_MANDIBUZZ] =
     {
         .baseHP        = 110,
-        .baseAttack    = 65,
+        .baseAttack    = 75,
         .baseDefense   = 105,
         .baseSpeed     = 80,
-        .baseSpAttack  = 55,
+        .baseSpAttack  = 45,
         .baseSpDefense = 95,
         .type1 = TYPE_DARK,
         .type2 = TYPE_FLYING,
