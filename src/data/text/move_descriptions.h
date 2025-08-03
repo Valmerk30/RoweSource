@@ -4353,8 +4353,8 @@ static const u8 sShockWaveDescription[] = _(
     "electric attack.");
 
 static const u8 sWaterPulseDescription[] = _(
-    "Attacks with ultrasonic\n"
-    "waves. May confuse the foe.");
+    "Attacks with aquatic waves.\n"
+    "May confuse the foe.");
 
 static const u8 sDoomDesireDescription[] = _(
     "Summons strong sunlight to\n"
@@ -5078,7 +5078,7 @@ static const u8 sSECRET_SWORDDescription[] = _(
 
 static const u8 sGLACIATEDescription[] = _(
     "Blows very cold air at the\n"
-    "foe. It lowers their Speed.");
+    "foe. It lowers Speed.");
 
 static const u8 sBOLT_STRIKEDescription[] = _(
     "Hits with a great amount of\n"
