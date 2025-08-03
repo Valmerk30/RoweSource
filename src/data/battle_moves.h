@@ -17443,8 +17443,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Attacks with aquatic waves.\n"
+            "Higher chance of Confusion."),
     },	
 
     [SPECIES_HELIOLISK] =
@@ -17456,9 +17456,9 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
-    },	
+            "Damages adjacent Pokémon and\n"
+            "heals up by half of it."),
+    },	   
 
     [SPECIES_TYRANTRUM] =
     {
@@ -17474,8 +17474,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_ROCK,	
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Hits with a meteor-like punch.\n"
+            "Raises and lowers Attack."),
     },	
 
     [SPECIES_AURORUS] =
@@ -17490,8 +17490,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,	
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Blows freezing air. May cause\n"
+            "Freeze and lower Speed."),
     },	
 
     [SPECIES_HAWLUCHA] =
