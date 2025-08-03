@@ -4090,6 +4090,7 @@ const u16 gEggMoves[] = {
 		MOVE_ENDURE,
 		MOVE_BATON_PASS,
 		MOVE_SMELLING_SALT,
+                MOVE_DUAL_CHOP,
 		MOVE_ME_FIRST,
 		MOVE_ALLY_SWITCH),
 
@@ -4128,7 +4129,8 @@ const u16 gEggMoves[] = {
 		MOVE_AMNESIA,
 		MOVE_MUD_SHOT,
 		MOVE_ROCK_CLIMB,
-		MOVE_IRON_HEAD),
+		MOVE_IRON_HEAD,
+		MOVE_PLAY_ROUGH),
 
 	egg_moves(VULLABY,
 		MOVE_TOXIC,
@@ -4138,6 +4140,7 @@ const u16 gEggMoves[] = {
 		MOVE_STEEL_WING,
 		MOVE_KNOCK_OFF,
 		MOVE_FAKE_TEARS,
+		MOVE_SAND_TOMB,
 		MOVE_FOUL_PLAY),
 
 	egg_moves(HEATMOR,
