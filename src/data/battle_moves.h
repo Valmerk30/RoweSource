@@ -17290,8 +17290,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_NORMAL,			
         .modification5 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable5 = TYPE_GHOST,
-        .modification4 = SIGNATURE_MOD_TYPE,
-        .variable4 = TYPE_NORMAL,
+        .modification6 = SIGNATURE_MOD_TYPE,
+        .variable6 = TYPE_NORMAL,
 	.differentDescription = TRUE,
         .description = _( 
             "Attacks weak points. Effective\n"
