@@ -845,7 +845,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 	
     [MOVE_MEGA_PUNCH] =
     {
-        .effect = EFFECT_SPEED_DOWN_HIT,
+        .effect = EFFECT_DEFENSE_DOWN_HIT,
         .power = 80,
         .type = TYPE_NORMAL,
         .accuracy = 90,
@@ -1077,7 +1077,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_MEGA_KICK] =
     {
-        .effect = EFFECT_SPEED_DOWN_HIT,
+        .effect = EFFECT_DEFENSE_DOWN_HIT,
         .power = 100,
         .type = TYPE_NORMAL,
         .accuracy = 85,
@@ -5969,7 +5969,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
             .power = 80,
             .pp = 20,
         #endif
-        .effect = EFFECT_DEFENSE_DOWN_HIT,
+        .effect = EFFECT_SPEED_DOWN_HIT,
         .type = TYPE_FIGHTING,
         .accuracy = 95,
         .secondaryEffectChance = 25,
@@ -6111,7 +6111,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
             .power = 100,
             .pp = 15,
         #endif
-        .effect = EFFECT_DEFENSE_DOWN_HIT,
+        .effect = EFFECT_SPEED_DOWN_HIT,
         .type = TYPE_FIGHTING,
         .accuracy = 85,
         .secondaryEffectChance = 50,
@@ -9229,7 +9229,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .type = TYPE_GHOST,
         .accuracy = 100,
         .pp = 30,
-        .secondaryEffectChance = 30,
+        .secondaryEffectChance = 20,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SHEER_FORCE_BOOST,
@@ -9257,7 +9257,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .type = TYPE_GHOST,
         .accuracy = 100,
         .pp = 25,
-        .secondaryEffectChance = 30,
+        .secondaryEffectChance = 20,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SHEER_FORCE_BOOST,
@@ -10717,15 +10717,15 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_CUT] =
     {
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_ATTACK_DOWN_HIT,
         .power = 75,
         .type = TYPE_STEEL,
         .accuracy = 90,
         .pp = 20,
-        .secondaryEffectChance = 0,
+        .secondaryEffectChance = 25,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
-        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED | FLAG_HIGH_CRIT | FLAG_BLADEMASTER_BOOST,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED | FLAG_BLADEMASTER_BOOST,
         .split = SPLIT_PHYSICAL,
     },
 
@@ -14764,7 +14764,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 =  SIGNATURE_MOD_TARGET_STAT_DOWN,
 	.variable3 = STAT_SPEED,
-        .chance3 = 10,
+        .chance3 = 15,
         .modification4 = SIGNATURE_MOD_SE_AGAINST_TYPE,
         .variable4 = TYPE_POISON,			
         .differentDescription = TRUE,
@@ -16903,8 +16903,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = STAT_SPDEF,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Strikes to Sp. Def. stat.\n"
+            "Higher chance of Paralysis"),
     },	
 
     [SPECIES_DRUDDIGON] =
@@ -16918,8 +16918,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Slashes with mighty claws.\n"
+            "Higher chance to lower Defense."),
     },	
 
     [SPECIES_GOLURK] =
@@ -16934,24 +16934,23 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "An unavoidable ghostly punch.\n"
+            "May lower Accuracy."),
     },	
 
     [SPECIES_BISHARP] =
     {
         .move = MOVE_CUT,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 90,
+        .variable = 100,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
-        .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
-	.variable3 = STAT_SPEED,
-        .chance3 = 25,
+        .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
+        .variable3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Cuts effectively against Grass.\n"
+            "Higher chance to lower Attack."),
     },	
 
     [SPECIES_BOUFFALANT] =
@@ -16968,8 +16967,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_FAIRY,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Hurts the user. Effective to\n"
+            "Fairy. May cause Flinch."),
     },	
 
     [SPECIES_BRAVIARY] =
@@ -16984,8 +16983,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Drops the foe from the sky.\n"
+            "May lower Attack and Speed."),
     },	
 
     [SPECIES_MANDIBUZZ] =
@@ -16996,12 +16995,14 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
-	.variable3 = STAT_SPEED,
+	.variable3 = STAT_DEF,
         .chance3 = 10,
+        .modification4 = SIGNATURE_MOD_TYPE,
+        .variable4 = TYPE_FLYING,	
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Throws 2 to 5 bones to the foe.\n"
+            "May lower Defense."),
     },	
 
     [SPECIES_HEATMOR] =
@@ -17017,8 +17018,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = SIGNATURE_PRIORITY_ALWAYS,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Hits with a scorching blast.\n"
+            "Almost always Burns."),
     },	
 
     [SPECIES_DURANT] =
@@ -17051,8 +17052,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance4 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Rampage of 2 or 3 turns. May\n"
+            "raise Speed and set Spikes."),
     },	
 
     [SPECIES_VOLCARONA] =
@@ -17067,13 +17068,13 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Dance cloaked in flames. May\n"
+            "raise Sp. Atk and cause Burn."),
     },	
 
     [SPECIES_MELOETTA] =
     {
-        .move = MOVE_JUMP_KICK,	
+        .move = MOVE_MEGA_KICK,	
         .modification = SIGNATURE_MOD_POWER,
         .variable = 100,
         .modification2 = SIGNATURE_MOD_ACCURACY,
@@ -17082,15 +17083,19 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,	
 	.modification4 = SIGNATURE_MOD_PSS_CHANGE,
         .variable4 = SPLIT_SPECIAL,
+        .modification5 = SIGNATURE_MOD_SE_AGAINST_TYPE,
+        .variable5 = TYPE_GHOST,
+        .modification6 = SIGNATURE_MOD_SE_AGAINST_TYPE,
+        .variable6 = TYPE_FAIRY,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Effective to Ghost and Fairy.\n"
+            "Higher chance to lower Defense."),
     }, 
 
     [SPECIES_MELOETTA_PIROUETTE] =
     {
-        .move = MOVE_JUMP_KICK,	
+        .move = MOVE_MEGA_KICK,	
         .modification = SIGNATURE_MOD_POWER,
         .variable = 100,
         .modification2 = SIGNATURE_MOD_ACCURACY,
@@ -17099,10 +17104,14 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,		
 	.modification4 = SIGNATURE_MOD_PSS_CHANGE,
         .variable4 = SPLIT_PHYSICAL,
+        .modification5 = SIGNATURE_MOD_SE_AGAINST_TYPE,
+        .variable5 = TYPE_GHOST,
+        .modification6 = SIGNATURE_MOD_SE_AGAINST_TYPE,
+        .variable6 = TYPE_FAIRY,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Effective to Ghost and Fairy.\n"
+            "Higher chance to lower Defense."),
     }, 
 
 
