@@ -16790,8 +16790,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Engulfs in a blue flame.\n"
+            "Higher chance to cause Sleep."),
     },	
 
     [SPECIES_HAXORUS] =
@@ -16806,8 +16806,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 15,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Two axe chops that hit twice.\n"
+            "May cause Flinch."),
     },	
 
     [SPECIES_BEARTIC] =
@@ -16824,8 +16824,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_ICE,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "A reckless tackle that hurts\n"
+            "the user. May cause Paralysis."),
     },	
 
     [SPECIES_CRYOGONAL] =
@@ -16840,8 +16840,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Intensifies with successive\n"
+            "hits. May cause Freeze."),
     },	
 
     [SPECIES_ACCELGOR] =
@@ -16871,8 +16871,23 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Hurls mud at the foe. Higher\n"
+            "chance to reduce Speed."),
+    },	
+
+    [SPECIES_STUNFISK_GALARIAN] =
+    {
+        .move = MOVE_MUD_SHOT,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 100,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 90,		
+        .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
+        .variable3 = 50,
+        .differentDescription = TRUE,
+        .description = _( 
+            "Hurls mud at the foe. Higher\n"
+            "chance to reduce Speed."),
     },	
 
     [SPECIES_MIENSHAO] =
