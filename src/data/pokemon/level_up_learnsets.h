@@ -20161,7 +20161,7 @@ static const struct LevelUpMove sMiniorLevelUpLearnset[] = {
 
 static const struct LevelUpMove sKomalaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
-    LEVEL_UP_MOVE( 1, MOVE_ROCK_SAMSH),
+    LEVEL_UP_MOVE( 1, MOVE_ROCK_SMASH),
     LEVEL_UP_MOVE( 1, MOVE_ROLLOUT),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 5, MOVE_STOCKPILE),
