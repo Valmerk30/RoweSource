@@ -16343,6 +16343,45 @@ static const u8 sOricorioTutorLearnset[] =
     0xFF,
 };
 
+static const u8 sOricorioPomTutorLearnset[] =
+{
+    TUTOR(MOVE_SWORDS_DANCE),
+    TUTOR(MOVE_SUBSTITUTE),
+    TUTOR(MOVE_SNORE),
+    TUTOR(MOVE_ICY_WIND),
+    TUTOR(MOVE_SWAGGER),
+    TUTOR(MOVE_SLEEP_TALK),
+    TUTOR(MOVE_TAILWIND),
+    TUTOR(MOVE_DEFOG),
+    0xFF,
+};
+
+static const u8 sOricorioPauTutorLearnset[] =
+{
+    TUTOR(MOVE_SWORDS_DANCE),
+    TUTOR(MOVE_SUBSTITUTE),
+    TUTOR(MOVE_SNORE),
+    TUTOR(MOVE_ICY_WIND),
+    TUTOR(MOVE_SWAGGER),
+    TUTOR(MOVE_SLEEP_TALK),
+    TUTOR(MOVE_TAILWIND),
+    TUTOR(MOVE_DEFOG),
+    0xFF,
+};
+
+static const u8 sOricorioSensuTutorLearnset[] =
+{
+    TUTOR(MOVE_SWORDS_DANCE),
+    TUTOR(MOVE_SUBSTITUTE),
+    TUTOR(MOVE_SNORE),
+    TUTOR(MOVE_ICY_WIND),
+    TUTOR(MOVE_SWAGGER),
+    TUTOR(MOVE_SLEEP_TALK),
+    TUTOR(MOVE_TAILWIND),
+    TUTOR(MOVE_DEFOG),
+    0xFF,
+};
+
 static const u8 sCutieflyTutorLearnset[] =
 {
     TUTOR(MOVE_DREAM_EATER),
@@ -20638,10 +20677,10 @@ const u8 *const sTutorLearnsets[] =
     [SPECIES_VIKAVOLT] = sVikavoltTutorLearnset,
     [SPECIES_CRABRAWLER] = sCrabrawlerTutorLearnset,
     [SPECIES_CRABOMINABLE] = sCrabominableTutorLearnset,
-    [SPECIES_ORICORIO] 		= sOricorioTutorLearnset,
-    [SPECIES_ORICORIO_POM_POM] 	= sOricorioTutorLearnset,
-    [SPECIES_ORICORIO_PA_U] 	= sOricorioTutorLearnset,
-    [SPECIES_ORICORIO_SENSU] 	= sOricorioTutorLearnset,
+    [SPECIES_ORICORIO] = sOricorioTutorLearnset,
+    [SPECIES_ORICORIO_POM_POM] = sOricorioPomTutorLearnset,
+    [SPECIES_ORICORIO_PA_U] = sOricorioPauTutorLearnset,
+    [SPECIES_ORICORIO_SENSU] = sOricorioSensuTutorLearnset,
     [SPECIES_CUTIEFLY] = sCutieflyTutorLearnset,
     [SPECIES_RIBOMBEE] = sRibombeeTutorLearnset,
     [SPECIES_ROCKRUFF] = sRockruffTutorLearnset,
