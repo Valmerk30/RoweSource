@@ -3029,8 +3029,8 @@ static const u8 sBindDescription[] = _(
     "for 2 to 5 turns.");
 
 static const u8 sSlamDescription[] = _(
-    "Slams the foe with a long\n"
-    "tail, vine, etc.");
+    "Brutally slams the foe.\n"
+    "May provoke flinching.");
 
 static const u8 sVineWhipDescription[] = _(
     "Strikes the foe with\n"
@@ -4049,8 +4049,8 @@ static const u8 sIngrainDescription[] = _(
     "The user can't switch out.");
 
 static const u8 sSuperpowerDescription[] = _(
-    "A very powerful body slam.\n"
-    "Lowers Attack and Defense.");
+    "A powerful body slam. Lowers\n"
+    "user's Attack and Defense.");
 
 static const u8 sMagicCoatDescription[] = _(
     "Reflects special effects\n"
@@ -4173,8 +4173,8 @@ static const u8 sCrushClawDescription[] = _(
     "claws. May lower Defense.");
 
 static const u8 sBlastBurnDescription[] = _(
-    "A very powerful fire slam.\n"
-    "Lowers Attack and Defense.");
+    "A powerful fire slam. Lowers\n"
+    "user's Attack and Defense.");
 
 static const u8 sHydroCannonDescription[] = _(
     "A reckless water cannon that\n"
@@ -4425,8 +4425,8 @@ static const u8 sU_TURNDescription[] = _(
     "out the user.");
 
 static const u8 sCLOSE_COMBATDescription[] = _(
-    "A strong attack but lowers\n"
-    "the defensive stats.");
+    "A powerful body slam. Lowers\n"
+    "user's Defense and Sp. Def.");
 
 static const u8 sPAYBACKDescription[] = _(
     "An attack that gains power\n"
@@ -5365,8 +5365,8 @@ static const u8 sSHORE_UPDescription[] = _(
     "More HP in a sandstorm.");
 
 static const u8 sFIRST_IMPRESSIONDescription[] = _(
-    "Hits hard and first.\n"
-    "Only works first turn.");
+    "An extremely fast attack\n"
+    "that hits before enemies do.");
 
 static const u8 sBANEFUL_BUNKERDescription[] = _(
     "Protects user and poisons\n"
@@ -5394,7 +5394,7 @@ static const u8 sFLORAL_HEALINGDescription[] = _(
 
 static const u8 sHIGH_HORSEPOWERDescription[] = _(
     "Slams hard into the foe.\n"
-    "May reduce the foe's speed.");
+    "May raise the user's speed.");
 
 static const u8 sSTRENGTH_SAPDescription[] = _(
     "Saps the foe's Attack to\n"
@@ -5561,12 +5561,12 @@ static const u8 sNATURES_MADNESSDescription[] = _(
     "May cause confusion.");
 
 static const u8 sMULTI_ATTACKDescription[] = _(
-    "Attacks of multiple types.\n"
+    "Attack of multiple types.\n"
     "Can cause random statuses.");
 
 static const u8 sMIND_BLOWNDescription[] = _(
-    "It explodes the user's head.\n"
-    "Lowers the defensive stats.");
+    "Reckless mind attack. Lowers.\n"
+    "user's Defense and Sp. Def.");
 
 static const u8 sPLASMA_FISTSDescription[] = _(
     "The user attacks twice. Two\n"
