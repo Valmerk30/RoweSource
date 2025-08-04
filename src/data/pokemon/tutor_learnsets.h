@@ -16339,6 +16339,8 @@ static const u8 sOricorioTutorLearnset[] =
     TUTOR(MOVE_SWAGGER),
     TUTOR(MOVE_SLEEP_TALK),
     TUTOR(MOVE_TAILWIND),
+    TUTOR(MOVE_DUAL_WINGBEAT),
+    TUTOR(MOVE_SIGNAL_BEAM),
     TUTOR(MOVE_DEFOG),
     0xFF,
 };
@@ -16352,6 +16354,8 @@ static const u8 sOricorioPomTutorLearnset[] =
     TUTOR(MOVE_SWAGGER),
     TUTOR(MOVE_SLEEP_TALK),
     TUTOR(MOVE_TAILWIND),
+    TUTOR(MOVE_DUAL_WINGBEAT),
+    TUTOR(MOVE_SIGNAL_BEAM),
     TUTOR(MOVE_DEFOG),
     0xFF,
 };
@@ -16365,6 +16369,8 @@ static const u8 sOricorioPauTutorLearnset[] =
     TUTOR(MOVE_SWAGGER),
     TUTOR(MOVE_SLEEP_TALK),
     TUTOR(MOVE_TAILWIND),
+    TUTOR(MOVE_DUAL_WINGBEAT),
+    TUTOR(MOVE_SIGNAL_BEAM),
     TUTOR(MOVE_DEFOG),
     0xFF,
 };
@@ -16378,6 +16384,8 @@ static const u8 sOricorioSensuTutorLearnset[] =
     TUTOR(MOVE_SWAGGER),
     TUTOR(MOVE_SLEEP_TALK),
     TUTOR(MOVE_TAILWIND),
+    TUTOR(MOVE_DUAL_WINGBEAT),
+    TUTOR(MOVE_SIGNAL_BEAM),
     TUTOR(MOVE_DEFOG),
     0xFF,
 };
