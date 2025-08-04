@@ -21171,8 +21171,8 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_ARAQUANID] =
     {
         .baseHP        = 70,
-        .baseAttack    = 70,
-        .baseDefense   = 90,
+        .baseAttack    = 75,
+        .baseDefense   = 85,
         .baseSpeed     = 45,
         .baseSpAttack  = 65,
         .baseSpDefense = 120,
