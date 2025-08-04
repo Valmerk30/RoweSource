@@ -2168,7 +2168,7 @@ static const u8 sFUSION_BOLTDescription[] = _(
 	"Works well with a fireball.");
 
 static const u8 sFLYING_PRESSDescription[] = _(
-	"This attack does FightingDash\n"
+	"This attack does Fighting\n"
 	"and Flying-type damage.");
 
 static const u8 sMAT_BLOCKDescription[] = _(
@@ -5121,8 +5121,8 @@ static const u8 sFUSION_BOLTDescription[] = _(
     "flinching or paralysis.");
 
 static const u8 sFLYING_PRESSDescription[] = _(
-    "This attack does Fighting\n"
-    "and Flying-type damage.");
+    "Grapples the foe in the\n"
+    "air. May paralyze.");
 
 static const u8 sMAT_BLOCKDescription[] = _(
     "Evades damaging moves\n"
@@ -5891,7 +5891,7 @@ static const u8 sASTRAL_BARRAGEDescription[] = _(
 
 static const u8 sEERIE_SPELLDescription[] = _(
     "Attacks with psychic power.\n"
-    "Foe's last move has 3 PP cut.");
+    "Foe's last move has PP cut.");
 
 static const u8 sNotDoneYetDescription[] = _(
     "Not done yet.");
