@@ -30731,8 +30731,7 @@ static const u8 sCrabrawlerTMHMLearnset[] =
     TMHM(TM45_ATTRACT),
     TMHM(TM46_THIEF),
     TMHM(TM52_FOCUS_BLAST),
-    TMHM(TM55_SCALD),
-    
+    TMHM(TM55_SCALD),    
     TMHM(TM59_BRUTAL_SWING),
     TMHM(TM66_PAYBACK),
     TMHM(TM71_STONE_EDGE),
@@ -30770,8 +30769,7 @@ static const u8 sCrabominableTMHMLearnset[] =
     TMHM(TM45_ATTRACT),
     TMHM(TM46_THIEF),
     TMHM(TM52_FOCUS_BLAST),
-    TMHM(TM55_SCALD),
-    
+    TMHM(TM55_SCALD),    
     TMHM(TM59_BRUTAL_SWING),
     TMHM(TM66_PAYBACK),
     TMHM(TM68_GIGA_IMPACT),
