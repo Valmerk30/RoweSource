@@ -10252,7 +10252,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED | FLAG_SOUND,
-        .split = SPLIT_STATUS,
+        .split = SPLIT_PHYSICAL,
     },	
 
     [MOVE_HYPERSPACE_FURY] =
@@ -17908,6 +17908,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification3 =  SIGNATURE_MOD_TARGET_STAT_DOWN,
 	.variable3 = STAT_SPATK,
         .chance3 = 25,
+	.modification4 = SIGNATURE_MOD_PSS_CHANGE,
+        .variable4 = SPLIT_PHYSICAL,
         .differentDescription = TRUE,
         .description = _( 
             "Double damage if the foe has\n"
