@@ -17814,8 +17814,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Dances with mystical power.\n"
+            "May cause Burn."),
     },	
  
     [SPECIES_ORICORIO_POM_POM] =
@@ -17830,27 +17830,11 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Dances with mystical power.\n"
+            "May cause Paralysis."),
     },	
  
     [SPECIES_ORICORIO_PA_U] =
-    {
-        .move = MOVE_REVELATION_DANCE,
-        .modification = SIGNATURE_MOD_POWER,
-        .variable = 100,
-        .modification2 = SIGNATURE_MOD_ACCURACY,
-        .variable2 = 90,		
-        .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
-        .variable3 = SIGNATURE_SECONDARY_EFFECT_SLEEP,
-        .chance3 = 20,
-        .differentDescription = TRUE,
-        .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
-    },	
- 
-    [SPECIES_ORICORIO_SENSU] =
     {
         .move = MOVE_REVELATION_DANCE,
         .modification = SIGNATURE_MOD_POWER,
@@ -17862,8 +17846,24 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Dances with mystical power.\n"
+            "May cause Confusion."),
+    },	
+ 
+    [SPECIES_ORICORIO_SENSU] =
+    {
+        .move = MOVE_REVELATION_DANCE,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 100,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 90,		
+        .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
+        .variable3 = SIGNATURE_SECONDARY_EFFECT_POISON,
+        .chance3 = 30,
+        .differentDescription = TRUE,
+        .description = _( 
+            "Dances with mystical power.\n"
+            "May cause Poison."),
     },	
  
     [SPECIES_RIBOMBEE] =
