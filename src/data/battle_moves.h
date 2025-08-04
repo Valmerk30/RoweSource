@@ -11553,7 +11553,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,	
 	.modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
-        .variable3 = 25,	
+        .variable3 = 20,	
         .differentDescription = TRUE,
         .description = _( 
             "A sharp-fanged attack. Higher\n"
@@ -17690,7 +17690,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
     	    "Immerses the foes in heated\n"
-    	    "steam. May inflict a burn.");
+    	    "steam. May inflict a burn."),
     },	
 
     [SPECIES_DECIDUEYE] =
@@ -17703,7 +17703,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
    	    "Absorbs over three quarters\n"
-   	    "of the damage inflicted.");
+   	    "of the damage inflicted."),
     },	
  
     [SPECIES_INCINEROAR] =
@@ -17930,8 +17930,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_POISON,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "2 to 5 sharp pins are fired.\n"
+            "May cause Poison."),
     },	
  
     [SPECIES_MUDSDALE] =
