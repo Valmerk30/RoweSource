@@ -1186,9 +1186,9 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
     // Hoopa
     [SPECIES_HOOPA_UNBOUND] = sHoopaUnboundLevelUpLearnset,
     // Oricorio
-    [SPECIES_ORICORIO_POM_POM] = sOricorioLevelUpLearnset,
-    [SPECIES_ORICORIO_PA_U] = sOricorioLevelUpLearnset,
-    [SPECIES_ORICORIO_SENSU] = sOricorioLevelUpLearnset,
+    [SPECIES_ORICORIO_POM_POM] = sOricorioPomLevelUpLearnset,
+    [SPECIES_ORICORIO_PA_U] = sOricorioPauLevelUpLearnset,
+    [SPECIES_ORICORIO_SENSU] = sOricorioSensuLevelUpLearnset,
     // Rockruff
     [SPECIES_ROCKRUFF_OWN_TEMPO] = sRockruffLevelUpLearnset,
     // Lycanroc
