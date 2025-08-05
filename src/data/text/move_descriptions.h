@@ -5670,8 +5670,8 @@ static const u8 sTEATIMEDescription[] = _(
     "gaining its effect.");
     
 static const u8 sOCTOLOCKDescription[] = _(
-    "Traps the foe to lower Def\n"
-    "and Sp. Def fall each turn.");
+    "Traps the foe with eight\n"
+    "tentacles to prevent escape.");
     
 static const u8 sBOLT_BEAKDescription[] = _(
     "Double power if the user\n"
@@ -5734,8 +5734,8 @@ static const u8 sOVERDRIVEDescription[] = _(
     "May cause Confusion.");
     
 static const u8 sAPPLE_ACIDDescription[] = _(
-    "Attacks with tart apple acid\n"
-    "to lower the foe's Sp. Def.");
+    "Attacks with tart apple acid.\n"
+    "Lowers the foe's Sp. Def.");
     
 static const u8 sGRAV_APPLEDescription[] = _(
     "Drops an apple from above.\n"
@@ -5794,7 +5794,7 @@ static const u8 sSHELL_SIDE_ARMDescription[] = _(
     "Slow, but always poisons.");
 
 static const u8 sMISTY_EXPLOSIONDescription[] = _(
-    "Hit enemies in an explosion\n"
+    "Hits enemies in an explosion\n"
     "that also hurts the user.");
 
 static const u8 sGRASSY_GLIDEDescription[] = _(
