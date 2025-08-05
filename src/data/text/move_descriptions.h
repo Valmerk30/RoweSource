@@ -3902,7 +3902,7 @@ static const u8 sCrossChopDescription[] = _(
 
 static const u8 sTwisterDescription[] = _(
     "Whips up a vicious twister\n"
-    "to tear at the foe.");
+    "that may cause flinching.");
 
 static const u8 sRainDanceDescription[] = _(
     "Boosts the power of Water-\n"
@@ -5630,7 +5630,7 @@ static const u8 sVEEVEE_VOLLEYDescription[] = _(
 
 static const u8 sDOUBLE_IRON_BASHDescription[] = _(
     "The user spins and hits with\n"
-    "its arms. May cause flinch.");
+    "its arms twice.");
     
 // GEN 8
 static const u8 sDYNAMAX_CANNONDescription[] = _(
