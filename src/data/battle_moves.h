@@ -18223,8 +18223,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "A high-speed spin that raises\n"
+            "the user's Speed."),
     },	
  
     [SPECIES_MIMIKYU] =
@@ -18253,8 +18253,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable8 = SIGNATURE_PRIORITY_ALWAYS,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Priority strike in 2 turns.\n"
+            "May lower random stats."),
     },	
 
     [SPECIES_BRUXISH] =
@@ -18269,8 +18269,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Chomps with fangs. Destroys any\n"
+            "barriers. May cause Flinch."),
     },	
 
     [SPECIES_DRAMPA] =
@@ -18280,10 +18280,16 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = 80,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,
+        .modification3 = SIGNATURE_MOD_SE_AGAINST_TYPE,
+        .variable3 = TYPE_FIGHTING,
+        .modification4 = SIGNATURE_MOD_SE_AGAINST_TYPE,
+        .variable4 = TYPE_BUG,
+        .modification5 = SIGNATURE_MOD_SE_AGAINST_TYPE,
+        .variable5 = TYPE_GRASS,	
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "A tornado effective to Fighting,\n"
+            "Bug and Grass. May cause Flinch."),
     },	
  
     [SPECIES_DHELMISE] =
@@ -18300,8 +18306,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_GHOST,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Strangles with chains. Prevents\n"
+            "escaping. May cause Confusion."),
     },	
  
     [SPECIES_KOMMO_O] =
@@ -18313,11 +18319,11 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable3 = STAT_DEF,
-        .chance3 = 20,
+        .chance3 = 10,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Shoots 2 to 5 scales. Raises\n"
+            "Speed. May recover lost Defense."),
     },	
  
     [SPECIES_MARSHADOW] =
@@ -18329,8 +18335,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Steals the target's stat\n"
+            "boosts, then attacks."),
     },	
  
     [SPECIES_NAGANADEL] =
@@ -18345,8 +18351,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 10,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Doubles damage if the foe is\n"
+            "poisoned. Small chance to Poison."),
     },	
  
     [SPECIES_MELMETAL] =
@@ -18361,8 +18367,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "123456789012345678901234567890\n"
-            "123456789012345678901234567890"),
+            "Bashes twice with arms.\n"
+            "May cause Flinch."),
     },
 
     [SPECIES_RILLABOOM] =
