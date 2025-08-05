@@ -2727,7 +2727,7 @@ static const u8 sBOLT_BEAKDescription[] = _(
 static const u8 sFISHIOUS_RENDDescription[] = _(
     "Double power if the user\n"
     "moves before the target.");
-    
+
 static const u8 sCOURT_CHANGEDescription[] = _(
     "The user swaps effects on\n"
     "either side of the field.");
@@ -3789,8 +3789,8 @@ static const u8 sFuryCutterDescription[] = _(
     "on each successive hit.");
 
 static const u8 sSteelWingDescription[] = _(
-    "Strikes the foe with hard\n"
-    "wings spread wide.");
+    "Strikes with hard wings\n"
+    "that may raise Defense.");
 
 static const u8 sMeanLookDescription[] = _(
     "Fixes the foe with a mean\n"
