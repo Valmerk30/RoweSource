@@ -17652,7 +17652,7 @@ static const u8 sCinderaceTutorLearnset[] =
     TUTOR(MOVE_BLAST_BURN),
     TUTOR(MOVE_FIRE_FANG),
     TUTOR(MOVE_HEAT_WAVE),
-	TUTOR(MOVE_SCORCHING_SANDS),
+    TUTOR(MOVE_SCORCHING_SANDS),
     0xFF,
 };
 
@@ -17705,7 +17705,12 @@ static const u8 sSkwovetTutorLearnset[] =
     TUTOR(MOVE_SLEEP_TALK),
     TUTOR(MOVE_DEFENSE_CURL),
     TUTOR(MOVE_SEED_BOMB),
+    TUTOR(MOVE_ICE_FANG),
+    TUTOR(MOVE_FIRE_FANG),
+    TUTOR(MOVE_THUNDER_FANG),
     TUTOR(MOVE_HYPER_VOICE),
+    TUTOR(MOVE_ROCK_SMASH),
+    TUTOR(MOVE_STRENGTH),
     0xFF,
 };
 
@@ -17727,6 +17732,8 @@ static const u8 sGreedentTutorLearnset[] =
     TUTOR(MOVE_FIRE_FANG),
     TUTOR(MOVE_THUNDER_FANG),
     TUTOR(MOVE_HYPER_VOICE),
+    TUTOR(MOVE_ROCK_SMASH),
+    TUTOR(MOVE_STRENGTH),
     TUTOR(MOVE_STOMPING_TANTRUM),
     0xFF,
 };
@@ -17781,11 +17788,13 @@ static const u8 sCorviknightTutorLearnset[] =
 
 static const u8 sBlipbugTutorLearnset[] =
 {
+    TUTOR(MOVE_SIGNAL_BEAM),
     0xFF,
 };
 
 static const u8 sDottlerTutorLearnset[] =
 {
+    TUTOR(MOVE_SIGNAL_BEAM),
     TUTOR(MOVE_SUBSTITUTE),
     TUTOR(MOVE_SNORE),
     TUTOR(MOVE_ENDURE),
@@ -17796,6 +17805,7 @@ static const u8 sDottlerTutorLearnset[] =
 
 static const u8 sOrbeetleTutorLearnset[] =
 {
+    TUTOR(MOVE_SIGNAL_BEAM),
     TUTOR(MOVE_SUBSTITUTE),
     TUTOR(MOVE_SNORE),
     TUTOR(MOVE_ENDURE),
@@ -17865,6 +17875,8 @@ static const u8 sWoolooTutorLearnset[] =
     TUTOR(MOVE_SWAGGER),
     TUTOR(MOVE_SLEEP_TALK),
     TUTOR(MOVE_DEFENSE_CURL),
+    TUTOR(MOVE_BODY_PRESS),
+    TUTOR(MOVE_ROCK_SMASH),
     TUTOR(MOVE_GRASSY_GLIDE),
     0xFF,
 };
@@ -17884,7 +17896,10 @@ static const u8 sDubwoolTutorLearnset[] =
     TUTOR(MOVE_SLEEP_TALK),
     TUTOR(MOVE_DEFENSE_CURL),
     TUTOR(MOVE_BODY_PRESS),
+    TUTOR(MOVE_ROCK_SMASH),
+    TUTOR(MOVE_STRENGTH),
     TUTOR(MOVE_GRASSY_GLIDE),
+    TUTOR(MOVE_STOMPING_TANTRUM),
     0xFF,
 };
 
