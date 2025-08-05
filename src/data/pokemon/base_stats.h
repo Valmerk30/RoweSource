@@ -33275,11 +33275,11 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_CRAMORANT_GULPING] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 85,
+        .baseHP        = 75,
+        .baseAttack    = 95,
         .baseDefense   = 55,
-        .baseSpeed     = 85,
-        .baseSpAttack  = 85,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 95,
         .baseSpDefense = 95,
         .type1 = TYPE_FLYING,
         .type2 = TYPE_WATER,
@@ -33303,12 +33303,12 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_CRAMORANT_GORGING] =
     {
-        .baseHP        = 70,
+        .baseHP        = 75,
         .baseAttack    = 85,
-        .baseDefense   = 55,
-        .baseSpeed     = 85,
+        .baseDefense   = 85,
+        .baseSpeed     = 40,
         .baseSpAttack  = 85,
-        .baseSpDefense = 95,
+        .baseSpDefense = 105,
         .type1 = TYPE_FLYING,
         .type2 = TYPE_WATER,
         .catchRate = 255,
