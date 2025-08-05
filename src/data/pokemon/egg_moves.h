@@ -4869,6 +4869,7 @@ const u16 gEggMoves[] = {
 		MOVE_FLAME_CHARGE),
 
 	egg_moves(ROLYCOLY,
+		MOVE_PYRO_BALL,
 		MOVE_EXPLOSION,
 		MOVE_MUD_SLAP,
 		MOVE_BLOCK),
@@ -4932,6 +4933,7 @@ const u16 gEggMoves[] = {
 
 	egg_moves(PINCURCHIN,
 		MOVE_MEMENTO,
+		MOVE_PUNISHMENT,
 		MOVE_SUCKER_PUNCH),
 
 	egg_moves(SNOM,
