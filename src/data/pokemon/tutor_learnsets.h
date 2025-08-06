@@ -17822,6 +17822,7 @@ static const u8 sNickitTutorLearnset[] =
     TUTOR(MOVE_SLEEP_TALK),
     TUTOR(MOVE_SWIFT),
     TUTOR(MOVE_KNOCK_OFF),
+    TUTOR(MOVE_SIGNAL_BEAM),
     TUTOR(MOVE_FOUL_PLAY),
     0xFF,
 };
@@ -17837,23 +17838,27 @@ static const u8 sThievulTutorLearnset[] =
     TUTOR(MOVE_ICE_FANG),
     TUTOR(MOVE_FIRE_FANG),
     TUTOR(MOVE_THUNDER_FANG),
+    TUTOR(MOVE_SIGNAL_BEAM),
     TUTOR(MOVE_FOUL_PLAY),
     0xFF,
 };
 
 static const u8 sGossifleurTutorLearnset[] =
 {
+    TUTOR(MOVE_THUNDER_WAVE),
     TUTOR(MOVE_SUBSTITUTE),
     TUTOR(MOVE_SNORE),
     TUTOR(MOVE_ENDURE),
     TUTOR(MOVE_SLEEP_TALK),
     TUTOR(MOVE_HYPER_VOICE),
     TUTOR(MOVE_GRASSY_GLIDE),
+    TUTOR(MOVE_SIGNAL_BEAM),
     0xFF,
 };
 
 static const u8 sEldegossTutorLearnset[] =
 {
+    TUTOR(MOVE_THUNDER_WAVE),
     TUTOR(MOVE_SUBSTITUTE),
     TUTOR(MOVE_SNORE),
     TUTOR(MOVE_ENDURE),
@@ -17861,6 +17866,9 @@ static const u8 sEldegossTutorLearnset[] =
     TUTOR(MOVE_SEED_BOMB),
     TUTOR(MOVE_HYPER_VOICE),
     TUTOR(MOVE_GRASSY_GLIDE),
+    TUTOR(MOVE_SIGNAL_BEAM),
+    TUTOR(MOVE_KNOCK_OFF),
+    TUTOR(MOVE_FOUL_PLAY),
     0xFF,
 };
 
