@@ -5778,8 +5778,8 @@ static const u8 sEXPANDING_FORCEDescription[] = _(
     "all foes. May raise Sp. Atk.");
 
 static const u8 sSTEEL_ROLLERDescription[] = _(
-    "Destroys terrain. Fails if\n"
-    "ground isn't terrain.");
+    "Rolls around angrily.\n"
+    "Stronger after a failure.");
 
 static const u8 sSCALE_SHOTDescription[] = _(
     "Shoots scales 2 to 5 times.\n"
@@ -5882,8 +5882,8 @@ static const u8 sTHUNDEROUS_KICKDescription[] = _(
     "May lower foe's Defense.");
 
 static const u8 sGLACIAL_LANCEDescription[] = _(
-    "Strikes by hurling a blizzard-\n"
-    "cloaked icicle lance at a foe.");
+    "Double power if the user\n"
+    "moves before the target.");
 
 static const u8 sASTRAL_BARRAGEDescription[] = _(
     "Strikes by sending a frightful\n"
