@@ -1411,12 +1411,12 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_DIGLETT] =
     {
-        .baseHP        = 20,
+        .baseHP        = 25,
         .baseAttack    = 55,
-        .baseDefense   = 25,
+        .baseDefense   = 30,
         .baseSpeed     = 95,
         .baseSpAttack  = 35,
-        .baseSpDefense = 45,
+        .baseSpDefense = 50,
         .type1 = TYPE_GROUND,
         .type2 = TYPE_GROUND,
         .catchRate = 255,
@@ -1440,15 +1440,11 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_DUGTRIO] =
     {
         .baseHP        = 50,
+        .baseAttack    = 100,
         .baseDefense   = 60,
         .baseSpeed     = 120,
         .baseSpAttack  = 50,
         .baseSpDefense = 80,
-        #if P_UPDATED_STATS >= GEN_7
-            .baseAttack    = 100,
-        #else
-            .baseAttack    = 100,
-        #endif
         .type1 = TYPE_GROUND,
         .type2 = TYPE_GROUND,
         .catchRate = 255,
@@ -8014,7 +8010,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroup1 = EGG_GROUP_FIELD,
         .eggGroup2 = EGG_GROUP_FIELD,
-        .abilities = {ABILITY_TRUANT, ABILITY_NONE},
+        .abilities = {ABILITY_COMATOSE, ABILITY_NONE},
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = FALSE,
     },
@@ -8062,7 +8058,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroup1 = EGG_GROUP_FIELD,
         .eggGroup2 = EGG_GROUP_FIELD,
-        .abilities = {ABILITY_SCRAPPY, ABILITY_NONE},
+        .abilities = {ABILITY_INSOMNIA, ABILITY_NONE},
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = FALSE,
     },
@@ -26863,12 +26859,12 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_DIGLETT_ALOLAN] =
     {
-        .baseHP        = 20,
+        .baseHP        = 25,
         .baseAttack    = 55,
-        .baseDefense   = 25,
+        .baseDefense   = 30,
         .baseSpeed     = 95,
         .baseSpAttack  = 35,
-        .baseSpDefense = 45,
+        .baseSpDefense = 50,
         .type1 = TYPE_GROUND,
         .type2 = TYPE_STEEL,
         .catchRate = 255,
