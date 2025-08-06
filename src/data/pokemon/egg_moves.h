@@ -4839,6 +4839,7 @@ const u16 gEggMoves[] = {
 		MOVE_TORMENT,
 		MOVE_KNOCK_OFF,
 		MOVE_HOWL,
+		MOVE_SUCKER_PUNCH,
 		MOVE_QUICK_GUARD),
 
 	egg_moves(GOSSIFLEUR,
@@ -4944,6 +4945,7 @@ const u16 gEggMoves[] = {
 
 	egg_moves(STONJOURNER,
 		MOVE_CURSE,
+		MOVE_IRON_HEAD,
 		MOVE_ANCIENT_POWER),
 
 	egg_moves(EISCUE,
@@ -4963,6 +4965,7 @@ const u16 gEggMoves[] = {
 	egg_moves(MORPEKO,
 		MOVE_SUPER_FANG,
 		MOVE_SWAGGER,
+		MOVE_FLATTER,
 		MOVE_RAPID_SPIN,
 		MOVE_FAKE_OUT,
 		MOVE_CHARGE,
