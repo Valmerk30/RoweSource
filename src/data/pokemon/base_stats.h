@@ -13367,7 +13367,12 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroup1 = EGG_GROUP_AMORPHOUS,
         .eggGroup2 = EGG_GROUP_AMORPHOUS,
-        .abilities = {ABILITY_MOTOR_DRIVE, ABILITY_OVERCHARGE},
+        #ifdef BATTLE_ENGINE
+            .abilities = {ABILITY_MOTOR_DRIVE, ABILITY_OVERCHARGE},
+            .abilityHidden = ABILITY_TRANSISTOR,
+        #else
+            .abilities = {ABILITY_NONE, ABILITY_NONE},
+        #endif
         .bodyColor = BODY_COLOR_RED,
         .noFlip = FALSE,
     },
