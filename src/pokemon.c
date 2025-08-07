@@ -3843,11 +3843,11 @@ void CalculateMonStats(struct Pokemon *mon)
 	
 	if(FlagGet(FLAG_PERFECT_IVS_MODE)){
 		hpIV 		= 30;
-		attackIV 	= 15;
-		defenseIV 	= 15;
-		spAttackIV 	= 15;
-		spDefenseIV	= 15;
-		speedIV 	= 30;
+		attackIV 	= 20;
+		defenseIV 	= 20;
+		spAttackIV 	= 20;
+		spDefenseIV	= 20;
+		speedIV 	= 20;
 	}
 	
 	if(FlagGet(FLAG_LEVELESS_MODE) && !FlagGet(FLAG_NO_EVOLUTION_MODE))
