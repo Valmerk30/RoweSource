@@ -15057,13 +15057,13 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = 90,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
-        .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
-	.variable3 = SIGNATURE_SECONDARY_EFFECT_FREEZE,
-        .chance3 = 10,
+        .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
+        .variable3 = FIELD_SET_WEATHER_HAIL,
+        .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
             "A chunk of ice that strikes\n"
-            "first and may cause Freeze."),
+            "first and may set Hail."),
     },
 
     [SPECIES_FROSLASS] =
@@ -15073,13 +15073,13 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = 90,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
-        .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
-	.variable3 = SIGNATURE_SECONDARY_EFFECT_FREEZE,
-        .chance3 = 10,
+        .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
+        .variable3 = FIELD_SET_WEATHER_HAIL,
+        .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
             "A freezing breath. High crit\n"
-            "ratio. May cause Freeze."),
+            "ratio. May set Hail."),
     },	
 	
     [SPECIES_WALREIN] =
@@ -15122,13 +15122,13 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = 100,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
-        .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
-        .variable3 = SIGNATURE_SECONDARY_EFFECT_POISON,
-        .chance3 = 20,
+        .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
+        .variable3 = FIELD_SET_WEATHER_RAIN,
+        .chance3 = 30,
         .differentDescription = TRUE,
         .description = _( 
             "Destroys barriers like Reflect\n"
-            "and may cause Poison."),
+            "and may set Rainy Weather."),
     },
 
     [SPECIES_RELICANTH] =
@@ -15533,12 +15533,12 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
-        .variable3 = SIGNATURE_SECONDARY_EFFECT_CONFUSION,
+        .variable3 = FIELD_SET_WEATHER_RAIN,
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
-            "A wave of water drops. May\n"
-            "cause Paralysis and Confusion."),
+            "Waves of water drops. May cause\n"
+            "Paralysis and Rainy Weather."),
     },	
 
     [SPECIES_CHERRIM] =
@@ -15564,12 +15564,13 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = 100,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
-        .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
-        .variable3 = 50,
+        .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
+        .variable3 =  FIELD_SET_WEATHER_SANDSTORM,
+        .chance3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "Throws a blob of mud. Higher\n"
-            "chance of lowering Accuracy."),
+            "Throws a blob of mud. May lower\n"
+            "Accuracy and set a Sandstorm."),
     },	
 
     [SPECIES_DRIFBLIM] =
@@ -15821,8 +15822,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = SPLIT_SPECIAL,	
         .differentDescription = TRUE,
         .description = _( 
-            "Charges the foe with water.\n"
-            "May set Rainy Weather"),
+            "Charges with strong waters. May\n"
+            "Flinch and set Rainy Weather"),
     },	
 
     [SPECIES_ABOMASNOW] =
@@ -16119,12 +16120,12 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
-        .variable3 = FIELD_OPPONET_SET_STEALTH_ROCK,
+        .variable3 =  FIELD_SET_WEATHER_SANDSTORM,
         .chance3 = 90,
         .differentDescription = TRUE,
         .description = _( 
             "Throws small rocks to the foe.\n"
-            "Almost always sets Stealth Rock."),
+            "Almost always sets Sandstorm."),
     },		
 
     [SPECIES_SWOOBAT] =
@@ -16851,13 +16852,13 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = 40,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
-        .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
-        .variable3 = SIGNATURE_SECONDARY_EFFECT_FREEZE,
-        .chance3 = 20,
+        .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
+        .variable3 = FIELD_SET_WEATHER_HAIL,
+        .chance3 = 30,
         .differentDescription = TRUE,
         .description = _( 
             "Intensifies with successive\n"
-            "hits. May cause Freeze."),
+            "hits. May set Hail."),
     },	
 
     [SPECIES_ACCELGOR] =
@@ -17503,13 +17504,13 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable = 100,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
-        .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
-        .variable3 = SIGNATURE_SECONDARY_EFFECT_FREEZE,
-        .chance3 = 10,	
+        .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
+        .variable3 = FIELD_SET_WEATHER_HAIL,
+        .chance3 = 30,
         .differentDescription = TRUE,
         .description = _( 
-            "Blows freezing air. May cause\n"
-            "Freeze and lower Speed."),
+            "Blows freezing air. May lower\n"
+            "Speed and set Hail Weather."),
     },	
 
     [SPECIES_HAWLUCHA] =
@@ -17897,6 +17898,38 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
             "Hits first with a rocky attack.\n"
             "May set Sandstorm."),
     },	
+
+    [SPECIES_LYCANROC_MIDNIGHT] =
+    {
+        .move = MOVE_ACCELEROCK,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 90,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 90,
+        .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
+        .variable3 =  FIELD_SET_WEATHER_SANDSTORM,
+        .chance3 = 20,
+        .differentDescription = TRUE,
+        .description = _( 
+            "Hits first with a rocky attack.\n"
+            "May set Sandstorm."),
+    },
+
+    [SPECIES_LYCANROC_DUSK] =
+    {
+        .move = MOVE_ACCELEROCK,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 90,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 90,
+        .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
+        .variable3 =  FIELD_SET_WEATHER_SANDSTORM,
+        .chance3 = 20,
+        .differentDescription = TRUE,
+        .description = _( 
+            "Hits first with a rocky attack.\n"
+            "May set Sandstorm."),
+    },
  
     [SPECIES_WISHIWASHI] =
     {
