@@ -759,7 +759,7 @@ static const u8 sNidoqueenTutorLearnset[] =
     TUTOR(MOVE_FURY_CUTTER),
     TUTOR(MOVE_BODY_PRESS),
     TUTOR(MOVE_OUTRAGE),
-    TUTOR(MOVE_SUPERPOWER),
+    TUTOR(MOVE_CLOSE_COMBAT),
     TUTOR(MOVE_DRILL_RUN),
     TUTOR(MOVE_ROCK_SMASH),
     TUTOR(MOVE_STRENGTH),
@@ -3353,6 +3353,7 @@ static const u8 sKabutopsTutorLearnset[] =
     TUTOR(MOVE_ROCK_SMASH),
     TUTOR(MOVE_CUT),
     TUTOR(MOVE_WHIRLPOOL),
+    TUTOR(MOVE_DRILL_RUN),
     0xFF,
 };
 
