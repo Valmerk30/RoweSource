@@ -23249,7 +23249,7 @@ const struct BaseStats gBaseStats[] =
         .eggGroup2 = EGG_GROUP_BUG,
         .abilities = {ABILITY_SWARM, ABILITY_COMPOUND_EYES},
         #ifdef BATTLE_ENGINE
-            .abilityHidden = ABILITY_TELEPATHY,
+            .abilityHidden = ABILITY_KLUTZ,
         #endif
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = FALSE,
@@ -23279,7 +23279,7 @@ const struct BaseStats gBaseStats[] =
         .eggGroup2 = EGG_GROUP_BUG,
         .abilities = {ABILITY_SWARM, ABILITY_COMPOUND_EYES},
         #ifdef BATTLE_ENGINE
-            .abilityHidden = ABILITY_TELEPATHY,
+            .abilityHidden = ABILITY_KLUTZ,
         #endif
         .bodyColor = BODY_COLOR_YELLOW,
         .noFlip = FALSE,
@@ -23309,7 +23309,7 @@ const struct BaseStats gBaseStats[] =
         .eggGroup2 = EGG_GROUP_BUG,
         #ifdef BATTLE_ENGINE
             .abilities = {ABILITY_SWARM, ABILITY_COMPOUND_EYES},
-            .abilityHidden = ABILITY_TELEPATHY,
+            .abilityHidden = ABILITY_KLUTZ,
         #else
             .abilities = {ABILITY_SWARM, ABILITY_NONE},
         #endif
@@ -25123,14 +25123,14 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_ETERNATUS] =
     {
-        .baseHP        = 140,
-        .baseAttack    = 85,
-        .baseDefense   = 95,
-        .baseSpeed     = 130,
-        .baseSpAttack  = 145,
-        .baseSpDefense = 95,
-        .type1 = TYPE_POISON,
-        .type2 = TYPE_DRAGON,
+        .baseHP        = 100,
+        .baseAttack    = 30,
+        .baseDefense   = 100,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 120,
+        .baseSpDefense = 100,
+        .type1 = TYPE_DRAGON,
+        .type2 = TYPE_FIRE,
         .catchRate = 255,
         .expYield = 345,
         .evYield_HP        = 3,
@@ -57635,7 +57635,7 @@ const struct BaseStats gVanillaBaseStats[] =
         .eggGroup2 = EGG_GROUP_BUG,
         #ifdef BATTLE_ENGINE
             .abilities = {ABILITY_SWARM, ABILITY_FRISK},
-            .abilityHidden = ABILITY_TELEPATHY,
+            .abilityHidden = ABILITY_KLUTZ,
         #else
             .abilities = {ABILITY_SWARM, ABILITY_NONE},
         #endif
