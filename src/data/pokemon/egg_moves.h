@@ -4452,6 +4452,7 @@ const u16 gEggMoves[] = {
 		MOVE_BESTOW),
 
 	egg_moves(BERGMITE,
+		MOVE_IRON_HEAD,
 		MOVE_MIST,
 		MOVE_MIRROR_COAT,
 		MOVE_AURORA_VEIL,
