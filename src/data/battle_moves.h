@@ -19033,7 +19033,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 30,
-	.modification4 = SIGNATURE_MOD_PSS_CHANGE,
+	    .modification4 = SIGNATURE_MOD_PSS_CHANGE,
         .variable4 = SPLIT_SPECIAL,
         .differentDescription = TRUE,
         .description = _( 
@@ -19065,12 +19065,40 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
-	.variable3 = SIGNATURE_SECONDARY_EFFECT_FLINCH,
+     	.variable3 = SIGNATURE_SECONDARY_EFFECT_FLINCH,
         .chance3 = 20,
         .differentDescription = TRUE,
         .description = _( 
             "Dark martial arts. High crit\n"
             "ratio. May cause Flinch."),
+    },	
+
+    [SPECIES_ETERNATUS] =
+    {
+        .move = MOVE_ETERNABEAM,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 150,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 90,		
+        .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
+        .variable3 = STAT_SPEED,
+        .chance3 = 10,
+        .modification4 = SIGNATURE_MOD_TARGET_STAT_DOWN,
+        .variable4 = STAT_ATK,
+        .chance4 = 10,
+        .modification5 = SIGNATURE_MOD_TARGET_STAT_DOWN,
+        .variable5 = STAT_DEF,
+        .chance5 = 10,
+        .modification6 = SIGNATURE_MOD_TARGET_STAT_DOWN,
+        .variable6 = STAT_SPATK,
+        .chance6 = 10,
+        .modification7 = SIGNATURE_MOD_TARGET_STAT_DOWN,
+        .variable7 = STAT_SPDEF,
+        .chance7 = 10,
+        .differentDescription = TRUE,
+        .description = _( 
+            "The user rests next turn.\n"
+            "May lower random stats."),
     },	
 
 };
