@@ -15857,7 +15857,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Destroys the foe's item.\n"
-            "May cause Paralysis."),
+            "May cause Confusion."),
     },		
 
     [SPECIES_ROTOM_HEAT] =
@@ -15873,7 +15873,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Destroys the foe's item.\n"
-            "May cause Paralysis."),
+            "May cause Confusion."),
     },		
 
     [SPECIES_ROTOM_WASH] =
@@ -15889,7 +15889,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Destroys the foe's item.\n"
-            "May cause Paralysis."),
+            "May cause Confusion."),
     },		
 
     [SPECIES_ROTOM_FROST] =
@@ -15905,7 +15905,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Destroys the foe's item.\n"
-            "May cause Paralysis."),
+            "May cause Confusion."),
     },		
 
     [SPECIES_ROTOM_FAN] =
@@ -15921,7 +15921,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Destroys the foe's item.\n"
-            "May cause Paralysis."),
+            "May cause Confusion."),
     },		
 
     [SPECIES_ROTOM_MOW] =
@@ -15937,7 +15937,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .differentDescription = TRUE,
         .description = _( 
             "Destroys the foe's item.\n"
-            "May cause Paralysis."),
+            "May cause Confusion."),
     },		
 	
     [SPECIES_HEATRAN] =
