@@ -9016,8 +9016,8 @@ static const struct TrainerMonItemCustomMoves sParty_Wallace[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_DRAGON_FANG,
     .heldItem = ITEM_DRAGON_FANG,
-    .postgamemoves = {MOVE_DRAGON_PULSE, MOVE_SLUDGE_BOMB, MOVE_HYDRO_PUMP, MOVE_TOXIC},
-    .moves = {MOVE_DRAGON_PULSE, MOVE_SLUDGE_BOMB, MOVE_HYDRO_PUMP, MOVE_TOXIC}
+    .postgamemoves = {MOVE_DRAGON_RUSH, MOVE_SLUDGE_BOMB, MOVE_HYDRO_PUMP, MOVE_TOXIC},
+    .moves = {MOVE_DRAGON_RUSH, MOVE_SLUDGE_BOMB, MOVE_HYDRO_PUMP, MOVE_TOXIC}
     },
     {
     .iv = 255,
@@ -9080,8 +9080,8 @@ static const struct TrainerMonItemCustomMoves sParty_Wallace[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_QUICK_CLAW,
     .heldItem = ITEM_QUICK_CLAW,
-    .postgamemoves = {MOVE_BREAKING_SWIPE, MOVE_STEEL_BEAM, MOVE_MOVE_SCORCHING_SANDS, MOVE_METAL_SOUND},
-    .moves = {MOVE_BREAKING_SWIPE, MOVE_STEEL_BEAM, MOVE_MOVE_SCORCHING_SANDS, MOVE_METAL_SOUND}
+    .postgamemoves = {MOVE_BREAKING_SWIPE, MOVE_STEEL_BEAM, MOVE_SCORCHING_SANDS, MOVE_METAL_SOUND},
+    .moves = {MOVE_BREAKING_SWIPE, MOVE_STEEL_BEAM, MOVE_SCORCHING_SANDS, MOVE_METAL_SOUND}
     },
     {
     .iv = 255,
@@ -13110,7 +13110,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR1[] = {
     {
     .iv = 255,
     .lvl = 5, 
-    .evs = {30, 30, 30, 30, 30, 30}, 
+    .evs = {40, 40, 40, 40, 40, 40},  
     .abilityNum = 0,
     .happiness = 255,
     .species = SPECIES_BUTTERFREE,
@@ -13126,7 +13126,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR1[] = {
     {
     .iv = 255,
     .lvl = 5,
-    .evs = {30, 30, 30, 30, 30, 30}, 
+    .evs = {40, 40, 40, 40, 40, 40},  
     .abilityNum = 2,
     .happiness = 255,
     .species = SPECIES_ACCELGOR,
@@ -13142,7 +13142,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR1[] = {
     {
     .iv = 255,
     .lvl = 5,
-    .evs = {30, 30, 30, 30, 30, 30}, 
+    .evs = {40, 40, 40, 40, 40, 40},  
     .abilityNum = 0,
     .happiness = 255,
     .species = SPECIES_ARMALDO,
@@ -13158,7 +13158,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR1[] = {
     {
     .iv = 255,
     .lvl = 5,
-    .evs = {30, 30, 30, 30, 30, 30}, 
+    .evs = {40, 40, 40, 40, 40, 40},  
     .abilityNum = 2,
     .happiness = 255,
     .species = SPECIES_ORBEETLE,
@@ -13174,7 +13174,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR1[] = {
 	{
     .iv = 250,
     .lvl = 5,
-    .evs = {30, 30, 30, 30, 30, 30}, 
+    .evs = {40, 40, 40, 40, 40, 40},  
     .abilityNum = 2,
     .happiness = 255,
     .species = SPECIES_SCOLIPEDE,
@@ -13190,7 +13190,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR1[] = {
     {
     .iv = 255,
     .lvl = 5,
-    .evs = {30, 30, 30, 30, 30, 30}, 
+    .evs = {40, 40, 40, 40, 40, 40},  
     .abilityNum = 0,
     .happiness = 255,
     .species = SPECIES_CENTISKORCH,
@@ -16426,7 +16426,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR2[] = {
     {
     .iv = 255,
     .lvl = 5, 
-    .evs = {30, 30, 30, 30, 30, 30}, 
+    .evs = {40, 40, 40, 40, 40, 40},  
     .abilityNum = 0,
     .happiness = 255,
     .species = SPECIES_BUTTERFREE,
@@ -16442,7 +16442,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR2[] = {
     {
     .iv = 255,
     .lvl = 5,
-    .evs = {30, 30, 30, 30, 30, 30}, 
+    .evs = {40, 40, 40, 40, 40, 40},  
     .abilityNum = 2,
     .happiness = 255,
     .species = SPECIES_ACCELGOR,
@@ -16458,7 +16458,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR2[] = {
     {
     .iv = 255,
     .lvl = 5,
-    .evs = {30, 30, 30, 30, 30, 30}, 
+    .evs = {40, 40, 40, 40, 40, 40},  
     .abilityNum = 0,
     .happiness = 255,
     .species = SPECIES_ARMALDO,
@@ -16474,7 +16474,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR2[] = {
     {
     .iv = 255,
     .lvl = 5,
-    .evs = {30, 30, 30, 30, 30, 30}, 
+    .evs = {40, 40, 40, 40, 40, 40},  
     .abilityNum = 2,
     .happiness = 255,
     .species = SPECIES_ORBEETLE,
@@ -16490,7 +16490,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR2[] = {
 	{
     .iv = 250,
     .lvl = 5,
-    .evs = {30, 30, 30, 30, 30, 30}, 
+    .evs = {40, 40, 40, 40, 40, 40},  
     .abilityNum = 2,
     .happiness = 255,
     .species = SPECIES_SCOLIPEDE,
@@ -16506,7 +16506,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR2[] = {
     {
     .iv = 255,
     .lvl = 5,
-    .evs = {30, 30, 30, 30, 30, 30}, 
+    .evs = {40, 40, 40, 40, 40, 40},  
     .abilityNum = 0,
     .happiness = 255,
     .species = SPECIES_CENTISKORCH,
@@ -16525,7 +16525,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR3[] = {
     {
     .iv = 255,
     .lvl = 5, 
-    .evs = {30, 30, 30, 30, 30, 30}, 
+    .evs = {40, 40, 40, 40, 40, 40},  
     .abilityNum = 0,
     .happiness = 255,
     .species = SPECIES_BUTTERFREE,
@@ -16541,7 +16541,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR3[] = {
     {
     .iv = 255,
     .lvl = 5,
-    .evs = {30, 30, 30, 30, 30, 30}, 
+    .evs = {40, 40, 40, 40, 40, 40},  
     .abilityNum = 2,
     .happiness = 255,
     .species = SPECIES_ACCELGOR,
@@ -16557,7 +16557,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR3[] = {
     {
     .iv = 255,
     .lvl = 5,
-    .evs = {30, 30, 30, 30, 30, 30}, 
+    .evs = {40, 40, 40, 40, 40, 40},  
     .abilityNum = 0,
     .happiness = 255,
     .species = SPECIES_ARMALDO,
@@ -16573,7 +16573,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR3[] = {
     {
     .iv = 255,
     .lvl = 5,
-    .evs = {30, 30, 30, 30, 30, 30}, 
+    .evs = {40, 40, 40, 40, 40, 40},  
     .abilityNum = 2,
     .happiness = 255,
     .species = SPECIES_ORBEETLE,
@@ -16589,7 +16589,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR3[] = {
 	{
     .iv = 250,
     .lvl = 5,
-    .evs = {30, 30, 30, 30, 30, 30}, 
+    .evs = {40, 40, 40, 40, 40, 40},  
     .abilityNum = 2,
     .happiness = 255,
     .species = SPECIES_SCOLIPEDE,
@@ -16605,7 +16605,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR3[] = {
     {
     .iv = 255,
     .lvl = 5,
-    .evs = {30, 30, 30, 30, 30, 30}, 
+    .evs = {40, 40, 40, 40, 40, 40},  
     .abilityNum = 0,
     .happiness = 255,
     .species = SPECIES_CENTISKORCH,
@@ -16624,7 +16624,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR4[] = {
     {
     .iv = 255,
     .lvl = 5, 
-    .evs = {30, 30, 30, 30, 30, 30}, 
+    .evs = {40, 40, 40, 40, 40, 40},  
     .abilityNum = 0,
     .happiness = 255,
     .species = SPECIES_BUTTERFREE,
@@ -16640,7 +16640,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR4[] = {
     {
     .iv = 255,
     .lvl = 5,
-    .evs = {30, 30, 30, 30, 30, 30}, 
+    .evs = {40, 40, 40, 40, 40, 40},  
     .abilityNum = 2,
     .happiness = 255,
     .species = SPECIES_ACCELGOR,
@@ -16656,7 +16656,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR4[] = {
     {
     .iv = 255,
     .lvl = 5,
-    .evs = {30, 30, 30, 30, 30, 30}, 
+    .evs = {40, 40, 40, 40, 40, 40},  
     .abilityNum = 0,
     .happiness = 255,
     .species = SPECIES_ARMALDO,
@@ -16672,7 +16672,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR4[] = {
     {
     .iv = 255,
     .lvl = 5,
-    .evs = {30, 30, 30, 30, 30, 30}, 
+    .evs = {40, 40, 40, 40, 40, 40},  
     .abilityNum = 2,
     .happiness = 255,
     .species = SPECIES_ORBEETLE,
@@ -16688,7 +16688,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR4[] = {
 	{
     .iv = 250,
     .lvl = 5,
-    .evs = {30, 30, 30, 30, 30, 30}, 
+    .evs = {40, 40, 40, 40, 40, 40},  
     .abilityNum = 2,
     .happiness = 255,
     .species = SPECIES_SCOLIPEDE,
@@ -16704,7 +16704,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR4[] = {
     {
     .iv = 255,
     .lvl = 5,
-    .evs = {30, 30, 30, 30, 30, 30}, 
+    .evs = {40, 40, 40, 40, 40, 40},  
     .abilityNum = 0,
     .happiness = 255,
     .species = SPECIES_CENTISKORCH,
@@ -16723,7 +16723,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR5[] = {
     {
     .iv = 255,
     .lvl = 5, 
-    .evs = {30, 30, 30, 30, 30, 30}, 
+    .evs = {40, 40, 40, 40, 40, 40},  
     .abilityNum = 0,
     .happiness = 255,
     .species = SPECIES_BUTTERFREE,
@@ -16739,7 +16739,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR5[] = {
     {
     .iv = 255,
     .lvl = 5,
-    .evs = {30, 30, 30, 30, 30, 30}, 
+    .evs = {40, 40, 40, 40, 40, 40},  
     .abilityNum = 2,
     .happiness = 255,
     .species = SPECIES_ACCELGOR,
@@ -16755,7 +16755,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR5[] = {
     {
     .iv = 255,
     .lvl = 5,
-    .evs = {30, 30, 30, 30, 30, 30}, 
+    .evs = {40, 40, 40, 40, 40, 40},  
     .abilityNum = 0,
     .happiness = 255,
     .species = SPECIES_ARMALDO,
@@ -16771,7 +16771,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR5[] = {
     {
     .iv = 255,
     .lvl = 5,
-    .evs = {30, 30, 30, 30, 30, 30}, 
+    .evs = {40, 40, 40, 40, 40, 40},  
     .abilityNum = 2,
     .happiness = 255,
     .species = SPECIES_ORBEETLE,
@@ -16787,7 +16787,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR5[] = {
 	{
     .iv = 250,
     .lvl = 5,
-    .evs = {30, 30, 30, 30, 30, 30}, 
+    .evs = {40, 40, 40, 40, 40, 40},  
     .abilityNum = 2,
     .happiness = 255,
     .species = SPECIES_SCOLIPEDE,
@@ -16803,7 +16803,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR5[] = {
     {
     .iv = 255,
     .lvl = 5,
-    .evs = {30, 30, 30, 30, 30, 30}, 
+    .evs = {40, 40, 40, 40, 40, 40},  
     .abilityNum = 0,
     .happiness = 255,
     .species = SPECIES_CENTISKORCH,
