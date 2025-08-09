@@ -19790,7 +19790,7 @@ static const struct TrainerMonItemCustomMoves sParty_Wattson2[] = {
     .postgameheldItem = ITEM_SITRUS_BERRY,
     .heldItem = ITEM_SITRUS_BERRY,
     .postgamemoves = {MOVE_WING_ATTACK, MOVE_SPARK, MOVE_QUICK_ATTACK, MOVE_DOUBLE_TEAM},
-MOVE_WING_ATTACK, MOVE_SPARK, MOVE_QUICK_ATTACK, MOVE_DOUBLE_TEAM
+    .moves = {MOVE_WING_ATTACK, MOVE_SPARK, MOVE_QUICK_ATTACK, MOVE_DOUBLE_TEAM}
     },
     {
     .iv = 255,
@@ -19904,7 +19904,7 @@ static const struct TrainerMonItemCustomMoves sParty_Wattson3[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_SITRUS_BERRY,
     .heldItem = ITEM_SITRUS_BERRY,
-    .postgamemoves = {MOVE_BUBBLE_BEAM, MOVE_CHARGE_BEAM, MOVE_ICE_BEAM, MOVE_SUPERSONIC}
+    .postgamemoves = {MOVE_BUBBLE_BEAM, MOVE_CHARGE_BEAM, MOVE_ICE_BEAM, MOVE_SUPERSONIC},
     .moves = {MOVE_BUBBLE_BEAM, MOVE_CHARGE_BEAM, MOVE_ICE_BEAM, MOVE_SUPERSONIC}
     },
 	{
