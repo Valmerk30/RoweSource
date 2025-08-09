@@ -15859,6 +15859,86 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
             "Destroys the foe's item.\n"
             "May cause Paralysis."),
     },		
+
+    [SPECIES_ROTOM_HEAT] =
+    {
+        .move = MOVE_POLTERGEIST,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 100,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 90,	
+        .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
+        .variable3 = SIGNATURE_SECONDARY_EFFECT_CONFUSION,
+        .chance3 = 20,
+        .differentDescription = TRUE,
+        .description = _( 
+            "Destroys the foe's item.\n"
+            "May cause Paralysis."),
+    },		
+
+    [SPECIES_ROTOM_WASH] =
+    {
+        .move = MOVE_POLTERGEIST,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 100,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 90,	
+        .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
+        .variable3 = SIGNATURE_SECONDARY_EFFECT_CONFUSION,
+        .chance3 = 20,
+        .differentDescription = TRUE,
+        .description = _( 
+            "Destroys the foe's item.\n"
+            "May cause Paralysis."),
+    },		
+
+    [SPECIES_ROTOM_FROST] =
+    {
+        .move = MOVE_POLTERGEIST,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 100,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 90,	
+        .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
+        .variable3 = SIGNATURE_SECONDARY_EFFECT_CONFUSION,
+        .chance3 = 20,
+        .differentDescription = TRUE,
+        .description = _( 
+            "Destroys the foe's item.\n"
+            "May cause Paralysis."),
+    },		
+
+    [SPECIES_ROTOM_FAN] =
+    {
+        .move = MOVE_POLTERGEIST,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 100,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 90,	
+        .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
+        .variable3 = SIGNATURE_SECONDARY_EFFECT_CONFUSION,
+        .chance3 = 20,
+        .differentDescription = TRUE,
+        .description = _( 
+            "Destroys the foe's item.\n"
+            "May cause Paralysis."),
+    },		
+
+    [SPECIES_ROTOM_MOW] =
+    {
+        .move = MOVE_POLTERGEIST,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 100,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 90,	
+        .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
+        .variable3 = SIGNATURE_SECONDARY_EFFECT_CONFUSION,
+        .chance3 = 20,
+        .differentDescription = TRUE,
+        .description = _( 
+            "Destroys the foe's item.\n"
+            "May cause Paralysis."),
+    },		
 	
     [SPECIES_HEATRAN] =
     {
