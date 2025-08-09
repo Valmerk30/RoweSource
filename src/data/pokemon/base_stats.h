@@ -5196,8 +5196,8 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroup1 = EGG_GROUP_WATER_1,
         .eggGroup2 = EGG_GROUP_WATER_1,
-        .abilities = {ABILITY_WATER_ABSORB, ABILITY_LIQUID_VOICE},
-        .abilityHidden = ABILITY_DRIZZLE,
+        .abilities = {ABILITY_WATER_ABSORB, ABILITY_DRIZZLE},
+        .abilityHidden = ABILITY_LIQUID_VOICE,
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = FALSE,
     },
@@ -5223,7 +5223,7 @@ const struct BaseStats gBaseStats[] =
         .eggGroup2 = EGG_GROUP_GRASS,
         #ifdef BATTLE_ENGINE
             .abilities = {ABILITY_CHLOROPHYLL, ABILITY_LEAF_GUARD},
-            .abilityHidden = ABILITY_INFILTRATOR,
+            .abilityHidden = ABILITY_AIR_CURRENT,
         #else
             .abilities = {ABILITY_CHLOROPHYLL, ABILITY_NONE},
         #endif
@@ -5252,7 +5252,7 @@ const struct BaseStats gBaseStats[] =
         .eggGroup2 = EGG_GROUP_GRASS,
         #ifdef BATTLE_ENGINE
             .abilities = {ABILITY_CHLOROPHYLL, ABILITY_LEAF_GUARD},
-            .abilityHidden = ABILITY_INFILTRATOR,
+            .abilityHidden = ABILITY_AIR_CURRENT,
         #else
             .abilities = {ABILITY_CHLOROPHYLL, ABILITY_NONE},
         #endif
@@ -5281,7 +5281,7 @@ const struct BaseStats gBaseStats[] =
         .eggGroup2 = EGG_GROUP_GRASS,
         #ifdef BATTLE_ENGINE
             .abilities = {ABILITY_CHLOROPHYLL, ABILITY_LEAF_GUARD},
-            .abilityHidden = ABILITY_AERILATE,
+            .abilityHidden = ABILITY_AIR_CURRENT,
         #else
             .abilities = {ABILITY_CHLOROPHYLL, ABILITY_NONE},
         #endif
@@ -29221,7 +29221,12 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroup1 = EGG_GROUP_AMORPHOUS,
         .eggGroup2 = EGG_GROUP_AMORPHOUS,
-        .abilities = {ABILITY_MOTOR_DRIVE, ABILITY_MOTOR_DRIVE},
+        #ifdef BATTLE_ENGINE
+            .abilities = {ABILITY_MOTOR_DRIVE, ABILITY_OVERCHARGE},
+            .abilityHidden = ABILITY_BLAZE,
+        #else
+            .abilities = {ABILITY_NONE, ABILITY_NONE},
+        #endif
         .bodyColor = BODY_COLOR_RED,
         .noFlip = FALSE,
     },
@@ -29246,7 +29251,12 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroup1 = EGG_GROUP_AMORPHOUS,
         .eggGroup2 = EGG_GROUP_AMORPHOUS,
-        .abilities = {ABILITY_MOTOR_DRIVE, ABILITY_MOTOR_DRIVE},
+        #ifdef BATTLE_ENGINE
+            .abilities = {ABILITY_MOTOR_DRIVE, ABILITY_OVERCHARGE},
+            .abilityHidden = ABILITY_TORRENT,
+        #else
+            .abilities = {ABILITY_NONE, ABILITY_NONE},
+        #endif
         .bodyColor = BODY_COLOR_RED,
         .noFlip = FALSE,
     },
@@ -29271,7 +29281,12 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroup1 = EGG_GROUP_AMORPHOUS,
         .eggGroup2 = EGG_GROUP_AMORPHOUS,
-        .abilities = {ABILITY_MOTOR_DRIVE, ABILITY_MOTOR_DRIVE},
+        #ifdef BATTLE_ENGINE
+            .abilities = {ABILITY_MOTOR_DRIVE, ABILITY_OVERCHARGE},
+            .abilityHidden = ABILITY_REFRIGERATE,
+        #else
+            .abilities = {ABILITY_NONE, ABILITY_NONE},
+        #endif
         .bodyColor = BODY_COLOR_RED,
         .noFlip = FALSE,
     },
@@ -29296,7 +29311,12 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroup1 = EGG_GROUP_AMORPHOUS,
         .eggGroup2 = EGG_GROUP_AMORPHOUS,
-        .abilities = {ABILITY_MOTOR_DRIVE, ABILITY_MOTOR_DRIVE},
+        #ifdef BATTLE_ENGINE
+            .abilities = {ABILITY_MOTOR_DRIVE, ABILITY_OVERCHARGE},
+            .abilityHidden = ABILITY_GALE_WINGS,
+        #else
+            .abilities = {ABILITY_NONE, ABILITY_NONE},
+        #endif
         .bodyColor = BODY_COLOR_RED,
         .noFlip = FALSE,
     },
@@ -29321,7 +29341,12 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroup1 = EGG_GROUP_AMORPHOUS,
         .eggGroup2 = EGG_GROUP_AMORPHOUS,
-        .abilities = {ABILITY_MOTOR_DRIVE, ABILITY_MOTOR_DRIVE},
+        #ifdef BATTLE_ENGINE
+            .abilities = {ABILITY_MOTOR_DRIVE, ABILITY_OVERCHARGE},
+            .abilityHidden = ABILITY_OVERGROW,
+        #else
+            .abilities = {ABILITY_NONE, ABILITY_NONE},
+        #endif
         .bodyColor = BODY_COLOR_RED,
         .noFlip = FALSE,
     },
@@ -39386,7 +39411,7 @@ const struct BaseStats gVanillaBaseStats[] =
         .eggGroup2 = EGG_GROUP_GRASS,
         #ifdef BATTLE_ENGINE
             .abilities = {ABILITY_CHLOROPHYLL, ABILITY_LEAF_GUARD},
-            .abilityHidden = ABILITY_AIR_CURRENT,
+            .abilityHidden = ABILITY_INFILTRATOR,
         #else
             .abilities = {ABILITY_CHLOROPHYLL, ABILITY_NONE},
         #endif
@@ -39415,7 +39440,7 @@ const struct BaseStats gVanillaBaseStats[] =
         .eggGroup2 = EGG_GROUP_GRASS,
         #ifdef BATTLE_ENGINE
             .abilities = {ABILITY_CHLOROPHYLL, ABILITY_LEAF_GUARD},
-            .abilityHidden = ABILITY_AIR_CURRENT,
+            .abilityHidden = ABILITY_INFILTRATOR,
         #else
             .abilities = {ABILITY_CHLOROPHYLL, ABILITY_NONE},
         #endif
@@ -39448,7 +39473,7 @@ const struct BaseStats gVanillaBaseStats[] =
         .eggGroup2 = EGG_GROUP_GRASS,
         #ifdef BATTLE_ENGINE
             .abilities = {ABILITY_CHLOROPHYLL, ABILITY_LEAF_GUARD},
-            .abilityHidden = ABILITY_AIR_CURRENT,
+            .abilityHidden = ABILITY_INFILTRATOR,
         #else
             .abilities = {ABILITY_CHLOROPHYLL, ABILITY_NONE},
         #endif
