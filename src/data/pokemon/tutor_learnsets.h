@@ -5155,7 +5155,7 @@ static const u8 sHeracrossTutorLearnset[] =
     TUTOR(MOVE_ROCK_SMASH),
     TUTOR(MOVE_STRENGTH),
     TUTOR(MOVE_CUT),
-    TUTOR(MOVE_CLOSE_COMBAT),
+    TUTOR(MOVE_SUPERPOWER),
     TUTOR(MOVE_HIGH_HORSEPOWER),
     0xFF,
 };
