@@ -6394,8 +6394,8 @@ static const struct TrainerMonItemCustomMoves sParty_Sidney[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_MUSCLE_BAND,
     .heldItem = ITEM_MUSCLE_BAND,
-    .postgamemoves = {MOVE_SHADOW_PUNCH, MOVE_HIGH_HORSEPOWER, MOVE_HAMMER_ARM, MOVE_CONFUSE_RAY},
-    .moves = {MOVE_SHADOW_PUNCH, MOVE_HIGH_HORSEPOWER, MOVE_HAMMER_ARM, MOVE_CONFUSE_RAY}
+    .postgamemoves = {MOVE_HIGH_HORSEPOWER, MOVE_SHADOW_PUNCH, MOVE_HAMMER_ARM, MOVE_CONFUSE_RAY},
+    .moves = {MOVE_HIGH_HORSEPOWER, MOVE_SHADOW_PUNCH, MOVE_HAMMER_ARM, MOVE_CONFUSE_RAY}
     },
     {
     .iv = 255,
@@ -6410,8 +6410,8 @@ static const struct TrainerMonItemCustomMoves sParty_Sidney[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_BLACK_SLUDGE,
     .heldItem = ITEM_BLACK_SLUDGE,
-    .postgamemoves = {MOVE_SUCKER_PUNCH, MOVE_SLUDGE_BOMB, MOVE_PLAY_ROUGH, MOVE_TORMENT},
-    .moves = {MOVE_SUCKER_PUNCH, MOVE_SLUDGE_BOMB, MOVE_PLAY_ROUGH, MOVE_TORMENT}
+    .postgamemoves = {MOVE_SLUDGE_BOMB, MOVE_SUCKER_PUNCH, MOVE_PLAY_ROUGH, MOVE_TORMENT},
+    .moves = {MOVE_SLUDGE_BOMB, MOVE_SUCKER_PUNCH, MOVE_PLAY_ROUGH, MOVE_TORMENT}
     },
     {
     .iv = 255,
@@ -6426,8 +6426,8 @@ static const struct TrainerMonItemCustomMoves sParty_Sidney[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_WEAKNESS_POLICY,
     .heldItem = ITEM_WEAKNESS_POLICY,
-    .postgamemoves = {MOVE_SPIRIT_SHACKLE, MOVE_AIR_SLASH, MOVE_THUNDERBOLT, MOVE_MINIMIZE},
-    .moves = {MOVE_SPIRIT_SHACKLE, MOVE_AIR_SLASH, MOVE_THUNDERBOLT, MOVE_MINIMIZE}
+    .postgamemoves = {MOVE_AIR_SLASH, MOVE_SPIRIT_SHACKLE, MOVE_THUNDERBOLT, MOVE_MINIMIZE},
+    .moves = {MOVE_AIR_SLASH, MOVE_SPIRIT_SHACKLE, MOVE_THUNDERBOLT, MOVE_MINIMIZE}
     },
     {
     .iv = 255,
@@ -6458,8 +6458,8 @@ static const struct TrainerMonItemCustomMoves sParty_Sidney[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_FOCUS_BAND,
     .heldItem = ITEM_FOCUS_BAND,
-    .postgamemoves = {MOVE_RETALIATE, MOVE_SECRET_SWORD, MOVE_SHADOW_CLAW, MOVE_KINGS_SHIELD},
-    .moves = {MOVE_RETALIATE, MOVE_SECRET_SWORD, MOVE_SHADOW_CLAW, MOVE_KINGS_SHIELD}
+    .postgamemoves = {MOVE_SECRET_SWORD, MOVE_SHADOW_CLAW, MOVE_RETALIATE, MOVE_KINGS_SHIELD},
+    .moves = {MOVE_SECRET_SWORD, MOVE_SHADOW_CLAW, MOVE_RETALIATE, MOVE_KINGS_SHIELD}
     },
     {
     .iv = 255,
@@ -6573,8 +6573,8 @@ static const struct TrainerMonItemCustomMoves sParty_Phoebe[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_LEFTOVERS,
     .heldItem = ITEM_LEFTOVERS,
-    .postgamemoves = {MOVE_LEAF_STORM, MOVE_LANDS_WRATH, MOVE_CRUNCH, MOVE_AROMATHERAPY},
-    .moves = {MOVE_LEAF_STORM, MOVE_LANDS_WRATH, MOVE_CRUNCH, MOVE_AROMATHERAPY}
+    .postgamemoves = {MOVE_LANDS_WRATH, MOVE_LEAF_STORM, MOVE_CRUNCH, MOVE_AROMATHERAPY},
+    .moves = {MOVE_LANDS_WRATH, MOVE_LEAF_STORM, MOVE_CRUNCH, MOVE_AROMATHERAPY}
     }	
 };
 
@@ -6592,8 +6592,8 @@ static const struct TrainerMonItemCustomMoves sParty_Glacia[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_KINGS_ROCK,
     .heldItem = ITEM_KINGS_ROCK,
-    .postgamemoves = {MOVE_POISON_JAB, MOVE_STONE_EDGE, MOVE_NIGHT_SLASH, MOVE_SCREECH},
-    .moves = {MOVE_POISON_JAB, MOVE_STONE_EDGE, MOVE_NIGHT_SLASH, MOVE_SCREECH}
+    .postgamemoves = {MOVE_STONE_EDGE, MOVE_POISON_JAB, MOVE_NIGHT_SLASH, MOVE_SCREECH},
+    .moves = {MOVE_STONE_EDGE, MOVE_POISON_JAB, MOVE_NIGHT_SLASH, MOVE_SCREECH}
     },
     {
     .iv = 255,
@@ -6624,8 +6624,8 @@ static const struct TrainerMonItemCustomMoves sParty_Glacia[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_MIRACLE_SEED,
     .heldItem = ITEM_MIRACLE_SEED,
-    .postgamemoves = {MOVE_SLUDGE_WAVE, MOVE_PETAL_BLIZZARD, MOVE_SHADOW_BALL, MOVE_ATTRACT},
-    .moves = {MOVE_SLUDGE_WAVE, MOVE_PETAL_BLIZZARD, MOVE_SHADOW_BALL, MOVE_ATTRACT}
+    .postgamemoves = {MOVE_PETAL_BLIZZARD, MOVE_SLUDGE_WAVE, MOVE_SHADOW_BALL, MOVE_ATTRACT},
+    .moves = {MOVE_PETAL_BLIZZARD, MOVE_SLUDGE_WAVE, MOVE_SHADOW_BALL, MOVE_ATTRACT}
     },
     {
     .iv = 255,
@@ -6656,8 +6656,8 @@ static const struct TrainerMonItemCustomMoves sParty_Glacia[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_SCOPE_LENS,
     .heldItem = ITEM_SCOPE_LENS,
-    .postgamemoves = {MOVE_CROSS_POISON, MOVE_AERIAL_ACE, MOVE_LEECH_LIFE, MOVE_TOXIC},
-    .moves = {MOVE_CROSS_POISON, MOVE_AERIAL_ACE, MOVE_LEECH_LIFE, MOVE_TOXIC}
+    .postgamemoves = {MOVE_AERIAL_ACE, MOVE_CROSS_POISON, MOVE_LEECH_LIFE, MOVE_TOXIC},
+    .moves = {MOVE_AERIAL_ACE, MOVE_CROSS_POISON, MOVE_LEECH_LIFE, MOVE_TOXIC}
     },
     {
     .iv = 255,
@@ -6672,8 +6672,8 @@ static const struct TrainerMonItemCustomMoves sParty_Glacia[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_LEFTOVERS,
     .heldItem = ITEM_LEFTOVERS,
-    .postgamemoves = {MOVE_ICE_FANG, MOVE_LIQUIDATION, MOVE_FISSURE, MOVE_ENCORE},
-    .moves = {MOVE_ICE_FANG, MOVE_LIQUIDATION, MOVE_FISSURE, MOVE_ENCORE}
+    .postgamemoves = {MOVE_LIQUIDATION, MOVE_ICE_FANG, MOVE_FISSURE, MOVE_ENCORE},
+    .moves = {MOVE_LIQUIDATION, MOVE_ICE_FANG, MOVE_FISSURE, MOVE_ENCORE}
     }
 };
 
@@ -6707,8 +6707,8 @@ static const struct TrainerMonItemCustomMoves sParty_Drake[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_MUSCLE_BAND,
     .heldItem = ITEM_MUSCLE_BAND,
-    .postgamemoves = {MOVE_POISON_JAB, MOVE_EARTHQUAKE, MOVE_SLAM, MOVE_TORMENT},
-    .moves = {MOVE_POISON_JAB, MOVE_EARTHQUAKE, MOVE_SLAM, MOVE_TORMENT}
+    .postgamemoves = {MOVE_POISON_JAB, MOVE_EARTHQUAKE, MOVE_SLAM, MOVE_EMBARGO},
+    .moves = {MOVE_POISON_JAB, MOVE_EARTHQUAKE, MOVE_SLAM, MOVE_EMBARGO}
     },
     {
     .iv = 255,
@@ -6723,8 +6723,8 @@ static const struct TrainerMonItemCustomMoves sParty_Drake[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_SCOPE_LENS,
     .heldItem = ITEM_SCOPE_LENS,
-    .postgamemoves = {MOVE_BULLET_PUNCH, MOVE_X_SCISSOR, MOVE_AERIAL_ACE, MOVE_SWORDS_DANCE},
-    .moves = {MOVE_BULLET_PUNCH, MOVE_X_SCISSOR, MOVE_AERIAL_ACE, MOVE_SWORDS_DANCE}
+    .postgamemoves = {MOVE_X_SCISSOR, MOVE_BULLET_PUNCH, MOVE_AERIAL_ACE, MOVE_SWORDS_DANCE},
+    .moves = {MOVE_X_SCISSOR, MOVE_BULLET_PUNCH, MOVE_AERIAL_ACE, MOVE_SWORDS_DANCE}
     },
     {
     .iv = 255,
@@ -6855,7 +6855,7 @@ static const struct TrainerMonItemCustomMoves sParty_Roxanne1[] = {
     .postgameheldItem = ITEM_SITRUS_BERRY,
     .heldItem = ITEM_SITRUS_BERRY,
     .postgamemoves = {MOVE_HEADBUTT, MOVE_ROCK_BLAST, MOVE_MUD_SLAP, MOVE_SANDSTORM},
-    .moves = {MOVE_HEADBUTT, MOVE_ROCK_THROW, MOVE_MUD_SLAP, MOVE_SANDSTORM}
+    .moves = {MOVE_HEADBUTT, MOVE_ROCK_BLAST, MOVE_MUD_SLAP, MOVE_SANDSTORM}
     },
     {
     .iv = 255,
@@ -9016,8 +9016,8 @@ static const struct TrainerMonItemCustomMoves sParty_Wallace[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_DRAGON_FANG,
     .heldItem = ITEM_DRAGON_FANG,
-    .postgamemoves = {MOVE_DRAGON_RUSH, MOVE_SLUDGE_BOMB, MOVE_HYDRO_PUMP, MOVE_TOXIC},
-    .moves = {MOVE_DRAGON_RUSH, MOVE_SLUDGE_BOMB, MOVE_HYDRO_PUMP, MOVE_TOXIC}
+    .postgamemoves = {MOVE_SLUDGE_BOMB, MOVE_DRAGON_RUSH, MOVE_HYDRO_PUMP, MOVE_TOXIC},
+    .moves = {MOVE_SLUDGE_BOMB, MOVE_DRAGON_RUSH, MOVE_HYDRO_PUMP, MOVE_TOXIC}
     },
     {
     .iv = 255,
@@ -9032,8 +9032,8 @@ static const struct TrainerMonItemCustomMoves sParty_Wallace[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_WISE_GLASSES,
     .heldItem = ITEM_WISE_GLASSES,
-    .postgamemoves = {MOVE_DRAGON_ASCENT, MOVE_MOONBLAST, MOVE_AEROBLAST, MOVE_SAFEGUARD},
-    .moves = {MOVE_DRAGON_ASCENT, MOVE_MOONBLAST, MOVE_AEROBLAST, MOVE_SAFEGUARD}
+    .postgamemoves = {MOVE_MOONBLAST, MOVE_DRAGON_ASCENT, MOVE_AEROBLAST, MOVE_SAFEGUARD},
+    .moves = {MOVE_MOONBLAST, MOVE_DRAGON_ASCENT, MOVE_AEROBLAST, MOVE_SAFEGUARD}
     },
     {
     .iv = 255,
@@ -9048,8 +9048,8 @@ static const struct TrainerMonItemCustomMoves sParty_Wallace[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_FOCUS_BAND,
     .heldItem = ITEM_FOCUS_BAND,
-    .postgamemoves = {MOVE_DRAGON_PULSE, MOVE_BARRAGE, MOVE_EXTRASENSORY, MOVE_HYPNOSIS},
-    .moves = {MOVE_DRAGON_PULSE, MOVE_BARRAGE, MOVE_EXTRASENSORY, MOVE_HYPNOSIS}
+    .postgamemoves = {MOVE_BARRAGE, MOVE_DRAGON_PULSE, MOVE_EXTRASENSORY, MOVE_HYPNOSIS},
+    .moves = {MOVE_BARRAGE, MOVE_DRAGON_PULSE, MOVE_EXTRASENSORY, MOVE_HYPNOSIS}
     },
 	{
     .iv = 255,
@@ -9064,8 +9064,8 @@ static const struct TrainerMonItemCustomMoves sParty_Wallace[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_BRIGHT_POWDER,
     .heldItem = ITEM_BRIGHT_POWDER,
-    .postgamemoves = {MOVE_DRAGON_ENERGY, MOVE_BUG_BUZZ, MOVE_ANCIENT_POWER, MOVE_DOUBLE_TEAM},
-    .moves = {MOVE_DRAGON_ENERGY, MOVE_BUG_BUZZ, MOVE_ANCIENT_POWER, MOVE_DOUBLE_TEAM}
+    .postgamemoves = {MOVE_BUG_BUZZ, MOVE_DRAGON_ENERGY, MOVE_ANCIENT_POWER, MOVE_DOUBLE_TEAM},
+    .moves = {MOVE_BUG_BUZZ, MOVE_DRAGON_ENERGY, MOVE_ANCIENT_POWER, MOVE_DOUBLE_TEAM}
     },
     {
     .iv = 255,
@@ -9080,8 +9080,8 @@ static const struct TrainerMonItemCustomMoves sParty_Wallace[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_QUICK_CLAW,
     .heldItem = ITEM_QUICK_CLAW,
-    .postgamemoves = {MOVE_BREAKING_SWIPE, MOVE_STEEL_BEAM, MOVE_SCORCHING_SANDS, MOVE_METAL_SOUND},
-    .moves = {MOVE_BREAKING_SWIPE, MOVE_STEEL_BEAM, MOVE_SCORCHING_SANDS, MOVE_METAL_SOUND}
+    .postgamemoves = {MOVE_STEEL_BEAM, MOVE_BREAKING_SWIPE, MOVE_SCORCHING_SANDS, MOVE_METAL_SOUND},
+    .moves = {MOVE_STEEL_BEAM, MOVE_BREAKING_SWIPE, MOVE_SCORCHING_SANDS, MOVE_METAL_SOUND}
     },
     {
     .iv = 255,
@@ -9096,8 +9096,8 @@ static const struct TrainerMonItemCustomMoves sParty_Wallace[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_LIFE_ORB,
     .heldItem = ITEM_LIFE_ORB,
-    .postgamemoves = {MOVE_ETERNABEAM, MOVE_FLAMETHROWER, MOVE_DARK_PULSE, MOVE_ROAR},
-    .moves = {MOVE_ETERNABEAM, MOVE_FLAMETHROWER, MOVE_DARK_PULSE, MOVE_ROAR}
+    .postgamemoves = {MOVE_FLAMETHROWER, MOVE_ETERNABEAM, MOVE_DARK_PULSE, MOVE_ROAR},
+    .moves = {MOVE_FLAMETHROWER, MOVE_ETERNABEAM, MOVE_DARK_PULSE, MOVE_ROAR}
     }
 };
 
@@ -13120,8 +13120,8 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR1[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_SILVER_POWDER,
     .heldItem = ITEM_SILVER_POWDER,
-    .postgamemoves = {MOVE_SIGNAL_BEAM, MOVE_AIR_SLASH, MOVE_DAZZLING_GLEAM, MOVE_STUN_SPORE},
-    .moves = {MOVE_SIGNAL_BEAM, MOVE_AIR_SLASH, MOVE_DAZZLING_GLEAM, MOVE_STUN_SPORE}
+    .postgamemoves = {MOVE_AIR_SLASH, MOVE_SIGNAL_BEAM, MOVE_DAZZLING_GLEAM, MOVE_STUN_SPORE},
+    .moves = {MOVE_AIR_SLASH, MOVE_SIGNAL_BEAM, MOVE_DAZZLING_GLEAM, MOVE_STUN_SPORE}
     },
     {
     .iv = 255,
@@ -13136,8 +13136,8 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR1[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_SCOPE_LENS,
     .heldItem = ITEM_SCOPE_LENS,
-    .postgamemoves = {MOVE_INFESTATION, MOVE_DARK_PULSE, MOVE_GIGA_DRAIN, MOVE_CURSE},
-    .moves = {MOVE_INFESTATION, MOVE_DARK_PULSE, MOVE_GIGA_DRAIN, MOVE_CURSE}
+    .postgamemoves = {MOVE_DARK_PULSE, MOVE_INFESTATION, MOVE_GIGA_DRAIN, MOVE_CURSE},
+    .moves = {MOVE_DARK_PULSE, MOVE_INFESTATION, MOVE_GIGA_DRAIN, MOVE_CURSE}
     },
     {
     .iv = 255,
@@ -13152,8 +13152,8 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR1[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_MUSCLE_BAND,
     .heldItem = ITEM_MUSCLE_BAND,
-    .postgamemoves = {MOVE_FURY_CUTTER, MOVE_CRUSH_CLAW, MOVE_IRON_TAIL, MOVE_ROCK_POLISH},
-    .moves = {MOVE_FURY_CUTTER, MOVE_CRUSH_CLAW, MOVE_IRON_TAIL, MOVE_ROCK_POLISH}
+    .postgamemoves = {MOVE_CRUSH_CLAW, MOVE_X_SCISSOR, MOVE_IRON_TAIL, MOVE_ROCK_POLISH},
+    .moves = {MOVE_CRUSH_CLAW, MOVE_X_SCISSOR, MOVE_IRON_TAIL, MOVE_ROCK_POLISH}
     },
     {
     .iv = 255,
@@ -13168,8 +13168,8 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR1[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_WISE_GLASSES,
     .heldItem = ITEM_WISE_GLASSES,
-    .postgamemoves = {MOVE_SILVER_WIND, MOVE_PSYSHOCK, MOVE_SCALD, MOVE_SKILL_SWAP},
-    .moves = {MOVE_SILVER_WIND, MOVE_PSYSHOCK, MOVE_SCALD, MOVE_SKILL_SWAP}
+    .postgamemoves = {MOVE_PSYSHOCK, MOVE_SILVER_WIND, MOVE_SCALD, MOVE_SKILL_SWAP},
+    .moves = {MOVE_PSYSHOCK, MOVE_SILVER_WIND, MOVE_SCALD, MOVE_SKILL_SWAP}
     },
 	{
     .iv = 250,
@@ -13184,8 +13184,8 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR1[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_ROCKY_HELMET,
     .heldItem = ITEM_ROCKY_HELMET,
-    .postgamemoves = {MOVE_STEAMROLLER, MOVE_VENOM_DRENCH, MOVE_STRENGTH, MOVE_TOXIC},
-    .moves = {MOVE_STEAMROLLER, MOVE_VENOM_DRENCH, MOVE_STRENGTH, MOVE_TOXIC}
+    .postgamemoves = {MOVE_VENOM_DRENCH, MOVE_STEAMROLLER, MOVE_STRENGTH, MOVE_TOXIC},
+    .moves = {MOVE_VENOM_DRENCH, MOVE_STEAMROLLER, MOVE_STRENGTH, MOVE_TOXIC}
     },
     {
     .iv = 255,
@@ -13200,8 +13200,8 @@ static const struct TrainerMonItemCustomMoves sParty_WallyVR1[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_SAFETY_GOGGLES,
     .heldItem = ITEM_SAFETY_GOGGLES,
-    .postgamemoves = {MOVE_LUNGE, MOVE_FIRE_FANG, MOVE_SCORCHING_SANDS, MOVE_COIL},
-    .moves = {MOVE_LUNGE, MOVE_FIRE_FANG, MOVE_SCORCHING_SANDS, MOVE_COIL}
+    .postgamemoves = {MOVE_FIRE_FANG, MOVE_LUNGE, MOVE_SCORCHING_SANDS, MOVE_COIL},
+    .moves = {MOVE_FIRE_FANG, MOVE_LUNGE, MOVE_SCORCHING_SANDS, MOVE_COIL}
     }
 };
 
@@ -19394,7 +19394,7 @@ static const struct TrainerMonItemCustomMoves sParty_Brawly2[] = {
     .postgameheldItem = ITEM_SITRUS_BERRY,
     .heldItem = ITEM_SITRUS_BERRY,
     .postgamemoves = {MOVE_ZEN_HEADBUTT, MOVE_AURA_SPHERE, MOVE_ICE_PUNCH, MOVE_LIGHT_SCREEN},
-    .moves = {MOVE_ZEN_HEADBUTT, MOVE_AURA_SPHERE, MOVE_PIN_MISSILE, MOVE_LIGHT_SCREEN}
+    .moves = {MOVE_ZEN_HEADBUTT, MOVE_AURA_SPHERE, MOVE_ICE_PUNCH, MOVE_LIGHT_SCREEN}
     },
     {
     .iv = 255,
@@ -19525,7 +19525,7 @@ static const struct TrainerMonItemCustomMoves sParty_Brawly3[] = {
     .postgameheldItem = ITEM_SITRUS_BERRY,
     .heldItem = ITEM_SITRUS_BERRY,
     .postgamemoves = {MOVE_PLAY_ROUGH, MOVE_SUPERPOWER, MOVE_BULLDOZE, MOVE_BABY_DOLL_EYES},
-    .moves = {MOVE_MUD_SHOT, MOVE_MUDDY_WATER, MOVE_BULLDOZE, MOVE_BABY_DOLL_EYES}
+    .moves = {MOVE_MUD_SHOT, MOVE_SUPERPOWER, MOVE_BULLDOZE, MOVE_BABY_DOLL_EYES}
     },
     {
     .iv = 255,
@@ -21916,8 +21916,8 @@ static const struct TrainerMonItemCustomMoves sParty_Juan3[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_SITRUS_BERRY,
     .heldItem = ITEM_SITRUS_BERRY,
-    .postgamemoves = {MOVE_AIR_CUTTER, MOVE_DIVE, MOVE_LUNGE, MOVE_ATTRACT},
-    .moves = {MOVE_AIR_CUTTER, MOVE_DIVE, MOVE_LUNGE, MOVE_ATTRACT}
+    .postgamemoves = {MOVE_AIR_CUTTER, MOVE_DIVE, MOVE_ICE_BEAM, MOVE_ATTRACT},
+    .moves = {MOVE_AIR_CUTTER, MOVE_DIVE, MOVE_ICE_BEAM, MOVE_ATTRACT}
     },
 	{
     .iv = 255,
@@ -21932,8 +21932,8 @@ static const struct TrainerMonItemCustomMoves sParty_Juan3[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_SITRUS_BERRY,
     .heldItem = ITEM_SITRUS_BERRY,
-    .postgamemoves = {MOVE_ROUND, MOVE_BUBBLE_BEAM, MOVE_MEGA_DRAIN, MOVE_QUIVER_DANCE},
-    .moves = {MOVE_ROUND, MOVE_BUBBLE_BEAM, MOVE_MEGA_DRAIN, MOVE_QUIVER_DANCE}
+    .postgamemoves = {MOVE_DAZZLING_GLEAM, MOVE_BOUNCY_BUBBLE, MOVE_ENERGY_BALL, MOVE_QUIVER_DANCE},
+    .moves = {MOVE_DAZZLING_GLEAM, MOVE_BOUNCY_BUBBLE, MOVE_ENERGY_BALL, MOVE_QUIVER_DANCE}
     },
     {
     .iv = 255,
@@ -22031,8 +22031,8 @@ static const struct TrainerMonItemCustomMoves sParty_Juan4[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_SITRUS_BERRY,
     .heldItem = ITEM_SITRUS_BERRY,
-    .postgamemoves = {MOVE_ROUND, MOVE_BOUNCY_BUBBLE, MOVE_ENERGY_BALL, MOVE_QUIVER_DANCE},
-    .moves = {MOVE_ROUND, MOVE_BOUNCY_BUBBLE, MOVE_ENERGY_BALL, MOVE_QUIVER_DANCE}
+    .postgamemoves = {MOVE_MOONBLAST, MOVE_BOUNCY_BUBBLE, MOVE_ENERGY_BALL, MOVE_QUIVER_DANCE},
+    .moves = {MOVE_MOONBLAST, MOVE_BOUNCY_BUBBLE, MOVE_ENERGY_BALL, MOVE_QUIVER_DANCE}
     },
     {
     .iv = 255,
@@ -22130,8 +22130,8 @@ static const struct TrainerMonItemCustomMoves sParty_Juan5[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_SITRUS_BERRY,
     .heldItem = ITEM_SITRUS_BERRY,
-    .postgamemoves = {MOVE_ROUND, MOVE_BOUNCY_BUBBLE, MOVE_ENERGY_BALL, MOVE_QUIVER_DANCE},
-    .moves = {MOVE_ROUND, MOVE_BOUNCY_BUBBLE, MOVE_ENERGY_BALL, MOVE_QUIVER_DANCE}
+    .postgamemoves = {MOVE_MOONBLAST, MOVE_BOUNCY_BUBBLE, MOVE_ENERGY_BALL, MOVE_QUIVER_DANCE},
+    .moves = {MOVE_MOONBLAST, MOVE_BOUNCY_BUBBLE, MOVE_ENERGY_BALL, MOVE_QUIVER_DANCE}
     },
     {
     .iv = 255,
