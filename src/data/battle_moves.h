@@ -15479,6 +15479,36 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
             "chance of lowering Sp. Atk."),
     },	
 
+    [SPECIES_WORMADAM_SANDY_CLOAK] =
+    {
+        .move = MOVE_STRUGGLE_BUG,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 80,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 90,		
+        .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
+        .variable3 = 50,
+        .differentDescription = TRUE,
+        .description = _( 
+            "Struggles to attack. Higher\n"
+            "chance of lowering Sp. Atk."),
+    },	
+
+    [SPECIES_WORMADAM_TRASH_CLOAK] =
+    {
+        .move = MOVE_STRUGGLE_BUG,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 80,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 90,		
+        .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
+        .variable3 = 50,
+        .differentDescription = TRUE,
+        .description = _( 
+            "Struggles to attack. Higher\n"
+            "chance of lowering Sp. Atk."),
+    },	
+
     [SPECIES_MOTHIM] =
     {
         .move = MOVE_SKITTER_SMACK,
