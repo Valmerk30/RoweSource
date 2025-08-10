@@ -17473,6 +17473,24 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
             "abilities. Can raise Evasion."),
     },	
 
+    [SPECIES_AEGISLASH_BLADE] =
+    {
+        .move = MOVE_SECRET_SWORD,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 100,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 90,
+        .modification3 =  SIGNATURE_MOD_ATTACKER_STAT_UP,
+        .variable3 = STAT_EVASION,
+        .chance3 = 25,
+        .modification4 = SIGNATURE_MOD_TYPE,
+        .variable4 = TYPE_GHOST,
+        .differentDescription = TRUE,
+        .description = _( 
+            "Uses a ghostly blade. Ignores"
+            "abilities. Can raise Evasion."),
+    },	
+
     [SPECIES_AROMATISSE] =
     {
         .move = MOVE_SPARKLY_SWIRL,
