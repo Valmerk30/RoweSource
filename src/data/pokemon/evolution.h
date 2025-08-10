@@ -129,7 +129,7 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
                                        {EVO_SPECIFIC_MAP, MAP_SHOAL_CAVE_LOW_TIDE_ICE_ROOM, SPECIES_GLACEON},
                                        {EVO_ITEM, ITEM_ICE_STONE, SPECIES_GLACEON},
                                        {EVO_MOVE_TYPE, TYPE_FAIRY, SPECIES_SYLVEON}},
-    [SPECIES_PORYGON]	            = {{EVO_LEVEL, 18, SPECIES_PORYGON2}, 
+    [SPECIES_PORYGON]	            = {{EVO_LEVEL, 20, SPECIES_PORYGON2}, 
 				       {EVO_TRADE_ITEM, ITEM_UP_GRADE, SPECIES_PORYGON2}},
     [SPECIES_OMANYTE]	            = {{EVO_LEVEL, 30, SPECIES_OMASTAR}},
     [SPECIES_KABUTO]	            = {{EVO_LEVEL, 30, SPECIES_KABUTOPS}},
