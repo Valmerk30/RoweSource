@@ -8404,6 +8404,7 @@ static const u8 sGirafarigTMHMLearnset[] =
 {
     TMHM(TM04_CALM_MIND),
     TMHM(TM06_TOXIC),
+    TMHM(TM09_BULLET_SEED),
     TMHM(TM10_HIDDEN_POWER),
     TMHM(TM11_SUNNY_DAY),
     TMHM(TM16_LIGHT_SCREEN),
@@ -10944,6 +10945,7 @@ static const u8 sZigzagoonTMHMLearnset[] =
 {
     TMHM(TM03_WATER_PULSE),
     TMHM(TM06_TOXIC),
+    TMHM(TM09_BULLET_SEED),
     TMHM(TM10_HIDDEN_POWER),
     TMHM(TM11_SUNNY_DAY),
     TMHM(TM13_ICE_BEAM),
@@ -10981,6 +10983,7 @@ static const u8 sZigzagoonGalarianTMHMLearnset[] =
 {
     TMHM(TM06_TOXIC),
     TMHM(TM08_BULK_UP),
+    TMHM(TM09_BULLET_SEED),
     TMHM(TM10_HIDDEN_POWER),
     TMHM(TM11_SUNNY_DAY),
     TMHM(TM12_TAUNT),
@@ -11020,6 +11023,7 @@ static const u8 sLinooneTMHMLearnset[] =
     TMHM(TM03_WATER_PULSE),
     TMHM(TM05_ROAR),
     TMHM(TM06_TOXIC),
+    TMHM(TM09_BULLET_SEED),
     TMHM(TM10_HIDDEN_POWER),
     TMHM(TM11_SUNNY_DAY),
     TMHM(TM13_ICE_BEAM),
@@ -11059,8 +11063,9 @@ static const u8 sLinooneTMHMLearnset[] =
 
 static const u8 sLinooneGalarianTMHMLearnset[] =
 {
-    TMHM(TM08_BULK_UP), 
     TMHM(TM06_TOXIC),
+    TMHM(TM08_BULK_UP), 
+    TMHM(TM09_BULLET_SEED),
     TMHM(TM11_SUNNY_DAY),
     TMHM(TM12_TAUNT),
     TMHM(TM13_ICE_BEAM),
@@ -34901,9 +34906,9 @@ static const u8 sHatennaTMHMLearnset[] =
 
 static const u8 sHattremTMHMLearnset[] =
 {
+    TMHM(TM04_CALM_MIND),
     TMHM(TM06_TOXIC),
     TMHM(TM10_HIDDEN_POWER),
-    TMHM(TM04_CALM_MIND),
     TMHM(TM13_ICE_BEAM),
     TMHM(TM14_BLIZZARD),
     TMHM(TM16_LIGHT_SCREEN),
@@ -34935,9 +34940,9 @@ static const u8 sHattremTMHMLearnset[] =
 
 static const u8 sHattereneTMHMLearnset[] =
 {
+    TMHM(TM04_CALM_MIND),
     TMHM(TM06_TOXIC),
     TMHM(TM10_HIDDEN_POWER),
-    TMHM(TM04_CALM_MIND),
     TMHM(TM13_ICE_BEAM),
     TMHM(TM14_BLIZZARD),
     TMHM(TM15_HYPER_BEAM),
@@ -35041,8 +35046,8 @@ static const u8 sMorgremTMHMLearnset[] =
 static const u8 sGrimmsnarlTMHMLearnset[] =
 {
     TMHM(TM06_TOXIC),
-    TMHM(TM10_HIDDEN_POWER),
     TMHM(TM08_BULK_UP),
+    TMHM(TM10_HIDDEN_POWER),
     TMHM(TM12_TAUNT),
     TMHM(TM13_ICE_BEAM),
     TMHM(TM14_BLIZZARD),
@@ -35080,8 +35085,9 @@ static const u8 sGrimmsnarlTMHMLearnset[] =
 static const u8 sObstagoonTMHMLearnset[] =
 {
     TMHM(TM06_TOXIC),
-    TMHM(TM10_HIDDEN_POWER),
     TMHM(TM08_BULK_UP),
+    TMHM(TM09_BULLET_SEED),
+    TMHM(TM10_HIDDEN_POWER),
     TMHM(TM11_SUNNY_DAY),
     TMHM(TM12_TAUNT),
     TMHM(TM13_ICE_BEAM),
@@ -38740,7 +38746,7 @@ const u8 *const gTMHMLearnsets[] =
 	[SPECIES_FARFETCHD_GALARIAN] = sFarfetchdGalarianTMHMLearnset,
 	[SPECIES_PONYTA_GALARIAN] = sPonytaGalarianTMHMLearnset,
 	[SPECIES_RAPIDASH_GALARIAN] = sRapidashGalarianTMHMLearnset,
-        [SPECIES_MR_MIME_GALARIAN] = sMrRimeTMHMLearnset,
+    [SPECIES_MR_MIME_GALARIAN] = sMrRimeTMHMLearnset,
 	[SPECIES_CORSOLA_GALARIAN] = sCorsolaGalarianTMHMLearnset,
 	[SPECIES_SLOWKING_GALARIAN] = sSlowkingGalarianTMHMLearnset,
 	[SPECIES_SLOWBRO_GALARIAN] = sSlowbroGalarianTMHMLearnset,
