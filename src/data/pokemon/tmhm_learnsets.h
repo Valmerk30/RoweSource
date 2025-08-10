@@ -580,6 +580,7 @@ static const u8 sPidgeotTMHMLearnset[] =
 static const u8 sRattataTMHMLearnset[] =
 {
     TMHM(TM06_TOXIC),
+    TMHM(TM09_BULLET_SEED),
     TMHM(TM10_HIDDEN_POWER),
     TMHM(TM11_SUNNY_DAY),
     TMHM(TM12_TAUNT),
@@ -618,6 +619,7 @@ static const u8 sRaticateTMHMLearnset[] =
 {
     TMHM(TM05_ROAR),
     TMHM(TM06_TOXIC),
+    TMHM(TM09_BULLET_SEED),
     TMHM(TM10_HIDDEN_POWER),
     TMHM(TM11_SUNNY_DAY),
     TMHM(TM12_TAUNT),
@@ -811,6 +813,7 @@ static const u8 sPikachuTMHMLearnset[] =
     TMHM(TM01_FOCUS_PUNCH),
     TMHM(TM04_CALM_MIND),
     TMHM(TM06_TOXIC),
+    TMHM(TM09_BULLET_SEED),
     TMHM(TM10_HIDDEN_POWER),
     TMHM(TM16_LIGHT_SCREEN),
     TMHM(TM17_PROTECT),
@@ -851,6 +854,7 @@ static const u8 sRaichuTMHMLearnset[] =
     TMHM(TM01_FOCUS_PUNCH),
     TMHM(TM04_CALM_MIND),
     TMHM(TM06_TOXIC),
+    TMHM(TM09_BULLET_SEED),
     TMHM(TM10_HIDDEN_POWER),
     TMHM(TM15_HYPER_BEAM),
     TMHM(TM16_LIGHT_SCREEN),
@@ -7144,6 +7148,7 @@ static const u8 sLanturnTMHMLearnset[] =
 static const u8 sPichuTMHMLearnset[] =
 {
     TMHM(TM06_TOXIC),
+    TMHM(TM09_BULLET_SEED),
     TMHM(TM10_HIDDEN_POWER),
     TMHM(TM16_LIGHT_SCREEN),
     TMHM(TM17_PROTECT),
@@ -7606,6 +7611,7 @@ static const u8 sMarillTMHMLearnset[] =
     TMHM(TM03_WATER_PULSE),
     TMHM(TM06_TOXIC),
     TMHM(TM07_HAIL),
+    TMHM(TM09_BULLET_SEED),
     TMHM(TM10_HIDDEN_POWER),
     TMHM(TM13_ICE_BEAM),
     TMHM(TM14_BLIZZARD),
@@ -7644,6 +7650,7 @@ static const u8 sAzumarillTMHMLearnset[] =
     TMHM(TM03_WATER_PULSE),
     TMHM(TM06_TOXIC),
     TMHM(TM07_HAIL),
+    TMHM(TM09_BULLET_SEED),
     TMHM(TM10_HIDDEN_POWER),
     TMHM(TM13_ICE_BEAM),
     TMHM(TM14_BLIZZARD),
@@ -12296,6 +12303,7 @@ static const u8 sAzurillTMHMLearnset[] =
     TMHM(TM03_WATER_PULSE),
     TMHM(TM06_TOXIC),
     TMHM(TM07_HAIL),
+    TMHM(TM09_BULLET_SEED),
     TMHM(TM10_HIDDEN_POWER),
     TMHM(TM13_ICE_BEAM),
     TMHM(TM14_BLIZZARD),
@@ -12861,6 +12869,7 @@ static const u8 sManectricTMHMLearnset[] =
 static const u8 sPlusleTMHMLearnset[] =
 {
     TMHM(TM06_TOXIC),
+    TMHM(TM09_BULLET_SEED),
     TMHM(TM10_HIDDEN_POWER),
     TMHM(TM16_LIGHT_SCREEN),
     TMHM(TM17_PROTECT),
@@ -12900,6 +12909,7 @@ static const u8 sPlusleTMHMLearnset[] =
 static const u8 sMinunTMHMLearnset[] =
 {
     TMHM(TM06_TOXIC),
+    TMHM(TM09_BULLET_SEED),
     TMHM(TM10_HIDDEN_POWER),
     TMHM(TM16_LIGHT_SCREEN),
     TMHM(TM17_PROTECT),
@@ -16488,6 +16498,7 @@ static const u8 sStaraptorTMHMLearnset[] =
 static const u8 sBidoofTMHMLearnset[] =
 {
     TMHM(TM06_TOXIC),
+    TMHM(TM09_BULLET_SEED),
     TMHM(TM10_HIDDEN_POWER),
     TMHM(TM11_SUNNY_DAY),
     TMHM(TM12_TAUNT),
@@ -16526,6 +16537,7 @@ static const u8 sBibarelTMHMLearnset[] =
     TMHM(TM01_FOCUS_PUNCH),
     TMHM(TM03_WATER_PULSE),
     TMHM(TM06_TOXIC),
+    TMHM(TM09_BULLET_SEED),
     TMHM(TM10_HIDDEN_POWER),
     TMHM(TM11_SUNNY_DAY),
     TMHM(TM12_TAUNT),
@@ -23859,6 +23871,7 @@ static const u8 sMinccinoTMHMLearnset[] =
 {
     TMHM(TM04_CALM_MIND),
     TMHM(TM06_TOXIC),
+    TMHM(TM09_BULLET_SEED),
     TMHM(TM10_HIDDEN_POWER),
     TMHM(TM11_SUNNY_DAY),
     TMHM(TM17_PROTECT),
@@ -27542,6 +27555,7 @@ static const u8 sBunnelbyTMHMLearnset[] =
 {
     TMHM(TM06_TOXIC),
     TMHM(TM08_BULK_UP),
+    TMHM(TM09_BULLET_SEED),
     TMHM(TM10_HIDDEN_POWER),
     TMHM(TM17_PROTECT),
     TMHM(TM21_FRUSTRATION),
@@ -27586,6 +27600,7 @@ static const u8 sDiggersbyTMHMLearnset[] =
     TMHM(TM01_FOCUS_PUNCH),
     TMHM(TM06_TOXIC),
     TMHM(TM08_BULK_UP),
+    TMHM(TM09_BULLET_SEED),
     TMHM(TM10_HIDDEN_POWER),
     TMHM(TM15_HYPER_BEAM),
     TMHM(TM17_PROTECT),
@@ -29312,6 +29327,7 @@ static const u8 sHawluchaTMHMLearnset[] =
 static const u8 sDedenneTMHMLearnset[] =
 {
     TMHM(TM06_TOXIC),
+    TMHM(TM09_BULLET_SEED),
     TMHM(TM10_HIDDEN_POWER),
     TMHM(TM11_SUNNY_DAY),
     TMHM(TM17_PROTECT),
@@ -30607,6 +30623,7 @@ static const u8 sToucannonTMHMLearnset[] =
 static const u8 sYungoosTMHMLearnset[] =
 {
     TMHM(TM06_TOXIC),
+    TMHM(TM09_BULLET_SEED),
     TMHM(TM10_HIDDEN_POWER),
     TMHM(TM12_TAUNT),
     TMHM(TM17_PROTECT),
@@ -30639,6 +30656,7 @@ static const u8 sGumshoosTMHMLearnset[] =
 {
     TMHM(TM05_ROAR),
     TMHM(TM06_TOXIC),
+    TMHM(TM09_BULLET_SEED),
     TMHM(TM10_HIDDEN_POWER),
     TMHM(TM12_TAUNT),
     TMHM(TM17_PROTECT),
@@ -36207,6 +36225,7 @@ static const u8 sZarudeTMHMLearnset[] =
 static const u8 sRattataAlolanTMHMLearnset[] =
 {
     TMHM(TM06_TOXIC),
+    TMHM(TM09_BULLET_SEED),
     TMHM(TM10_HIDDEN_POWER),
     TMHM(TM11_SUNNY_DAY),
     TMHM(TM12_TAUNT),
@@ -36247,6 +36266,7 @@ static const u8 sRaticateAlolanTMHMLearnset[] =
     TMHM(TM05_ROAR),
     TMHM(TM06_TOXIC),
     TMHM(TM08_BULK_UP),
+    TMHM(TM09_BULLET_SEED),
     TMHM(TM10_HIDDEN_POWER),
     TMHM(TM11_SUNNY_DAY),
     TMHM(TM12_TAUNT),
@@ -36291,6 +36311,7 @@ static const u8 sRaichuAlolanTMHMLearnset[] =
     TMHM(TM01_FOCUS_PUNCH),
     TMHM(TM04_CALM_MIND),
     TMHM(TM06_TOXIC),
+    TMHM(TM09_BULLET_SEED),
     TMHM(TM10_HIDDEN_POWER),
     TMHM(TM15_HYPER_BEAM),
     TMHM(TM16_LIGHT_SCREEN),
