@@ -12561,8 +12561,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_GHOST,
         .differentDescription = TRUE,
         .description = _( 
-            "Effective against Normal and\n"
-            "Ghost. May also Paralyze."),
+            "Effective against Ghost.\n"
+            "May also Paralyze."),
     },
 
     [SPECIES_LICKILICKY] =
@@ -12578,8 +12578,8 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable4 = TYPE_GHOST,
         .differentDescription = TRUE,
         .description = _( 
-            "Effective against Normal and\n"
-            "Ghost. May also Paralyze."),
+            "Effective against Ghost.\n"
+            "May also Paralyze."),
     },
 
     [SPECIES_KOFFING] =
