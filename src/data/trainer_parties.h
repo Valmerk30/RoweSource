@@ -7234,8 +7234,8 @@ static const struct TrainerMonItemCustomMoves sParty_Norman1[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_SITRUS_BERRY,
     .heldItem = ITEM_SITRUS_BERRY,
-    .postgamemoves = {MOVE_POWER_UP_PUNCH, MOVE_ROUND, MOVE_LUNGE, MOVE_TEETER_DANCE},
-    .moves = {MOVE_POWER_UP_PUNCH, MOVE_ROUND, MOVE_LUNGE, MOVE_TEETER_DANCE}
+    .postgamemoves = {MOVE_POWER_UP_PUNCH, MOVE_ROUND, MOVE_BUG_BITE, MOVE_TEETER_DANCE},
+    .moves = {MOVE_POWER_UP_PUNCH, MOVE_ROUND, MOVE_BUG_BITE, MOVE_TEETER_DANCE}
     },
 	{
     .iv = 255,
@@ -7266,8 +7266,8 @@ static const struct TrainerMonItemCustomMoves sParty_Norman1[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_SITRUS_BERRY,
     .heldItem = ITEM_SITRUS_BERRY,
-    .postgamemoves = {MOVE_THUNDER_SHOCK, MOVE_TRI_ATTACK, MOVE_MIRROR_SHOT, MOVE_CONVERSION},
-    .moves = {MOVE_THUNDER_SHOCK, MOVE_TRI_ATTACK, MOVE_MIRROR_SHOT, MOVE_CONVERSION}
+    .postgamemoves = {MOVE_THUNDER_SHOCK, MOVE_SWIFT, MOVE_MIRROR_SHOT, MOVE_CONVERSION},
+    .moves = {MOVE_THUNDER_SHOCK, MOVE_SWIFT, MOVE_MIRROR_SHOT, MOVE_CONVERSION}
     }
 };
 
