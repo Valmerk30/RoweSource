@@ -9639,7 +9639,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_DRAGON_RAGE] =
     {
         .effect = EFFECT_RAGE,
-        .power = 70,
+        .power = 60,
         .type = TYPE_DRAGON,
         .accuracy = 95,
         .pp = 20,
