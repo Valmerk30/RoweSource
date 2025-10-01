@@ -9594,6 +9594,20 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_STATUS,
     },
 
+    [MOVE_DRAGON_RAGE] =
+    {
+        .effect = EFFECT_RAGE,
+        .power = 50,
+        .type = TYPE_DRAGON,
+        .accuracy = 100,
+        .pp = 25,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
+        .split = SPLIT_PHYSICAL,
+    },
+
     [MOVE_TWISTER] =
     {
         .effect = EFFECT_TWISTER,
@@ -9634,20 +9648,6 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED | FLAG_SHEER_FORCE_BOOST,
         .split = SPLIT_SPECIAL,
-    },
-
-    [MOVE_DRAGON_RAGE] =
-    {
-        .effect = EFFECT_RAGE,
-        .power = 60,
-        .type = TYPE_DRAGON,
-        .accuracy = 95,
-        .pp = 20,
-        .secondaryEffectChance = 25,
-        .target = MOVE_TARGET_SELECTED,
-        .priority = 0,
-        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
-        .split = SPLIT_PHYSICAL,
     },
 
     [MOVE_SCALE_SHOT] =
