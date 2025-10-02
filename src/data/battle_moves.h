@@ -12588,7 +12588,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification = SIGNATURE_MOD_POWER,
         .variable = 50,
         .modification2 = SIGNATURE_MOD_ACCURACY,
-        .variable2 = 70,	
+        .variable2 = 90,	
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 90,		
         .differentDescription = TRUE,
@@ -13396,7 +13396,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable2 = 0,		
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_INFATUATION,
-        .chance3 = 50,	
+        .chance3 = 25,	
         .differentDescription = TRUE,
         .description = _( 
             "A fairy wind that never misses.\n"
@@ -13600,9 +13600,9 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     {
         .move = MOVE_HIDDEN_POWER,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 90,
+        .variable = 60,
         .modification2 = SIGNATURE_MOD_ACCURACY,
-        .variable2 = 90,		
+        .variable2 = 95,		
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable3 = STAT_SPEED,
         .chance3 = 10,
@@ -13780,7 +13780,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     {
         .move = MOVE_ROLLOUT,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 40,
+        .variable = 30,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,	
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
@@ -14004,9 +14004,9 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     {
         .move = MOVE_JUDGMENT,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 100,
+        .variable = 60,
         .modification2 = SIGNATURE_MOD_ACCURACY,
-        .variable2 = 90,
+        .variable2 = 95,
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_SPDEF,
         .chance3 = 25,
@@ -15400,7 +15400,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification = SIGNATURE_MOD_POWER,
         .variable = 50,
         .modification2 = SIGNATURE_MOD_ACCURACY,
-        .variable2 = 90,
+        .variable2 = 95,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
         .variable3 = 20,
         .modification4 = SIGNATURE_MOD_PRIORITY,
@@ -15438,7 +15438,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification = SIGNATURE_MOD_POWER,
         .variable = 60,
         .modification2 = SIGNATURE_MOD_ACCURACY,
-        .variable2 = 90,		
+        .variable2 = 95,		
         .modification3 = SIGNATURE_MOD_ATTACKER_STAT_UP,
         .variable3 = STAT_SPDEF,
         .chance3 = 25,
@@ -18812,6 +18812,22 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .description = _( 
             "Dives underwater for 2 turns to\n"
             "find prey. May cause Flinch."),
+    },	
+
+    [SPECIES_ARROKUDA] =
+    {
+        .move = MOVE_AQUA_JET,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 50,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 100,		
+        .modification4 = SIGNATURE_MOD_MODIFY_FIELD,
+        .variable4 = FIELD_SET_WEATHER_RAIN,
+        .chance4 = 20,
+        .differentDescription = TRUE,
+        .description = _( 
+            "Swims fast to strike first.\n"
+            "May set Rainy Weather."),
     },	
 
     [SPECIES_BARRASKEWDA] =
