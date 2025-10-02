@@ -21730,10 +21730,10 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_PYUKUMUKU] =
     {
         .baseHP        = 100,
-        .baseAttack    = 20,
+        .baseAttack    = 25,
         .baseDefense   = 150,
         .baseSpeed     = 10,
-        .baseSpAttack  = 20,
+        .baseSpAttack  = 15,
         .baseSpDefense = 150,
         .type1 = TYPE_POISON,
         .type2 = TYPE_POISON,
