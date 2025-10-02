@@ -7515,8 +7515,8 @@ static const struct TrainerMonItemCustomMoves sParty_Juan1[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_SITRUS_BERRY,
     .heldItem = ITEM_SITRUS_BERRY,
-    .postgamemoves = {MOVE_MUD_SLAP, MOVE_WATER_GUN, MOVE_PSYWAVE, MOVE_AMNESIA},
-    .moves = {MOVE_MUD_SLAP, MOVE_WATER_GUN, MOVE_PSYWAVE, MOVE_AMNESIA}
+    .postgamemoves = {MOVE_MUD_SLAP, MOVE_BUBBLE, MOVE_PSYWAVE, MOVE_AMNESIA},
+    .moves = {MOVE_MUD_SLAP, MOVE_BUBBLE, MOVE_PSYWAVE, MOVE_AMNESIA}
     },
     {
     .iv = 255,
@@ -7531,8 +7531,8 @@ static const struct TrainerMonItemCustomMoves sParty_Juan1[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_SITRUS_BERRY,
     .heldItem = ITEM_SITRUS_BERRY,
-    .postgamemoves = {MOVE_PLUCK, MOVE_WATER_GUN, MOVE_BELCH, MOVE_ATTRACT},
-    .moves = {MOVE_PLUCK, MOVE_WATER_GUN, MOVE_BELCH, MOVE_ATTRACT}
+    .postgamemoves = {MOVE_PLUCK, MOVE_AQUA_JET, MOVE_BELCH, MOVE_ATTRACT},
+    .moves = {MOVE_PLUCK, MOVE_AQUA_JET, MOVE_BELCH, MOVE_ATTRACT}
     },
 	{
     .iv = 255,
@@ -7540,15 +7540,15 @@ static const struct TrainerMonItemCustomMoves sParty_Juan1[] = {
     .evs = {0, 0, 0, 0, 0, 0},  
     .abilityNum = 0,
     .happiness = 255,
-    .species = SPECIES_POLIWAG,
+    .species = SPECIES_POLIWHIRL,
         .ivs = {20, 10, 10, 10, 10, 10},
 	.hiddenNature = NATURE_SERIOUS,
 	.pokeball = ITEM_POKE_BALL,
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_SITRUS_BERRY,
     .heldItem = ITEM_SITRUS_BERRY,
-    .postgamemoves = {MOVE_DISARMING_VOICE, MOVE_BUBBLE, MOVE_ABSORB, MOVE_WATER_SPORT},
-    .moves = {MOVE_DISARMING_VOICE, MOVE_BUBBLE, MOVE_ABSORB, MOVE_WATER_SPORT}
+    .postgamemoves = {MOVE_DISARMING_VOICE, MOVE_BUBBLE_BEAM, MOVE_ABSORB, MOVE_WATER_SPORT},
+    .moves = {MOVE_DISARMING_VOICE, MOVE_BUBBLE_BEAM, MOVE_ABSORB, MOVE_WATER_SPORT}
     },
     {
     .iv = 255,
@@ -21817,8 +21817,8 @@ static const struct TrainerMonItemCustomMoves sParty_Juan2[] = {
 	.isShiny = FALSE,
     .postgameheldItem = ITEM_SITRUS_BERRY,
     .heldItem = ITEM_SITRUS_BERRY,
-    .postgamemoves = {MOVE_AIR_CUTTER, MOVE_BRINE, MOVE_BELCH, MOVE_ATTRACT},
-    .moves = {MOVE_AIR_CUTTER, MOVE_BRINE, MOVE_BELCH, MOVE_ATTRACT}
+    .postgamemoves = {MOVE_AIR_CUTTER, MOVE_AQUA_JET, MOVE_BELCH, MOVE_ATTRACT},
+    .moves = {MOVE_AIR_CUTTER, MOVE_AQUA_JET, MOVE_BELCH, MOVE_ATTRACT}
     },
 	{
     .iv = 255,
