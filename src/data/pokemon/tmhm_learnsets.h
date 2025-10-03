@@ -369,6 +369,7 @@ static const u8 sCaterpieTMHMLearnset[] =
 {
     TMHM(TM06_TOXIC),
     TMHM(TM10_HIDDEN_POWER),
+    TMHM(TM17_PROTECT),
 	0xFF,
 };
 
@@ -376,6 +377,7 @@ static const u8 sMetapodTMHMLearnset[] =
 {
     TMHM(TM06_TOXIC),
     TMHM(TM10_HIDDEN_POWER),
+    TMHM(TM17_PROTECT),
 	0xFF,
 };
 
@@ -425,6 +427,7 @@ static const u8 sWeedleTMHMLearnset[] =
 {
     TMHM(TM06_TOXIC),
     TMHM(TM10_HIDDEN_POWER),
+    TMHM(TM17_PROTECT),
 	0xFF,
 };
 
@@ -432,6 +435,7 @@ static const u8 sKakunaTMHMLearnset[] =
 {
     TMHM(TM06_TOXIC),
     TMHM(TM10_HIDDEN_POWER),
+    TMHM(TM17_PROTECT),
 	0xFF,
 };
 
@@ -5358,6 +5362,30 @@ static const u8 sTaurosTMHMLearnset[] =
 
 static const u8 sMagikarpTMHMLearnset[] =
 {
+    TMHM(TM03_WATER_PULSE),
+    TMHM(TM06_TOXIC),
+    TMHM(TM07_HAIL),
+    TMHM(TM10_HIDDEN_POWER),
+    TMHM(TM13_ICE_BEAM),
+    TMHM(TM14_BLIZZARD),
+    TMHM(TM16_LIGHT_SCREEN),
+    TMHM(TM17_PROTECT),
+    TMHM(TM18_RAIN_DANCE),
+    TMHM(TM21_FRUSTRATION),
+    TMHM(TM23_IRON_TAIL),
+    TMHM(TM27_RETURN),
+    TMHM(TM32_DOUBLE_TEAM),
+    TMHM(TM42_FACADE),
+    TMHM(TM43_SECRET_POWER),
+    TMHM(TM44_REST),
+    TMHM(TM45_ATTRACT),
+    TMHM(TM55_SCALD),
+    TMHM(TM87_SWAGGER),
+    TMHM(TM88_SLEEP_TALK),
+    TMHM(TM90_SUBSTITUTE),
+    TMHM(TM94_SURF),
+    TMHM(TM98_WATERFALL),
+    TMHM(TM100_CONFIDE),
     0xFF,
 };
 
@@ -5456,6 +5484,11 @@ static const u8 sLaprasTMHMLearnset[] =
 
 static const u8 sDittoTMHMLearnset[] =
 {
+    TMHM(TM10_HIDDEN_POWER),
+    TMHM(TM16_LIGHT_SCREEN),
+    TMHM(TM17_PROTECT),
+    TMHM(TM33_REFLECT),
+    TMHM(TM43_SECRET_POWER),
     0xFF,
 };
 
@@ -8402,13 +8435,17 @@ static const u8 sMisdreavusTMHMLearnset[] =
 static const u8 sUnownTMHMLearnset[] =
 {
     TMHM(TM10_HIDDEN_POWER),
+    TMHM(TM17_PROTECT),
     TMHM(TM43_SECRET_POWER),
     0xFF,
 };
 
 static const u8 sWobbuffetTMHMLearnset[] =
 {
+    TMHM(TM16_LIGHT_SCREEN),
+    TMHM(TM17_PROTECT),
     TMHM(TM20_SAFEGUARD),
+    TMHM(TM33_REFLECT),
     0xFF,
 };
 
@@ -11114,11 +11151,17 @@ static const u8 sLinooneGalarianTMHMLearnset[] =
 
 static const u8 sWurmpleTMHMLearnset[] =
 {
+    TMHM(TM06_TOXIC),
+    TMHM(TM10_HIDDEN_POWER),
+    TMHM(TM17_PROTECT),
     0xFF,
 };
 
 static const u8 sSilcoonTMHMLearnset[] =
 {
+    TMHM(TM06_TOXIC),
+    TMHM(TM10_HIDDEN_POWER),
+    TMHM(TM17_PROTECT),
     0xFF,
 };
 
@@ -11160,6 +11203,7 @@ static const u8 sBeautiflyTMHMLearnset[] =
 
 static const u8 sCascoonTMHMLearnset[] =
 {
+    TMHM(TM17_PROTECT),
     0xFF,
 };
 
@@ -14971,7 +15015,10 @@ static const u8 sAbsolTMHMLearnset[] =
 
 static const u8 sWynautTMHMLearnset[] =
 {
+    TMHM(TM16_LIGHT_SCREEN),
+    TMHM(TM17_PROTECT),
     TMHM(TM20_SAFEGUARD),
+    TMHM(TM33_REFLECT),
     0xFF,
 };
 
@@ -15430,6 +15477,8 @@ static const u8 sSalamenceTMHMLearnset[] =
 
 static const u8 sBeldumTMHMLearnset[] =
 {
+    TMHM(TM17_PROTECT),
+    TMHM(TM43_SECRET_POWER),
     0xFF,
 };
 
@@ -17109,6 +17158,8 @@ static const u8 sMothimTMHMLearnset[] =
 
 static const u8 sCombeeTMHMLearnset[] =
 {
+    TMHM(TM10_HIDDEN_POWER),
+    TMHM(TM17_PROTECT),
     TMHM(TM115_BUG_BUZZ),
     0xFF,
 };
@@ -25060,6 +25111,9 @@ static const u8 sKlinklangTMHMLearnset[] =
 
 static const u8 sTynamoTMHMLearnset[] =
 {
+    TMHM(TM16_LIGHT_SCREEN),
+    TMHM(TM17_PROTECT),
+    TMHM(TM33_REFLECT),
     TMHM(TM57_CHARGE_BEAM),
     TMHM(TM73_THUNDER_WAVE),
     0xFF,
@@ -27778,12 +27832,19 @@ static const u8 sTalonflameTMHMLearnset[] =
 
 static const u8 sScatterbugTMHMLearnset[] =
 {
+    TMHM(TM06_TOXIC),
+    TMHM(TM10_HIDDEN_POWER),
+    TMHM(TM17_PROTECT),
     0xFF,
 };
 
 static const u8 sSpewpaTMHMLearnset[] =
 {
+    TMHM(TM06_TOXIC),
+    TMHM(TM10_HIDDEN_POWER),
+    TMHM(TM16_LIGHT_SCREEN),
     TMHM(TM17_PROTECT),
+    TMHM(TM33_REFLECT),
     0xFF,
 };
 
@@ -32809,12 +32870,21 @@ static const u8 sTapuFiniTMHMLearnset[] =
 };
 
 static const u8 sCosmogTMHMLearnset[] =
-{
+{   TMHM(TM10_HIDDEN_POWER),
+    TMHM(TM16_LIGHT_SCREEN),
+    TMHM(TM17_PROTECT),
+    TMHM(TM33_REFLECT),
+    TMHM(TM43_SECRET_POWER),
     0xFF,
 };
 
 static const u8 sCosmoemTMHMLearnset[] =
 {
+    TMHM(TM10_HIDDEN_POWER),
+    TMHM(TM16_LIGHT_SCREEN),
+    TMHM(TM17_PROTECT),
+    TMHM(TM33_REFLECT),
+    TMHM(TM43_SECRET_POWER),
     0xFF,
 };
 
@@ -33930,6 +34000,9 @@ static const u8 sCorviknightTMHMLearnset[] =
 
 static const u8 sBlipbugTMHMLearnset[] =
 {
+    TMHM(TM06_TOXIC),
+    TMHM(TM10_HIDDEN_POWER),
+    TMHM(TM17_PROTECT),
     TMHM(TM83_INFESTATION),
     TMHM(TM115_BUG_BUZZ),
     0xFF,
