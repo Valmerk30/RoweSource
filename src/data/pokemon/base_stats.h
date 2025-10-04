@@ -2347,7 +2347,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroup1 = EGG_GROUP_FLYING,
         .eggGroup2 = EGG_GROUP_FIELD,
-        .abilities = {ABILITY_DEFIANT, ABILITY_JUSTIFIED}, 
+        .abilities = {ABILITY_JUSTIFIED, ABILITY_SCRAPPY}, 
         #ifdef BATTLE_ENGINE
             .abilityHidden = ABILITY_SHARPNESS,
         #endif
@@ -8710,7 +8710,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroup1 = EGG_GROUP_BUG,
         .eggGroup2 = EGG_GROUP_HUMAN_LIKE,
-        .abilities = {ABILITY_INSOMNIA, ABILITY_TINTED_LENS},
+        .abilities = {ABILITY_INTIMIDATE, ABILITY_TINTED_LENS},
         .abilityHidden = ABILITY_PRANKSTER,
         .bodyColor = BODY_COLOR_GRAY,
         .noFlip = FALSE,
@@ -13249,8 +13249,8 @@ const struct BaseStats gBaseStats[] =
         #endif
         .eggGroup2 = EGG_GROUP_AMORPHOUS,
         #ifdef BATTLE_ENGINE
-            .abilities = {ABILITY_STEADFAST, ABILITY_SHARPNESS},
-            .abilityHidden = ABILITY_JUSTIFIED,
+            .abilities = {ABILITY_STEADFAST, ABILITY_JUSTIFIED},
+            .abilityHidden = ABILITY_SHARPNESS,
         #else
             .abilities = {ABILITY_NONE, ABILITY_NONE},
         #endif
@@ -24430,7 +24430,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroup1 = EGG_GROUP_FLYING,
         .eggGroup2 = EGG_GROUP_FIELD,
-        .abilities = {ABILITY_SHARPNESS, ABILITY_JUSTIFIED},
+        .abilities = {ABILITY_JUSTIFIED, ABILITY_SHARPNESS},
         .abilityHidden = ABILITY_SCRAPPY,
         .bodyColor = BODY_COLOR_WHITE,
         .noFlip = FALSE,
@@ -27373,8 +27373,8 @@ const struct BaseStats gBaseStats[] =
         .eggGroup1 = EGG_GROUP_FLYING,
         .eggGroup2 = EGG_GROUP_FIELD,
         #ifdef BATTLE_ENGINE
-            .abilities = {ABILITY_STEADFAST, ABILITY_JUSTIFIED},
-            .abilityHidden = ABILITY_SCRAPPY,
+ 	        .abilities = {ABILITY_JUSTIFIED, ABILITY_SHARPNESS},
+     	    .abilityHidden = ABILITY_SCRAPPY,
         #else
             .abilities = {ABILITY_NONE, ABILITY_NONE},
         #endif
