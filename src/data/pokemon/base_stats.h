@@ -5308,7 +5308,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroup1 = EGG_GROUP_FIELD,
         .eggGroup2 = EGG_GROUP_FIELD,
-        .abilities = {ABILITY_RUN_AWAY, ABILITY_PICKUP},
+        .abilities = {ABILITY_RUN_AWAY, ABILITY_PICKPOCKET},
         #ifdef BATTLE_ENGINE
             .abilityHidden = ABILITY_SKILL_LINK,
         #endif
@@ -11775,7 +11775,7 @@ const struct BaseStats gBaseStats[] =
         .eggGroup1 = EGG_GROUP_FIELD,
         .eggGroup2 = EGG_GROUP_FIELD,
         #ifdef BATTLE_ENGINE
-            .abilities = {ABILITY_TECHNICIAN, ABILITY_PICKUP},
+            .abilities = {ABILITY_TECHNICIAN, ABILITY_PICKPOCKET},
             .abilityHidden = ABILITY_SKILL_LINK,
         #else
             .abilities = {ABILITY_NONE, ABILITY_PICKUP},
