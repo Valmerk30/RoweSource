@@ -4876,8 +4876,7 @@ static const struct LevelUpMove sLanturnLevelUpLearnset[] = {
 static const struct LevelUpMove sPichuLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_SHOCK),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
-    LEVEL_UP_MOVE( 1, MOVE_GROWL),
-    LEVEL_UP_MOVE( 4, MOVE_PLAY_NICE),
+    LEVEL_UP_MOVE( 1, MOVE_PLAY_NICE),
     LEVEL_UP_MOVE( 5, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE(10, MOVE_CHARM),
     LEVEL_UP_MOVE(12, MOVE_NUZZLE),
