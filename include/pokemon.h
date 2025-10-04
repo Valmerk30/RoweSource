@@ -410,7 +410,7 @@ enum{
     SIGNATURE_PRIORITY_CONDITION_TRICK_ROOM,        //Has priority in Trick Room
 };
 
-#define SIGNATURE_MOVE_DESCRIPTION_TEXT_LENGTH 60
+#define SIGNATURE_MOVE_DESCRIPTION_TEXT_LENGTH 80
 
 struct SignatureMove
 {
