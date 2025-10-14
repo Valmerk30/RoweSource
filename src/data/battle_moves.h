@@ -12953,7 +12953,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     {
         .move = MOVE_COVET,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 50,
+        .variable = 60,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 95,		
         .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
@@ -12971,7 +12971,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     {
         .move = MOVE_COVET,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 50,
+        .variable = 60,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 95,		
         .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
@@ -12989,7 +12989,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     {
         .move = MOVE_COVET,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 95,
+        .variable = 60,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
@@ -13007,7 +13007,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     {
         .move = MOVE_COVET,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 95,
+        .variable = 60,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,		
         .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
@@ -13025,7 +13025,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     {
         .move = MOVE_COVET,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 50,
+        .variable = 60,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 95,		
         .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
@@ -13043,7 +13043,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     {
         .move = MOVE_COVET,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 50,
+        .variable = 60,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 95,		
         .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
@@ -13061,7 +13061,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     {
         .move = MOVE_COVET,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 50,
+        .variable = 60,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 95,		
         .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
@@ -13079,7 +13079,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     {
         .move = MOVE_COVET,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 50,
+        .variable = 60,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 95,		
         .modification3 = SIGNATURE_MOD_MODIFY_FIELD,
