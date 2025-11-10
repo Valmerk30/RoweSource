@@ -4784,8 +4784,8 @@ static const u8 sTM78Desc[] = _(
 
 static const u8 sTM79Desc[] = _(
     "Icy breath attack.\n"
-    "Always results in\n"
-    "a critical hit.");
+    "High critical hit\n"
+    "ratio.");
 
 static const u8 sTM80Desc[] = _(
     "Large boulders are\n"
