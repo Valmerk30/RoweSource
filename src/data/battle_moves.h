@@ -833,7 +833,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .effect = EFFECT_SEMI_INVULNERABLE,
         .power = 80,
         .type = TYPE_NORMAL,
-        .accuracy = 90,
+        .accuracy = 95,
         .pp = 20,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
@@ -3681,14 +3681,14 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_DIVE] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_4
-            .power = 100,
+            .power = 90,
         #else
             .power = 100,
         #endif
         .effect = EFFECT_SEMI_INVULNERABLE,
         .type = TYPE_WATER,
         .accuracy = 90,
-        .pp = 10,
+        .pp = 15,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -6711,7 +6711,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .accuracy = 90,
         .pp = 20,
         .secondaryEffectChance = 0,
-        .target = MOVE_TARGET_SELECTED,
+        .target = MOVE_TARGET_FOES_AND_ALLY,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED | FLAG_DMG_UNDERGROUND,
         .split = SPLIT_PHYSICAL,
@@ -6958,18 +6958,18 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED | FLAG_STRIKER_BOOST,
         .split = SPLIT_PHYSICAL,
     },	
-	
+
     [MOVE_DIG] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_4
-            .power = 100,
+            .power = 90,
         #else
             .power = 60,
         #endif
         .effect = EFFECT_SEMI_INVULNERABLE,
         .type = TYPE_GROUND,
-        .accuracy = 90,
-        .pp = 10,
+        .accuracy = 95,
+        .pp = 15,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -6977,7 +6977,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_PHYSICAL,
         .argument = MOVE_EFFECT_FEINT,		
     },	
-		
+	
     [MOVE_LANDS_WRATH] =
     {
         .effect = EFFECT_CONFUSE_HIT,
@@ -7298,10 +7298,29 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED | FLAG_HIGH_CRIT,
         .split = SPLIT_SPECIAL,
     },	
-	
+
+    [MOVE_FLY] =
+    {
+        #if B_UPDATED_MOVE_DATA >= GEN_4
+            .power = 90,
+        #else
+            .power = 70,
+        #endif
+        .effect = EFFECT_SEMI_INVULNERABLE,
+        .type = TYPE_FLYING,
+        .accuracy = 90,
+        .pp = 15,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_MAKES_CONTACT | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
+        .split = SPLIT_PHYSICAL,
+        .argument = MOVE_EFFECT_FEINT,	
+    },
+
     [MOVE_BEAK_BLAST] =
     {
-	        .effect = EFFECT_BEAK_BLAST,
+	    .effect = EFFECT_BEAK_BLAST,
         .power = 100,
         .type = TYPE_FLYING,
         .accuracy = 85,
@@ -7327,25 +7346,6 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_PHYSICAL,
     },	
 
-    [MOVE_FLY] =
-    {
-        #if B_UPDATED_MOVE_DATA >= GEN_4
-            .power = 100,
-        #else
-            .power = 70,
-        #endif
-        .effect = EFFECT_SEMI_INVULNERABLE,
-        .type = TYPE_FLYING,
-        .accuracy = 90,
-        .pp = 10,
-        .secondaryEffectChance = 0,
-        .target = MOVE_TARGET_SELECTED,
-        .priority = 0,
-        .flags = FLAG_MAKES_CONTACT | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
-        .split = SPLIT_PHYSICAL,
-        .argument = MOVE_EFFECT_FEINT,	
-    },
-	
     [MOVE_FLYING_PRESS] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_7
@@ -9411,7 +9411,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
         .split = SPLIT_SPECIAL,
     },
-
+	
     [MOVE_SHADOW_BONE] =
     {
         .effect = EFFECT_DEFENSE_DOWN_HIT,
@@ -9424,6 +9424,21 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED | FLAG_SHEER_FORCE_BOOST,
         .split = SPLIT_PHYSICAL,
+    },
+
+    [MOVE_SHADOW_FORCE] =
+    {
+        .effect = EFFECT_SEMI_INVULNERABLE,
+        .power = 90,
+        .type = TYPE_GHOST,
+        .accuracy = 90,
+        .pp = 15,
+        .secondaryEffectChance = 100,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_MAKES_CONTACT | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
+        .split = SPLIT_PHYSICAL,
+        .argument = MOVE_EFFECT_FEINT,
     },
 
     [MOVE_SPECTRAL_THIEF] =
@@ -9466,21 +9481,6 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED | FLAG_TARGET_ABILITY_IGNORED,
         .split = SPLIT_SPECIAL,
-    },
-	
-    [MOVE_SHADOW_FORCE] =
-    {
-        .effect = EFFECT_SEMI_INVULNERABLE,
-        .power = 100,
-        .type = TYPE_GHOST,
-        .accuracy = 90,
-        .pp = 10,
-        .secondaryEffectChance = 100,
-        .target = MOVE_TARGET_SELECTED,
-        .priority = 0,
-        .flags = FLAG_MAKES_CONTACT | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
-        .split = SPLIT_PHYSICAL,
-        .argument = MOVE_EFFECT_FEINT,
     },
 
     [MOVE_PHANTOM_FORCE] =
@@ -11814,37 +11814,69 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
             "White haze that eliminates all\n\n"
             "stat changes and can Sleep."),
     },	
-	
-    [SPECIES_DUGTRIO] =
+
+    [SPECIES_DIGLETT] =
     {
-        .move = MOVE_MAGNITUDE,
+        .move = MOVE_DIG,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 1,
+        .variable = 80,
         .modification2 = SIGNATURE_MOD_ACCURACY,
-        .variable2 = 90,			
+        .variable2 = 95,			
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_DEF,
         .chance3 = 25,
         .differentDescription = TRUE,
         .description = _( 
-            "Attack of random intensity.\n\n"
-            "May lower the foes Defense."),
+            "Digs underground and strikes\n\n"
+            "next turn. May lower Defense."),
+    },	
+
+    [SPECIES_DIGLETT_ALOLAN] =
+    {
+        .move = MOVE_DIG,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 80,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 95,			
+        .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
+        .variable3 = STAT_DEF,
+        .chance3 = 25,
+        .differentDescription = TRUE,
+        .description = _( 
+            "Digs underground and strikes\n\n"
+            "next turn. May lower Defense."),
+    },	
+	
+    [SPECIES_DUGTRIO] =
+    {
+        .move = MOVE_DIG,
+        .modification = SIGNATURE_MOD_POWER,
+        .variable = 100,
+        .modification2 = SIGNATURE_MOD_ACCURACY,
+        .variable2 = 95,			
+        .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
+        .variable3 = STAT_DEF,
+        .chance3 = 50,
+        .differentDescription = TRUE,
+        .description = _( 
+            "Digs underground and strikes\n\n"
+            "next turn. May lower Defense."),
     },	
 
     [SPECIES_DUGTRIO_ALOLAN] =
     {
-        .move = MOVE_MAGNITUDE,
+        .move = MOVE_DIG,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 1,
+        .variable = 100,
         .modification2 = SIGNATURE_MOD_ACCURACY,
-        .variable2 = 90,			
+        .variable2 = 95,			
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
         .variable3 = STAT_DEF,
-        .chance3 = 25,
+        .chance3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "Attack of random intensity.\n\n"
-            "May lower the foes Defense."),
+            "Digs underground and strikes\n\n"
+            "next turn. May lower Defense."),
     },	
 
     [SPECIES_MEOWTH] =
@@ -13311,7 +13343,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification = SIGNATURE_MOD_POWER,
         .variable = 100,
         .modification2 = SIGNATURE_MOD_ACCURACY,
-        .variable2 = 90,
+        .variable2 = 95,
         .modification3 = SIGNATURE_MOD_SECONDARY_EFFECT,
         .variable3 = SIGNATURE_SECONDARY_EFFECT_FLINCH,
         .chance3 = 20,		
@@ -13326,7 +13358,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     [SPECIES_NOCTOWL] =
     {
         .move = MOVE_EXTRASENSORY,
-         .modification = SIGNATURE_MOD_POWER,
+        .modification = SIGNATURE_MOD_POWER,
         .variable = 100,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,
