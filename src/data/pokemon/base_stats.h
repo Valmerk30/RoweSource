@@ -31436,9 +31436,9 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_FURFROU_HEART_TRIM] =
     {
         .baseHP        = 75,
-        .baseAttack    = 80,
+        .baseAttack    = 90,
         .baseDefense   = 60,
-        .baseSpeed     = 102,
+        .baseSpeed     = 100,
         .baseSpAttack  = 65,
         .baseSpDefense = 90,
         .type1 = TYPE_NORMAL,
@@ -31464,7 +31464,7 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_FURFROU_STAR_TRIM] =
     {
         .baseHP        = 75,
-        .baseAttack    = 80,
+        .baseAttack    = 90,
         .baseDefense   = 60,
         .baseSpeed     = 100,
         .baseSpAttack  = 65,
@@ -31492,7 +31492,7 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_FURFROU_DIAMOND_TRIM] =
     {
         .baseHP        = 75,
-        .baseAttack    = 80,
+        .baseAttack    = 90,
         .baseDefense   = 60,
         .baseSpeed     = 100,
         .baseSpAttack  = 65,
@@ -31520,7 +31520,7 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_FURFROU_DEBUTANTE_TRIM] =
     {
         .baseHP        = 75,
-        .baseAttack    = 80,
+        .baseAttack    = 90,
         .baseDefense   = 60,
         .baseSpeed     = 100,
         .baseSpAttack  = 65,
@@ -31548,7 +31548,7 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_FURFROU_MATRON_TRIM] =
     {
         .baseHP        = 75,
-        .baseAttack    = 80,
+        .baseAttack    = 90,
         .baseDefense   = 60,
         .baseSpeed     = 100,
         .baseSpAttack  = 65,
@@ -31576,7 +31576,7 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_FURFROU_DANDY_TRIM] =
     {
         .baseHP        = 75,
-        .baseAttack    = 80,
+        .baseAttack    = 90,
         .baseDefense   = 60,
         .baseSpeed     = 100,
         .baseSpAttack  = 65,
@@ -31604,7 +31604,7 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_FURFROU_LA_REINE_TRIM] =
     {
         .baseHP        = 75,
-        .baseAttack    = 80,
+        .baseAttack    = 90,
         .baseDefense   = 60,
         .baseSpeed     = 100,
         .baseSpAttack  = 65,
@@ -31632,7 +31632,7 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_FURFROU_KABUKI_TRIM] =
     {
         .baseHP        = 75,
-        .baseAttack    = 80,
+        .baseAttack    = 90,
         .baseDefense   = 60,
         .baseSpeed     = 100,
         .baseSpAttack  = 65,
@@ -31660,7 +31660,7 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_FURFROU_PHARAOH_TRIM] =
     {
         .baseHP        = 75,
-        .baseAttack    = 80,
+        .baseAttack    = 90,
         .baseDefense   = 60,
         .baseSpeed     = 100,
         .baseSpAttack  = 65,
