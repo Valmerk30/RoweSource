@@ -14036,7 +14036,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     {
         .move = MOVE_JUDGMENT,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 60,
+        .variable = 50,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 95,
         .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
@@ -14989,7 +14989,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
     {
         .move = MOVE_FAINT_ATTACK,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 60,
+        .variable = 50,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 0,		
         .modification3 = SIGNATURE_MOD_PRIORITY,
