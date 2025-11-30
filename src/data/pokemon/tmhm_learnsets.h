@@ -39030,6 +39030,7 @@ const u8 *const gTMHMLearnsets[] =
 	[SPECIES_RAPIDASH_GALARIAN] = sRapidashGalarianTMHMLearnset,
     [SPECIES_MR_MIME_GALARIAN] = sMrRimeTMHMLearnset,
 	[SPECIES_CORSOLA_GALARIAN] = sCorsolaGalarianTMHMLearnset,
+	[SPECIES_SLOWPOKE_GALARIAN] = sSlowpokeGalarianTMHMLearnset,
 	[SPECIES_SLOWKING_GALARIAN] = sSlowkingGalarianTMHMLearnset,
 	[SPECIES_SLOWBRO_GALARIAN] = sSlowbroGalarianTMHMLearnset,
 	[SPECIES_ZIGZAGOON_GALARIAN] = sZigzagoonGalarianTMHMLearnset,
