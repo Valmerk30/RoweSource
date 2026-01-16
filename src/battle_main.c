@@ -5897,6 +5897,12 @@ u8 getMoveBasePower(u16 move, u16 speciesId, u16 ability){
             movePower = gSignatureMoveList[speciesId].variable5;
         else if (gSignatureMoveList[speciesId].modification6 == SIGNATURE_MOD_POWER)
             movePower = gSignatureMoveList[speciesId].variable6;
+        else if (gSignatureMoveList[speciesId].modification7 == SIGNATURE_MOD_POWER)
+            movePower = gSignatureMoveList[speciesId].variable7;
+        else if (gSignatureMoveList[speciesId].modification8 == SIGNATURE_MOD_POWER)
+            movePower = gSignatureMoveList[speciesId].variable8;
+        else if (gSignatureMoveList[speciesId].modification9 == SIGNATURE_MOD_POWER)
+            movePower = gSignatureMoveList[speciesId].variable9;
     }
 
     //Special Cases
@@ -5944,6 +5950,12 @@ u8 getAttackingStat(u16 move, u8 battler){
             stat = gSignatureMoveList[speciesId].variable5;
         else if (gSignatureMoveList[speciesId].modification6 == SIGNATURE_MOD_DAMAGE_STAT)
             stat = gSignatureMoveList[speciesId].variable6;
+        else if (gSignatureMoveList[speciesId].modification7 == SIGNATURE_MOD_DAMAGE_STAT)
+            stat = gSignatureMoveList[speciesId].variable7;
+        else if (gSignatureMoveList[speciesId].modification8 == SIGNATURE_MOD_DAMAGE_STAT)
+            stat = gSignatureMoveList[speciesId].variable8;
+        else if (gSignatureMoveList[speciesId].modification9 == SIGNATURE_MOD_DAMAGE_STAT)
+            stat = gSignatureMoveList[speciesId].variable9;		
     }
 
     //Special Cases
@@ -5994,6 +6006,12 @@ u8 getSignatureMoveType(u16 move, u16 speciesId, u16 ability){
             MoveType = gSignatureMoveList[speciesId].variable5;
         else if (gSignatureMoveList[speciesId].modification6 == SIGNATURE_MOD_TYPE)
             MoveType = gSignatureMoveList[speciesId].variable6;
+        else if (gSignatureMoveList[speciesId].modification7 == SIGNATURE_MOD_TYPE)
+            MoveType = gSignatureMoveList[speciesId].variable7;
+        else if (gSignatureMoveList[speciesId].modification8 == SIGNATURE_MOD_TYPE)
+            MoveType = gSignatureMoveList[speciesId].variable8;
+        else if (gSignatureMoveList[speciesId].modification9 == SIGNATURE_MOD_TYPE)
+            MoveType = gSignatureMoveList[speciesId].variable9;		
     }
 
     //Special Cases
@@ -6097,6 +6115,12 @@ u8 getMoveAccuracy(u16 move, u16 speciesId){
             Accuracy = gSignatureMoveList[speciesId].variable5;
         else if (gSignatureMoveList[speciesId].modification6 == SIGNATURE_MOD_ACCURACY)
             Accuracy = gSignatureMoveList[speciesId].variable6;
+        else if (gSignatureMoveList[speciesId].modification7 == SIGNATURE_MOD_ACCURACY)
+            MoveType = gSignatureMoveList[speciesId].variable7;
+        else if (gSignatureMoveList[speciesId].modification8 == SIGNATURE_MOD_ACCURACY)
+            MoveType = gSignatureMoveList[speciesId].variable8;
+        else if (gSignatureMoveList[speciesId].modification9 == SIGNATURE_MOD_ACCURACY)
+            MoveType = gSignatureMoveList[speciesId].variable9;	
     }
 
     return Accuracy;
@@ -6119,6 +6143,12 @@ u8 getMoveSecondaryEffectChance(u16 move, u16 speciesId){
             chances = gSignatureMoveList[speciesId].variable5;
         else if (gSignatureMoveList[speciesId].modification6 == SIGNATURE_MOD_EFFECT_CHANCE)
             chances = gSignatureMoveList[speciesId].variable6;
+        else if (gSignatureMoveList[speciesId].modification7 == SIGNATURE_MOD_EFFECT_CHANCE)
+            MoveType = gSignatureMoveList[speciesId].variable7;
+        else if (gSignatureMoveList[speciesId].modification8 == SIGNATURE_MOD_EFFECT_CHANCE)
+            MoveType = gSignatureMoveList[speciesId].variable8;
+        else if (gSignatureMoveList[speciesId].modification9 == SIGNATURE_MOD_EFFECT_CHANCE)
+            MoveType = gSignatureMoveList[speciesId].variable9;			
     }
 
     return chances;
