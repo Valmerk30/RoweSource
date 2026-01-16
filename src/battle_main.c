@@ -5015,6 +5015,21 @@ s8 getModifiedMovePriority(u16 move, u8 battlerId){
             typePriority = gSignatureMoveList[speciesId].chance6;
             tryToRaisePriority = TRUE;
         }
+        else if (gSignatureMoveList[speciesId].modification7 == SIGNATURE_MOD_PRIORITY){
+            priorityType = gSignatureMoveList[speciesId].variable7;
+            typePriority = gSignatureMoveList[speciesId].chance7;
+            tryToRaisePriority = TRUE;
+        }
+        else if (gSignatureMoveList[speciesId].modification8 == SIGNATURE_MOD_PRIORITY){
+            priorityType = gSignatureMoveList[speciesId].variable8;
+            typePriority = gSignatureMoveList[speciesId].chance8;
+            tryToRaisePriority = TRUE;
+        }
+        else if (gSignatureMoveList[speciesId].modification9 == SIGNATURE_MOD_PRIORITY){
+            priorityType = gSignatureMoveList[speciesId].variable9;
+            typePriority = gSignatureMoveList[speciesId].chance9;
+            tryToRaisePriority = TRUE;
+        }		
     }
 
     if(tryToRaisePriority){
