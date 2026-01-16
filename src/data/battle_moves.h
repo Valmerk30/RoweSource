@@ -13678,7 +13678,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable8 = TYPE_DRAGON,		
         .differentDescription = TRUE,
         .description = _( 
-            "Hits 2 to 5 times. May Taunt."
+            "Hits 2 to 5 times. May Taunt.\n\n"
             "Eff to Ghost, Psychic and Dragon"),
     },
 
@@ -13704,7 +13704,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .variable8 = TYPE_DRAGON,		
         .differentDescription = TRUE,
         .description = _( 
-            "Hits 2 to 5 times. May Taunt."
+            "Hits 2 to 5 times. May Taunt.\n\n"
             "Eff to Ghost, Psychic and Dragon"),
     },
 	
