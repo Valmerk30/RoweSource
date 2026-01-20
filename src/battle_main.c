@@ -6116,11 +6116,11 @@ u8 getMoveAccuracy(u16 move, u16 speciesId){
         else if (gSignatureMoveList[speciesId].modification6 == SIGNATURE_MOD_ACCURACY)
             Accuracy = gSignatureMoveList[speciesId].variable6;
         else if (gSignatureMoveList[speciesId].modification7 == SIGNATURE_MOD_ACCURACY)
-            MoveType = gSignatureMoveList[speciesId].variable7;
+            Accuracy = gSignatureMoveList[speciesId].variable7;
         else if (gSignatureMoveList[speciesId].modification8 == SIGNATURE_MOD_ACCURACY)
-            MoveType = gSignatureMoveList[speciesId].variable8;
+            Accuracy = gSignatureMoveList[speciesId].variable8;
         else if (gSignatureMoveList[speciesId].modification9 == SIGNATURE_MOD_ACCURACY)
-            MoveType = gSignatureMoveList[speciesId].variable9;	
+            Accuracy = gSignatureMoveList[speciesId].variable9;	
     }
 
     return Accuracy;
@@ -6144,11 +6144,11 @@ u8 getMoveSecondaryEffectChance(u16 move, u16 speciesId){
         else if (gSignatureMoveList[speciesId].modification6 == SIGNATURE_MOD_EFFECT_CHANCE)
             chances = gSignatureMoveList[speciesId].variable6;
         else if (gSignatureMoveList[speciesId].modification7 == SIGNATURE_MOD_EFFECT_CHANCE)
-            MoveType = gSignatureMoveList[speciesId].variable7;
+            chances = gSignatureMoveList[speciesId].variable7;
         else if (gSignatureMoveList[speciesId].modification8 == SIGNATURE_MOD_EFFECT_CHANCE)
-            MoveType = gSignatureMoveList[speciesId].variable8;
+            chances = gSignatureMoveList[speciesId].variable8;
         else if (gSignatureMoveList[speciesId].modification9 == SIGNATURE_MOD_EFFECT_CHANCE)
-            MoveType = gSignatureMoveList[speciesId].variable9;			
+            chances = gSignatureMoveList[speciesId].variable9;			
     }
 
     return chances;
