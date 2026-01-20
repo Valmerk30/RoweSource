@@ -4363,7 +4363,7 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u16 ability, u8 special, u16 move
 				gBattlerAttacker = battler;
                 gSpecialStatuses[battler].switchInAbilityDone = TRUE;
 				gBattleMons[battler].type1 = gBattleMons[BATTLE_OPPOSITE(battler)].type1;
-				PREPARE_TYPE_BUFFER(gBattleTextBuff1, gBattleMons[battler].type3);
+				PREPARE_TYPE_BUFFER(gBattleTextBuff1, gBattleMons[battler].type1);
 				BattleScriptPushCursorAndCallback(BattleScript_BattlerGotTheType);
 				effect++;
             }
