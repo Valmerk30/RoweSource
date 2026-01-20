@@ -2733,7 +2733,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         #endif
         .effect = EFFECT_INCINERATE,
         .type = TYPE_FIRE,
-        .accuracy = 80,
+        .accuracy = 90,
         .pp = 25,
         .secondaryEffectChance = 100,
         .target = MOVE_TARGET_BOTH,
