@@ -39025,6 +39025,7 @@ const u8 *const gTMHMLearnsets[] =
     [SPECIES_DEOXYS_DEFENSE] = sDeoxysDefenseTMHMLearnset,
     [SPECIES_DEOXYS_SPEED] = sDeoxysSpeedTMHMLearnset,
 	//Galarian
+	[SPECIES_MEOWTH_GALARIAN] = sMeowthGalarianTMHMLearnset,
 	[SPECIES_FARFETCHD_GALARIAN] = sFarfetchdGalarianTMHMLearnset,
 	[SPECIES_PONYTA_GALARIAN] = sPonytaGalarianTMHMLearnset,
 	[SPECIES_RAPIDASH_GALARIAN] = sRapidashGalarianTMHMLearnset,
