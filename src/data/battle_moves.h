@@ -575,6 +575,20 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_HIGHEST,
     },	
 
+    [MOVE_RELIC_SONG] =
+    {
+        .effect = EFFECT_SLEEP_HIT,
+        .power = 60,
+        .type = TYPE_NORMAL,
+        .accuracy = 90,
+        .pp = 25,
+        .secondaryEffectChance = 10,
+        .target = MOVE_TARGET_BOTH,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MAGICCOAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+        .split = SPLIT_STATUS,
+    },
+
     [MOVE_STOMP] =
     {
         .effect = EFFECT_FLINCH_MINIMIZE_HIT,
@@ -727,20 +741,6 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SHEER_FORCE_BOOST,
         .split = SPLIT_PHYSICAL,
-    },
-
-    [MOVE_RELIC_SONG] =
-    {
-        .effect = EFFECT_SLEEP_HIT,
-        .power = 75,
-        .type = TYPE_NORMAL,
-        .accuracy = 85,
-        .pp = 20,
-        .secondaryEffectChance = 10,
-        .target = MOVE_TARGET_BOTH,
-        .priority = 0,
-        .flags = FLAG_PROTECT_AFFECTED | FLAG_MAGICCOAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
-        .split = SPLIT_STATUS,
     },
 	
     [MOVE_FURY_SWIPES] =
@@ -15434,7 +15434,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 95,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
-        .variable3 = 20,
+        .variable3 = 10,
         .modification4 = SIGNATURE_MOD_PRIORITY,
         .variable4 = SIGNATURE_PRIORITY_ALWAYS,		
         .modification5 = SIGNATURE_MOD_TYPE,
@@ -15453,7 +15453,7 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,
         .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
-        .variable3 = 20,
+        .variable3 = 10,
         .modification4 = SIGNATURE_MOD_PRIORITY,
         .variable4 = SIGNATURE_PRIORITY_ALWAYS,		
         .modification5 = SIGNATURE_MOD_TYPE,
