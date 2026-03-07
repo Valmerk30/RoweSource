@@ -74,6 +74,7 @@ const u16 gEggMoves[] = {
 		MOVE_STEEL_WING,
 		MOVE_PURSUIT,
 		MOVE_UPROAR,
+		MOVE_VOLT_TACKLE,
 		MOVE_FIRE_LASH,
 		MOVE_AIR_CUTTER,
 		MOVE_AIR_SLASH,
@@ -4904,7 +4905,7 @@ const u16 gEggMoves[] = {
 	egg_moves(CHEWTLE,
 		MOVE_SKULL_BASH,
 		MOVE_GASTRO_ACID,
-                MOVE_POISON_FANG,
+        MOVE_POISON_FANG,
 		MOVE_DRAGON_TAIL),
 
 	egg_moves(YAMPER,
@@ -4918,6 +4919,7 @@ const u16 gEggMoves[] = {
 		MOVE_PYRO_BALL,
 		MOVE_EXPLOSION,
 		MOVE_MUD_SLAP,
+		MOVE_BREAKING_SWIPE,
 		MOVE_BLOCK),
 
 	egg_moves(APPLIN,
