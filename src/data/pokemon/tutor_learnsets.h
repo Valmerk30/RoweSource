@@ -5723,6 +5723,7 @@ static const u8 sHitmontopTutorLearnset[] =
     TUTOR(MOVE_STRENGTH),
     TUTOR(MOVE_CLOSE_COMBAT),
     TUTOR(MOVE_TRIPLE_AXEL),
+    TUTOR(MOVE_KNOCK_OFF),
     0xFF,
 };
 
