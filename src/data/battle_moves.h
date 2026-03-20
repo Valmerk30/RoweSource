@@ -3455,24 +3455,19 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
         .split = SPLIT_SPECIAL,
-
     },	
-	
-    [MOVE_WATERFALL] =
+
+    [MOVE_SURGING_STRIKES] =
     {
-        #if B_UPDATED_MOVE_DATA >= GEN_4
-            .effect = EFFECT_FLINCH_HIT,
-        #else
-            .effect = EFFECT_HIT,
-        #endif
-        .power = 85,
+        .effect = EFFECT_TRIPLE_KICK,   //TODO (Multi hit + Always Crit)
+        .power = 15,
         .type = TYPE_WATER,
         .accuracy = 90,
-        .pp = 15,
-        .secondaryEffectChance = 20,
+        .pp = 20,
+        .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
-        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED | FLAG_SHEER_FORCE_BOOST,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
         .split = SPLIT_PHYSICAL,
     },
 
@@ -3543,13 +3538,31 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED | FLAG_SHEER_FORCE_BOOST,
         .split = SPLIT_SPECIAL,
     },	
-	
+
+    [MOVE_WATERFALL] =
+    {
+        #if B_UPDATED_MOVE_DATA >= GEN_4
+            .effect = EFFECT_FLINCH_HIT,
+        #else
+            .effect = EFFECT_HIT,
+        #endif
+        .power = 85,
+        .type = TYPE_WATER,
+        .accuracy = 90,
+        .pp = 15,
+        .secondaryEffectChance = 20,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED | FLAG_SHEER_FORCE_BOOST,
+        .split = SPLIT_PHYSICAL,
+    },
+
     [MOVE_WATER_SPOUT] =
     {
         .effect = EFFECT_BRICK_BREAK,
         .power = 85,
         .type = TYPE_WATER,
-        .accuracy = 85,
+        .accuracy = 90,
         .pp = 15,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
@@ -3598,20 +3611,6 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .accuracy = 90,
         .pp = 15,
         .secondaryEffectChance = 25,
-        .target = MOVE_TARGET_SELECTED,
-        .priority = 0,
-        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
-        .split = SPLIT_PHYSICAL,
-    },
-
-    [MOVE_SURGING_STRIKES] =
-    {
-        .effect = EFFECT_TRIPLE_KICK,   //TODO (Multi hit + Always Crit)
-        .power = 15,
-        .type = TYPE_WATER,
-        .accuracy = 90,
-        .pp = 20,
-        .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
@@ -5357,6 +5356,20 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_PHYSICAL,
     },
 
+    [MOVE_TRIPLE_AXEL] =
+    {
+        .effect = EFFECT_TRIPLE_KICK,   //TODO: Increase damage by 20 instead of 10
+        .power = 15,
+        .type = TYPE_ICE,
+        .accuracy = 90,
+        .pp = 20,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED | FLAG_STRIKER_BOOST,
+        .split = SPLIT_PHYSICAL,
+    },
+	
     [MOVE_FREEZE_DRY] =
     {
         .effect = EFFECT_SPECIAL_DEFENSE_DOWN_HIT,
@@ -5403,20 +5416,6 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_SPECIAL,
     },	
 
-    [MOVE_TRIPLE_AXEL] =
-    {
-        .effect = EFFECT_TRIPLE_KICK,   //TODO: Increase damage by 20 instead of 10
-        .power = 15,
-        .type = TYPE_ICE,
-        .accuracy = 90,
-        .pp = 20,
-        .secondaryEffectChance = 0,
-        .target = MOVE_TARGET_SELECTED,
-        .priority = 0,
-        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED | FLAG_STRIKER_BOOST,
-        .split = SPLIT_PHYSICAL,
-    },
-	
     [MOVE_FREEZY_FROST] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_8
@@ -6028,7 +6027,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_TRIPLE_KICK] =
     {
         .effect = EFFECT_TRIPLE_KICK,
-        .power = 15,
+        .power = 20,
         .type = TYPE_FIGHTING,
         .accuracy = 90,
         .pp = 20,
