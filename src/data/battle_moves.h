@@ -12537,17 +12537,16 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
 
     [SPECIES_HITMONLEE] =
     {
-        .move = MOVE_TRIPLE_KICK,
+        .move = MOVE_JUMP_KICK,
         .modification = SIGNATURE_MOD_POWER,
-        .variable = 20,
+        .variable = 100,
         .modification2 = SIGNATURE_MOD_ACCURACY,
         .variable2 = 90,
-        .modification3 = SIGNATURE_MOD_TARGET_STAT_DOWN,
-        .variable3 = STAT_SPEED,
-        .chance3 = 10,
+        .modification3 = SIGNATURE_MOD_EFFECT_CHANCE,
+        .variable3 = 50,
         .differentDescription = TRUE,
         .description = _( 
-            "Kicks the foe 3 times in a row.\n\n"
+			"A powerful strong jumping kick.\n\n"
             "May lower the foe's Speed."),
     },
 	
