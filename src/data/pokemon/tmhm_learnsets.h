@@ -4426,6 +4426,7 @@ static const u8 sHitmonleeTMHMLearnset[] =
     TMHM(TM88_SLEEP_TALK),
     TMHM(TM90_SUBSTITUTE),
     TMHM(TM100_CONFIDE),
+    TMHM(TM104_PLAY_ROUGH),
     TMHM(TM106_AURA_SPHERE),
     TMHM(TM117_BLAZE_KICK),
     0xFF,
@@ -4460,6 +4461,7 @@ static const u8 sHitmonchanTMHMLearnset[] =
     TMHM(TM88_SLEEP_TALK),
     TMHM(TM90_SUBSTITUTE),
     TMHM(TM100_CONFIDE),
+    TMHM(TM104_PLAY_ROUGH),
     TMHM(TM106_AURA_SPHERE),
     TMHM(TM119_DRAIN_PUNCH),
     0xFF,
@@ -9934,6 +9936,7 @@ static const u8 sHitmontopTMHMLearnset[] =
     TMHM(TM90_SUBSTITUTE),
     TMHM(TM100_CONFIDE),
     TMHM(TM104_PLAY_ROUGH),
+    TMHM(TM106_AURA_SPHERE),
     0xFF,
 };
 
